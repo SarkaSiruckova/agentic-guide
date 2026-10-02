@@ -103,6 +103,8 @@ The most common mistake is handing a model every tool "just in case". Give it th
 - [Chat vs agent vs workflow vs automation](/concepts/agents/chat-agent-workflow-automation/): an agent is a model that picks its own tools
 - [The agent loop](/concepts/agents/the-agent-loop/): what happens when the model keeps using tools until the job is done
 - [MCP](/concepts/agents/mcp/): a standard way to connect tools to many assistants
+- [Structured outputs](/concepts/talking-to-models/structured-outputs/): getting tool inputs and answers in a fixed shape
+- [Least privilege](/concepts/security/least-privilege/): limiting what each tool can touch
 
 ## The proper terms
 

@@ -97,6 +97,8 @@ The assistant never held a password and never had more access than the account a
 - [Agentic harness](/concepts/agents/agentic-harness/): the host application that contains the MCP client
 - [Skills and instruction files](/concepts/agents/skills-and-instruction-files/): know-how that pairs with the access MCP provides
 - [APIs, OAuth and API keys](/concepts/data/apis-oauth-and-api-keys/): what sits underneath many servers, and how sign-in works
+- [Prompt injection](/concepts/security/prompt-injection/): the main risk when connected tools return untrusted text
+- [Least privilege](/concepts/security/least-privilege/): how to decide what a connected server may do
 
 ## The proper terms
 

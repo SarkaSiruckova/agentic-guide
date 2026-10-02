@@ -49,7 +49,7 @@ The check happens at the source, before the content reaches the model. Content t
 Other principles worth knowing:
 
 - **Read versus write.** Looking is lower risk than changing. Give agents read access first, and add write access only where needed. Actions that are hard to undo should need approval from a person (see [human in the loop](/concepts/agents/human-in-the-loop/)).
-- **Least privilege.** Give each identity the minimum access that does its job. This gets its own page later.
+- **Least privilege.** Give each identity the minimum access that does its job. See [least privilege](/concepts/security/least-privilege/).
 - **Logging.** Record who asked, what the agent fetched and what it did. When something goes wrong, the log is how you find out what happened.
 
 ## In practice
@@ -110,6 +110,7 @@ The most common mistake is giving the agent a broad account for convenience and 
 - [RAG and chunking](/concepts/data/rag-and-chunking/): chunks must carry their document's permissions
 - [System prompts](/concepts/talking-to-models/system-prompts/): useful for guidance, not for enforcement
 - [Human in the loop](/concepts/agents/human-in-the-loop/): approvals for actions that are risky or hard to undo
+- [Least privilege](/concepts/security/least-privilege/): the principle for deciding what to grant
 
 ## The proper terms
 

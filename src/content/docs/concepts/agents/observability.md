@@ -96,6 +96,9 @@ The most common mistake is adding observability after the first serious incident
 - [The agent loop](/concepts/agents/the-agent-loop/): each round of the loop becomes a step in the trace
 - [Entity resolution](/concepts/data/entity-resolution/): the cause behind the wrong "Acme" in the example
 - [Permissions and access control](/concepts/data/permissions-and-access-control/): traces need the same protection as the data they copy
+- [Audit trails](/concepts/security/audit-trails/): the accountability record, as opposed to the builder's view
+- [Estimating cost per task](/concepts/cost/estimating-cost-per-task/): turning measured runs into a realistic cost
+- [Observability and evals tooling](/map/observability-and-evals/): example platforms
 
 ## The proper terms
 

@@ -107,6 +107,7 @@ The most common mistake is starting with the architecture instead of a question 
 - [Structured vs unstructured data](/concepts/data/structured-vs-unstructured-data/): the two kinds of material the layer has to handle
 - [Permissions and access control](/concepts/data/permissions-and-access-control/): how the layer decides what each person may see
 - [MCP](/concepts/agents/mcp/): a common standard for connecting agents to sources
+- [The map](/map/): where each layer of the infrastructure sits
 
 ## The proper terms
 

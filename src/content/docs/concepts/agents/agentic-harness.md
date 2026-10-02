@@ -106,6 +106,7 @@ The first week, the logs show the agent suggesting an angel who already invested
 - [Tool use](/concepts/agents/tool-use/): how the harness lets the model act, and what it allows
 - [Human in the loop](/concepts/agents/human-in-the-loop/): where the harness asks a person to approve
 - [Observability](/concepts/agents/observability/): the logging layer that lets you see what the agent did
+- [Agent frameworks](/map/agent-frameworks/): code libraries for building the harness
 
 ## The proper terms
 

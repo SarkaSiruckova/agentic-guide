@@ -81,7 +81,49 @@ Authentication is proving who you are. Authorisation is deciding what you are al
 
 [Read the full page](/concepts/data/apis-oauth-and-api-keys/).
 
+## LLM vs LRM vs LQM
+
+Three labels that overlap. An LRM is a kind of LLM, and "LQM" is an informal term whose meaning varies by who uses it.
+
+| | LLM | LRM | LQM |
+| --- | --- | --- | --- |
+| Stands for | Large language model | Large reasoning model | Large quantitative model |
+| Built around | Text | Text, plus extended step-by-step thinking | Numbers, physics or simulation data (meaning varies) |
+| Status of the term | Widely used | Widely used, informal | Informal, partly vendor branding |
+| Check it by | Comparing to sources | Checking the answer and the working | Testing against known results or recalculating |
+
+[Read the full page](/concepts/how-models-work/llms-lrms-and-lqms/).
+
+## Structured data vs structured outputs
+
+Structured data is data that already lives in an organised form, such as database rows. Structured outputs are a way of making a model answer in that form. You usually use structured outputs to turn unstructured data into structured data.
+
+[Read the full page](/concepts/talking-to-models/structured-outputs/).
+
+## Open source vs open weights
+
+Open source, strictly, means the whole system can be inspected, changed and shared, including training code and data information. Open weights means only the trained numbers are available. Neither means free or private by itself.
+
+[Read the full page](/concepts/how-models-work/open-vs-closed-weights/).
+
+## Prompt injection vs jailbreaking
+
+Jailbreaking is a user trying to make a model break its own built-in rules. Prompt injection is instructions slipped in through content the agent reads, usually to hijack what it does with its tools.
+
+[Read the full page](/concepts/security/prompt-injection/).
+
+## GDPR vs UK GDPR, and the two meanings of DPA
+
+The EU GDPR and the UK GDPR are separate legal texts with very similar rules, and a UK firm can fall under both. A DPA can be a data processing agreement (a contract with a vendor) or the Data Protection Act 2018 (UK law). This is general information, not legal advice.
+
+[Read the full page](/concepts/security/gdpr-data-retention-and-dpas/).
+
+## Cost per token vs cost per task
+
+A price per token is what the vendor charges. The cost per task is what a finished job really costs, once you count every call, the growing record an agent rereads each round, retries and tools.
+
+[Read the full page](/concepts/cost/estimating-cost-per-task/).
+
 ## Planned so far
 
-- LLM vs LRM vs LQM
 - Claude.ai vs Claude Code vs the Claude API

@@ -12,25 +12,25 @@ The ideas, grouped by theme. Each becomes its own page as it's written.
 
 - [What an LLM is](/concepts/how-models-work/what-an-llm-is/)
 - [Tokens and context windows](/concepts/how-models-work/tokens-and-context-windows/)
-- Pre-training and post-training
-- LLMs, LRMs and LQMs
-- Fine-tuning vs prompting vs RAG
-- Inference
-- Parameters and temperature
-- Open vs closed weights
-- Quantisation
-- Reasoning models
-- Multimodal models
+- [Pre-training and post-training](/concepts/how-models-work/pre-training-and-post-training/)
+- [LLMs, LRMs and LQMs](/concepts/how-models-work/llms-lrms-and-lqms/)
+- [Fine-tuning vs prompting vs RAG](/concepts/how-models-work/fine-tuning-vs-prompting-vs-rag/)
+- [Inference](/concepts/how-models-work/inference/)
+- [Parameters and temperature](/concepts/how-models-work/parameters-and-temperature/)
+- [Open vs closed weights](/concepts/how-models-work/open-vs-closed-weights/)
+- [Quantisation](/concepts/how-models-work/quantisation/)
+- [Reasoning models](/concepts/how-models-work/reasoning-models/)
+- [Multimodal models](/concepts/how-models-work/multimodal-models/)
 - [Embeddings](/concepts/how-models-work/embeddings/)
 - [Hallucination and grounding](/concepts/how-models-work/hallucination-and-grounding/)
-- Benchmarks
+- [Benchmarks](/concepts/how-models-work/benchmarks/)
 
 ## Talking to models
 
 - [Prompt engineering](/concepts/talking-to-models/prompt-engineering/)
 - [System prompts](/concepts/talking-to-models/system-prompts/)
 - [Context engineering](/concepts/talking-to-models/context-engineering/)
-- Structured outputs
+- [Structured outputs](/concepts/talking-to-models/structured-outputs/)
 
 ## Agents
 
@@ -61,23 +61,23 @@ The ideas, grouped by theme. Each becomes its own page as it's written.
 
 ## Running things
 
-- Serverless functions
-- Environment variables and secrets
-- Triggers and scheduling
-- Orchestration tools
-- Rate limits, retries and failures
+- [Serverless functions](/concepts/running-things/serverless-functions/)
+- [Environment variables and secrets](/concepts/running-things/environment-variables-and-secrets/)
+- [Triggers and scheduling](/concepts/running-things/triggers-and-scheduling/)
+- [Orchestration tools](/concepts/running-things/orchestration-tools/)
+- [Rate limits, retries and failures](/concepts/running-things/rate-limits-retries-and-failures/)
 
 ## Security and compliance
 
-- Prompt injection
-- Data exfiltration through tools
-- Least privilege
-- GDPR, data retention and DPAs
-- Audit trails
+- [Prompt injection](/concepts/security/prompt-injection/)
+- [Data exfiltration through tools](/concepts/security/data-exfiltration-through-tools/)
+- [Least privilege](/concepts/security/least-privilege/)
+- [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/)
+- [Audit trails](/concepts/security/audit-trails/)
 
 ## Cost
 
-- How AI pricing works
-- Prompt caching and batch processing
-- Model routing
-- Estimating cost per task
+- [How AI pricing works](/concepts/cost/how-ai-pricing-works/)
+- [Prompt caching and batch processing](/concepts/cost/prompt-caching-and-batch-processing/)
+- [Model routing](/concepts/cost/model-routing/)
+- [Estimating cost per task](/concepts/cost/estimating-cost-per-task/)

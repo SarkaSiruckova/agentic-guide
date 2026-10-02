@@ -91,6 +91,8 @@ The most common mistake is building a copy and forgetting that it is one. Name e
 - [Entity resolution](/concepts/data/entity-resolution/): deciding which record to update when systems disagree
 - [What a context layer is](/concepts/data/what-a-context-layer-is/): freshness is one of its main design choices
 - [Hallucination and grounding](/concepts/how-models-work/hallucination-and-grounding/): grounding in stale sources gives confident wrong answers
+- [Triggers and scheduling](/concepts/running-things/triggers-and-scheduling/): how refresh jobs get started
+- [Serverless functions](/concepts/running-things/serverless-functions/): a common home for small update jobs
 
 ## The proper terms
 

@@ -92,6 +92,8 @@ The most common mistakes are running an agent with no limits, and giving it tool
 - [Tool use](/concepts/agents/tool-use/): how a single tool call works
 - [Context engineering](/concepts/talking-to-models/context-engineering/): keeping the record useful as it grows
 - [Agentic harness](/concepts/agents/agentic-harness/): the software that runs the loop and sets its limits
+- [Estimating cost per task](/concepts/cost/estimating-cost-per-task/): why a growing record makes loops cost more
+- [Rate limits, retries and failures](/concepts/running-things/rate-limits-retries-and-failures/): what to do when a step fails
 
 ## The proper terms
 

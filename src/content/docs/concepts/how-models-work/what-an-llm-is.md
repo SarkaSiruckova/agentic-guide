@@ -89,6 +89,8 @@ The most common mistake is treating an LLM as a database or a search engine. It 
 - [Hallucination and grounding](/concepts/how-models-work/hallucination-and-grounding/): why models state false things confidently, and how to reduce it
 - [Chat vs agent vs workflow vs automation](/concepts/agents/chat-agent-workflow-automation/): what gets built around an LLM
 - [Embeddings](/concepts/how-models-work/embeddings/): how text becomes numbers that capture meaning
+- [Pre-training and post-training](/concepts/how-models-work/pre-training-and-post-training/): how a model gets its knowledge and manners
+- [Inference](/concepts/how-models-work/inference/): what happens when you send a prompt
 
 ## The proper terms
 

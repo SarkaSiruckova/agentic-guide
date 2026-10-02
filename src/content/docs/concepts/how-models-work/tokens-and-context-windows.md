@@ -63,8 +63,8 @@ A better approach: ask once for a structured summary of the key terms, check it,
 
 ## Costs and limits
 
-- **You usually pay per token.** Most providers charge separately for tokens going in and tokens coming out. Actual prices belong on the cost pages, because they change.
-- **Long conversations cost more each turn.** The whole record is sent again every time, so a conversation twice as long costs more than twice as much to finish. Caching can reduce this (it gets its own page).
+- **You usually pay per token.** Most providers charge separately for tokens going in and tokens coming out. Actual prices are on [how AI pricing works](/concepts/cost/how-ai-pricing-works/), because they change.
+- **Long conversations cost more each turn.** The whole record is sent again every time, so a conversation twice as long costs more than twice as much to finish. [Prompt caching](/concepts/cost/prompt-caching-and-batch-processing/) can reduce this.
 - **Agents use a lot of window.** Every round of an [agent loop](/concepts/agents/the-agent-loop/) adds more to the record.
 - **A big window is not perfect recall.** More room does not guarantee the model uses every detail well.
 - **Different models count differently.** A token count from one provider won't match another's exactly.

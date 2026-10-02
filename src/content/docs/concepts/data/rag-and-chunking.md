@@ -118,6 +118,8 @@ A short way to remember it: prompting tells the model what to do, RAG gives it w
 - [Embeddings](/concepts/how-models-work/embeddings/): the numbers that make meaning search possible
 - [Keeping data fresh](/concepts/data/keeping-data-fresh/): how the index stays in step with the documents
 - [Context engineering](/concepts/talking-to-models/context-engineering/): deciding what reaches the model, of which retrieval is one part
+- [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/): indexes of personal data need retention rules
+- [Fine-tuning vs prompting vs RAG](/concepts/how-models-work/fine-tuning-vs-prompting-vs-rag/): how to choose between them
 
 ## The proper terms
 

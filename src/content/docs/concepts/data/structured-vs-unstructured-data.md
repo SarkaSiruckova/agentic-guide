@@ -81,7 +81,7 @@ The most common mistake is trying to force all information into fields. Some kno
 
 ## Often confused with
 
-**Structured vs structured outputs.** "Structured outputs" is a feature where a model is made to reply in a fixed format, such as a set of named fields. It is about the shape of a model's answer, not about how your data is stored. It will get its own page later.
+**Structured vs structured outputs.** "[Structured outputs](/concepts/talking-to-models/structured-outputs/)" is a feature where a model is made to reply in a fixed format, such as a set of named fields. It is about the shape of a model's answer, not about how your data is stored. It will get its own page later.
 
 ## Related
 

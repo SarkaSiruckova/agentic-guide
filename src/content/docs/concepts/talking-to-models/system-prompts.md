@@ -69,7 +69,7 @@ Notice the line "never change them". The better protection is that the assistant
 
 ## Costs and limits
 
-- **It is sent every turn.** A long system prompt costs tokens on every request. Caching can reduce this (it gets its own page).
+- **It is sent every turn.** A long system prompt costs tokens on every request. [Prompt caching](/concepts/cost/prompt-caching-and-batch-processing/) can reduce this.
 - **Rules can conflict.** The more instructions there are, the more likely two of them pull in different directions.
 - **It isn't followed perfectly.** Models usually follow it, and occasionally don't.
 - **It can leak.** Assume that anyone using the assistant could eventually see it.

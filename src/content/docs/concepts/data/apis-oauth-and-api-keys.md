@@ -31,7 +31,7 @@ The system needs to know who is asking. There are two common ways.
 Keeping keys safe:
 
 - Never put them in a public repository, a public website or a chat. This guide's own repository is public, so keys never go in it.
-- Store them as secrets in a proper place that the program reads at run time (secrets management gets its own page later).
+- Store them as secrets in a proper place that the program reads at run time (see [environment variables and secrets](/concepts/running-things/environment-variables-and-secrets/)).
 - Rotate them: replace them regularly, and straight away if one might have leaked.
 - Limit their scope: a key that can only read is better than one that can do everything.
 
@@ -66,7 +66,7 @@ Most business tools offer an API, and many offer both methods. Smaller or older 
 
 You will rarely handle this by hand. Platforms that connect agents to tools usually run the sign-in flow for you and store the tokens. A [model](/concepts/how-models-work/what-an-llm-is/) never needs to see the secret. The application around it attaches the secret when it runs a [tool](/concepts/agents/tool-use/).
 
-Other limits sit on top of this. APIs also enforce **rate limits**, a cap on how many requests are allowed in a given time, and these get their own page later. Fresh access also matters for [keeping data fresh](/concepts/data/keeping-data-fresh/), because a live read needs a working sign-in.
+Other limits sit on top of this. APIs also enforce **rate limits**, a cap on how many requests are allowed in a given time, and see [rate limits, retries and failures](/concepts/running-things/rate-limits-retries-and-failures/). Fresh access also matters for [keeping data fresh](/concepts/data/keeping-data-fresh/), because a live read needs a working sign-in.
 
 ## Worked example
 
@@ -111,6 +111,7 @@ The most common mistake is pasting a key into a place that is shared, such as a 
 - [MCP](/concepts/agents/mcp/): a standard way to expose tools, often built on APIs
 - [Permissions and access control](/concepts/data/permissions-and-access-control/): what an identity may see and do once connected
 - [Keeping data fresh](/concepts/data/keeping-data-fresh/): live reads rely on a working connection
+- [Auth and secrets](/map/auth-and-secrets/): where identity and keys fit in the wider stack
 
 ## The proper terms
 

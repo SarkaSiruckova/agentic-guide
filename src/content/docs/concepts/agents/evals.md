@@ -96,6 +96,7 @@ The most common mistake is skipping evals until something goes wrong in front of
 - [Observability](/concepts/agents/observability/): records of real runs are the best source of new test cases
 - [Prompt engineering](/concepts/talking-to-models/prompt-engineering/): evals tell you whether a prompt change helped
 - [The agent loop](/concepts/agents/the-agent-loop/): for agents, check the route taken as well as the final answer
+- [Benchmarks](/concepts/how-models-work/benchmarks/): public tests, for shortlisting rather than deciding
 
 ## The proper terms
 

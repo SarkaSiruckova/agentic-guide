@@ -110,6 +110,7 @@ The most common mistake is assuming memory is a record of everything. It is a sm
 - [Context engineering](/concepts/talking-to-models/context-engineering/): memory is the "persist" move, paired with careful retrieval
 - [RAG and chunking](/concepts/data/rag-and-chunking/): the other way to bring saved knowledge back into the window
 - [Skills and instruction files](/concepts/agents/skills-and-instruction-files/): memory you write and control yourself
+- [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/): memories about people are personal data
 
 ## The proper terms
 

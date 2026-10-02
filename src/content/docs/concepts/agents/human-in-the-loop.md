@@ -102,6 +102,8 @@ Common mistakes are putting checkpoints on everything, so people tune out, and o
 - [Tool use](/concepts/agents/tool-use/): read tools versus write tools, and why write tools need checkpoints
 - [Permissions and access control](/concepts/data/permissions-and-access-control/): limits what the agent can reach, before any approval is needed
 - [The agent loop](/concepts/agents/the-agent-loop/): where the pause happens, and how the loop carries on afterwards
+- [Prompt injection](/concepts/security/prompt-injection/): why approvals on risky actions matter
+- [Audit trails](/concepts/security/audit-trails/): the lasting record of approvals given and refused
 
 ## The proper terms
 
