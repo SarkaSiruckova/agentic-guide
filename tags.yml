@@ -1,0 +1,43 @@
+# Tags group pages across sections. Add new tags here so they get a
+# description and colour; tags not listed here are still created automatically.
+tags:
+  foundations:
+    label: Foundations
+    description: How models work under the hood
+    color: "#6f8fb8"
+  prompting:
+    label: Prompting and context
+    description: How to talk to models and what they see
+    color: "#8f7fb8"
+  agents:
+    label: Agents
+    description: Models that use tools and take actions
+    color: "#6fb8a1"
+  data:
+    label: Data
+    description: Databases, retrieval and the context layer
+    color: "#b89a6f"
+  automation:
+    label: Automation
+    description: Workflows, triggers and scheduled jobs
+    color: "#b8806f"
+  security:
+    label: Security
+    description: Keeping agents and data safe
+    color: "#b86f7d"
+  cost:
+    label: Cost
+    description: What AI costs to run and how to spend less
+    color: "#a3b86f"
+  infrastructure:
+    label: Infrastructure
+    description: Cloud, hosting and the pieces that hold it all up
+    color: "#6fa8b8"
+  tools:
+    label: Tools
+    description: Specific products and how to use them
+    color: "#b8a86f"
+  channels:
+    label: Channels
+    description: Reaching agents through chat apps and email
+    color: "#7fb86f"

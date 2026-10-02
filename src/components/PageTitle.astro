@@ -1,0 +1,50 @@
+---
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+import { PageTags } from 'starlight-tags/components';
+
+const data = Astro.locals.starlightRoute.entry.data as {
+  lastReviewed?: string;
+  snapshot?: boolean;
+  tags?: string[];
+};
+---
+
+<Default />
+{
+  (data.lastReviewed || data.snapshot || data.tags?.length) && (
+    <div class="page-meta">
+      {data.tags?.length ? <PageTags variant="outline" size="small" /> : null}
+      {data.lastReviewed && <span class="reviewed">Last reviewed {data.lastReviewed}</span>}
+    </div>
+  )
+}
+{
+  data.snapshot && (
+    <p class="snapshot-note">
+      This page is a snapshot. Models, products and prices change quickly, so check when it was last reviewed
+      and confirm anything important with the provider directly.
+    </p>
+  )
+}
+
+<style>
+  .page-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1rem;
+    margin-top: 0.75rem;
+    font-family: var(--sl-font);
+    font-size: var(--sl-text-sm);
+    color: var(--sl-color-gray-3);
+  }
+  .snapshot-note {
+    margin-top: 1rem;
+    padding: 0.6rem 0.9rem;
+    border-left: 3px solid var(--guide-marker);
+    background: var(--sl-color-accent-low);
+    color: var(--sl-color-gray-1);
+    font-family: var(--sl-font);
+    font-size: var(--sl-text-sm);
+  }
+</style>

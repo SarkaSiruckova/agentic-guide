@@ -1,0 +1,108 @@
+/*
+  Field guide palette: moss ink on paper, with a yellow highlighter
+  for things worth noticing. Dark mode is slate with sea-glass ink.
+*/
+
+/* Dark mode (Starlight's default layer) */
+:root {
+  --sl-font: 'Public Sans', system-ui, sans-serif;
+  --guide-body-font: 'Literata', Georgia, serif;
+
+  --sl-color-accent-low: #1c3a33;
+  --sl-color-accent: #6fb8a1;
+  --sl-color-accent-high: #cdebe1;
+
+  --sl-color-white: #f4f7f6;
+  --sl-color-gray-1: #e1e7e6;
+  --sl-color-gray-2: #c0cac8;
+  --sl-color-gray-3: #8b9895;
+  --sl-color-gray-4: #56635f;
+  --sl-color-gray-5: #2e3936;
+  --sl-color-gray-6: #1e2725;
+  --sl-color-black: #151c1a;
+
+  --guide-marker: #e3c95b;
+}
+
+/* Light mode */
+:root[data-theme='light'] {
+  --sl-color-accent-low: #d8ebe3;
+  --sl-color-accent: #2b6b58;
+  --sl-color-accent-high: #173f33;
+
+  --sl-color-white: #151c1a;
+  --sl-color-gray-1: #1e2725;
+  --sl-color-gray-2: #2e3936;
+  --sl-color-gray-3: #56635f;
+  --sl-color-gray-4: #8b9895;
+  --sl-color-gray-5: #c0cac8;
+  --sl-color-gray-6: #e7ecea;
+  --sl-color-gray-7: #f2f5f3;
+  --sl-color-black: #fbfcfa;
+
+  --guide-marker: #b8931c;
+}
+
+/* Reading text in a serif built for long-form reading */
+.sl-markdown-content {
+  font-family: var(--guide-body-font);
+  line-height: 1.75;
+}
+.sl-markdown-content :is(h1, h2, h3, h4, h5, h6),
+.sl-markdown-content :is(table, code, kbd) {
+  font-family: var(--sl-font);
+}
+.sl-markdown-content h2 {
+  margin-top: 2.25rem;
+  letter-spacing: -0.01em;
+}
+.sl-markdown-content p,
+.sl-markdown-content li {
+  max-width: 70ch;
+}
+
+/* The "highlighter": use <mark> for the one thing on a page worth remembering */
+.sl-markdown-content mark {
+  background: linear-gradient(transparent 55%, color-mix(in srgb, var(--guide-marker) 45%, transparent) 55%);
+  color: inherit;
+  padding: 0 0.1em;
+}
+
+/* Diagrams get room to breathe and scroll on small screens */
+.sl-markdown-content pre.mermaid {
+  background: transparent;
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  overflow-x: auto;
+}
+
+/* Mermaid diagrams in the guide's own colours, in both light and dark mode */
+.sl-markdown-content pre.mermaid svg {
+  font-family: var(--sl-font) !important;
+}
+.sl-markdown-content pre.mermaid :is(.node rect, .node polygon, .node circle, .node path, .cluster rect) {
+  fill: var(--sl-color-accent-low) !important;
+  stroke: var(--sl-color-accent) !important;
+  stroke-width: 1.2px !important;
+}
+.sl-markdown-content pre.mermaid :is(.nodeLabel, .label, .cluster-label) {
+  color: var(--sl-color-white) !important;
+  fill: var(--sl-color-white) !important;
+}
+.sl-markdown-content pre.mermaid :is(.flowchart-link, .edgePath path) {
+  stroke: var(--sl-color-gray-3) !important;
+}
+.sl-markdown-content pre.mermaid :is(marker path, .arrowheadPath) {
+  fill: var(--sl-color-gray-3) !important;
+  stroke: var(--sl-color-gray-3) !important;
+}
+.sl-markdown-content pre.mermaid :is(.edgeLabel, .edgeLabel rect, .labelBkg) {
+  background-color: var(--sl-color-black) !important;
+  fill: var(--sl-color-black) !important;
+  color: var(--sl-color-gray-2) !important;
+}
+.sl-markdown-content pre.mermaid .edgeLabel :is(p, span, div) {
+  background-color: var(--sl-color-black) !important;
+  color: var(--sl-color-gray-2) !important;
+}
