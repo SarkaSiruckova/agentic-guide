@@ -34,7 +34,7 @@ The ideas, grouped by theme. Each becomes its own page as it's written.
 
 ## Agents
 
-- Chat vs agent vs workflow vs automation
+- [Chat vs agent vs workflow vs automation](/concepts/agents/chat-agent-workflow-automation/)
 - Tool use
 - The agent loop
 - Agentic harness and harness engineering

@@ -7,4 +7,5 @@ sidebar:
 
 | Date | Change |
 | --- | --- |
+| 2026-10-02 | New page: [Chat vs agent vs workflow vs automation](/concepts/agents/chat-agent-workflow-automation/) |
 | 2026-10-02 | Site created |
