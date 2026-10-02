@@ -10,8 +10,8 @@ The ideas, grouped by theme. Each becomes its own page as it's written.
 
 ## How models work
 
-- What an LLM is
-- Tokens and context windows
+- [What an LLM is](/concepts/how-models-work/what-an-llm-is/)
+- [Tokens and context windows](/concepts/how-models-work/tokens-and-context-windows/)
 - Pre-training and post-training
 - LLMs, LRMs and LQMs
 - Fine-tuning vs prompting vs RAG
@@ -22,21 +22,21 @@ The ideas, grouped by theme. Each becomes its own page as it's written.
 - Reasoning models
 - Multimodal models
 - Embeddings
-- Hallucination and grounding
+- [Hallucination and grounding](/concepts/how-models-work/hallucination-and-grounding/)
 - Benchmarks
 
 ## Talking to models
 
-- Prompt engineering
-- System prompts
-- Context engineering
+- [Prompt engineering](/concepts/talking-to-models/prompt-engineering/)
+- [System prompts](/concepts/talking-to-models/system-prompts/)
+- [Context engineering](/concepts/talking-to-models/context-engineering/)
 - Structured outputs
 
 ## Agents
 
 - [Chat vs agent vs workflow vs automation](/concepts/agents/chat-agent-workflow-automation/)
-- Tool use
-- The agent loop
+- [Tool use](/concepts/agents/tool-use/)
+- [The agent loop](/concepts/agents/the-agent-loop/)
 - Agentic harness and harness engineering
 - MCP
 - Skills and instruction files

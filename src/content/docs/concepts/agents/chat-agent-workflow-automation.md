@@ -23,7 +23,7 @@ Ask one question of any AI setup: when this step finishes, who or what chooses w
 - **You, one message at a time (chat).** You type, the model replies, and you decide what to ask next. The model is the AI program that reads and writes text. In a chat it only talks: nothing happens in your other systems unless you carry its answer there yourself.
 - **A fixed list of steps (workflow).** Someone writes the steps down in advance, like a recipe, and the system follows them in the same order every time. A step can use a model, for example to summarise an email, but the model doesn't choose what comes next. The script does. A workflow can also contain if/then rules, such as "if the company is already in the CRM, add a note", but a person wrote those rules in advance.
 - **A trigger that starts the steps (automation).** A trigger is an event, such as a new email arriving or the clock reaching 9am, that starts something without a person pressing a button. An automation is a trigger joined to a workflow: when this happens, run those steps. The trigger decides when it starts, and the script still decides what happens.
-- **The model itself (agent).** You give the model a goal and some tools. A tool is an action it is allowed to take, such as searching a database or sending a message. The model picks an action, looks at the result, picks the next action, and carries on until it judges the goal is met. Nobody wrote the route in advance.
+- **The model itself (agent).** You give the model a goal and some tools. A [tool](/concepts/agents/tool-use/) is an action it is allowed to take, such as searching a database or sending a message. The model picks an action, looks at the result, picks the next action, and carries on until it judges the goal is met. Nobody wrote the route in advance.
 
 ```mermaid
 flowchart TD
@@ -50,7 +50,7 @@ flowchart TD
   end
 ```
 
-Notice that chat and agent both loop. The difference is who sits in the loop: in a chat it is you, in an agent it is the model.
+Notice that chat and agent both loop (the [agent loop](/concepts/agents/the-agent-loop/) has its own page). The difference is who sits in the loop: in a chat it is you, in an agent it is the model.
 
 A workflow with a model inside it is not an agent. What makes something an agent is that the model chooses the route, not that a model is involved somewhere.
 
@@ -125,6 +125,8 @@ The most common mistake is using an agent where a workflow would do, or calling 
 ## Related
 
 - [Confusables](/start-here/confusables/): other pairs of terms that are easy to mix up
+- [Tool use](/concepts/agents/tool-use/): how a model asks for actions to be carried out
+- [The agent loop](/concepts/agents/the-agent-loop/): the cycle an agent repeats until the job is done
 - [Glossary](/start-here/glossary/): every term in one line
 
 ## The proper terms
