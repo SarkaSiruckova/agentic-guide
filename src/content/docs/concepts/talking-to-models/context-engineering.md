@@ -24,8 +24,8 @@ There are four basic moves:
 
 - **Select.** Fetch only what is relevant to the question, not everything you have.
 - **Compress.** Replace long older material, such as a finished stage of work, with a short summary.
-- **Isolate.** Give a separate task its own clean window instead of crowding one shared window (this is what subagents do, and they get their own page).
-- **Persist.** Save useful facts outside the window as notes, and bring them back only when needed.
+- **Isolate.** Give a separate task its own clean window instead of crowding one shared window (this is what [subagents](/concepts/agents/subagents-and-multi-agent-systems/) do).
+- **Persist.** Save useful facts outside the window as notes, and bring them back only when needed (see [memory](/concepts/agents/memory/)).
 
 ```mermaid
 flowchart TD
@@ -46,7 +46,7 @@ The loop at the bottom matters. In an [agent loop](/concepts/agents/the-agent-lo
 
 ## In practice
 
-This is the heart of a **context layer**: the set of sources, and the logic that assembles the right information from them for each question. That gets its own page.
+This is the heart of a [context layer](/concepts/data/what-a-context-layer-is/): the set of sources, and the logic that assembles the right information from them for each question.
 
 The usual tools are search and retrieval to fetch the right passages, summarising to shorten old material, and memory notes to carry facts between conversations. The data stays in your systems and is fetched at the moment of the question, so it is as fresh as the source.
 

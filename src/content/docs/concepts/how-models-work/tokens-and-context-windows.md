@@ -49,7 +49,7 @@ Most apps hide token counting from you, but you feel it when a long conversation
 
 Bigger windows help, but they are not a cure-all. Models can be less reliable with details buried in the middle of a very long input, and every extra token costs money.
 
-Because of this, good setups send the model only what it needs. Rather than pasting a whole archive, they fetch the few relevant passages first. That technique is called retrieval, and it gets its own page. Another habit is to summarise the key points, then continue in a fresh conversation.
+Because of this, good setups send the model only what it needs. Rather than pasting a whole archive, they fetch the few relevant passages first. That technique is called retrieval (see [RAG and chunking](/concepts/data/rag-and-chunking/)). Another habit is to summarise the key points, then continue in a fresh conversation.
 
 The window holds a copy of the information, not the original. The real data stays in your systems, and a tool fetches it into the window when needed.
 

@@ -7,40 +7,138 @@ sidebar:
 
 One line per term, in alphabetical order. Click through for the full explanation.
 
+- [Access control](/concepts/data/permissions-and-access-control/): the system that enforces who may see and do what
+- [Access token](/concepts/data/apis-oauth-and-api-keys/): a short-lived credential an app uses to call an API
 - [Agent](/concepts/agents/chat-agent-workflow-automation/): a system where the model itself chooses each next step to reach a goal
+- [Agent framework](/concepts/agents/agentic-harness/): a code toolkit for building your own agent harness
 - [Agent loop](/concepts/agents/the-agent-loop/): the repeating cycle of deciding, acting and observing until the goal is met
+- [Agentic harness](/concepts/agents/agentic-harness/): the software and settings around a model that make it an agent
+- [AGENTS.md](/concepts/agents/skills-and-instruction-files/): an open-format instruction file read by many coding assistants
+- [API](/concepts/data/apis-oauth-and-api-keys/): a defined way for software to request data or actions from a system
+- [API key](/concepts/data/apis-oauth-and-api-keys/): a secret string that identifies the calling program
+- [Audit log](/concepts/data/permissions-and-access-control/): a record of who asked for what and what happened
+- [Authentication](/concepts/data/apis-oauth-and-api-keys/): proving who a person or program is
+- [Authorisation](/concepts/data/apis-oauth-and-api-keys/): deciding what an identified person or program may do
 - [Automation](/concepts/agents/chat-agent-workflow-automation/): a trigger joined to a workflow, so it runs without anyone starting it
+- [Benchmark](/concepts/agents/evals/): a public standard test used to compare models in general
+- [Cache](/concepts/data/keeping-data-fresh/): a short-lived copy kept to avoid asking the source again
 - [Chain-of-thought](/concepts/talking-to-models/prompt-engineering/): asking a model to reason step by step before it answers
 - [Chat](/concepts/agents/chat-agent-workflow-automation/): a back-and-forth with a model where you decide each next step
+- [Chunk](/concepts/data/rag-and-chunking/): a short piece of a document, stored and retrieved on its own
+- [Chunking](/concepts/data/rag-and-chunking/): splitting documents into pieces so retrieval can find the right part
 - [Citation](/concepts/how-models-work/hallucination-and-grounding/): a pointer from a claim back to the source it came from
+- [Connector](/concepts/data/what-a-context-layer-is/): a connection that lets software read from, or write to, a source system
 - [Context engineering](/concepts/talking-to-models/context-engineering/): choosing and maintaining everything a model sees in its context window
 - [Context layer](/concepts/talking-to-models/context-engineering/): the sources and logic that assemble the right information for each question
 - [Context window](/concepts/how-models-work/tokens-and-context-windows/): the maximum number of tokens a model can handle at once; also called context length
+- [Cosine similarity](/concepts/how-models-work/embeddings/): a score for how closely two vectors point the same way
 - [Custom instructions](/concepts/talking-to-models/system-prompts/): a user-added layer on top of a product's own system prompt
+- [Cypher](/concepts/data/knowledge-graphs/): a query language for graph databases, used to find paths and patterns
+- [Database](/concepts/data/types-of-databases/): an organised store that software can search and update reliably
+- [Deduplication](/concepts/data/entity-resolution/): finding and removing duplicate records for the same entity
+- [Delegated access](/concepts/data/apis-oauth-and-api-keys/): acting with a user's own permissions
+- [Document database](/concepts/data/types-of-databases/): stores flexible, self-contained records, usually as JSON
+- [Edge](/concepts/data/knowledge-graphs/): a labelled link between two nodes, such as "founded"
+- [Embedding](/concepts/how-models-work/embeddings/): a list of numbers that represents the meaning of a piece of content
+- [Embedding model](/concepts/how-models-work/embeddings/): a model that turns content into embeddings, separate from a chat model
+- [Entity](/concepts/data/entity-resolution/): a real-world thing your data describes, such as a company or person
+- [Entity resolution](/concepts/data/entity-resolution/): deciding which records refer to the same real-world entity
+- [Eval](/concepts/agents/evals/): a repeatable test of an AI system against example cases
+- [Event](/concepts/data/keeping-data-fresh/): a message saying something changed in a system
+- [Extraction](/concepts/data/structured-vs-unstructured-data/): pulling structured fields out of free text
+- [False merge](/concepts/data/entity-resolution/): wrongly joining records that describe different entities
 - [Few-shot prompting](/concepts/talking-to-models/prompt-engineering/): including a few examples in the prompt
+- [Fine-tuning](/concepts/data/rag-and-chunking/): training a model further to change its behaviour or style
+- [Freshness](/concepts/data/keeping-data-fresh/): how closely a copy matches the current state of the source
 - [Function calling](/concepts/agents/tool-use/): another name for tool use, common in developer documentation
+- [Fuzzy matching](/concepts/data/entity-resolution/): matching text that is similar but not identical, such as typos
+- [Golden record](/concepts/data/entity-resolution/): the single trusted record kept for an entity
+- [Graph database](/concepts/data/types-of-databases/): stores things and the links between them
+- [GraphRAG](/concepts/data/knowledge-graphs/): retrieval that uses a graph's links to choose which passages to fetch
 - [Grounding](/concepts/how-models-work/hallucination-and-grounding/): giving a model real source material to answer from, so its answers can be checked
+- [Guardrail](/concepts/agents/agentic-harness/): a rule enforced by the harness, such as a limit or an approval step
 - [Hallucination](/concepts/how-models-work/hallucination-and-grounding/): a confident statement from a model that is false or invented
+- [Harness engineering](/concepts/agents/agentic-harness/): designing and tuning the parts of a harness to improve reliability
+- [Human-in-the-loop](/concepts/agents/human-in-the-loop/): a person is built into the agent's process at chosen points
+- [Hybrid search](/concepts/data/rag-and-chunking/): combining keyword search and meaning search, then merging results
+- [Index](/concepts/data/rag-and-chunking/): the searchable store of chunks and their embeddings
 - [Inference](/concepts/how-models-work/what-an-llm-is/): using a trained model to get a reply
+- [Instruction file](/concepts/agents/skills-and-instruction-files/): a text file the agent reads at the start of work
+- [JSON](/concepts/data/structured-vs-unstructured-data/): a text format that labels each value, used to pass data between programs
+- [Key-value store](/concepts/data/types-of-databases/): stores a value under a name for fast lookup
 - [Knowledge cutoff](/concepts/how-models-work/what-an-llm-is/): the point in time where a model's training text ends
+- [Knowledge graph](/concepts/data/knowledge-graphs/): facts stored as nodes joined by labelled relationships
 - [Large language model (LLM)](/concepts/how-models-work/what-an-llm-is/): a model trained on huge amounts of text to predict what comes next
+- [Least privilege](/concepts/data/permissions-and-access-control/): giving an identity only the access its job needs
+- [LLM as judge](/concepts/agents/evals/): using a second model to mark another model's output
+- [Long-term memory](/concepts/agents/memory/): notes saved outside the model that persist between conversations
+- [MCP (Model Context Protocol)](/concepts/agents/mcp/): an open standard for connecting AI assistants to tools and data
+- [MCP client](/concepts/agents/mcp/): the part of an assistant that talks to MCP servers
+- [MCP host](/concepts/agents/mcp/): the assistant application that contains the model and the MCP client
+- [MCP server](/concepts/agents/mcp/): a connector that exposes a system's tools, data and prompts through MCP
+- [Memory poisoning](/concepts/agents/memory/): planting a false or harmful note so it affects later conversations
+- [Missed match](/concepts/data/entity-resolution/): failing to join records that describe the same entity
+- [Multi-agent system](/concepts/agents/subagents-and-multi-agent-systems/): a setup where several agents work together on one job
+- [Node](/concepts/data/knowledge-graphs/): a thing in a graph, such as a person, company or fund
+- [Normalisation](/concepts/data/entity-resolution/): cleaning text into a standard form before comparing
+- [OAuth](/concepts/data/apis-oauth-and-api-keys/): a standard for letting an app act for a user without their password
+- [Observability](/concepts/agents/observability/): the ability to see what a system did and why
 - [Observation](/concepts/agents/the-agent-loop/): the result of an action, added to the agent's running record
+- [Ontology](/concepts/data/knowledge-graphs/): the agreed list of node types and relationship types in a graph
+- [Orchestrator](/concepts/agents/subagents-and-multi-agent-systems/): the agent that splits a task, delegates and combines results
 - Parameters: the inputs a tool needs, such as a company name ([tool use](/concepts/agents/tool-use/)), or the internal numbers a model learns in training, also called weights ([what an LLM is](/concepts/how-models-work/what-an-llm-is/))
+- [Permission](/concepts/data/permissions-and-access-control/): a rule allowing a specific person or program to do something
+- [Polling](/concepts/data/keeping-data-fresh/): repeatedly asking a system whether anything has changed
+- [Progressive disclosure](/concepts/agents/skills-and-instruction-files/): loading detail only when a task needs it
 - [Prompt](/concepts/talking-to-models/prompt-engineering/): the text you send to a model
 - [Prompt engineering](/concepts/talking-to-models/prompt-engineering/): writing prompts so a model does what you intended
+- [Prompt injection](/concepts/agents/mcp/): hidden instructions in text that try to steer a model's behaviour
 - [Prompt template](/concepts/talking-to-models/prompt-engineering/): a saved prompt with blanks to fill in
+- [RAG](/concepts/data/rag-and-chunking/): fetching relevant passages first, then having a model answer from them
+- [Rate limit](/concepts/data/apis-oauth-and-api-keys/): a cap on how many requests are allowed in a given time
 - [ReAct](/concepts/agents/the-agent-loop/): short for "reason and act", the name of the agent loop pattern
+- [Read-only access](/concepts/data/how-llms-talk-to-databases/): a login that can look at data but not change it
+- [Redaction](/concepts/agents/observability/): blanking out sensitive details before data is stored
+- [Refresh token](/concepts/data/apis-oauth-and-api-keys/): a longer-lived credential used to get new access tokens
+- [Regression](/concepts/agents/evals/): something that used to work breaks after a change
+- [Relational database](/concepts/data/types-of-databases/): stores data in linked tables, queried with SQL
+- [Reranking](/concepts/data/rag-and-chunking/): re-ordering retrieved results with a more careful model so the best come first
+- [Retention](/concepts/agents/observability/): how long records are kept before deletion
 - [Retrieval](/concepts/how-models-work/tokens-and-context-windows/): fetching only the relevant passages into the model's context window
 - [Role](/concepts/talking-to-models/system-prompts/): the label on each message in a conversation: system, user or assistant
+- [Rubric](/concepts/agents/evals/): a short checklist used to mark a result
+- [Schema](/concepts/data/how-llms-talk-to-databases/): the description of a database's tables and columns
+- [Scope](/concepts/data/apis-oauth-and-api-keys/): a specific permission an app asks for, such as read files
+- [Search engine](/concepts/data/types-of-databases/): indexes words in text to find and rank matching documents
+- [Semantic search](/concepts/how-models-work/embeddings/): finding items by meaning instead of exact words
+- [Semi-structured data](/concepts/data/structured-vs-unstructured-data/): data with some labelled structure but loose or varying fields
+- [Service account](/concepts/data/permissions-and-access-control/): a shared identity used by software rather than a person
+- [Short-term memory](/concepts/agents/memory/): what is in the context window during the current conversation
+- [Similarity search](/concepts/data/rag-and-chunking/): finding the stored items whose embeddings are closest to the question's
+- [Skill](/concepts/agents/skills-and-instruction-files/): a packaged, named set of instructions loaded when relevant
+- [SKILL.md](/concepts/agents/skills-and-instruction-files/): the main file of a skill, holding its description and steps
+- [Source of truth](/concepts/data/keeping-data-fresh/): the system officially considered right about a fact
+- [Span](/concepts/agents/observability/): one step inside a trace, such as a model call or tool call
+- [SQL](/concepts/data/types-of-databases/): a standard language for querying relational databases
+- [Stale data](/concepts/data/keeping-data-fresh/): a copy that no longer matches its source
 - [Step limit](/concepts/agents/the-agent-loop/): a cap on the number of rounds before an agent's loop is stopped
+- [Structured data](/concepts/data/structured-vs-unstructured-data/): data in tables with fixed fields and types
+- [Subagent](/concepts/agents/subagents-and-multi-agent-systems/): a helper agent with its own context window, instructions and tools
 - [System prompt](/concepts/talking-to-models/system-prompts/): standing instructions set by the builder, sent before every conversation
+- [Text-to-SQL](/concepts/data/how-llms-talk-to-databases/): a model writing a SQL query from a plain-language question
 - [Token](/concepts/how-models-work/tokens-and-context-windows/): the small piece of text a model reads and writes, roughly three-quarters of an English word
 - [Tool](/concepts/agents/tool-use/): an action a model is allowed to request, such as searching a database or sending a message
 - [Tool call](/concepts/agents/tool-use/): the model's structured request to use a tool
 - [Tool result](/concepts/agents/tool-use/): what a tool sends back, added to the conversation as text
 - [Tool use](/concepts/agents/tool-use/): the way a model requests actions and the software around it carries them out
+- [Trace](/concepts/agents/observability/): the full step-by-step record of one agent run
 - [Training](/concepts/how-models-work/what-an-llm-is/): adjusting a model's internal numbers by showing it large amounts of text
 - [Trigger](/concepts/agents/chat-agent-workflow-automation/): an event, such as a new email arriving, that starts something automatically
+- [Triple](/concepts/data/knowledge-graphs/): one fact written as thing, relationship, thing
+- [Unstructured data](/concepts/data/structured-vs-unstructured-data/): free-form content such as documents, emails and notes
 - [User prompt](/concepts/talking-to-models/system-prompts/): the message a person types in the conversation
+- [Vector](/concepts/how-models-work/embeddings/): an ordered list of numbers, here the address of an embedding
+- [Vector database](/concepts/data/types-of-databases/): stores embeddings to find items with similar meaning
+- [Webhook](/concepts/data/keeping-data-fresh/): a message one system sends to another when something happens
 - [Workflow](/concepts/agents/chat-agent-workflow-automation/): a fixed list of steps that runs the same way every time
 - [Zero-shot prompting](/concepts/talking-to-models/prompt-engineering/): asking a model with no examples in the prompt

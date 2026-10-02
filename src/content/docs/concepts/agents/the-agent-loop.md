@@ -54,9 +54,9 @@ The loop is run by the application around the model, not by the model itself. Co
 
 The data stays in your systems. Each round, a tool fetches what it needs at that moment, so the agent works from current records and not from a stale copy.
 
-Limits you can usually set include a maximum number of rounds, a time limit, a spending cap, which tools are allowed, and which actions need a person's approval (this is called human-in-the-loop, and it gets its own page).
+Limits you can usually set include a maximum number of rounds, a time limit, a spending cap, which tools are allowed, and which actions need a person's approval (this is called [human-in-the-loop](/concepts/agents/human-in-the-loop/)).
 
-Good agent tools also let you see every round afterwards, so you can check what the agent did and why. This is called observability.
+Good agent tools also let you see every round afterwards, so you can check what the agent did and why. This is called [observability](/concepts/agents/observability/).
 
 ## Worked example
 
@@ -91,6 +91,7 @@ The most common mistakes are running an agent with no limits, and giving it tool
 - [Chat vs agent vs workflow vs automation](/concepts/agents/chat-agent-workflow-automation/): the agent is the one where the model chooses the route
 - [Tool use](/concepts/agents/tool-use/): how a single tool call works
 - [Context engineering](/concepts/talking-to-models/context-engineering/): keeping the record useful as it grows
+- [Agentic harness](/concepts/agents/agentic-harness/): the software that runs the loop and sets its limits
 
 ## The proper terms
 

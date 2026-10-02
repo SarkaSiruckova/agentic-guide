@@ -88,6 +88,7 @@ The most common mistake is relying on the prompt alone for rules that really mat
 - [Prompt engineering](/concepts/talking-to-models/prompt-engineering/): how to write good instructions
 - [Context engineering](/concepts/talking-to-models/context-engineering/): what else goes into the context window
 - [Tool use](/concepts/agents/tool-use/): the better place to enforce limits
+- [Skills and instruction files](/concepts/agents/skills-and-instruction-files/): reusable know-how kept outside the system prompt
 
 ## The proper terms
 

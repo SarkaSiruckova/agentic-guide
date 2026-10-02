@@ -60,7 +60,7 @@ Developers often call this **function calling**. It is the same thing.
 Tools come from three places:
 
 - **Built in.** Chat assistants ship with a few, such as web search, reading uploaded files and running code.
-- **Connected.** You link the assistant to your business systems, such as a CRM or file storage. A widely used standard for this is called MCP (it gets its own page).
+- **Connected.** You link the assistant to your business systems, such as a CRM or file storage. A widely used standard for this is called [MCP](/concepts/agents/mcp/).
 - **Custom.** A developer writes a small function, for example "look up a company in the CRM", and describes it to the model.
 
 The data stays in the systems the tools connect to. The tool fetches it at the moment it is asked, so the answer is as fresh as the system itself.
@@ -102,6 +102,7 @@ The most common mistake is handing a model every tool "just in case". Give it th
 
 - [Chat vs agent vs workflow vs automation](/concepts/agents/chat-agent-workflow-automation/): an agent is a model that picks its own tools
 - [The agent loop](/concepts/agents/the-agent-loop/): what happens when the model keeps using tools until the job is done
+- [MCP](/concepts/agents/mcp/): a standard way to connect tools to many assistants
 
 ## The proper terms
 

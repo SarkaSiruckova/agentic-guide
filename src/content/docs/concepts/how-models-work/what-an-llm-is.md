@@ -88,6 +88,7 @@ The most common mistake is treating an LLM as a database or a search engine. It 
 - [Tokens and context windows](/concepts/how-models-work/tokens-and-context-windows/): the units a model reads and the limit on how many it can hold
 - [Hallucination and grounding](/concepts/how-models-work/hallucination-and-grounding/): why models state false things confidently, and how to reduce it
 - [Chat vs agent vs workflow vs automation](/concepts/agents/chat-agent-workflow-automation/): what gets built around an LLM
+- [Embeddings](/concepts/how-models-work/embeddings/): how text becomes numbers that capture meaning
 
 ## The proper terms
 

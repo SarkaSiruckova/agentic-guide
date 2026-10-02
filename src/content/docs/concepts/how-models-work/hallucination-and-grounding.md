@@ -49,7 +49,7 @@ flowchart TD
 
 ## In practice
 
-Grounding comes in several forms. The simplest is pasting the document into the conversation. More automated setups use search tools or retrieval, which finds the relevant passages in a large collection and sends only those. Retrieval gets its own page.
+Grounding comes in several forms. The simplest is pasting the document into the conversation. More automated setups use search tools or retrieval, which finds the relevant passages in a large collection and sends only those. [RAG and chunking](/concepts/data/rag-and-chunking/) covers retrieval in detail.
 
 Good setups also ask for quotes or links, so a person can check the claim in seconds. Some add a second pass, where another step checks each claim against the source.
 

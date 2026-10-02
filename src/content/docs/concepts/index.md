@@ -21,7 +21,7 @@ The ideas, grouped by theme. Each becomes its own page as it's written.
 - Quantisation
 - Reasoning models
 - Multimodal models
-- Embeddings
+- [Embeddings](/concepts/how-models-work/embeddings/)
 - [Hallucination and grounding](/concepts/how-models-work/hallucination-and-grounding/)
 - Benchmarks
 
@@ -37,27 +37,27 @@ The ideas, grouped by theme. Each becomes its own page as it's written.
 - [Chat vs agent vs workflow vs automation](/concepts/agents/chat-agent-workflow-automation/)
 - [Tool use](/concepts/agents/tool-use/)
 - [The agent loop](/concepts/agents/the-agent-loop/)
-- Agentic harness and harness engineering
-- MCP
-- Skills and instruction files
-- Memory
-- Subagents and multi-agent systems
-- Human-in-the-loop
-- Evals
-- Observability
+- [Agentic harness and harness engineering](/concepts/agents/agentic-harness/)
+- [MCP](/concepts/agents/mcp/)
+- [Skills and instruction files](/concepts/agents/skills-and-instruction-files/)
+- [Memory](/concepts/agents/memory/)
+- [Subagents and multi-agent systems](/concepts/agents/subagents-and-multi-agent-systems/)
+- [Human-in-the-loop](/concepts/agents/human-in-the-loop/)
+- [Evals](/concepts/agents/evals/)
+- [Observability](/concepts/agents/observability/)
 
 ## Data and the context layer
 
-- What a context layer is
-- Structured vs unstructured data
-- Types of databases
-- Knowledge graphs
-- How LLMs talk to databases
-- RAG and chunking
-- Entity resolution
-- Keeping data fresh
-- APIs, OAuth and API keys
-- Permissions and access control
+- [What a context layer is](/concepts/data/what-a-context-layer-is/)
+- [Structured vs unstructured data](/concepts/data/structured-vs-unstructured-data/)
+- [Types of databases](/concepts/data/types-of-databases/)
+- [Knowledge graphs](/concepts/data/knowledge-graphs/)
+- [How LLMs talk to databases](/concepts/data/how-llms-talk-to-databases/)
+- [RAG and chunking](/concepts/data/rag-and-chunking/)
+- [Entity resolution](/concepts/data/entity-resolution/)
+- [Keeping data fresh](/concepts/data/keeping-data-fresh/)
+- [APIs, OAuth and API keys](/concepts/data/apis-oauth-and-api-keys/)
+- [Permissions and access control](/concepts/data/permissions-and-access-control/)
 
 ## Running things
 

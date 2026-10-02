@@ -127,6 +127,7 @@ The most common mistake is using an agent where a workflow would do, or calling 
 - [Confusables](/start-here/confusables/): other pairs of terms that are easy to mix up
 - [Tool use](/concepts/agents/tool-use/): how a model asks for actions to be carried out
 - [The agent loop](/concepts/agents/the-agent-loop/): the cycle an agent repeats until the job is done
+- [Agentic harness](/concepts/agents/agentic-harness/): everything around the model that turns it into an agent
 - [Glossary](/start-here/glossary/): every term in one line
 
 ## The proper terms

@@ -112,6 +112,7 @@ The most common mistake is writing a vague request and then blaming the model fo
 - [System prompts](/concepts/talking-to-models/system-prompts/): the standing instructions behind a product or agent
 - [Context engineering](/concepts/talking-to-models/context-engineering/): choosing everything the model sees
 - [What an LLM is](/concepts/how-models-work/what-an-llm-is/): why the model depends so heavily on its input
+- [Evals](/concepts/agents/evals/): how to test whether a prompt change really helped
 
 ## The proper terms
 
