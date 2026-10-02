@@ -28,7 +28,19 @@ export default defineConfig({
       },
       sidebar: [
         { label: 'Start here', items: [{ autogenerate: { directory: 'start-here' } }] },
-        { label: '1. Concepts', items: [{ autogenerate: { directory: 'concepts' } }] },
+        {
+          label: '1. Concepts',
+          items: [
+            { label: 'Concepts overview', slug: 'concepts' },
+            { label: 'How models work', collapsed: true, items: [{ autogenerate: { directory: 'concepts/how-models-work' } }] },
+            { label: 'Talking to models', collapsed: true, items: [{ autogenerate: { directory: 'concepts/talking-to-models' } }] },
+            { label: 'Agents', collapsed: true, items: [{ autogenerate: { directory: 'concepts/agents' } }] },
+            { label: 'Data and the context layer', collapsed: true, items: [{ autogenerate: { directory: 'concepts/data' } }] },
+            { label: 'Running things', collapsed: true, items: [{ autogenerate: { directory: 'concepts/running-things' } }] },
+            { label: 'Security and compliance', collapsed: true, items: [{ autogenerate: { directory: 'concepts/security' } }] },
+            { label: 'Cost', collapsed: true, items: [{ autogenerate: { directory: 'concepts/cost' } }] },
+          ],
+        },
         { label: '2. The map', items: [{ autogenerate: { directory: 'map' } }] },
         { label: '3. Model landscape', items: [{ autogenerate: { directory: 'models' } }] },
         { label: '4. Setup and practice', items: [{ autogenerate: { directory: 'setup' } }] },
