@@ -43,7 +43,7 @@ On the changed files, check:
 - Every new or changed page has `title`, `description`, `tags`, `lastReviewed` and `snapshot`.
 - Every tag used exists in `tags.yml`.
 - Concept pages follow the section order in `templates/concept.md`.
-- The glossary, `recently-added.md` and the section overview page include any new pages.
+- The glossary, `recently-added.md` and the sidebar include any new pages, and each new page has an opening bridge, a Next up section and a `published` date.
 
 ## 5. Build and links
 

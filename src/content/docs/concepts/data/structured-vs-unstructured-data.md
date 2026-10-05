@@ -4,7 +4,10 @@ description: The difference between data that fits in tables and data that lives
 tags: [data]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+The car is built: an engine, controls, a driving loop and a harness that decides what the driver sees. Now it needs maps and road knowledge, which means your data, and data comes in two very different shapes.
 
 **In one line:** structured data fits into tables with fixed fields, such as a stage or an amount, while unstructured data is free-form text such as emails, documents and call notes.
 
@@ -48,7 +51,7 @@ There is also a bridge between the two. A model can read unstructured text and *
 
 Structured data usually lives in databases and in the fields of business tools such as a CRM. Unstructured data lives in file storage, email, chat and notes fields.
 
-Real systems mix both. A CRM record has structured fields (stage, owner, date) next to free-text notes. A good [context layer](/concepts/data/what-a-context-layer-is/) uses both parts of the same record.
+Real systems mix both. A CRM record has structured fields (stage, owner, date) next to free-text notes. A good [context layer](/concepts/data/what-a-context-layer-is/) (the connected setup that gathers the right information for each question, covered at the end of this chapter) uses both parts of the same record.
 
 Extraction is useful, but it is not magic. The model can misread or invent a field, so important values need a check, or a person's confirmation, before they are saved. See [hallucination and grounding](/concepts/how-models-work/hallucination-and-grounding/).
 
@@ -81,7 +84,7 @@ The most common mistake is trying to force all information into fields. Some kno
 
 ## Often confused with
 
-**Structured vs structured outputs.** "[Structured outputs](/concepts/talking-to-models/structured-outputs/)" is a feature where a model is made to reply in a fixed format, such as a set of named fields. It is about the shape of a model's answer, not about how your data is stored. It will get its own page later.
+**Structured vs structured outputs.** "[Structured outputs](/concepts/talking-to-models/structured-outputs/)" is a feature where a model is made to reply in a fixed format, such as a set of named fields. It is about the shape of a model's answer, not about how your data is stored. It has its own page in chapter 3.
 
 ## Related
 
@@ -97,3 +100,7 @@ The most common mistake is trying to force all information into fields. Some kno
 - **Semi-structured data:** data with some labelled structure but loose or varying fields
 - **Structured data:** data in tables with fixed fields and types
 - **Unstructured data:** free-form content such as documents, emails and notes
+
+## Next up
+
+Structured data has to live somewhere, and there is more than one kind of store. [Types of databases](/concepts/data/types-of-databases/) tours the main ones and the questions each suits.

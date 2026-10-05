@@ -4,7 +4,10 @@ description: How to make sure an agent only sees and does what the person asking
 tags: [data, security]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Connections, search and fresh copies decide what an agent can reach. Permissions are the keys: they decide what it may see and do on behalf of each person, and each person's key should open only the doors they could open anyway.
 
 **In one line:** permissions and access control decide who can see and do what, and for an agent they must be enforced by the systems holding the data, not left to the agent's good behaviour.
 
@@ -120,3 +123,7 @@ The most common mistake is giving the agent a broad account for convenience and 
 - **Least privilege:** giving an identity only the access its job needs
 - **Permission:** a rule allowing a specific person or program to do something
 - **Service account:** a shared identity used by software rather than a person
+
+## Next up
+
+Every part is now in place. [What a context layer is](/concepts/data/what-a-context-layer-is/) pulls connectors, entity resolution, search, freshness and permissions together into one design.

@@ -4,7 +4,10 @@ description: Two ways to give an agent reusable know-how without retyping prompt
 tags: [agents, tools]
 lastReviewed: 2026-10-02
 snapshot: true
+published: 2026-10-02
 ---
+
+Saved memories are notes an agent picks up along the way. Instruction files and skills are the opposite: guidance a person writes on purpose, so the agent knows the rules of the road and the steps of a job before it starts.
 
 **In one line:** instruction files and skills are saved written guidance that an agent reads, so you teach it how you work once instead of explaining it in every conversation.
 
@@ -58,7 +61,7 @@ flowchart TD
 
 Instruction files have become a shared habit across coding assistants, and AGENTS.md is an open format kept by the Agentic AI Foundation. Some assistants also read their own named files.
 
-Skills started at Anthropic and were published as an open format, now supported by many assistants and coding tools. A skill is just a folder, so it is easy to copy, share and keep in version control.
+Skills started at Anthropic and were published as an open format, now supported by many assistants and coding tools. A skill is just a folder, so it is easy to copy, share and keep in version control (a system that keeps every past version of a file, such as Git).
 
 **Snapshot, as of October 2026.** The Agent Skills format is described at agentskills.io. A skill needs a SKILL.md file with a name (lowercase letters, numbers and hyphens) and a description saying what it does and when to use it, followed by instructions. Optional folders can hold scripts, references and assets. Support is wide but not universal, and details such as which extra fields work can differ between products. Check the documentation of the assistant you use.
 
@@ -117,3 +120,7 @@ Nothing changes for requests that have nothing to do with introductions: the ski
 - **AGENTS.md:** an open-format instruction file read by many coding assistants
 - **Progressive disclosure:** loading detail only when a task needs it
 - **Load on demand:** reading a skill's full content only when a request matches it
+
+## Next up
+
+A skill teaches an agent how to do a job, but it still needs a way to reach the systems where the work happens. [MCP](/concepts/agents/mcp/) is the standard way of plugging those systems in.

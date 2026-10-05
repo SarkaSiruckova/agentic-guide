@@ -4,7 +4,10 @@ description: How an AI assistant appears to remember you, by saving notes and br
 tags: [agents]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Among the parts of the harness, memory is the logbook. A model forgets everything when a conversation ends, so anything it seems to remember has been written down and handed back to it.
 
 **In one line:** memory is information saved outside the model and brought back into its context window later, which is the only way an assistant can seem to remember anything from an earlier conversation.
 
@@ -26,7 +29,7 @@ It helps to separate three things people often call memory:
 
 - **The context window.** Everything the model can see right now: this conversation, tool results and instructions. It is short-term, and it is gone when the conversation ends. (See [tokens and context windows](/concepts/how-models-work/tokens-and-context-windows/).)
 - **Saved notes.** Short facts or preferences stored outside the model, such as "prefers briefings as five bullet points". This is long-term memory, and it is what the word usually means.
-- **Looked-up knowledge.** Documents the assistant searches when it needs them, such as files and CRM records. This is not memory of you. It is a library the assistant consults, using retrieval ([RAG and chunking](/concepts/data/rag-and-chunking/)).
+- **Looked-up knowledge.** Documents the assistant searches when it needs them, such as files and CRM records. This is not memory of you. It is a library the assistant consults, using retrieval (searching documents for the passages relevant to a question, covered in chapter 4 under [RAG and chunking](/concepts/data/rag-and-chunking/)).
 
 Saved notes have a life cycle:
 
@@ -61,7 +64,7 @@ Memory shows up in several forms:
 - **Instruction files.** A plain text file the assistant reads at the start of every session, which you write and maintain yourself. See [skills and instruction files](/concepts/agents/skills-and-instruction-files/).
 - **Custom memory.** A developer gives an agent a tool to save and search notes in a file or database.
 
-This is one half of [context engineering](/concepts/talking-to-models/context-engineering/), the move called persist: save useful facts outside the window and bring them back only when needed. The other half is deciding what to retrieve, so the window is not stuffed with every note ever saved.
+This is one half of [context engineering](/concepts/talking-to-models/context-engineering/) (choosing what goes into the model's context window, the last page of this chapter), the move called persist: save useful facts outside the window and bring them back only when needed. The other half is deciding what to retrieve, so the window is not stuffed with every note ever saved.
 
 Where the notes live matters. A memory held by a vendor sits in their system, under their rules. A file in your own storage sits under your permissions. Check which one you are using.
 
@@ -119,3 +122,7 @@ The most common mistake is assuming memory is a record of everything. It is a sm
 - **Memory poisoning:** planting a false or harmful note so it affects later conversations
 - **Persistence:** saving information outside the context window so it survives the conversation
 - **Short-term memory:** what is in the context window during the current conversation
+
+## Next up
+
+Notes an agent saves for itself can be wrong or go stale. [Skills and instruction files](/concepts/agents/skills-and-instruction-files/) cover the other approach: know-how that people write down deliberately and the agent reads as it works.

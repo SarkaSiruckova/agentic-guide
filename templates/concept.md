@@ -2,9 +2,12 @@
 title: Concept name
 description: One plain sentence saying what this is.
 tags: []
+published: YYYY-MM-DD
 lastReviewed: YYYY-MM-DD
 snapshot: false
 ---
+
+Opening bridge: one or two sentences linking this page to the one before it in the reading order, and saying what this page adds. Must make sense to a reader arriving from search.
 
 **In one line:** a plain-English definition someone could repeat to a colleague.
 
@@ -41,3 +44,7 @@ The term this gets mixed up with, and the difference in one or two sentences. Re
 ## The proper terms
 
 - **Term:** what it means, in a few words
+
+## Next up
+
+One or two sentences on why the next page in the reading order follows, ending with a link to it.

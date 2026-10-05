@@ -1,8 +1,12 @@
 ---
 title: Confusables
 description: Things that are easy to mix up, side by side.
+tags: [foundations]
+lastReviewed: 2026-10-05
+snapshot: false
 sidebar:
   order: 4
+published: 2026-10-02
 ---
 
 Pairs and groups of terms that sound similar or overlap, with the difference spelled out.
@@ -124,6 +128,14 @@ A price per token is what the vendor charges. The cost per task is what a finish
 
 [Read the full page](/concepts/cost/estimating-cost-per-task/).
 
-## Planned so far
+## Claude.ai vs Claude Code vs the Claude API
 
-- Claude.ai vs Claude Code vs the Claude API
+Three ways to use the same family of models, built for different jobs.
+
+| | What it is | Use it when |
+| --- | --- | --- |
+| Claude.ai | The chat apps on web, desktop and mobile | You want to think, write, research or plan with a person in the loop |
+| Claude Code | A coding agent that works in a folder on your computer | You are building or changing files and want the agent to run commands |
+| The Claude API | A way for your own software to call the models | You are building your own product or agent |
+
+[Read the full page](/setup/claude-surfaces/).

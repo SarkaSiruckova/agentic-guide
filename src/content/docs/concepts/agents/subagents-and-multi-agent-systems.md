@@ -4,7 +4,10 @@ description: How one agent hands parts of a job to helper agents that each work 
 tags: [agents]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+With tools, memory, skills and connections in place, a single agent can take on large jobs, and its running record grows with every step. Subagents keep that record manageable by handing pieces of the work to helper agents that each start clean.
 
 **In one line:** a subagent is a helper agent that one agent sends off to do part of a job, with its own clean context window, instructions and tools, and a multi-agent system is a setup where several agents work together this way.
 
@@ -52,7 +55,7 @@ flowchart TD
   O --> A[Combined answer]
 ```
 
-This is the "isolate" move from [context engineering](/concepts/talking-to-models/context-engineering/): give a separate task its own clean window instead of crowding one shared window.
+This is the "isolate" move from [context engineering](/concepts/talking-to-models/context-engineering/) (choosing what goes into a model's context window, covered at the end of this chapter): give a separate task its own clean window instead of crowding one shared window.
 
 The orchestrator's brief is the most important part. A worker starts blank. It knows nothing about the conversation unless the brief says so, and it cannot ask the orchestrator for clarification mid-task in most setups.
 
@@ -115,3 +118,7 @@ The most common mistake is building a team of agents for a task that one agent c
 - **Parallel execution:** running several workers at the same time
 - **Subagent:** a helper agent with its own context window, instructions and tools
 - **Worker:** a subagent that does one piece of a task and reports back
+
+## Next up
+
+More agents doing more on their own raises a fair question: where should a person step in? [Human-in-the-loop](/concepts/agents/human-in-the-loop/) covers how to place approvals where they count.

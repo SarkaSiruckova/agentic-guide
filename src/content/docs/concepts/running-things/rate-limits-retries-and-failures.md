@@ -4,7 +4,10 @@ description: Why calls between connected systems fail, and how to retry sensibly
 tags: [automation, infrastructure]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Functions, triggers and orchestration tools all assume the systems on the other end will answer. This page covers what to do when they do not: when a service is busy, slow or down.
 
 **In one line:** connected systems fail often in small ways, so a well-built job waits and retries the safe things, gives up after a limit, and tells a person when it cannot finish.
 
@@ -115,3 +118,7 @@ The whole import finishes a few minutes later than the naive one would have, and
 - **Idempotency key:** a unique label that lets a repeated action be recognised and skipped
 - **Dead-letter queue:** a holding list for failed items awaiting human review
 - **Retry storm:** many retries at once that worsen an outage
+
+## Next up
+
+Retries and alerts only help if someone can see what happened. [Observability](/concepts/agents/observability/) is about keeping a step-by-step record of what an agent actually did.

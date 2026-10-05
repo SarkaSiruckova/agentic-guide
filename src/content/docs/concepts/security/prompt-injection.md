@@ -4,7 +4,10 @@ description: How text an agent reads as data can be treated as an instruction, w
 tags: [security, agents]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Testing with evals shows an agent does its job when everyone plays fair. But a car that runs every day also needs locks and an alarm, and this chapter covers them, starting with a weakness built into language models themselves: they can be steered by instructions hidden in the text they read.
 
 **In one line:** prompt injection is when text that a model was only meant to read gets treated as an instruction, so whoever wrote that text can steer what the agent does.
 
@@ -122,3 +125,7 @@ The same hidden text in the same email becomes a line in a log instead of a leak
 - **Lethal trifecta:** private data, untrusted content and an outbound channel combined in one agent
 - **Prompt injection:** text read as data that a model treats as an instruction
 - **Untrusted content:** text from a source you do not control
+
+## Next up
+
+Prompt injection is how an attacker gets in, but the damage usually happens on the way out, when an agent sends data somewhere it should not go. [Data exfiltration through tools](/concepts/security/data-exfiltration-through-tools/) looks at every one of those exits.

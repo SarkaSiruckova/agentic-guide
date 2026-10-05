@@ -4,7 +4,10 @@ description: How to keep keys, passwords and settings out of your code so the sa
 tags: [security, infrastructure]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Small pieces of code, such as serverless functions, need keys to reach the CRM, the file store and the model. This page covers where those keys belong, so they never end up written into the code itself.
 
 **In one line:** an environment variable is a named setting a program reads from its surroundings instead of from its code, and a secret is the sensitive kind, such as an API key or a password, that must never be written into code or shared.
 
@@ -46,9 +49,9 @@ The rules that matter most:
 2. **Never commit them to a repository.** A repository keeps history, and this guide's own repository is public, so a secret in it would be visible to the world.
 3. **Keep `.env` files out of version control.** Add a line for `.env` to the repository's `.gitignore` file, which tells git to skip those files. Commit a sample file with placeholders instead.
 4. **Use separate values for testing and live use.** A test key cannot damage real data.
-5. **Give each key the minimum access it needs.** A key that can only read companies is far less dangerous than one that can delete them (see [APIs, OAuth and API keys](/concepts/data/apis-oauth-and-api-keys/) and [least privilege](/concepts/security/least-privilege/)).
+5. **Give each key the minimum access it needs.** A key that can only read companies is far less dangerous than one that can delete them (see [APIs, OAuth and API keys](/concepts/data/apis-oauth-and-api-keys/) and [least privilege](/concepts/security/least-privilege/), the rule of giving every account only the access it needs, covered in chapter 6).
 6. **Rotate regularly.** Rotating means replacing a key with a new one and retiring the old. Old keys that nobody remembers are the ones that leak.
-7. **Never hand secrets to a model in text.** Anything in a prompt or a conversation can be repeated by the model, and [prompt injection](/concepts/security/prompt-injection/) can trick an agent into revealing it. Give the secret to the tool that needs it, so the model asks for an action and never sees the key.
+7. **Never hand secrets to a model in text.** Anything in a prompt or a conversation can be repeated by the model, and [prompt injection](/concepts/security/prompt-injection/) (instructions hidden in text the agent reads, covered in chapter 6) can trick an agent into revealing it. Give the secret to the tool that needs it, so the model asks for an action and never sees the key.
 
 ## In practice
 
@@ -102,3 +105,7 @@ The most common mistake is treating a private repository as a safe place for sec
 - **Revoke:** switching a key off so it no longer works
 - **Secret scanning:** automatic detection of credentials committed to a repository
 - **Push protection:** blocking a push that contains a recognised secret
+
+## Next up
+
+With the code in place and its keys stored safely, the next question is what sets it going. [Triggers and scheduling](/concepts/running-things/triggers-and-scheduling/) covers the clocks, events and buttons that start a job.

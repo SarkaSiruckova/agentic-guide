@@ -4,7 +4,10 @@ description: How a model that can only write text ends up searching databases an
 tags: [agents]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+A model can only write text, but text in a fixed shape can be read by software as a request. Tools are the controls that let that request act on the world: the model asks, and the software around it does the work.
 
 **In one line:** tool use is how a model asks for something to be done, such as searching a database, while the software around it does the actual work and hands back the result.
 
@@ -115,3 +118,7 @@ The most common mistake is handing a model every tool "just in case". Give it th
 - **Tool call:** the model's structured request to use a tool
 - **Tool result:** what the tool sends back, added to the conversation as text
 - **Tool use:** the way a model requests actions and the software around it carries them out
+
+## Next up
+
+One tool call answers one question, but real jobs need several, each depending on the last. [The agent loop](/concepts/agents/the-agent-loop/) shows how a model keeps going, step by step, until the job is done.

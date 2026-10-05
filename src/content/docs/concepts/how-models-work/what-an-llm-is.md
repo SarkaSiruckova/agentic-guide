@@ -4,7 +4,10 @@ description: The text-predicting program behind every chat assistant and agent, 
 tags: [foundations]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Chats, workflows and agents all run on a large language model. Think of it as the engine: everything else in this guide is the car built around it, and this page looks at what the engine actually does.
 
 **In one line:** a large language model (LLM) is a program trained on huge amounts of text to predict what comes next, and that one skill turns out to be enough to write, summarise, answer questions and follow instructions.
 
@@ -100,3 +103,7 @@ The most common mistake is treating an LLM as a database or a search engine. It 
 - **Parameters (or weights):** the internal numbers a model learns during training (the word is also used for a tool's inputs)
 - **Token:** the small piece of text a model reads and writes
 - **Training:** adjusting a model's internal numbers by showing it large amounts of text
+
+## Next up
+
+An engine runs on fuel, and a model's fuel is tokens. [Tokens and context windows](/concepts/how-models-work/tokens-and-context-windows/) explains what a model burns and how much it can hold at once.

@@ -4,7 +4,10 @@ description: "The ways work starts without anyone typing: a clock, an event, a m
 tags: [automation, infrastructure]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Code that runs on a platform and holds its keys safely still needs something to set it going. This page covers the triggers that start work without anyone typing, and the traps that come with running unattended.
 
 **In one line:** a trigger is whatever starts a piece of work on its own, such as the clock reaching Monday 8am, a new email arriving, or someone pressing a button.
 
@@ -79,7 +82,7 @@ One day the mailbox service delivers the same event twice. The job first checks 
 
 ## Costs and limits
 
-- **Polling costs more as it gets faster.** Checking every minute uses ten times the requests of checking every ten minutes, and may hit [rate limits](/concepts/running-things/rate-limits-retries-and-failures/). Use events where the other system offers them.
+- **Polling costs more as it gets faster.** Checking every minute uses ten times the requests of checking every ten minutes, and may hit [rate limits](/concepts/running-things/rate-limits-retries-and-failures/) (caps on how many requests a service accepts, covered later in this chapter). Use events where the other system offers them.
 - **Schedules do not know about reality.** A job that runs on a bank holiday or during an outage still runs. Add checks inside the job.
 - **Silent failure is the worst case.** A scheduled job that stops working shows no error to anyone. Report on success too, or run a "did it run?" check.
 - **Model-powered jobs cost money every run.** A scheduled agent that wakes up hourly and finds nothing to do still costs something. Make the first step a cheap check for "is there any work?".
@@ -106,3 +109,7 @@ One day the mailbox service delivers the same event twice. The job first checks 
 - **Polling:** repeatedly asking a system whether anything is new
 - **Idempotent:** safe to repeat, because doing it twice gives the same result as once
 - **UTC:** the world reference time, with no daylight saving changes
+
+## Next up
+
+One trigger usually starts several steps across several apps. [Orchestration tools](/concepts/running-things/orchestration-tools/) are the software that strings those steps together and runs them in order.

@@ -4,7 +4,10 @@ description: Whether you can download a model's learned numbers and run them you
 tags: [foundations, infrastructure]
 lastReviewed: 2026-10-02
 snapshot: true
+published: 2026-10-02
 ---
+
+So far this chapter has looked at what a model is and what it can do. This page asks a more practical question: who holds the engine, and whether you can run it yourself.
 
 **In one line:** a closed-weight model can only be used through its provider's service, while an open-weight model publishes its learned numbers so anyone can download and run it, under a licence that sets the rules.
 
@@ -74,7 +77,7 @@ Her conclusion: "open weights" is not a privacy answer on its own. A downloaded 
 - **Possible capability gap.** The very best closed models have often led open ones on hard tasks, though the gap changes over time and depends on the task. Test, do not assume.
 - **Licence reading.** Terms vary and can restrict commercial use or require credit. Have someone read them before building a product.
 - **No surprise changes, but no free upgrades.** An open model you hold does not change under you, and cannot be withdrawn by a price change. It also does not improve on its own.
-- **Security is yours.** You must control who can reach the model and what it can connect to. Hosting the model yourself does not remove risks such as [prompt injection](/concepts/security/prompt-injection/).
+- **Security is yours.** You must control who can reach the model and what it can connect to. Hosting the model yourself does not remove risks such as [prompt injection](/concepts/security/prompt-injection/) (hidden instructions in text that try to steer the model, covered in chapter 6).
 - **Common mistake.** Assuming "open" means "free", "private" or "safe".
 
 ## Often confused with
@@ -100,3 +103,7 @@ Her conclusion: "open weights" is not a privacy answer on its own. A downloaded 
 - **Licence:** the legal terms that set what you may do with a model
 - **Self-hosting:** running a model on infrastructure you control
 - **Hosted open model:** an open model run for you by a third party
+
+## Next up
+
+Running an open model yourself soon meets a practical limit: memory. [Quantisation](/concepts/how-models-work/quantisation/) explains how models are shrunk to fit on smaller machines, and what that costs in quality.

@@ -3,6 +3,7 @@ import Default from '@astrojs/starlight/components/PageTitle.astro';
 import { PageTags } from 'starlight-tags/components';
 
 const data = Astro.locals.starlightRoute.entry.data as {
+  published?: string;
   lastReviewed?: string;
   snapshot?: boolean;
   tags?: string[];
@@ -11,9 +12,10 @@ const data = Astro.locals.starlightRoute.entry.data as {
 
 <Default />
 {
-  (data.lastReviewed || data.snapshot || data.tags?.length) && (
+  (data.published || data.lastReviewed || data.snapshot || data.tags?.length) && (
     <div class="page-meta">
       {data.tags?.length ? <PageTags variant="outline" size="small" /> : null}
+      {data.published && <span class="published">Published {data.published}</span>}
       {data.lastReviewed && <span class="reviewed">Last reviewed {data.lastReviewed}</span>}
     </div>
   )

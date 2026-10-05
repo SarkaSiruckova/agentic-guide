@@ -4,7 +4,10 @@ description: Everything around a model that turns it into an agent, and the craf
 tags: [agents]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+A model on its own is an engine on a workbench. The harness is everything that turns it into a car: the loop that drives it, the controls, the rules, the brakes and the dashboard.
 
 **In one line:** the harness is all the software and settings around a model (the loop, tools, instructions, memory, permissions, limits and logs) that turns a model that writes text into an agent that gets work done.
 
@@ -114,3 +117,7 @@ The first week, the logs show the agent suggesting an angel who already invested
 - **Harness engineering:** designing and tuning the parts of a harness to improve reliability
 - **Agent framework:** a code toolkit for building your own agent harness
 - **Guardrail:** a rule enforced by the harness, such as a limit or an approval step
+
+## Next up
+
+One part of the harness deserves a closer look, because the model starts every conversation blank. [Memory](/concepts/agents/memory/) explains how an agent appears to remember anything at all.

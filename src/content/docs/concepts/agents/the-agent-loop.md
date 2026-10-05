@@ -4,7 +4,10 @@ description: The repeating cycle that lets a model work towards a goal, one tool
 tags: [agents]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+A single tool call is one move of the controls. The agent loop is driving: look at the road, decide, act, then look again, until the destination is reached.
 
 **In one line:** the agent loop is the cycle of decide, act and look at the result that an agent repeats until the goal is met or something stops it.
 
@@ -50,7 +53,7 @@ Researchers named this pattern **ReAct**, short for "reason and act": the model 
 
 ## In practice
 
-The loop is run by the application around the model, not by the model itself. Coding assistants, agent products and agent frameworks all contain one. The loop itself is short. Most of the work in a good agent goes into the tools, the instructions and the limits.
+The loop is run by the application around the model, not by the model itself. Coding assistants, agent products and agent frameworks (code libraries for building agents) all contain one. The loop itself is short. Most of the work in a good agent goes into the tools, the instructions and the limits.
 
 The data stays in your systems. Each round, a tool fetches what it needs at that moment, so the agent works from current records and not from a stale copy.
 
@@ -102,3 +105,7 @@ The most common mistakes are running an agent with no limits, and giving it tool
 - **ReAct:** short for "reason and act", the name of the pattern
 - **Round:** one trip through the loop
 - **Step limit:** a cap on the number of rounds before the loop is stopped
+
+## Next up
+
+The loop itself is short, and the model does not run it. [Agentic harness](/concepts/agents/agentic-harness/) covers the software that does: the loop, the tools, the limits and everything else around the model.

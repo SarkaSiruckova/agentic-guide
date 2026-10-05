@@ -4,7 +4,10 @@ description: Models that spend extra effort thinking through a problem step by s
 tags: [foundations]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+A standard model answers in one pass, token by token, as soon as it has read the prompt. Reasoning models add a stretch of working out first, and this page covers what that buys and what it costs.
 
 **In one line:** a reasoning model works through a problem in a long run of intermediate steps before it answers, which helps on hard multi-step tasks but costs more time and money.
 
@@ -61,7 +64,7 @@ Sample Ventures, the fictional fund, is looking at a follow-on investment in Acm
 
 **Reasoning model.** It takes noticeably longer. It sets out the order of events, converts the note, applies the pool top-up, then works out the percentages and checks that they add to 100%. Its answer matches a spreadsheet the associate builds to check.
 
-Two lessons follow. The reasoning model did better because the question has many ordered steps. But the associate still checked it against a spreadsheet, because the model can slip on arithmetic and on assumptions the question left open. Better still, the model can be given a calculation [tool](/concepts/agents/tool-use/) so the sums are exact.
+Two lessons follow. The reasoning model did better because the question has many ordered steps. But the associate still checked it against a spreadsheet, because the model can slip on arithmetic and on assumptions the question left open. Better still, the model can be given a calculation [tool](/concepts/agents/tool-use/) (software the model can call, covered in chapter 3) so the sums are exact.
 
 The same associate asking "what does SAFE stand for?" should use the fast model. A reasoning model would take longer and cost more for the same answer.
 
@@ -102,3 +105,7 @@ The most common mistake is switching on maximum thinking for every task. Match t
 - **Reinforcement learning:** training by trial and error, rewarding outcomes that turn out well
 - **Verifiable task:** a task with an answer that can be checked automatically, such as maths or code tests
 - **Faithfulness:** how accurately shown reasoning reflects what actually produced the answer
+
+## Next up
+
+Reasoning models are often sold under their own acronym, alongside others that sound similar. [LLMs, LRMs and LQMs](/concepts/how-models-work/llms-lrms-and-lqms/) sorts out which labels mean something and which are mostly marketing.

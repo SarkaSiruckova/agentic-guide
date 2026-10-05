@@ -4,7 +4,10 @@ description: How an agent's tools can become exits for sensitive data, by attack
 tags: [security, agents]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Hidden instructions only do harm if the agent has a way to act on them. This page looks at the most damaging way: tools that can carry sensitive data out, whether an attacker is steering or not.
 
 **In one line:** data exfiltration is data leaving the place it should stay, and for an agent, every tool that can send something outside is a possible exit.
 
@@ -69,7 +72,7 @@ The defences, roughly from strongest to weakest:
 5. **Limit what it can reach.** Data the agent cannot read cannot be leaked. Use [permissions and access control](/concepts/data/permissions-and-access-control/) so it sees only what the job needs.
 6. **Redact before sending.** Remove or mask names, figures or identifiers that the outside recipient does not need.
 7. **Watch and alert.** Log outbound actions and raise an alert on unusual ones, such as a large attachment or a new recipient (see [observability](/concepts/agents/observability/)).
-8. **Check third parties.** For any connector or server run by someone else, ask what it logs, what it keeps, for how long, whether it uses the data for anything else, and what the contract and settings say. A data processing agreement may be needed (see [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/)).
+8. **Check third parties.** For any connector or server run by someone else, ask what it logs, what it keeps, for how long, whether it uses the data for anything else, and what the contract and settings say. A data processing agreement (a contract setting how a vendor may handle the personal data you send it) may be needed (see [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/)).
 
 Standard guidance on language model security, such as that published by OWASP, also warns about output that automatically loads images or links carrying data, and advises sanitising what the interface renders.
 
@@ -120,3 +123,7 @@ The usual mistake is securing the data store carefully and then giving the agent
 - **Egress:** data or traffic leaving a system or network
 - **Outbound channel:** any tool or route an agent can use to send something out
 - **Redaction:** removing or masking sensitive details before data is shared
+
+## Next up
+
+Cutting exits is one half of the defence. The other half is limiting what an agent can reach and do in the first place, which is [least privilege](/concepts/security/least-privilege/).

@@ -4,7 +4,10 @@ description: How to get a model to answer in a fixed, machine-readable shape, su
 tags: [prompting, data]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Once you know how a model works and how its scores are compared, the next question is how to wire it into software that acts. That starts here, with getting the model to answer in a fixed shape other programs can read.
 
 **In one line:** structured outputs make a model return its answer in a fixed shape, such as JSON that follows a defined layout, instead of free-flowing text, so other software can read it without guessing.
 
@@ -27,7 +30,7 @@ There are four ways to get structured answers. They run from weakest to stronges
 1. **Ask nicely in the prompt.** You write "reply only with JSON using these fields". It often works and sometimes does not: the model may add a friendly sentence before the JSON, rename a field or leave one out. Fine for experiments, risky for anything automatic.
 2. **JSON mode.** Some providers offer a setting that forces the reply to be valid JSON. That stops broken punctuation, but it does not check that your fields are present or correctly named.
 3. **Schema-constrained generation.** You give the provider your schema, and the output is forced to match it. The proper term is **constrained decoding**: while the model writes, the system blocks any next piece of text that would break the schema. Provider documentation describes this as guaranteeing valid JSON, the right field names and the right types.
-4. **Output as a tool call.** You define a [tool](/concepts/agents/tool-use/) whose inputs are the fields you want, and tell the model to "call" it. The tool call is already structured, so the inputs arrive in your shape. Some providers combine this with the constrained approach so the inputs are guaranteed to match.
+4. **Output as a tool call.** You define a [tool](/concepts/agents/tool-use/) (an action the model can ask the surrounding software to carry out, covered on the next page) whose inputs are the fields you want, and tell the model to "call" it. The tool call is already structured, so the inputs arrive in your shape. Some providers combine this with the constrained approach so the inputs are guaranteed to match.
 
 Whichever you choose, check the result afterwards. Constrained generation has gaps: the provider's documentation notes that a refusal, or an answer cut off for being too long, may not match the schema. The check itself is called **validation**: software confirms that every required field exists and every value is the right type.
 
@@ -85,7 +88,7 @@ The email is passed to the model together with the schema, and the model returns
 Then the steps around it:
 
 1. **Validate.** Software checks that all fields exist and that `stage` is one of the four allowed values.
-2. **Check what it can.** The company name is looked up in the CRM. If a match exists, the note is attached to it rather than creating a duplicate (see [entity resolution](/concepts/data/entity-resolution/)).
+2. **Check what it can.** The company name is looked up in the CRM. If a match exists, the note is attached to it rather than creating a duplicate (see [entity resolution](/concepts/data/entity-resolution/), the task of matching records that refer to the same thing, covered in chapter 4).
 3. **Write.** The fields go into the CRM as a new interaction.
 4. **Handle failures.** If validation fails, the system retries once. If it fails again, the email goes to the operations lead's review pile.
 
@@ -123,3 +126,7 @@ The most common mistake is trusting the output because it parsed. Parsing proves
 - **Enum:** a fixed list of allowed values for a field
 - **Null:** the data value meaning "nothing here"
 - **Extraction:** pulling clean fields out of messy text
+
+## Next up
+
+A tool call is a structured output with a job attached. [Tool use](/concepts/agents/tool-use/) explains how a model uses one to ask software to search, fetch or send things for it.

@@ -4,7 +4,10 @@ description: Four words people use as if they meant the same thing, and the one 
 tags: [agents, automation]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+The [glossary](/start-here/glossary/) gives every term in one line. This page takes the four words that get mixed up most (chat, workflow, automation and agent) and gives you one question that tells them apart.
 
 **In one line:** chat, workflow, automation and agent are four different ways of getting work done with AI, and what separates them is who decides the next step.
 
@@ -66,7 +69,7 @@ The real tools fall into categories:
 - **Workflows and automations:** automation tools such as Zapier, Make, n8n or Power Automate. You usually build the steps as boxes and arrows, and add a trigger if you want it to run on its own.
 - **Agents:** a model given tools, through an agent product or a framework (a toolkit for building agents). Coding assistants such as Claude Code are a well-known example.
 
-In all four, the data (company records, emails, files) stays in the firm's own systems, such as the CRM and SharePoint. The AI reads from and writes to them, but it doesn't hold them.
+In all four, the data (company records, emails, files) stays in the firm's own systems, such as the CRM (the customer relationship management system that holds contacts, companies and deals) and SharePoint. The AI reads from and writes to them, but it doesn't hold them.
 
 How fresh the data is depends on the style. A plain chat only knows what you paste in or what it can look up. An automation runs each time something new arrives, so its records are as current as the last trigger. An agent looks things up at the moment it runs.
 
@@ -139,3 +142,7 @@ The most common mistake is using an agent where a workflow would do, or calling 
 - **Tool:** an action a model is allowed to take, such as searching a database or sending a message
 - **Trigger:** an event, such as a new email arriving, that starts something automatically
 - **Workflow:** a fixed list of steps that runs the same way every time
+
+## Next up
+
+All four styles have the same thing at their centre: a language model. [What an LLM is](/concepts/how-models-work/what-an-llm-is/) explains what that part actually does.

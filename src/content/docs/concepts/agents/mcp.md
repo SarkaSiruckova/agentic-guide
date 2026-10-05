@@ -4,7 +4,10 @@ description: An open standard that lets AI assistants connect to tools and data 
 tags: [agents, tools]
 lastReviewed: 2026-10-02
 snapshot: true
+published: 2026-10-02
 ---
+
+Tools only help if they can reach your systems, and every system used to need its own custom wiring. MCP is a standard socket: any accessory built for it plugs into any assistant that supports it.
 
 **In one line:** MCP (Model Context Protocol) is an open standard for connecting AI assistants to tools and data, so a connector is built once and works with many assistants.
 
@@ -14,7 +17,7 @@ An assistant is only useful for business work if it can reach your systems: the 
 
 MCP fixes this the way a universal plug fixes travel. The system builds one MCP connector (called a server). Any assistant that speaks MCP can then use it. Build once, plug in anywhere.
 
-It matters for a context layer because it is the most common way to give an agent controlled access to your data and actions, without writing a new integration each time.
+It matters for a context layer (the sources and logic that feed an agent the right information, covered in chapter 4) because it is the most common way to give an agent controlled access to your data and actions, without writing a new integration each time.
 
 <mark>MCP does not make an assistant safer or smarter: it makes connecting it easier, so the choices about access and trust matter more, not less.</mark>
 
@@ -110,3 +113,7 @@ The assistant never held a password and never had more access than the account a
 - **Local server:** an MCP server that runs on your own computer
 - **Remote server:** an MCP server reached over the internet
 - **Prompt injection:** hidden instructions in text that try to steer a model's behaviour
+
+## Next up
+
+With tools plugged in, one agent can do a lot, but its context window fills up fast on a big job. [Subagents and multi-agent systems](/concepts/agents/subagents-and-multi-agent-systems/) show how an agent hands pieces of the work to helpers.

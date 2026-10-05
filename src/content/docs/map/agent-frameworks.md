@@ -6,7 +6,10 @@ lastReviewed: 2026-10-02
 snapshot: true
 sidebar:
   order: 8
+published: 2026-10-02
 ---
+
+With models, data and connectors in place, something has to do the driving: ask the model, use a tool, look at the result, and go again. This layer is the ready-made software that does that, the build-or-buy side of the [agentic harness](/concepts/agents/agentic-harness/).
 
 **In one line:** an agent framework is a ready-made library or platform that runs the agent loop and wires up tools and memory for you, so you write only the parts that are specific to your firm.
 
@@ -140,3 +143,7 @@ She starts with path one. After a month, the associates ask for deeper research 
 - **Tracing:** recording each step an agent takes so you can inspect it later
 - **Durable execution:** saving progress so a long job can resume after a failure
 - **No-code builder:** a visual tool for assembling agents without writing code
+
+## Next up
+
+Every connection a framework makes needs a key that proves it is allowed in. [Auth and secrets](/map/auth-and-secrets/) covers who gets which keys and where they are kept.

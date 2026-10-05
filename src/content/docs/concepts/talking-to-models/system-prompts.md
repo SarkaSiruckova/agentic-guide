@@ -4,7 +4,10 @@ description: The standing instructions that set a model's role and rules before 
 tags: [prompting, agents]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+A prompt gives directions for one request. A system prompt sets the standing rules of the road, which apply to every request in the conversation.
 
 **In one line:** a system prompt is a set of standing instructions given to a model before the conversation begins, setting its role, rules and tone for everything that follows.
 
@@ -43,7 +46,7 @@ Typical contents are: the role and purpose, the tone, rules and boundaries, guid
 
 Chat products have a system prompt written by the provider, which you don't see. Many let you add your own on top, usually called custom instructions or project instructions.
 
-When building an agent, the system prompt is a piece of text kept in the code or in an instruction file. Treat it like any important document: keep it in version control, review changes, and test the agent after editing it.
+When building an agent, the system prompt is a piece of text kept in the code or in an instruction file. Treat it like any important document: keep it in version control (a record of every change, so earlier versions can be restored), review changes, and test the agent after editing it.
 
 Don't put secrets in it. Models can often be coaxed into repeating their instructions, so passwords, keys and private details do not belong there.
 
@@ -69,7 +72,7 @@ Notice the line "never change them". The better protection is that the assistant
 
 ## Costs and limits
 
-- **It is sent every turn.** A long system prompt costs tokens on every request. [Prompt caching](/concepts/cost/prompt-caching-and-batch-processing/) can reduce this.
+- **It is sent every turn.** A long system prompt costs tokens on every request. [Prompt caching](/concepts/cost/prompt-caching-and-batch-processing/) (reusing the unchanged start of a conversation so it is cheaper to send again, covered in the cost chapter) can reduce this.
 - **Rules can conflict.** The more instructions there are, the more likely two of them pull in different directions.
 - **It isn't followed perfectly.** Models usually follow it, and occasionally don't.
 - **It can leak.** Assume that anyone using the assistant could eventually see it.
@@ -96,3 +99,7 @@ The most common mistake is relying on the prompt alone for rules that really mat
 - **Role:** the label on each message: system, user or assistant
 - **System prompt:** standing instructions set by the builder, sent before every conversation
 - **User prompt:** the message a person types in the conversation
+
+## Next up
+
+Even with clear directions and sound rules, a model can still say false things with total confidence. [Hallucination and grounding](/concepts/how-models-work/hallucination-and-grounding/) explains why, and the main defence against it.

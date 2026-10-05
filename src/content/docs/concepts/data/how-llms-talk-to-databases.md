@@ -4,7 +4,10 @@ description: The common ways a model gets answers out of a database, and how to 
 tags: [data, agents]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Getting through the door is only half of it. The model also has to turn a plain question into something the database can run. This page covers the main ways that happens and the guard rails each one needs.
 
 **In one line:** a model cannot reach a database itself, so the software around it sends the query and returns the rows, and how much freedom the model gets over that query decides how useful and how safe the setup is.
 
@@ -101,3 +104,7 @@ The most common mistake is giving the assistant a powerful login "to make it eas
 - **Schema:** the description of a database's tables and columns
 - **SQL:** the standard language for querying relational databases
 - **Text-to-SQL:** a model writing a SQL query from a plain-language question
+
+## Next up
+
+Queries suit tidy rows, but much of what a firm knows sits in documents too large to paste in whole. [RAG and chunking](/concepts/data/rag-and-chunking/) explains how an assistant finds the right passages.

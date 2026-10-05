@@ -4,7 +4,10 @@ description: Public standard tests used to compare AI models, and how to read th
 tags: [foundations]
 lastReviewed: 2026-10-02
 snapshot: true
+published: 2026-10-02
 ---
+
+This chapter has covered how models are built, run, labelled and shrunk. The last question is how to compare them, and public benchmarks are where most comparisons start.
 
 **In one line:** a benchmark is a public, standard test that many models take, so their scores can be compared, useful for building a shortlist but not for making the final choice.
 
@@ -93,3 +96,7 @@ The result: the leaderboard leader gets 22 of 25 right but sometimes mixes up th
 - **Saturation:** when top models score near the maximum and the test stops separating them
 - **Human preference arena:** a ranking built from people voting between anonymous model answers
 - **Shortlist:** the small set of candidate models chosen for your own testing
+
+## Next up
+
+With the engine understood, the next chapter builds the car around it: the parts that let a model act, remember and work in steps. It starts with [structured outputs](/concepts/talking-to-models/structured-outputs/), which get a model to answer in a fixed shape that other software can use.

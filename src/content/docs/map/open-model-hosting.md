@@ -6,7 +6,10 @@ lastReviewed: 2026-10-02
 snapshot: true
 sidebar:
   order: 3
+published: 2026-10-02
 ---
+
+Closed models are reached through their makers' doors or a big cloud's. Open-weight models add a choice the other routes make for you: who actually runs the model, and on whose chips.
 
 **In one line:** open-model hosting is the question of who actually runs an open-weight model, because downloading the model is free but running it needs chips, software and someone to look after both.
 
@@ -124,3 +127,7 @@ An associate at Sample Ventures, the fictional fund, suggests running an open mo
 - **Quantisation:** storing a model's numbers at lower precision to save memory
 - **GPU:** a chip that does many calculations at once
 - **Local model:** a model running on your own computer
+
+## Next up
+
+Whoever hosts it, the main model rarely works alone. [Specialised models](/map/specialised-models/) covers the small models that handle narrow jobs around it.

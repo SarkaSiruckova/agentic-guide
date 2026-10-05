@@ -4,7 +4,10 @@ description: Placing a person at chosen points in an agent's work so that risky 
 tags: [agents, security]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+An agent with tools, memory and helpers can act largely on its own. That is the point, and also the reason some of its actions should wait for a person's approval.
 
 **In one line:** human-in-the-loop means a person is built into an agent's process at chosen points, to approve an action, review a result or step in when the agent is unsure.
 
@@ -112,3 +115,7 @@ Common mistakes are putting checkpoints on everything, so people tune out, and o
 - **Human-in-the-loop:** a person is built into the agent's process at chosen points
 - **Review afterwards:** letting the agent act, then checking a log or sample later
 - **Rubber-stamping:** approving without reading, usually because there are too many requests
+
+## Next up
+
+Every part of this chapter, from tools and memory to skills and subagents, ends up as text in the model's window. [Context engineering](/concepts/talking-to-models/context-engineering/) pulls them together: deciding what the model actually sees at each step.

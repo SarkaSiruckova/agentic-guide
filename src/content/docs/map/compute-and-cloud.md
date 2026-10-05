@@ -6,7 +6,10 @@ lastReviewed: 2026-10-02
 snapshot: true
 sidebar:
   order: 1
+published: 2026-10-02
 ---
+
+The map starts at the bottom of the stack, the ground every road is built on. Before any model or agent can run, a chip in a data centre has to do the work.
 
 **In one line:** compute and cloud is the bottom layer of AI: the specialised chips and data centres that do the actual calculating, rented by the hour from a handful of large providers.
 
@@ -110,3 +113,7 @@ A partner later asks, "Could Acme Payments' pitch deck leave the UK?" She can an
 - **Availability zone:** a separate data centre building or group within a region
 - **Data residency:** the country or area where data is stored
 - **CLOUD Act:** a US law letting authorities request data from US providers held abroad
+
+## Next up
+
+Nobody calls a chip directly. One layer up, [model access platforms](/map/model-access-platforms/) are the doorways your software uses to reach a model running on these chips.

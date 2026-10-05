@@ -4,7 +4,10 @@ description: What the labels large language model, large reasoning model and lar
 tags: [foundations]
 lastReviewed: 2026-10-02
 snapshot: true
+published: 2026-10-02
 ---
+
+Reasoning models have a label of their own, LRM, and it sits beside others such as LLM and LQM. This page sorts out what each one means, and why the more useful question is what a model is built to do.
 
 **In one line:** LLM, LRM and LQM are informal labels for models built around text, step-by-step reasoning, and numbers or simulation, and the useful question is always what a model is built to do and how you can check it.
 
@@ -102,3 +105,7 @@ Remember that an LRM is a kind of LLM, so the labels overlap. An LQM is not a ki
 - **LQM:** large quantitative model, an informal label for models built around numbers or simulation
 - **Quantitative model:** any model that produces numeric predictions from data or equations
 - **Simulation:** a computer model of a real system, used to predict how it behaves
+
+## Next up
+
+These labels describe what a model is built around. Another way to sort models is by the kinds of material they can take in, and [multimodal models](/concepts/how-models-work/multimodal-models/) covers the ones that handle images, audio and documents as well as text.

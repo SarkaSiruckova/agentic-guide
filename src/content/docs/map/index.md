@@ -7,9 +7,10 @@ snapshot: false
 sidebar:
   order: 0
   label: Map overview
+published: 2026-10-02
 ---
 
-This section starts from first principles: what kinds of infrastructure exist, what each one does, and how they connect to make an agent work. Read the concepts first if a word is new; the [glossary](/start-here/glossary/) helps too.
+The concept chapters ended on the fuel bill: what one task costs to run. By now you know every part of the car, from the engine to the keys. This chapter is the road network: the kinds of infrastructure that exist, what each one does, and how they connect to make an agent work. If a word is new, the [glossary](/start-here/glossary/) helps.
 
 Think of it as a stack. A person talks to an interface. Behind it, software runs an agent, which asks a model for decisions and uses connectors to reach your systems. Everything sits on rented computers, and every step needs a safe way to prove who is allowed to do what.
 
@@ -55,3 +56,7 @@ Every layer page has a short, dated list of example providers. Those lists chang
 ## Putting it together
 
 [One question through every layer](/map/one-question-through-every-layer/) traces a single request across all of these, and ends with the smallest honest version to build first.
+
+## Next up
+
+The map starts at the bottom of the stack. [Compute and cloud](/map/compute-and-cloud/) covers the chips and data centres everything else runs on.

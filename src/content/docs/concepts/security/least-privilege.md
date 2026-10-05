@@ -4,7 +4,10 @@ description: Giving every person, program and agent only the access its job need
 tags: [security]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Locks are only as good as the keys handed out. Least privilege is the rule for handing them out: every agent gets the keys its job needs and no more, which limits what a fooled or mistaken agent can reach.
 
 **In one line:** least privilege means each person, program or agent gets the minimum access its job needs, and nothing more, for no longer than needed.
 
@@ -108,3 +111,7 @@ Now a hidden instruction arrives in an email. At worst it could add a bogus cont
 - **Scope:** a limit written into a credential, such as read-only access to mail
 - **Service account:** a shared identity used by software rather than a person
 - **Time-limited credential:** access that expires after a set period or task
+
+## Next up
+
+Narrow access limits what can go wrong, but something will still go wrong eventually. [Audit trails](/concepts/security/audit-trails/) make sure you can say afterwards exactly what happened and who was responsible.

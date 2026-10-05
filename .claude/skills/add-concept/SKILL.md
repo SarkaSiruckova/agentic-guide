@@ -28,39 +28,20 @@ Never create a second page for something that already has one.
 
 ## 3. Decide: small change or new content
 
-**Small change (publish directly, no approval needed):**
-- Fixing a typo, a broken link or a factual slip
-- Adding or clarifying up to a short paragraph on an existing page
-- Adding a link, a related-page entry, a glossary line or a tag
-- Updating `lastReviewed` after checking a page is still accurate
+The reader is the student and relies on you for accuracy. There is no approval step for either kind of change. You own the research, the fact-checking, the style and the safety, and you say plainly what you are unsure about.
 
-**New content (draft first, publish only after approval):**
-- Any new page
-- Rewriting more than a paragraph of an existing page
-- Adding or significantly changing a diagram
-- Adding a new section or tag
-- Anything that changes the meaning of what a page says
+**Small change:** a typo, a broken link, a short clarification, a link, a glossary line, a tag, or a `lastReviewed` update after checking a page is still accurate.
 
-If unsure, treat it as new content.
+**New content:** a new page, a rewrite of more than a paragraph, a new or changed diagram, a new section or tag, or anything that changes what a page says. Research it more carefully, and check volatile claims against official sources.
 
-## 4a. Small change
+## 4. Make the change
 
-1. Make the edit.
-2. Run the safety check and `npm run build`.
-3. Commit and push.
-4. Tell the reader in one or two lines what changed and on which page.
-
-## 4b. New content
-
-1. Research anything that depends on specific tools, providers or current facts with a web search. Concept explanations themselves should stay timeless.
+1. Research anything that depends on specific tools, providers or current facts. Concept explanations themselves should stay timeless.
 2. Write the page using `templates/concept.md` (for concept pages) and the style rules in `CLAUDE.md`. Include a diagram if anything has moving parts.
-3. Save it in the right folder, but **do not commit yet**.
-4. Show the reader the full draft in the chat, plus a short list of the other files you'll update (glossary, recently added, overview page, related pages, confusables).
-5. Wait for approval. If the reader asks for changes, make them and show the draft again.
-6. Once approved, do the housekeeping steps from `CLAUDE.md`, run the safety check and `npm run build`, then commit and push.
-7. Give the reader the live link: `https://agentic-guide.vercel.app/<path>/` (live within a minute or two).
-
-If the reader says "no" or abandons the draft, delete the uncommitted file so nothing half-finished is left behind.
+3. Set `published` to today's date. Do the housekeeping steps from `CLAUDE.md`: glossary, recently added, sidebar position, related pages, confusables, and the bridges (this page's opening bridge and Next up, plus the Next up of the page before it).
+4. Run the safety check and `npm run build`.
+5. Commit and push (or leave that to the publish-guide skill).
+6. Tell the reader what changed, the live link `https://agentic-guide.vercel.app/<path>/`, and anything you are unsure about.
 
 ## 5. Safety check (every time)
 
@@ -68,4 +49,4 @@ Before any commit, review every changed file against the safety rules in `CLAUDE
 
 ## Adding several concepts at once
 
-If the reader gives you a batch, handle them one page at a time: draft, approve, publish, then the next. Mention the queue at the start ("Three concepts here: I'll start with X").
+If the reader gives you a batch, handle them one page at a time: write, check, publish, then the next. Mention the queue at the start ("Three concepts here: I'll start with X").

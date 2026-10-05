@@ -6,7 +6,10 @@ lastReviewed: 2026-10-02
 snapshot: false
 sidebar:
   order: 12
+published: 2026-10-02
 ---
+
+Each layer of the map has had its own page. This one follows a single ordinary question across the whole road network, start to finish, so you can see how the layers connect.
 
 **In one line:** one ordinary question passes through every layer of the map, and following it shows what each layer is for and where things can break.
 
@@ -118,3 +121,7 @@ Leave out the rest for now: no second data source, no database of your own, no c
 - **Rate limit:** a cap on how many requests a provider accepts in a period
 - **Trace:** the full record of one agent run, step by step
 - **Prompt injection:** hidden instructions in text that try to steer a model
+
+## Next up
+
+With the road network mapped, the next question is who builds the cars. The [model landscape](/models/) covers the carmakers: who makes the models, how their tiers compare and what their data terms say.

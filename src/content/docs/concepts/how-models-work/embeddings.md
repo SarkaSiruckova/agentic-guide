@@ -4,7 +4,10 @@ description: How text is turned into lists of numbers so that things with simila
 tags: [foundations, data]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Chat models read and write text, but some jobs need something different: a way to measure how close two pieces of text are in meaning. Embeddings do that, and they sit underneath most search inside AI systems.
 
 **In one line:** an embedding turns a piece of text (or an image) into a long list of numbers, so that pieces with similar meaning end up close together and can be found by distance.
 
@@ -100,3 +103,7 @@ The most common mistake is trusting the top result without reading it. Treat emb
 - **Semantic search:** finding items by meaning instead of exact words
 - **Vector:** an ordered list of numbers, here the address of an embedding
 - **Vector database:** a database built to find the nearest vectors quickly
+
+## Next up
+
+Embeddings help find the right material, but hard questions also need careful working out. [Reasoning models](/concepts/how-models-work/reasoning-models/) covers models trained to think through a problem before they answer.

@@ -4,7 +4,10 @@ description: A lasting, trustworthy record of who did what, to what, and when, k
 tags: [security, agents]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Least privilege limits what an agent can do. An audit trail records what it actually did, like an alarm system's log of every door opened and by whom.
 
 **In one line:** an audit trail is a lasting, protected record of who did what, to which record, when, and with what result, kept so that someone can review and explain it later.
 
@@ -103,3 +106,7 @@ The trail did three jobs: it identified what happened, separated the associate f
 - **Audit trail:** a lasting protected record of actions kept for accountability
 - **Retention period:** how long records are kept before deletion
 - **Tamper-resistant:** protected so records cannot be quietly altered
+
+## Next up
+
+An audit trail is full of information about people, and so are the prompts, logs and indexes around it. [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/) covers the rules on how long that data may be kept and who may handle it.

@@ -2,11 +2,45 @@
 title: Recently added
 description: The latest pages and changes, newest first.
 sidebar:
-  order: 5
+  order: 99
+published: 2026-10-02
 ---
 
 | Date | Change |
 | --- | --- |
+| 2026-10-05 | Guide reorganised into 11 numbered chapters, read from beginner to advanced, with every page leading into the next |
+| 2026-10-05 | New page: [Querying vs adding information safely](/channels/querying-vs-adding-safely/) |
+| 2026-10-05 | New page: [Email](/channels/email/) |
+| 2026-10-05 | New page: [xAI Grok and bots](/channels/xai-grok/) |
+| 2026-10-05 | New page: [Telegram](/channels/telegram/) |
+| 2026-10-05 | New page: [WhatsApp](/channels/whatsapp/) |
+| 2026-10-05 | New page: [Slack](/channels/slack/) |
+| 2026-10-05 | New page: [Microsoft Teams](/channels/microsoft-teams/) |
+| 2026-10-05 | New page: [How chat channels connect to an agent](/channels/how-channels-connect/) |
+| 2026-10-05 | New page: [Your first agent](/setup/your-first-agent/) |
+| 2026-10-05 | New page: [Not burning tokens](/setup/not-burning-tokens/) |
+| 2026-10-05 | New page: [Recommended settings](/setup/recommended-settings/) |
+| 2026-10-05 | New page: [Connecting business tools through MCP](/setup/connecting-business-tools-through-mcp/) |
+| 2026-10-05 | New page: [n8n](/setup/n8n/) |
+| 2026-10-05 | New page: [Cursor and AI app builders](/setup/cursor-and-app-builders/) |
+| 2026-10-05 | New page: [Claude Code in depth](/setup/claude-code-in-depth/) |
+| 2026-10-05 | New page: [Claude.ai, Claude Code and the Claude API](/setup/claude-surfaces/) |
+| 2026-10-05 | New page: [Supabase](/setup/supabase/) |
+| 2026-10-05 | New page: [Vercel](/setup/vercel/) |
+| 2026-10-05 | New page: [Git and GitHub for a team of one](/setup/git-and-github-for-one/) |
+| 2026-10-05 | New page: [Terminal basics](/setup/terminal-basics/) |
+| 2026-10-02 | New page: [How to judge a new model](/models/how-to-judge-a-new-model/) |
+| 2026-10-02 | New page: [Data terms at a glance](/models/data-terms-at-a-glance/) |
+| 2026-10-02 | New page: [Open-weight options](/models/open-weight-options/) |
+| 2026-10-02 | New page: [Qwen and other labs](/models/qwen-and-other-labs/) |
+| 2026-10-02 | New page: [DeepSeek](/models/deepseek/) |
+| 2026-10-02 | New page: [Mistral AI](/models/mistral/) |
+| 2026-10-02 | New page: [Meta](/models/meta/) |
+| 2026-10-02 | New page: [xAI](/models/xai/) |
+| 2026-10-02 | New page: [Google](/models/google/) |
+| 2026-10-02 | New page: [OpenAI](/models/openai/) |
+| 2026-10-02 | New page: [Anthropic](/models/anthropic/) |
+| 2026-10-02 | New page: [Model tiers](/models/model-tiers/) |
 | 2026-10-02 | New page: [One question through every layer](/map/one-question-through-every-layer/) |
 | 2026-10-02 | New page: [Interfaces](/map/interfaces/) |
 | 2026-10-02 | New page: [Observability and evals](/map/observability-and-evals/) |

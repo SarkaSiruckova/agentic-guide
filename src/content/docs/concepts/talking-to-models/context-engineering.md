@@ -4,7 +4,10 @@ description: Choosing what goes into a model's context window so it has what it 
 tags: [prompting, agents]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Tools, memory, skills, connections and subagents all end the same way: as text placed in front of the model. Context engineering is the craft of deciding which of it goes in at each step, so the driver sees the road ahead and not every map in the glovebox.
 
 **In one line:** context engineering is deciding what goes into the model's context window at each step, so it has what it needs and little else.
 
@@ -98,3 +101,7 @@ The most common mistake is treating a bigger window as the fix. Choosing well be
 - **Context engineering:** choosing and maintaining everything a model sees
 - **Context layer:** the sources and logic that assemble the right information for each question
 - **Selection:** fetching only the material that is relevant to the question
+
+## Next up
+
+A well-built car still needs maps and road knowledge to get anywhere useful. For an agent, that is your data, and the next chapter starts with the most basic split in it: [structured vs unstructured data](/concepts/data/structured-vs-unstructured-data/).

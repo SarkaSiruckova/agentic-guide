@@ -4,7 +4,10 @@ description: How a model first learns language from huge amounts of text, then g
 tags: [foundations]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+The basics ended with why models sometimes make things up, and how grounding them in real sources helps. This chapter opens the bonnet to see how the engine itself is built, starting with how a model learns in the first place.
 
 **In one line:** pre-training is where a model learns language and general knowledge by predicting text, and post-training is where that raw model is shaped into a helpful, safer assistant.
 
@@ -29,7 +32,7 @@ The result is a **base model**. It is good at continuing text, but it is not an 
 - **Instruction tuning.** The model is trained on example conversations: a request, then a good reply. This teaches it to follow instructions and answer in a useful format.
 - **Preference training.** People (or sometimes other AI models) compare pairs of answers and say which is better. The model is then trained towards the answers that win. When humans give the judgements, this is called RLHF (reinforcement learning from human feedback).
 - **Safety training.** The model is trained to decline some requests and handle sensitive topics carefully.
-- **Reasoning training.** For [reasoning models](/concepts/how-models-work/reasoning-models/), the model also practises on problems with checkable answers, such as maths or code, and is rewarded when it gets them right.
+- **Reasoning training.** For [reasoning models](/concepts/how-models-work/reasoning-models/) (models that work through a problem step by step before answering, covered later in this chapter), the model also practises on problems with checkable answers, such as maths or code, and is rewarded when it gets them right.
 
 The original published RLHF recipe, from OpenAI's InstructGPT research, followed this pattern: example answers from human labellers, then a model trained on human rankings of outputs, then further training towards the preferred answers. A notable result was that people preferred a much smaller post-trained model to a far larger base model.
 
@@ -49,7 +52,7 @@ flowchart TD
 
 You mostly meet the end of the pipeline. Providers release models with names and sizes, and you pick one for the job. You rarely see a base model, because it is awkward to use directly.
 
-Pre-training is what sets the **knowledge cutoff**: the point after which the model has seen almost nothing. Anything newer has to arrive some other way, such as a web search [tool](/concepts/agents/tool-use/) or documents you supply (see [hallucination and grounding](/concepts/how-models-work/hallucination-and-grounding/)).
+Pre-training is what sets the **knowledge cutoff**: the point after which the model has seen almost nothing. Anything newer has to arrive some other way, such as a web search [tool](/concepts/agents/tool-use/) (software the model can call to do something, covered in chapter 3) or documents you supply (see [hallucination and grounding](/concepts/how-models-work/hallucination-and-grounding/)).
 
 Post-training is what you notice day to day: the polite tone, the refusals, the habit of writing a tidy summary. Different providers' models feel different largely because their post-training differs.
 
@@ -96,3 +99,7 @@ A common mistake is assuming a model "learns" from your chat. Normally it does n
 - **Safety training:** post-training that teaches a model what to decline and how to handle risk
 - **Knowledge cutoff:** the date after which the model has seen almost no training text
 - **Sycophancy:** a model's tendency to agree with or flatter the user
+
+## Next up
+
+Training leaves a model as a vast set of fixed numbers, plus a few settings you can still turn each time you use it. [Parameters and temperature](/concepts/how-models-work/parameters-and-temperature/) explains both, and why they are so often mixed up.

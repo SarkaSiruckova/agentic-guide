@@ -4,7 +4,10 @@ description: Tools that connect triggers, steps and apps into workflows, from no
 tags: [automation, tools]
 lastReviewed: 2026-10-02
 snapshot: true
+published: 2026-10-02
 ---
+
+A trigger only answers the question of when a job starts. Orchestration tools handle what comes after: running the steps in order across your apps, and keeping a record of every run.
 
 **In one line:** an orchestration tool is software that runs a series of steps across your apps in the right order, starting from a trigger and handling the schedule, retries and record-keeping for you.
 
@@ -116,3 +119,7 @@ The common mistake is building one flow that does everything, with broad access 
 - **Workflow engine:** developer software that runs coded workflows reliably, resuming after failures
 - **Self-hosting:** running software on your own servers instead of the vendor's cloud
 - **Fair-code:** source-visible software with licence limits on commercial use
+
+## Next up
+
+Every step in a flow is a call to another system, and some of those calls will fail. [Rate limits, retries and failures](/concepts/running-things/rate-limits-retries-and-failures/) explains how to recover without making things worse.

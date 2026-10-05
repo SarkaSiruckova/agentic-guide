@@ -6,7 +6,10 @@ lastReviewed: 2026-10-02
 snapshot: true
 sidebar:
   order: 10
+published: 2026-10-02
 ---
+
+Once an agent runs with its own keys and access, the next need is seeing what it did. This layer is the tooling built around two ideas from running agents for real: recording each run and testing the results.
 
 **In one line:** this layer is the set of tools that record what your agents did (observability) and check whether they do their job well (evals), so you can fix problems instead of guessing at them.
 
@@ -110,3 +113,7 @@ Sample Ventures, the fictional fund, has an assistant that answers questions abo
 - **OpenTelemetry:** an open standard for collecting traces, metrics and logs
 - **Alert:** an automatic warning when a measure goes outside normal range
 - **Self-hosting:** running software on your own servers instead of the vendor's cloud
+
+## Next up
+
+Everything so far sits out of sight. [Interfaces](/map/interfaces/) covers the one layer people actually see: where they meet the agent.

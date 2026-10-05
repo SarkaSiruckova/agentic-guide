@@ -4,7 +4,10 @@ description: The data protection rules that apply when personal data flows throu
 tags: [security, data]
 lastReviewed: 2026-10-02
 snapshot: true
+published: 2026-10-02
 ---
+
+Security keeps data away from the wrong people. Data protection law asks a further question, whether you should hold information about people at all, for how long, and who handles it for you, and this page closes the security chapter with those rules as they apply to AI tools.
 
 **In one line:** data protection law says you may use information about people only for good reasons, keep it only as long as needed, protect it, and have a written contract with any vendor who handles it for you, and AI tools do not change that.
 
@@ -150,3 +153,7 @@ The result is a short file: the signed DPA, the DPIA, and a one-page map of wher
 - **Special category data:** sensitive personal data such as health, beliefs or ethnic origin
 - **Restricted transfer:** sending personal data to a country outside the UK
 - **ICO:** the UK regulator for data protection
+
+## Next up
+
+With the locks fitted and the paperwork in order, the remaining practical question is what all of this costs to run. Chapter 7 starts with the fuel bill: [how AI pricing works](/concepts/cost/how-ai-pricing-works/).

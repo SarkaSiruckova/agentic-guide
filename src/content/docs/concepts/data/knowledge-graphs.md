@@ -4,7 +4,10 @@ description: A way of storing facts as things joined by labelled relationships, 
 tags: [data]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Tables answer "list all X" and retrieval answers "what did the documents say". Some questions are about how people and companies are connected, and a knowledge graph is built for those.
 
 **In one line:** a knowledge graph stores facts as things (people, companies, funds) joined by labelled relationships (works at, founded, invested in), so you can follow the connections to answer questions like "how are these two people linked?"
 
@@ -116,3 +119,7 @@ A rule of thumb: counting and listing suit tables, connecting suits a graph. For
 - **Node:** a thing in a graph, such as a person, company or fund
 - **Ontology:** the agreed list of node types and relationship types in a graph
 - **Triple:** one fact written as thing, relationship, thing
+
+## Next up
+
+A graph falls apart if one company appears twice under different names. [Entity resolution](/concepts/data/entity-resolution/) is how software decides that different records describe the same thing.

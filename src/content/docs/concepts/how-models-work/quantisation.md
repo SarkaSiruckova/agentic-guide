@@ -4,7 +4,10 @@ description: Storing a model's numbers with fewer bits so it needs less memory a
 tags: [foundations, infrastructure]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Open-weight models can be downloaded and run on your own hardware, but large ones need a lot of memory. Quantisation is the common way to make them fit.
 
 **In one line:** quantisation shrinks a model by storing its numbers with less precision, like compressing a photo, so it fits in less memory and runs on smaller hardware, usually with a small loss in quality.
 
@@ -70,7 +73,7 @@ This is a tiny [eval](/concepts/agents/evals/): a handful of real cases, checked
 - **Savings are approximate.** Working memory for long conversations is extra.
 - **Quality varies by model.** Some models compress well and others do not. A general rule is a guide, not a promise.
 - **Hosted versions may differ from the original.** The same model name at two providers may not behave the same.
-- **Common mistake.** Judging a model from a leaderboard score, then running a more compressed version of it and expecting the same results. Test the exact version you will use.
+- **Common mistake.** Judging a model from a leaderboard score (its rank in a public table of test results, covered on the next page), then running a more compressed version of it and expecting the same results. Test the exact version you will use.
 - **Not a fix for capability.** A quantised small model is still a small model.
 
 ## Often confused with
@@ -94,3 +97,7 @@ This is a tiny [eval](/concepts/agents/evals/): a handful of real cases, checked
 - **Full precision:** the original, higher bit format a model was trained or shared in
 - **4 bit / 8 bit:** common quantisation levels, using that many bits per weight
 - **Quantised model:** a model whose weights have been stored at lower precision
+
+## Next up
+
+Shrinking a model, or choosing between several, raises the question of how to tell which one is good enough. [Benchmarks](/concepts/how-models-work/benchmarks/) covers the public tests used to compare models, and how far to trust them.

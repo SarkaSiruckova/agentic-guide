@@ -4,7 +4,10 @@ description: How to choose between changing the instructions, supplying document
 tags: [foundations, data]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+With RAG known, there are three ways to give a model knowledge or change how it responds: change the prompt, change what it reads, or change the model itself. This page is about choosing between them.
 
 **In one line:** prompting changes what you ask, RAG changes what the model reads, and fine-tuning changes the model itself, so the sensible order is to try them in that order and fine-tune only when the first two cannot fix the problem.
 
@@ -45,7 +48,7 @@ There are two broad ways to do it:
 **What you need before you start:**
 
 - **Good example data.** Hundreds or more of correct, consistent input and output pairs. Mistakes and inconsistencies in the examples are copied faithfully.
-- **A way to measure.** Without [evals](/concepts/agents/evals/), you cannot tell whether the fine-tuned model is better than a well-prompted base model. Measure before and after.
+- **A way to measure.** Without [evals](/concepts/agents/evals/) (repeatable tests that score a model's answers, covered in chapter 5), you cannot tell whether the fine-tuned model is better than a well-prompted base model. Measure before and after.
 - **Upkeep.** A fine-tune is tied to the base model it was trained on. When that model is retired or replaced, the work usually has to be redone.
 
 **Privacy.** Your training examples have to go somewhere: to the provider that runs the training, or to your own training setup. Check what the provider does with the data (retention, whether it is used for anything else) before you upload anything sensitive. See [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/).
@@ -119,3 +122,7 @@ Two years later the fund logs thousands of emails a month across several teams, 
 - **Full fine-tuning:** updating all of a model's parameters during further training
 - **LoRA:** a lightweight fine-tuning method that trains small adapters instead of the whole model
 - **Training data:** the example inputs and desired outputs used to fine-tune a model
+
+## Next up
+
+Retrieval finds passages, but some questions are about how people and companies connect rather than what a document says. [Knowledge graphs](/concepts/data/knowledge-graphs/) are built for those.

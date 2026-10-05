@@ -6,7 +6,10 @@ lastReviewed: 2026-10-02
 snapshot: true
 sidebar:
   order: 6
+published: 2026-10-02
 ---
+
+App hosting runs your code; this layer holds the data that code works with. It is the physical side of [types of databases](/concepts/data/types-of-databases/) and the context layer: the maps and road knowledge an agent finds its way by.
 
 **In one line:** databases and storage are the places your information is kept, and the first job of any agent setup is to decide which place is the original and which are only copies built for searching.
 
@@ -113,3 +116,7 @@ Sample Ventures wants an assistant that can answer questions about companies, pe
 - **Graph database:** a database built around things and the links between them
 - **Object storage:** cloud storage for whole files, held in buckets or containers
 - **Backup:** a saved copy of data you can restore after a loss
+
+## Next up
+
+Most of that data sits in systems you already own, such as the CRM and SharePoint. [Connectors and integrations](/map/connectors-and-integrations/) covers how an agent reaches them.

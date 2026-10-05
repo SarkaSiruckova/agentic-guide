@@ -4,7 +4,10 @@ description: How information goes stale as copies drift from the original, and t
 tags: [data]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+A map is only useful if the roads on it still exist. Clean, matched records go out of date too, and this page covers how to keep what an agent reads in step with the system where the information really lives.
 
 **In one line:** keeping data fresh means making sure that what an agent reads is still true in the system where the information actually lives.
 
@@ -53,7 +56,7 @@ Some habits matter more than the choice of method:
 - **Decide the source of truth** for each fact, and write it down. Without it, two systems can overwrite each other.
 - **Show "last updated" in answers.** If the agent says "Acme Payments is at seed stage (CRM record, updated 28 September)", a reader can judge how far to trust it.
 - **Cache sensibly.** A cache is a short-lived copy kept to avoid asking the source repeatedly. Give it an expiry that fits the fact: minutes for a deal stage, days for a company description.
-- **Make refreshes visible.** If a nightly job fails, someone should find out before the agent starts giving week-old answers. This is where [observability](/concepts/agents/observability/) helps.
+- **Make refreshes visible.** If a nightly job fails, someone should find out before the agent starts giving week-old answers. This is where [observability](/concepts/agents/observability/) (keeping a record of what your jobs and agents actually did, covered in chapter 5) helps.
 - **Prefer reading live for small, important facts,** and copies for bulk search.
 
 How an agent gets live access, and what it needs to sign in, is covered in [APIs, OAuth and API keys](/concepts/data/apis-oauth-and-api-keys/).
@@ -103,3 +106,7 @@ The most common mistake is building a copy and forgetting that it is one. Name e
 - **Source of truth:** the system officially considered right about a fact
 - **Stale data:** a copy that no longer matches its source
 - **Webhook:** a message one system sends to another when something happens
+
+## Next up
+
+Current data still has to reach only the right people. [Permissions and access control](/concepts/data/permissions-and-access-control/) covers how to make sure an agent shows each person only what they are allowed to see.

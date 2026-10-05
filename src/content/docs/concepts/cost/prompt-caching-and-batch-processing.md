@@ -4,7 +4,10 @@ description: "Two ways providers let you pay less: reusing the already processed
 tags: [cost]
 lastReviewed: 2026-10-02
 snapshot: true
+published: 2026-10-02
 ---
+
+The rate per token is set by the provider, but how many full-price tokens you pay for is partly up to you. This page covers the two main discounts: reusing a repeated start of a prompt, and sending work that can wait in bulk.
 
 **In one line:** prompt caching makes repeated text at the start of your requests cheaper and faster, and batch processing makes non-urgent work cheaper by accepting the results later.
 
@@ -126,3 +129,7 @@ The cache figures ignore the one-off cost of writing the cache, which is small. 
 - **Cache write:** storing the processed start of a prompt for later reuse
 - **Time to live (TTL):** how long a cache entry lasts before it expires
 - **Batch processing:** submitting many non-urgent requests together for a lower price
+
+## Next up
+
+Caching and batching make the same model cheaper. The other big lever is using a cheaper model for the jobs that do not need a strong one, which is [model routing](/concepts/cost/model-routing/).

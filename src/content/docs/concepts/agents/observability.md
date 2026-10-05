@@ -4,7 +4,10 @@ description: Being able to see what an agent actually did, step by step, so you 
 tags: [agents, infrastructure]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Once an agent runs unattended, on schedules and through retries, nobody is watching it work. Observability is the dashboard gauges and the trip recorder: the record that shows afterwards what it saw, decided and did.
 
 **In one line:** observability is being able to look back at exactly what an agent saw, decided and did on a run, round by round, so you can explain why it behaved as it did.
 
@@ -16,7 +19,7 @@ Without a record, you are guessing. Was the instruction unclear? Did a search re
 
 <mark>If you cannot see what an agent did, you cannot fix it, price it or explain it.</mark>
 
-A record helps in four ways: debugging odd behaviour, understanding where the cost goes, proving what happened when someone asks, and turning real failures into test cases for your [evals](/concepts/agents/evals/).
+A record helps in four ways: debugging odd behaviour, understanding where the cost goes, proving what happened when someone asks, and turning real failures into test cases for your [evals](/concepts/agents/evals/) (repeatable tests of an AI system, covered on the next page).
 
 ## How it works
 
@@ -58,7 +61,7 @@ You do not need to log everything forever. Decide three things up front:
 2. **How long to keep it.** Keep traces long enough to debug and learn from, then delete them.
 3. **Who can see them.** Not everyone who uses the agent should read every trace.
 
-This matters because a trace contains whatever the agent saw. If the agent read an investor's email or a confidential data room file, the trace now holds a copy. Logs deserve the same [access control](/concepts/data/permissions-and-access-control/) as the source data. Where you can, redact (blank out) personal details before they are stored. Rules on personal data (such as GDPR) and audit trails get their own pages later.
+This matters because a trace contains whatever the agent saw. If the agent read an investor's email or a confidential data room file, the trace now holds a copy. Logs deserve the same [access control](/concepts/data/permissions-and-access-control/) as the source data. Where you can, redact (blank out) personal details before they are stored. Rules on personal data (such as GDPR, the data protection law in the UK and EU) and audit trails get their own pages later.
 
 ## Worked example
 
@@ -109,3 +112,7 @@ The most common mistake is adding observability after the first serious incident
 - **Retention:** how long records are kept before deletion
 - **Span:** one step inside a trace, such as a model call or tool call
 - **Trace:** the full step-by-step record of one agent run
+
+## Next up
+
+A record of real runs shows what went wrong once. [Evals](/concepts/agents/evals/) turn those failures into repeatable tests, so every change can be checked before it reaches real users.

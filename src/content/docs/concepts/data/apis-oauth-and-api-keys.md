@@ -4,7 +4,10 @@ description: How software asks other systems for data, and how it proves who it 
 tags: [data, security]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Data sits in databases and business tools, behind a login. This page covers how software asks those systems for data, and how it proves who it is and what it may do.
 
 **In one line:** an API is a defined way for one program to ask another system for things, and API keys and OAuth are the two main ways the program proves who it is and what it is allowed to do.
 
@@ -126,3 +129,7 @@ The most common mistake is pasting a key into a place that is shared, such as a 
 - **Rate limit:** a cap on how many requests are allowed in a given time
 - **Refresh token:** a longer-lived credential used to get new access tokens
 - **Scope:** a specific permission an app asks for, such as read files
+
+## Next up
+
+With a way in, a model still has to turn a plain question into a request the system understands. [How LLMs talk to databases](/concepts/data/how-llms-talk-to-databases/) covers the common patterns and how to keep each one safe.

@@ -4,7 +4,10 @@ description: Why models state false things with confidence, and how giving them 
 tags: [foundations]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Good prompts and system prompts shape how a model answers, but they cannot give it facts it was never shown. This page explains what happens when a model fills that gap anyway, and how real sources keep it honest.
 
 **In one line:** hallucination is when a model states something false with confidence, and grounding is giving it real source material to answer from, so its answers can be checked.
 
@@ -63,7 +66,7 @@ Someone at Sample Ventures, the fictional fund, asks: "What was Acme Payments' r
 
 **Without grounding,** a plain assistant has no data on this company. It may produce a confident figure, such as "around £1.2m", that is invented.
 
-**With grounding,** an agent searches the CRM and the data room files. It finds the accounts and answers: "£1.4m, according to the 2025 accounts (file: Acme-accounts-2025, page 3)." A person can open the file and confirm in a few seconds.
+**With grounding,** an agent searches the CRM and the data room files (the shared folder a startup gives investors during a deal). It finds the accounts and answers: "£1.4m, according to the 2025 accounts (file: Acme-accounts-2025, page 3)." A person can open the file and confirm in a few seconds.
 
 If the agent finds nothing, the right answer is "I couldn't find revenue figures for Acme Payments in the CRM or the data room." That is a useful answer. Models give it far more often when they have been told it is allowed.
 
@@ -96,3 +99,7 @@ The most common mistake is trusting an answer because it reads well. Check the s
 - **Grounding:** giving a model real source material to answer from
 - **Hallucination:** a confident statement from a model that is false or invented
 - **Retrieval:** fetching the relevant passages from a larger collection
+
+## Next up
+
+That completes the basics. Chapter 2 looks under the bonnet, starting with how a model learns everything it knows in the first place: [Pre-training and post-training](/concepts/how-models-work/pre-training-and-post-training/).

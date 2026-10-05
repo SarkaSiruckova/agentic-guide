@@ -4,7 +4,10 @@ description: How to write instructions that get a model to do what you actually 
 tags: [prompting]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+A model can only use what is in its context window, so the words you put there matter a great deal. A prompt is the set of directions you hand the driver, and this page is about giving clear ones.
 
 **In one line:** prompt engineering is writing the instructions and background you give a model so that it does what you actually want.
 
@@ -96,7 +99,7 @@ The second version states the goal, the task, the format and the rule for missin
 - **Longer prompts cost more.** A prompt is read again on every request. Keep it as short as it can be while still being clear.
 - **Too many rules backfire.** A long list of instructions, some pulling against each other, can confuse the model.
 - **Prompts can be fragile.** A wording that works well with one model may behave differently with another, so re-test after a switch.
-- **A good prompt doesn't make facts true.** The model can still [hallucinate](/concepts/how-models-work/hallucination-and-grounding/). Asking for sources helps, but it doesn't remove the risk.
+- **A good prompt doesn't make facts true.** The model can still [hallucinate](/concepts/how-models-work/hallucination-and-grounding/) (state something false with complete confidence). Asking for sources helps, but it doesn't remove the risk.
 - **There are no magic phrases.** Clear and specific beats clever.
 
 The most common mistake is writing a vague request and then blaming the model for a vague answer.
@@ -122,3 +125,7 @@ The most common mistake is writing a vague request and then blaming the model fo
 - **Prompt engineering:** writing prompts so a model does what you intended
 - **Prompt template:** a saved prompt with blanks to fill in
 - **Zero-shot prompting:** asking with no examples
+
+## Next up
+
+Some directions apply to every trip, not just one. [System prompts](/concepts/talking-to-models/system-prompts/) covers the standing instructions a model receives before any conversation starts.

@@ -4,7 +4,10 @@ description: What happens when a trained model produces an answer, and why repli
 tags: [foundations, infrastructure]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+A trained model is an engine on a workbench until someone runs it. Inference is that running: what happens, step by step, each time a model reads a prompt and writes a reply.
 
 **In one line:** inference is the model doing its job, reading your prompt and writing a reply one token at a time, as opposed to training, which is how the model was built in the first place.
 
@@ -62,7 +65,7 @@ Inference runs in one of three places:
 
 - **A provider's servers, through an API.** You send text and get text back. The provider owns the chips. Examples are the main model labs' own APIs.
 - **A cloud platform.** The big cloud companies host models from several labs inside your existing cloud account, which can simplify billing and data controls.
-- **Your own hardware.** Common with [open-weight models](/concepts/how-models-work/open-vs-closed-weights/). You own the chips and the upkeep, and you keep the data in-house.
+- **Your own hardware.** Common with [open-weight models](/concepts/how-models-work/open-vs-closed-weights/) (models whose learned numbers anyone can download and run, covered later in this chapter). You own the chips and the upkeep, and you keep the data in-house.
 
 Cost normally follows tokens: you pay for what goes in and what comes out. See [how AI pricing works](/concepts/cost/how-ai-pricing-works/).
 
@@ -118,3 +121,7 @@ If this is slow every day, the options are: send only the relevant sections inst
 - **Streaming:** sending the reply to you piece by piece as it is produced
 - **Time to first token:** the wait between sending a prompt and the first piece of reply
 - **Tokens per second:** how fast the model generates its reply once it has started
+
+## Next up
+
+Inference turns text into more text, but some jobs need text turned into something software can compare and search. [Embeddings](/concepts/how-models-work/embeddings/) shows how meaning becomes a list of numbers.

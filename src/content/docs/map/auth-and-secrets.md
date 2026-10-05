@@ -6,7 +6,10 @@ lastReviewed: 2026-10-02
 snapshot: true
 sidebar:
   order: 9
+published: 2026-10-02
 ---
+
+Every layer so far makes calls into some other system, and each call has to prove it is allowed. This layer holds the keys: the identities, sign-ins and secrets behind every connection, the practical side of [permissions and access control](/concepts/data/permissions-and-access-control/).
 
 **In one line:** this layer decides who or what is allowed into each system, and keeps the keys and sign-ins that prove it somewhere safe, instead of scattered through files and chats.
 
@@ -126,3 +129,7 @@ Sample Ventures, the fictional fund, wants an agent that reads the data room fol
 - **Application permission:** access that lets an app act on its own, without a person
 - **Secrets store:** a protected service that holds keys and passwords and hands them out on request
 - **Rotation:** replacing a key or secret with a new one on a regular basis
+
+## Next up
+
+Keys decide what an agent may do. [Observability and evals](/map/observability-and-evals/) covers how you see what it actually did, and test whether it did it well.

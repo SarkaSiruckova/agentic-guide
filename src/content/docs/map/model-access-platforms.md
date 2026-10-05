@@ -6,7 +6,10 @@ lastReviewed: 2026-10-02
 snapshot: true
 sidebar:
   order: 2
+published: 2026-10-02
 ---
+
+One layer above the chips sits the doorway to the model itself. This page covers the routes a program can take to reach a model that someone else runs on that hardware.
 
 **In one line:** a model access platform is the doorway your software uses to send text to a model and get an answer back, and there are three kinds of door: the model maker's own, a big cloud's, or a gateway that fronts many.
 
@@ -118,3 +121,7 @@ The firm never needed to decide on chips or hosting. It chose a door, and wrote 
 - **Rate limit:** a cap on requests or text per minute
 - **Model garden or catalogue:** a cloud's list of models you can choose from
 - **Data processing region:** the place where a request is actually run
+
+## Next up
+
+Those doors mostly lead to models run by their makers. [Open-model hosting](/map/open-model-hosting/) covers the other case: a model anyone can download, and the question of who runs it.

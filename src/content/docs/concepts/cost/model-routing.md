@@ -4,7 +4,10 @@ description: Sending each job to the cheapest model that can do it well, and to 
 tags: [cost, agents]
 lastReviewed: 2026-10-02
 snapshot: true
+published: 2026-10-02
 ---
+
+Discounts make each token cheaper, but the biggest price difference is between the models themselves. Model routing is the habit of matching each job to the cheapest model that can do it well.
 
 **In one line:** model routing means using different models for different jobs or steps, so easy work goes to a small, cheap, fast model and hard work goes to a stronger, costlier one.
 
@@ -108,3 +111,7 @@ The most common mistake is adding routing on day one. Start with one good-enough
 - **Fallback:** a backup model used when the first choice fails or is unavailable
 - **Gateway:** a service giving one doorway to many models, often with routing built in
 - **Load balancing:** spreading identical requests across several copies of a model or provider
+
+## Next up
+
+Pricing, discounts and routing each change one part of the bill. [Estimating cost per task](/concepts/cost/estimating-cost-per-task/) puts them together into one figure for a finished job, before you build anything.

@@ -4,7 +4,10 @@ description: Tests for AI systems that show whether a change made things better 
 tags: [agents]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Traces show what an agent did on real runs. Evals are its MOT, the regular roadworthiness check: the same set of checks, run after every change, so a tweak that quietly breaks something is caught before the agent goes back on the road.
 
 **In one line:** an eval is a test for an AI system: a set of example inputs with a clear idea of what a good result looks like, run again every time you change something, so you can see whether things got better or worse.
 
@@ -106,3 +109,7 @@ The most common mistake is skipping evals until something goes wrong in front of
 - **LLM as judge:** using a second model to mark another model's output
 - **Regression:** something that used to work breaks after a change
 - **Rubric:** a short checklist used to mark a result
+
+## Next up
+
+An agent that is tested and runs reliably can still be tricked by what it reads. Chapter 6 turns to the locks and alarm, starting with [prompt injection](/concepts/security/prompt-injection/): instructions hidden in the text an agent takes in.

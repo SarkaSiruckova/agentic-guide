@@ -4,7 +4,10 @@ description: Models that can work with more than text, such as images, audio, vi
 tags: [foundations]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Models are usually described as working on text, but much real material arrives as charts, scans and recordings. This page explains how some models take those in as well, and where they slip.
 
 **In one line:** a multimodal model can take in, and sometimes produce, more than one kind of material (a modality), such as text, images, audio or video, instead of text alone.
 
@@ -12,7 +15,7 @@ snapshot: false
 
 Much business information is not plain text. Pitch decks are full of charts. Contracts arrive as scans. Calls are audio. Screenshots show what an error message said.
 
-A text-only model cannot see any of that. A multimodal model can, so you can hand it the material as it exists rather than retyping it. For a context layer, this decides whether a pile of PDFs, slides and recordings is usable at all.
+A text-only model cannot see any of that. A multimodal model can, so you can hand it the material as it exists rather than retyping it. For a context layer (the organised store of company data that agents draw on, covered in chapter 4), this decides whether a pile of PDFs, slides and recordings is usable at all.
 
 <mark>A multimodal model reads an image the way it reads text, by prediction, so it can misread a chart or a number and still sound sure.</mark>
 
@@ -97,3 +100,7 @@ The model saved time finding the data. The check against the source caught the e
 - **Output modality:** a kind of material a model can produce
 - **OCR:** software that turns a picture of text into editable text
 - **Transcription:** turning speech in audio into written text
+
+## Next up
+
+Whatever a model can read, someone has to run it. [Open vs closed weights](/concepts/how-models-work/open-vs-closed-weights/) looks at who holds the model itself, and what that means for control, cost and privacy.

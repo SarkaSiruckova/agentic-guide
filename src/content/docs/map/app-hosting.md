@@ -6,7 +6,10 @@ lastReviewed: 2026-10-02
 snapshot: true
 sidebar:
   order: 5
+published: 2026-10-02
 ---
+
+With the models covered, the map moves to your own code: the glue that receives a request, calls a model and returns a result. This layer is where that code runs, and it is the practical home of [serverless functions](/concepts/running-things/serverless-functions/) and scheduled jobs.
 
 **In one line:** app hosting is the layer that keeps your own code running on someone else's computers, so a website, an API or a scheduled agent job works without you leaving a laptop switched on.
 
@@ -119,3 +122,7 @@ Sample Ventures wants a small internal assistant that answers questions about th
 - **Cold start:** the extra delay when idle code has to wake up
 - **Region:** the geographic location of the data centres where your app runs
 - **Custom domain:** your own web address pointing at a hosted app
+
+## Next up
+
+Your code reads and writes data, and that data needs a home of its own. [Databases and storage](/map/databases-and-storage/) covers where it sits.

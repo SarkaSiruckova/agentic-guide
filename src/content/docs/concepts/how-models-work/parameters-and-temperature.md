@@ -4,7 +4,10 @@ description: "Two different things often mentioned together: the numbers inside 
 tags: [foundations]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Training gives a model its knowledge and habits, stored as an enormous set of numbers. This page covers those numbers, and temperature, the main dial you can turn each time you use the model.
 
 **In one line:** parameters are the learned numbers inside a model that make up its size, while temperature is a setting you can sometimes change to make its answers more predictable or more varied.
 
@@ -24,11 +27,11 @@ Mixing them up leads to two common errors: treating a bigger parameter count as 
 
 A model is, at heart, a very large collection of numbers. Training adjusts these numbers until the model gets good at predicting text. After training they are fixed. The proper term for each of these numbers is a **parameter**, and together they are sometimes called the model's **weights**.
 
-Parameter counts are quoted in billions. More parameters usually means a model can store more patterns and handle harder tasks. It also means more memory, slower [inference](/concepts/how-models-work/inference/) and higher cost.
+Parameter counts are quoted in billions. More parameters usually means a model can store more patterns and handle harder tasks. It also means more memory, slower [inference](/concepts/how-models-work/inference/) (the model producing a reply, covered on the next page) and higher cost.
 
 But the count is a rough size indicator, not a quality score. A newer, smaller model can beat an older, larger one, because quality also depends on the training data, the training method and the later tuning (see [pre-training and post-training](/concepts/how-models-work/pre-training-and-post-training/)). Many providers do not publish the parameter counts of their main models at all.
 
-**The word collision.** In [tool use](/concepts/agents/tool-use/), "parameters" means something else: the inputs a tool needs, such as a company name. Same word, unrelated idea. When you read it, ask whether it describes the model's inner numbers or a tool's inputs.
+**The word collision.** In [tool use](/concepts/agents/tool-use/) (letting the model call other software, covered in chapter 3), "parameters" means something else: the inputs a tool needs, such as a company name. Same word, unrelated idea. When you read it, ask whether it describes the model's inner numbers or a tool's inputs.
 
 ### Temperature and sampling
 
@@ -61,7 +64,7 @@ flowchart TD
 
 - **Not a truthfulness dial.** A low setting makes the model repeat its most likely answer, and its most likely answer can be wrong. It does not stop [hallucination](/concepts/how-models-work/hallucination-and-grounding/). Giving the model the right source material does far more.
 - **Not a creativity dial.** Higher temperature adds variety, which can look like creativity, but also adds mistakes and rambling. Good creative output comes mainly from the prompt and the model.
-- **Not a guarantee of identical output.** Even at the lowest setting, running the same request twice may give slightly different answers. Provider documentation says so plainly. If you need exact repeatability, do not depend on temperature. Use [structured outputs](/concepts/talking-to-models/structured-outputs/) and check the results.
+- **Not a guarantee of identical output.** Even at the lowest setting, running the same request twice may give slightly different answers. Provider documentation says so plainly. If you need exact repeatability, do not depend on temperature. Use [structured outputs](/concepts/talking-to-models/structured-outputs/) (asking for answers in a fixed, machine-readable shape, covered in chapter 3) and check the results.
 
 ## In practice
 
@@ -69,13 +72,13 @@ Most chat assistants set these for you and hide them. They appear when you build
 
 Typical habits: low temperature for extraction, classification and anything where you want the same answer each time. Higher for brainstorming, drafting alternatives and wording variety. Middle values for everyday chat.
 
-**Newer models may not let you change them.** Some providers' documentation says that certain models, especially [reasoning models](/concepts/how-models-work/reasoning-models/), restrict or ignore these sampling settings. On some, sending a non-default value returns an error. The thinking process is managed by the provider, and the control you get instead is often a setting for how much effort the model puts into thinking. Always check the documentation for the specific model before building around a temperature value.
+**Newer models may not let you change them.** Some providers' documentation says that certain models, especially [reasoning models](/concepts/how-models-work/reasoning-models/) (models that think step by step before answering, covered later in this chapter), restrict or ignore these sampling settings. On some, sending a non-default value returns an error. The thinking process is managed by the provider, and the control you get instead is often a setting for how much effort the model puts into thinking. Always check the documentation for the specific model before building around a temperature value.
 
 ## Worked example
 
 Sample Ventures, the fictional fund, uses a model for two small jobs.
 
-**Job 1: extracting fields from intro emails.** An automation reads each incoming intro email and pulls out the startup name, the introducer and the sector, writing them to the CRM. Here the team wants the same email to produce the same fields every time, so it uses a low temperature, asks for a fixed format, and checks that the output has all the fields. If the model does not allow changing temperature, the fixed format and checks do most of the work anyway. A low setting does not make the extraction correct, so a person reviews a sample each week, and mistakes feed into the [evals](/concepts/agents/evals/).
+**Job 1: extracting fields from intro emails.** An automation reads each incoming intro email and pulls out the startup name, the introducer and the sector, writing them to the CRM. Here the team wants the same email to produce the same fields every time, so it uses a low temperature, asks for a fixed format, and checks that the output has all the fields. If the model does not allow changing temperature, the fixed format and checks do most of the work anyway. A low setting does not make the extraction correct, so a person reviews a sample each week, and mistakes feed into the [evals](/concepts/agents/evals/) (the firm's own tests of how well the model does the job, covered in chapter 5).
 
 **Job 2: names for the annual investor day.** The operations lead wants fresh ideas. She asks for 20 names at a higher temperature so the list is varied rather than 20 versions of the same name. She runs it twice, gets 40 options, and picks three. No harm if some are silly.
 
@@ -114,3 +117,7 @@ Same model, same firm, opposite settings, because the jobs want opposite things:
 - **Top-k:** a setting that limits the choice to the k most likely tokens
 - **Top-p:** a setting that limits the choice to the most likely options adding up to a set probability
 - **Weights:** another name for a model's parameters
+
+## Next up
+
+Parameters and temperature both come into play at the moment a model writes a reply. [Inference](/concepts/how-models-work/inference/) follows a single request from the moment you send it to the last token, and shows where the time and cost go.

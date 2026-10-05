@@ -1,0 +1,29 @@
+---
+title: Agentic AI Field Guide
+description: "A plain-language guide to agentic AI, from the first idea to building real agents."
+template: splash
+hero:
+  tagline: Agentic AI in plain language, from the very first idea to building agents that work on real data.
+  actions:
+    - text: Start with chapter 1
+      link: /start-here/glossary/
+      icon: right-arrow
+---
+
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+
+This guide is for curious beginners. Every idea comes in plain words first, then its proper name, so the vocabulary builds as you go. Read the chapters in order and each one builds on the last. Or jump in anywhere: every page points back to what it relies on.
+
+<CardGrid>
+  <LinkCard title="1. The basics" description="Vocabulary, agents vs automations, what a model is." href="/start-here/glossary/" />
+  <LinkCard title="2. How models work" description="Training, inference, embeddings, reasoning." href="/concepts/how-models-work/pre-training-and-post-training/" />
+  <LinkCard title="3. How agents work" description="Tools, the agent loop, harnesses, memory, MCP." href="/concepts/talking-to-models/structured-outputs/" />
+  <LinkCard title="4. Data and the context layer" description="Databases, RAG, permissions, context layers." href="/concepts/data/structured-vs-unstructured-data/" />
+  <LinkCard title="5. Running agents for real" description="Hosting, scheduling, failures, evals." href="/concepts/running-things/serverless-functions/" />
+  <LinkCard title="6. Security and compliance" description="Prompt injection, least privilege, GDPR." href="/concepts/security/prompt-injection/" />
+  <LinkCard title="7. Cost" description="Pricing, caching, routing, budgeting." href="/concepts/cost/how-ai-pricing-works/" />
+  <LinkCard title="8. The map" description="How the whole industry stack fits together." href="/map/" />
+  <LinkCard title="9. Model landscape" description="The main model makers, compared." href="/models/" />
+  <LinkCard title="10. Setup and practice" description="Hands-on tools, from terminal to first agent." href="/setup/" />
+  <LinkCard title="11. Comms channels" description="Talking to agents in Teams, Slack and more." href="/channels/" />
+</CardGrid>

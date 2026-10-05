@@ -11,6 +11,11 @@ const guideFields = starlightTagsExtension.extend({
     .union([z.string(), z.date()])
     .transform((v) => (typeof v === 'string' ? v : v.toISOString().slice(0, 10)))
     .optional(),
+  /** Date this page was first published, e.g. 2026-10-05 */
+  published: z
+    .union([z.string(), z.date()])
+    .transform((v) => (typeof v === 'string' ? v : v.toISOString().slice(0, 10)))
+    .optional(),
   /** True for pages that describe a moment in time (models, pricing) */
   snapshot: z.boolean().default(false),
 });

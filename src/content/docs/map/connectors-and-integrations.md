@@ -6,7 +6,10 @@ lastReviewed: 2026-10-02
 snapshot: true
 sidebar:
   order: 7
+published: 2026-10-02
 ---
+
+Data sits in many systems, and an agent cannot reach any of them on its own. This layer is the set of links that let it in, the practical side of [tool use](/concepts/agents/tool-use/) and [MCP](/concepts/agents/mcp/).
 
 **In one line:** connectors and integrations are the links between an agent and the systems that hold your data, and each kind differs in who builds it, who keeps it working and what access it uses.
 
@@ -118,3 +121,7 @@ An associate asks the question. The assistant searches the CRM, looks in the dat
 - **Service account:** a non-human account that connects as the app, not a person
 - **Delegated access:** a connection acting with the permissions of a signed-in person
 - **Change notification:** Microsoft's name for webhook alerts about changed data
+
+## Next up
+
+Connectors give the agent its tools. [Agent frameworks](/map/agent-frameworks/) covers the software that runs the loop of calling them, so you do not have to write it from scratch.

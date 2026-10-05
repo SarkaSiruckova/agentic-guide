@@ -3,24 +3,35 @@ title: Glossary
 description: Every term in one line, linked to its full page.
 sidebar:
   order: 3
+published: 2026-10-02
 ---
 
-One line per term, in alphabetical order. Click through for the full explanation.
+This is the vocabulary for the whole guide, one line per term in alphabetical order. Skim it now or dip back in any time a word stops you, and click through for the full explanation.
 
 - [429](/concepts/running-things/rate-limits-retries-and-failures/): the HTTP status code meaning too many requests
+- [Abuse monitoring](/models/data-terms-at-a-glance/): checks a provider runs to catch banned uses
 - [Accelerator](/map/compute-and-cloud/): a chip built to speed up AI maths
 - [Access control](/concepts/data/permissions-and-access-control/): the system that enforces who may see and do what
 - [Access token](/concepts/data/apis-oauth-and-api-keys/): a short-lived credential an app uses to call an API
 - [Adapter](/concepts/how-models-work/fine-tuning-vs-prompting-vs-rag/): a small trained add-on layer that changes a frozen model's behaviour
+- [Adaptive Card](/channels/microsoft-teams/): a message with a set layout, inputs and buttons
+- [Adequacy decision](/models/deepseek/): an official finding that a country's data protection is equivalent
 - [Admin consent](/map/auth-and-secrets/): an administrator approving an app's permissions for the whole organisation
 - [Agent](/concepts/agents/chat-agent-workflow-automation/): a system where the model itself chooses each next step to reach a goal
 - [Agent framework](/concepts/agents/agentic-harness/): a code toolkit for building your own agent harness
 - [Agent loop](/concepts/agents/the-agent-loop/): the repeating cycle of deciding, acting and observing until the goal is met
+- [Agent SDK](/setup/claude-surfaces/): a library that packages Claude Code's agent for your own software
 - [Agentic harness](/concepts/agents/agentic-harness/): the software and settings around a model that make it an agent
+- [Agents SDK](/models/openai/): OpenAI's library for building multi-agent programs
 - [AGENTS.md](/concepts/agents/skills-and-instruction-files/): an open-format instruction file read by many coding assistants
 - [Aggregator](/map/model-access-platforms/): a hosted gateway that sells access to many providers on one account
+- [AI Agent node](/setup/n8n/): an n8n step that lets a model choose and call tools
+- [AI app builder](/setup/cursor-and-app-builders/): a website that generates and hosts a web app from a description
+- [AI code editor](/setup/cursor-and-app-builders/): a code editor with an AI assistant built in
 - [Allowlist](/concepts/security/data-exfiltration-through-tools/): a short list of approved destinations or actions, with everything else blocked
+- [Apache 2.0](/models/google/): a permissive open licence with few conditions on reuse
 - [API](/concepts/data/apis-oauth-and-api-keys/): a defined way for software to request data or actions from a system
+- [API billing](/setup/claude-surfaces/): pay-as-you-go charges based on tokens used
 - [API key](/concepts/data/apis-oauth-and-api-keys/): a secret string that identifies the calling program
 - [App hosting](/map/app-hosting/): a service that runs your code on its computers and keeps it available
 - [App registration](/map/auth-and-secrets/): a record telling an identity provider that an application exists
@@ -31,29 +42,47 @@ One line per term, in alphabetical order. Click through for the full explanation
 - [Audit trail](/concepts/security/audit-trails/): a lasting protected record of actions kept for accountability
 - [Authentication](/concepts/data/apis-oauth-and-api-keys/): proving who a person or program is
 - [Authorisation](/concepts/data/apis-oauth-and-api-keys/): deciding what an identified person or program may do
+- [Auto memory](/setup/claude-code-in-depth/): notes Claude Code writes itself between sessions
 - [Automation](/concepts/agents/chat-agent-workflow-automation/): a trigger joined to a workflow, so it runs without anyone starting it
 - [Availability zone](/map/compute-and-cloud/): a separate data centre building or group within a region
 - [Base model](/concepts/how-models-work/pre-training-and-post-training/): a pre-trained model that continues text but does not reliably follow instructions
 - [Batch processing](/concepts/cost/prompt-caching-and-batch-processing/): submitting many non-urgent requests together for a lower price
 - [Benchmark](/concepts/how-models-work/benchmarks/): a public standard test used to compare models in general
 - [Blast radius](/concepts/security/least-privilege/): how much damage one mistake or compromise can cause
+- [Block Kit](/channels/slack/): Slack's format for rich messages with buttons and layouts
+- [Bot user](/channels/slack/): an account-like identity an app uses to post in Slack
+- [BotFather](/channels/telegram/): Telegram's official bot for creating and managing bots
+- [Branch](/setup/git-and-github-for-one/): a separate line of work within a repository
 - [Cache](/concepts/data/keeping-data-fresh/): a short-lived copy kept to avoid asking the source again
 - [Cascade](/concepts/cost/model-routing/): trying a cheap model first and escalating if a check fails
 - [Chain of thought](/concepts/how-models-work/reasoning-models/): the intermediate working a model writes before its answer
 - [Chain-of-thought](/concepts/talking-to-models/prompt-engineering/): asking a model to reason step by step before it answers
 - [Change notification](/map/connectors-and-integrations/): Microsoft's name for webhook alerts about changed data
 - [Channel](/map/interfaces/): a messaging service where an agent can send and receive messages
+- [Channel bot](/channels/how-channels-connect/): software registered with a chat platform to receive and send messages
 - [Chat](/concepts/agents/chat-agent-workflow-automation/): a back-and-forth with a model where you decide each next step
+- [ChatGPT](/models/openai/): OpenAI's consumer and business chat app
+- [Checkpoint](/setup/claude-code-in-depth/): a snapshot of your files taken before each prompt
 - [Chunk](/concepts/data/rag-and-chunking/): a short piece of a document, stored and retrieved on its own
 - [Chunking](/concepts/data/rag-and-chunking/): splitting documents into pieces so retrieval can find the right part
 - [Citation](/concepts/how-models-work/hallucination-and-grounding/): a pointer from a claim back to the source it came from
 - [Classifier](/map/specialised-models/): a model that sorts an input into one of a fixed set of labels
+- [Claude Code](/setup/claude-surfaces/): Anthropic's coding agent that works in a folder on your computer
+- [Claude Console](/setup/claude-surfaces/): the web account where API keys and billing are managed
+- [CLAUDE.md](/setup/claude-code-in-depth/): a file of standing instructions Claude Code reads each session
+- [Clone](/setup/git-and-github-for-one/): making a first local copy of a remote repository
 - [Closed-weight model](/concepts/how-models-work/open-vs-closed-weights/): a model usable only through its provider's service
 - [Cloud](/map/compute-and-cloud/): computing power rented over the internet instead of owned
 - [CLOUD Act](/map/compute-and-cloud/): a US law letting authorities request data from US providers held abroad
+- [Cloud API](/channels/whatsapp/): Meta-hosted interface for sending and receiving WhatsApp messages
+- [Cloud chat](/channels/telegram/): a Telegram chat stored on Telegram's servers, not end-to-end encrypted by default
+- [Codex](/models/openai/): OpenAI's coding agent
 - [Coding assistant](/map/interfaces/): an AI tool that reads and edits code for developers
 - [Cold start](/concepts/running-things/serverless-functions/): the extra delay when a function starts after being idle
 - [Command line (CLI)](/map/interfaces/): a text-only window where you type commands
+- [Commit](/setup/git-and-github-for-one/): a saved snapshot of the project, with a message
+- [Community licence](/models/qwen-and-other-labs/): a custom licence that allows broad use but adds conditions
+- [Compaction](/setup/claude-code-in-depth/): summarising a long conversation to free up context space
 - [Concurrency](/concepts/running-things/serverless-functions/): how many runs of a function happen at the same time
 - [Connector](/concepts/data/what-a-context-layer-is/): a connection that lets software read from, or write to, a source system
 - [Constrained decoding](/concepts/talking-to-models/structured-outputs/): forcing the model's output to follow a schema as it writes
@@ -65,13 +94,18 @@ One line per term, in alphabetical order. Click through for the full explanation
 - [Controller](/concepts/security/gdpr-data-retention-and-dpas/): the organisation that decides why and how personal data is used
 - [Cosine similarity](/concepts/how-models-work/embeddings/): a score for how closely two vectors point the same way
 - [Cost per task](/concepts/cost/estimating-cost-per-task/): the full cost of one finished job, across all its calls
+- [Cowork](/setup/claude-surfaces/): Anthropic's agent mode for multi-step file and task work
 - [Credits](/concepts/cost/how-ai-pricing-works/): prepaid units that are drawn down as you use a service
 - [Cron](/concepts/running-things/triggers-and-scheduling/): a compact five-field notation for schedules
 - [Cross-encoder](/map/specialised-models/): a model that reads a question and a passage together to score them
+- [Cursor rules](/setup/cursor-and-app-builders/): standing instructions stored in a project's `.cursor/rules` folder
+- [Custom connector](/setup/connecting-business-tools-through-mcp/): a remote MCP server you add to Claude yourself
 - [Custom instructions](/concepts/talking-to-models/system-prompts/): a user-added layer on top of a product's own system prompt
+- [Customer service window](/channels/whatsapp/): 24 hours after a user messages you, when free-form replies are allowed
 - [Cypher](/concepts/data/knowledge-graphs/): a query language for graph databases, used to find paths and patterns
 - [Data exfiltration](/concepts/security/data-exfiltration-through-tools/): sensitive data leaving the place it should stay
 - [Data minimisation](/concepts/security/gdpr-data-retention-and-dpas/): using only the personal data you actually need
+- [Data processing addendum](/models/mistral/): a contract schedule setting how a supplier handles your personal data
 - [Data processing agreement (DPA)](/concepts/security/gdpr-data-retention-and-dpas/): the contract setting how a vendor may handle your personal data
 - [Data processing region](/map/model-access-platforms/): the place where a request is actually run
 - [Data residency](/map/compute-and-cloud/): the country or area where data is stored
@@ -83,12 +117,21 @@ One line per term, in alphabetical order. Click through for the full explanation
 - [Deduplication](/concepts/data/entity-resolution/): finding and removing duplicate records for the same entity
 - [Delegated access](/concepts/data/apis-oauth-and-api-keys/): acting with a user's own permissions
 - [Delegated permission](/map/auth-and-secrets/): access that lets an app act as a signed-in person
+- [Deployment Protection](/setup/vercel/): Vercel's controls over who can open your deployment addresses
+- [Deprecation](/models/model-tiers/): a provider's notice that a model will be switched off
+- [Derivative model](/models/qwen-and-other-labs/): a model built by training further on another model's weights
+- [Diff](/setup/git-and-github-for-one/): a line-by-line view of what changed
 - [Direct prompt injection](/concepts/security/prompt-injection/): a user types instructions meant to override the agent's rules
+- [Distillation](/models/deepseek/): training a smaller model to copy a larger model's behaviour
+- [DKIM](/channels/email/): a signature showing a message came from a domain and was not altered
+- [DMARC](/channels/email/): a domain's rule for mail that fails SPF and DKIM checks
 - [Document database](/concepts/data/types-of-databases/): stores flexible, self-contained records, usually as JSON
 - [Document store](/map/databases-and-storage/): a database of flexible, JSON-like records
 - [DPIA](/concepts/security/gdpr-data-retention-and-dpas/): a written risk review for higher-risk uses of personal data
+- [Draft-only step](/setup/your-first-agent/): an action that prepares output without sending or filing it
 - [Durable execution](/map/agent-frameworks/): saving progress so a long job can resume after a failure
 - [Edge](/concepts/data/knowledge-graphs/): a labelled link between two nodes, such as "founded"
+- [eDiscovery](/channels/microsoft-teams/): searching and exporting stored messages for legal or regulatory needs
 - [Effort setting](/concepts/how-models-work/reasoning-models/): a provider control for how much thinking a model should do
 - [Egress](/concepts/security/data-exfiltration-through-tools/): data or traffic leaving a system or network
 - [Embedding](/concepts/how-models-work/embeddings/): a list of numbers that represents the meaning of a piece of content
@@ -98,6 +141,7 @@ One line per term, in alphabetical order. Click through for the full explanation
 - [Entity resolution](/concepts/data/entity-resolution/): deciding which records refer to the same real-world entity
 - [Enum](/concepts/talking-to-models/structured-outputs/): a fixed list of allowed values for a field
 - [Environment variable](/concepts/running-things/environment-variables-and-secrets/): a named value a program reads from where it runs
+- [Error workflow](/setup/n8n/): a separate workflow that starts when another one fails
 - [Eval](/concepts/agents/evals/): a repeatable test of an AI system against example cases
 - [Event](/concepts/data/keeping-data-fresh/): a message saying something changed in a system
 - [Exponential backoff](/concepts/running-things/rate-limits-retries-and-failures/): waiting longer after each failed attempt, roughly doubling each time
@@ -114,30 +158,43 @@ One line per term, in alphabetical order. Click through for the full explanation
 - [Function calling](/concepts/agents/tool-use/): another name for tool use, common in developer documentation
 - [Fuzzy matching](/concepts/data/entity-resolution/): matching text that is similar but not identical, such as typos
 - [Gateway](/concepts/cost/model-routing/): a service giving one doorway to many models, often with routing built in
+- [Git](/setup/git-and-github-for-one/): the tool on your computer that records and manages that history
+- [GitHub](/setup/git-and-github-for-one/): a website that hosts copies of Git repositories
 - [Golden record](/concepts/data/entity-resolution/): the single trusted record kept for an entity
+- [GPT](/models/openai/): OpenAI's family of language models
+- [gpt-oss](/models/openai/): OpenAI's open-weight model pair
 - [GPU](/concepts/how-models-work/inference/): a chip built for large amounts of parallel arithmetic, used to run models
 - [Graph database](/concepts/data/types-of-databases/): stores things and the links between them
 - [GraphRAG](/concepts/data/knowledge-graphs/): retrieval that uses a graph's links to choose which passages to fetch
 - [Grounding](/concepts/how-models-work/hallucination-and-grounding/): giving a model real source material to answer from, so its answers can be checked
+- [Guard model](/models/qwen-and-other-labs/): a small model that screens text for unsafe content
 - [Guardrail](/concepts/agents/agentic-harness/): a rule enforced by the harness, such as a limit or an approval step
 - [Hallucination](/concepts/how-models-work/hallucination-and-grounding/): a confident statement from a model that is false or invented
 - [Handoff](/map/agent-frameworks/): passing a task from one agent to another
 - [Harness engineering](/concepts/agents/agentic-harness/): designing and tuning the parts of a harness to improve reliability
+- [Hobby plan](/setup/vercel/): Vercel's free tier for personal, non-commercial projects
+- [Homebrew](/setup/terminal-basics/): a package manager for macOS command-line tools and apps
+- [Hook](/setup/claude-code-in-depth/): a command that runs automatically at a set moment
 - [Hosted inference](/map/open-model-hosting/): a company runs a model for you and you call it by API
 - [Hosted open model](/concepts/how-models-work/open-vs-closed-weights/): an open model run for you by a third party
 - [Human preference arena](/concepts/how-models-work/benchmarks/): a ranking built from people voting between anonymous model answers
 - [Human-in-the-loop](/concepts/agents/human-in-the-loop/): a person is built into the agent's process at chosen points
 - [Hybrid search](/concepts/data/rag-and-chunking/): combining keyword search and meaning search, then merging results
 - [ICO](/concepts/security/gdpr-data-retention-and-dpas/): the UK regulator for data protection
+- [IDE](/setup/cursor-and-app-builders/): a code editor with extra tools for writing and running software
 - [Idempotency key](/concepts/running-things/rate-limits-retries-and-failures/): a unique label that lets a repeated action be recognised and skipped
 - [Idempotent](/concepts/running-things/triggers-and-scheduling/): safe to repeat, because doing it twice gives the same result as once
+- [Identity mapping](/channels/how-channels-connect/): matching a chat user to a real person in your systems
 - [Identity provider](/map/auth-and-secrets/): the service that holds accounts and verifies sign-ins
+- [IMAP](/channels/email/): a standard for reading mail from a server
 - [Index](/concepts/data/rag-and-chunking/): the searchable store of chunks and their embeddings
 - [Indirect prompt injection](/concepts/security/prompt-injection/): instructions hidden in content the agent reads, such as an email or web page
 - [Inference](/concepts/how-models-work/inference/): using a trained model to produce output from a prompt
 - [Inference server](/map/open-model-hosting/): software that loads a model and answers requests
+- [Inline keyboard](/channels/telegram/): buttons shown under a message that send a callback when pressed
 - [Input modality](/concepts/how-models-work/multimodal-models/): a kind of material a model can take in
 - [Input tokens](/concepts/cost/how-ai-pricing-works/): the tokens you send to the model
+- [Instant Rollback](/setup/vercel/): pointing the live domain back at an earlier deployment
 - [Instruction file](/concepts/agents/skills-and-instruction-files/): a text file the agent reads at the start of work
 - [Instruction tuning](/concepts/how-models-work/pre-training-and-post-training/): training on example requests and good replies so the model follows instructions
 - [Integration](/map/connectors-and-integrations/): any working link between two systems, built by anyone
@@ -160,19 +217,32 @@ One line per term, in alphabetical order. Click through for the full explanation
 - [LLM-as-judge](/map/observability-and-evals/): using one model to score another model's answers
 - [Load balancing](/concepts/cost/model-routing/): spreading identical requests across several copies of a model or provider
 - [Local model](/map/open-model-hosting/): a model running on your own computer
+- [Long polling](/channels/telegram/): repeatedly asking a server whether anything new has arrived
+- [Long-lived connection](/channels/how-channels-connect/): a connection kept open so the platform can push events down it
 - [Long-term memory](/concepts/agents/memory/): notes saved outside the model that persist between conversations
 - [LoRA](/concepts/how-models-work/fine-tuning-vs-prompting-vs-rag/): a lightweight fine-tuning method that trains small adapters instead of the whole model
 - [LQM](/concepts/how-models-work/llms-lrms-and-lqms/): large quantitative model, an informal label for models built around numbers or simulation
 - [LRM](/concepts/how-models-work/llms-lrms-and-lqms/): large reasoning model, a language model trained to think step by step first
+- [Managed settings](/setup/recommended-settings/): organisation-wide settings that individuals cannot override
 - [Maximum output length](/concepts/how-models-work/parameters-and-temperature/): the cap on how many tokens a reply may contain
 - [MCP (Model Context Protocol)](/concepts/agents/mcp/): an open standard for connecting AI assistants to tools and data
 - [MCP client](/concepts/agents/mcp/): the part of an assistant that talks to MCP servers
 - [MCP host](/concepts/agents/mcp/): the assistant application that contains the model and the MCP client
 - [MCP server](/concepts/agents/mcp/): a connector that exposes a system's tools, data and prompts through MCP
 - [Memory poisoning](/concepts/agents/memory/): planting a false or harmful note so it affects later conversations
+- [Merge conflict](/setup/git-and-github-for-one/): two changes to the same lines that Git cannot combine alone
+- [Message template](/channels/whatsapp/): pre-approved message wording needed to start or restart a conversation
+- [Messaging endpoint](/channels/microsoft-teams/): the HTTPS address where Teams delivers a bot's activities
+- [Messaging limit](/channels/whatsapp/): cap on how many people you can start conversations with per day
+- [Microsoft Entra](/channels/microsoft-teams/): Microsoft's identity and sign-in system
+- [Microsoft Purview](/channels/microsoft-teams/): Microsoft's tools for retention, audit and eDiscovery
 - [Missed match](/concepts/data/entity-resolution/): failing to join records that describe the same entity
+- [MIT licence](/models/deepseek/): a short permissive licence allowing commercial use with few conditions
+- [Mixture of experts](/models/meta/): a design where only part of the model runs for each token
 - [Modality](/concepts/how-models-work/multimodal-models/): a kind of material, such as text, images, audio or video
 - [Model access platform](/map/model-access-platforms/): a service your software calls to use an AI model
+- [Model as a service](/models/qwen-and-other-labs/): selling access to a model's answers to other businesses
+- [Model family](/models/model-tiers/): a set of related models sold under one name
 - [Model routing](/concepts/cost/model-routing/): choosing which model handles each request or step
 - [MTok](/concepts/cost/how-ai-pricing-works/): one million tokens, the usual unit for pricing
 - [Multi-agent system](/concepts/agents/subagents-and-multi-agent-systems/): a setup where several agents work together on one job
@@ -180,6 +250,7 @@ One line per term, in alphabetical order. Click through for the full explanation
 - [No-code builder](/map/agent-frameworks/): a visual tool for assembling agents without writing code
 - [Node](/concepts/data/knowledge-graphs/): a thing in a graph, such as a person, company or fund
 - [Normalisation](/concepts/data/entity-resolution/): cleaning text into a standard form before comparing
+- [npm](/setup/terminal-basics/): the package manager for JavaScript tools, bundled with Node.js
 - [OAuth](/concepts/data/apis-oauth-and-api-keys/): a standard for letting an app act for a user without their password
 - [Object storage](/map/databases-and-storage/): cloud storage for whole files, held in buckets or containers
 - [Observability](/concepts/agents/observability/): the ability to see what a system did and why
@@ -187,6 +258,7 @@ One line per term, in alphabetical order. Click through for the full explanation
 - [OCR](/concepts/how-models-work/multimodal-models/): software that turns a picture of text into editable text
 - [Ontology](/concepts/data/knowledge-graphs/): the agreed list of node types and relationship types in a graph
 - [Open source AI](/concepts/how-models-work/open-vs-closed-weights/): a system released with weights, training code and data information under open terms
+- [Open weights](/models/mistral/): model files published for anyone to download and run
 - [Open-weight model](/concepts/how-models-work/open-vs-closed-weights/): a model whose weights are published for anyone to download and run
 - [OpenTelemetry](/map/observability-and-evals/): an open standard for collecting traces, metrics and logs
 - [Orchestration](/map/agent-frameworks/): coordinating steps, tools or agents so work happens in the right order
@@ -195,16 +267,25 @@ One line per term, in alphabetical order. Click through for the full explanation
 - [Outbound channel](/concepts/security/data-exfiltration-through-tools/): any tool or route an agent can use to send something out
 - [Output modality](/concepts/how-models-work/multimodal-models/): a kind of material a model can produce
 - [Output tokens](/concepts/cost/how-ai-pricing-works/): the tokens the model writes back
+- [Package manager](/setup/terminal-basics/): a tool that installs and tracks other software
 - Parameters: the inputs a tool needs, such as a company name ([tool use](/concepts/agents/tool-use/)), or the internal numbers a model learns in training, also called weights ([what an LLM is](/concepts/how-models-work/what-an-llm-is/) and [parameters and temperature](/concepts/how-models-work/parameters-and-temperature/))
+- [Path](/setup/terminal-basics/): the written address of a file or folder
 - [Pay as you go](/concepts/cost/how-ai-pricing-works/): paying only for the usage you consume, with no fixed fee
 - [Permission](/concepts/data/permissions-and-access-control/): a rule allowing a specific person or program to do something
+- [Permission mode](/setup/claude-code-in-depth/): a setting for how much Claude Code does without asking
+- [Permissive licence](/models/open-weight-options/): a licence with few conditions, such as Apache 2.0 or MIT
 - [Personal data](/concepts/security/gdpr-data-retention-and-dpas/): any information about an identifiable living person
+- [pgvector](/setup/supabase/): a Postgres add-on for storing and searching embeddings
+- [Pinning](/models/model-tiers/): choosing a fixed model version so results stay repeatable
+- [Plan mode](/setup/claude-surfaces/): a Claude Code mode that proposes changes without making them
 - [Polling](/concepts/data/keeping-data-fresh/): repeatedly asking a system whether anything has changed
 - [Post-training](/concepts/how-models-work/pre-training-and-post-training/): the later steps that turn a base model into a useful assistant
+- [Postgres](/setup/supabase/): a widely used open source relational database
 - [Pre-training](/concepts/how-models-work/pre-training-and-post-training/): the first phase, learning language and knowledge by predicting the next token
 - [Precision](/concepts/how-models-work/quantisation/): how exactly a number is stored, set by its bit count
 - [Preference training](/concepts/how-models-work/pre-training-and-post-training/): training a model towards answers that people or AI judges rate as better
 - [Prefill](/concepts/how-models-work/inference/): the stage where the model reads and processes the whole prompt
+- [Privacy mode](/channels/telegram/): a setting limiting which group messages a bot can see
 - [Processor](/concepts/security/gdpr-data-retention-and-dpas/): an organisation that handles personal data on a controller's behalf
 - [Progressive disclosure](/concepts/agents/skills-and-instruction-files/): loading detail only when a task needs it
 - [Prompt](/concepts/talking-to-models/prompt-engineering/): the text you send to a model
@@ -212,6 +293,10 @@ One line per term, in alphabetical order. Click through for the full explanation
 - [Prompt engineering](/concepts/talking-to-models/prompt-engineering/): writing prompts so a model does what you intended
 - [Prompt injection](/concepts/security/prompt-injection/): text read as data that a model treats as an instruction
 - [Prompt template](/concepts/talking-to-models/prompt-engineering/): a saved prompt with blanks to fill in
+- [Public benefit corporation](/models/openai/): a company legally required to weigh a stated public mission
+- [Publishable key](/setup/supabase/): a low-privilege key that is safe in browsers
+- [Pull](/setup/git-and-github-for-one/): fetching remote commits and merging them into your work
+- [Push](/setup/git-and-github-for-one/): sending local commits to the remote
 - [Push protection](/concepts/running-things/environment-variables-and-secrets/): blocking a push that contains a recognised secret
 - [Quantisation](/concepts/how-models-work/quantisation/): storing a model's numbers with fewer bits to save memory
 - [Quantised model](/concepts/how-models-work/quantisation/): a model whose weights have been stored at lower precision
@@ -220,36 +305,51 @@ One line per term, in alphabetical order. Click through for the full explanation
 - [Rate limit](/concepts/running-things/rate-limits-retries-and-failures/): a cap on how many requests or tokens a service accepts in a period
 - [ReAct](/concepts/agents/the-agent-loop/): short for "reason and act", the name of the agent loop pattern
 - [Read-only access](/concepts/data/how-llms-talk-to-databases/): a login that can look at data but not change it
+- [Reasoning effort](/models/model-tiers/): a setting for how long a model thinks before answering
 - [Reasoning model](/concepts/how-models-work/reasoning-models/): a language model trained and run to think step by step before answering
 - [Reasoning trace](/concepts/how-models-work/reasoning-models/): the recorded thinking a reasoning model produced, sometimes shown, summarised or hidden
+- [Red line](/channels/querying-vs-adding-safely/): a rule that is not bent, whatever the request
 - [Redaction](/concepts/agents/observability/): blanking out sensitive details before data is stored
 - [Refresh token](/concepts/data/apis-oauth-and-api-keys/): a longer-lived credential used to get new access tokens
 - [Region](/map/compute-and-cloud/): a named area where a cloud provider groups its data centres
 - [Regression](/concepts/agents/evals/): something that used to work breaks after a change
 - [Reinforcement learning](/concepts/how-models-work/reasoning-models/): training by trial and error, rewarding outcomes that turn out well
 - [Relational database](/concepts/data/types-of-databases/): stores data in linked tables, queried with SQL
+- [Remote](/setup/git-and-github-for-one/): a copy of the repository stored somewhere else
+- [Replay attack](/channels/how-channels-connect/): resending a genuine recorded request to trigger it again
+- [Repository](/setup/git-and-github-for-one/): a project folder together with its full change history
+- [Request signature](/channels/how-channels-connect/): a code proving a request came from the platform unaltered
 - [Reranker](/map/specialised-models/): a model that re-orders search results by how well they answer a question
 - [Reranking](/concepts/data/rag-and-chunking/): re-ordering retrieved results with a more careful model so the best come first
+- [Resource-specific consent](/channels/microsoft-teams/): permission granted by a team or chat owner for one conversation
+- [Responses API](/models/openai/): OpenAI's API for requests that use tools
 - [Restricted transfer](/concepts/security/gdpr-data-retention-and-dpas/): sending personal data to a country outside the UK
 - [Retention](/concepts/agents/observability/): how long records are kept before deletion
 - [Retention period](/concepts/security/audit-trails/): how long records are kept before deletion
+- [Retirement](/models/model-tiers/): the date a model stops answering requests
 - [Retrieval](/concepts/how-models-work/tokens-and-context-windows/): fetching only the relevant passages into the model's context window
 - [Retry storm](/concepts/running-things/rate-limits-retries-and-failures/): many retries at once that worsen an outage
 - [Retry-After](/concepts/running-things/rate-limits-retries-and-failures/): a header telling you how long to wait before retrying
+- [Revert](/setup/git-and-github-for-one/): making a new commit that reverses an earlier one
 - [RLHF](/concepts/how-models-work/pre-training-and-post-training/): reinforcement learning from human feedback, a common form of preference training
 - [Role](/concepts/talking-to-models/system-prompts/): the label on each message in a conversation: system, user or assistant
 - [Rotation](/concepts/running-things/environment-variables-and-secrets/): replacing a key with a new one and retiring the old
 - [Router](/concepts/cost/model-routing/): the logic that picks a model for each request
+- [Row level security](/setup/supabase/): database rules deciding which rows each caller can touch
 - [Rubric](/concepts/agents/evals/): a short checklist used to mark a result
 - [Safety training](/concepts/how-models-work/pre-training-and-post-training/): post-training that teaches a model what to decline and how to handle risk
 - [Sampling](/concepts/how-models-work/parameters-and-temperature/): choosing the next token from the model's list of likely options
+- [Sandbox](/setup/recommended-settings/): an operating-system boundary limiting which files and sites commands can reach
 - [Saturation](/concepts/how-models-work/benchmarks/): when top models score near the maximum and the test stops separating them
 - [Schema](/concepts/data/how-llms-talk-to-databases/): the description of a database's tables and columns
 - [Scope](/concepts/data/apis-oauth-and-api-keys/): a specific permission an app asks for, such as read files
+- [Scope creep](/setup/your-first-agent/): adding features and access faster than you can test them
 - [SDK (software development kit)](/map/agent-frameworks/): a code package for building with a particular service
 - [Search engine](/concepts/data/types-of-databases/): indexes words in text to find and rank matching documents
 - [Seat](/concepts/cost/how-ai-pricing-works/): one person's licence for a subscription product
 - [Secret](/concepts/running-things/environment-variables-and-secrets/): a sensitive value, such as a key or password, that must stay private
+- [Secret chat](/channels/telegram/): a one to one Telegram chat with end-to-end encryption
+- [Secret key](/setup/supabase/): a high-privilege key for servers only
 - [Secret scanning](/concepts/running-things/environment-variables-and-secrets/): automatic detection of credentials committed to a repository
 - [Secrets manager](/concepts/running-things/environment-variables-and-secrets/): a service that stores, controls and rotates secrets
 - [Secrets store](/map/auth-and-secrets/): a protected service that holds keys and passwords and hands them out on request
@@ -258,20 +358,36 @@ One line per term, in alphabetical order. Click through for the full explanation
 - [Semi-structured data](/concepts/data/structured-vs-unstructured-data/): data with some labelled structure but loose or varying fields
 - [Serverless](/concepts/running-things/serverless-functions/): running code on a platform that manages the servers for you
 - [Service account](/concepts/data/permissions-and-access-control/): a shared identity used by software rather than a person
+- [Shared mailbox](/channels/email/): an inbox several people or an agent can read together
+- [Shell](/setup/terminal-basics/): the program that reads your typed commands and runs them
 - [Short-term memory](/concepts/agents/memory/): what is in the context window during the current conversation
+- [Sideloading](/channels/microsoft-teams/): installing an app directly without going through a catalogue
+- [Signing secret](/channels/slack/): a value used to check that a request came from Slack
 - [Similarity search](/concepts/data/rag-and-chunking/): finding the stored items whose embeddings are closest to the question's
 - [Simulation](/concepts/how-models-work/llms-lrms-and-lqms/): a computer model of a real system, used to predict how it behaves
 - [Single sign-on (SSO)](/map/auth-and-secrets/): one login that works across many applications
+- [Sites.Selected](/setup/connecting-business-tools-through-mcp/): a Microsoft permission limiting an app to specifically granted SharePoint sites
 - [Skill](/concepts/agents/skills-and-instruction-files/): a packaged, named set of instructions loaded when relevant
 - [SKILL.md](/concepts/agents/skills-and-instruction-files/): the main file of a skill, holding its description and steps
+- [Slash command](/channels/slack/): a typed shortcut such as /ask that triggers an app
+- [Smallest honest version](/setup/your-first-agent/): the minimum build that does a real job and shows its working
+- [SMTP](/channels/email/): a standard for sending mail between servers
+- [SOC 2 Type II](/models/xai/): an audit report on a provider's security controls over time
+- [Socket Mode](/channels/slack/): receiving Slack events over a websocket instead of a public address
 - [Source of truth](/concepts/data/keeping-data-fresh/): the system officially considered right about a fact
 - [Span](/concepts/agents/observability/): one step inside a trace, such as a model call or tool call
 - [Special category data](/concepts/security/gdpr-data-retention-and-dpas/): sensitive personal data such as health, beliefs or ethnic origin
 - [Specialised model](/map/specialised-models/): a model trained to do one narrow job well
 - [Speech-to-text](/map/specialised-models/): software that turns spoken audio into written words
+- [Spend limit](/setup/recommended-settings/): a cap on money spent, after which use stops or alerts fire
 - [Spending cap](/concepts/cost/estimating-cost-per-task/): a hard limit on spend after which calls are refused or stopped
+- [SPF](/channels/email/): a check that a mail server is allowed to send for a domain
+- [Spoofing](/channels/email/): faking the sender of a message
 - [SQL](/concepts/data/types-of-databases/): a standard language for querying relational databases
+- [Staged rollout](/models/how-to-judge-a-new-model/): moving to a new model gradually, with a way back
+- [Staging area](/setup/git-and-github-for-one/): where chosen changes wait before being committed
 - [Stale data](/concepts/data/keeping-data-fresh/): a copy that no longer matches its source
+- [Standard contractual clauses](/models/deepseek/): approved contract terms that allow personal data to leave the UK or EU
 - [Stateless](/concepts/running-things/serverless-functions/): keeping no memory between runs
 - [Step limit](/concepts/agents/the-agent-loop/): a cap on the number of rounds before an agent's loop is stopped
 - [Stop sequence](/concepts/how-models-work/parameters-and-temperature/): a piece of text that ends the reply when the model writes it
@@ -281,15 +397,24 @@ One line per term, in alphabetical order. Click through for the full explanation
 - [Structured output](/concepts/talking-to-models/structured-outputs/): a model answer returned in a fixed, machine-readable shape
 - [Sub-processor](/concepts/security/gdpr-data-retention-and-dpas/): another company a processor uses to handle the data
 - [Subagent](/concepts/agents/subagents-and-multi-agent-systems/): a helper agent with its own context window, instructions and tools
+- [Subscription plan](/setup/claude-surfaces/): monthly access to the apps with usage limits
+- [sudo](/setup/terminal-basics/): a command prefix that runs something with administrator rights
+- [Superseded](/channels/querying-vs-adding-safely/): replaced by a newer version but kept in history
+- [Sustainable Use License](/setup/n8n/): n8n's licence allowing internal business use but not resale or hosting for others
 - [Sycophancy](/concepts/how-models-work/pre-training-and-post-training/): a model's tendency to agree with or flatter the user
 - [System of record](/map/databases-and-storage/): the one place a given fact officially lives
 - [System prompt](/concepts/talking-to-models/system-prompts/): standing instructions set by the builder, sent before every conversation
 - [Tamper-resistant](/concepts/security/audit-trails/): protected so records cannot be quietly altered
+- [Team Bot](/channels/xai-grok/): one shared bot that every teammate talks to in private chats
 - [Temperature](/concepts/how-models-work/parameters-and-temperature/): a setting that makes output more predictable when low and more varied when high
+- [Tenant](/channels/microsoft-teams/): an organisation's own private space within Microsoft 365
+- [Terminal](/setup/terminal-basics/): the macOS app that gives you a window for typed commands
+- [Test set](/setup/your-first-agent/): a fixed list of questions with checked answers, rerun after every change
 - [Text-to-speech](/map/specialised-models/): software that turns written words into spoken audio
 - [Text-to-SQL](/concepts/data/how-llms-talk-to-databases/): a model writing a SQL query from a plain-language question
 - [Thinking budget](/concepts/how-models-work/reasoning-models/): a cap on how many tokens a model may spend thinking
 - [Thinking tokens](/concepts/cost/how-ai-pricing-works/): hidden working a reasoning model writes before answering
+- [Tier](/models/model-tiers/): a size and speed level within a family
 - [Time to first token](/concepts/how-models-work/inference/): the wait between sending a prompt and the first piece of reply
 - [Time to live (TTL)](/concepts/cost/prompt-caching-and-batch-processing/): how long a cache entry lasts before it expires
 - [Timeout](/concepts/running-things/serverless-functions/): the maximum time a function may run before being stopped
@@ -308,16 +433,27 @@ One line per term, in alphabetical order. Click through for the full explanation
 - [Training data](/concepts/how-models-work/fine-tuning-vs-prompting-vs-rag/): the example inputs and desired outputs used to fine-tune a model
 - [Transcription](/concepts/how-models-work/multimodal-models/): turning speech in audio into written text
 - [Trigger](/concepts/running-things/triggers-and-scheduling/): the signal that starts a job without a person typing
+- [Trigger node](/setup/n8n/): the step that starts a workflow when something happens
 - [Triple](/concepts/data/knowledge-graphs/): one fact written as thing, relationship, thing
+- [Two-factor authentication](/setup/recommended-settings/): signing in with a password plus a second proof such as a phone code
 - [Unstructured data](/concepts/data/structured-vs-unstructured-data/): free-form content such as documents, emails and notes
+- [Usage credits](/setup/not-burning-tokens/): optional paid extra usage once a subscription allowance runs out
 - [User prompt](/concepts/talking-to-models/system-prompts/): the message a person types in the conversation
 - [UTC](/concepts/running-things/triggers-and-scheduling/): the world reference time, with no daylight saving changes
 - [Validation](/concepts/talking-to-models/structured-outputs/): checking that output has the right fields and types
 - [Vector](/concepts/how-models-work/embeddings/): an ordered list of numbers, here the address of an embedding
 - [Vector database](/concepts/data/types-of-databases/): stores embeddings to find items with similar meaning
 - [Verifiable task](/concepts/how-models-work/reasoning-models/): a task with an answer that can be checked automatically, such as maths or code tests
+- [Version control](/setup/git-and-github-for-one/): recording every change to files so earlier versions can be restored
 - [Webhook](/concepts/data/keeping-data-fresh/): a message one system sends to another when something happens
 - [Weights](/concepts/how-models-work/parameters-and-temperature/): another name for a model's parameters
+- [WhatsApp Business Platform](/channels/whatsapp/): Meta's developer interfaces for connecting software to WhatsApp
 - [Workflow](/concepts/agents/chat-agent-workflow-automation/): a fixed list of steps that runs the same way every time
 - [Workflow engine](/concepts/running-things/orchestration-tools/): developer software that runs coded workflows reliably, resuming after failures
+- [Zero data retention](/models/anthropic/): a contract setting where inputs and outputs are not stored
+- [Zero retention](/models/mistral/): a setting where the provider keeps no copy of your requests
 - [Zero-shot prompting](/concepts/talking-to-models/prompt-engineering/): asking a model with no examples in the prompt
+
+## Next up
+
+The first word worth pinning down is the one used most loosely. [Chat vs agent vs workflow vs automation](/concepts/agents/chat-agent-workflow-automation/) sorts out what people actually mean by "agent".

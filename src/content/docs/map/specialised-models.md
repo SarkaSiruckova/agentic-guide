@@ -6,7 +6,10 @@ lastReviewed: 2026-10-02
 snapshot: true
 sidebar:
   order: 4
+published: 2026-10-02
 ---
+
+So far the map has followed one general model, whether reached through a lab's API or hosted as an open model. This page adds the smaller models that work alongside it on narrow jobs.
 
 **In one line:** a specialised model is a model built to do one narrow job, such as embedding text, ranking search results or reading speech, so that the general chat model only has to do the thinking and writing.
 
@@ -119,3 +122,7 @@ Voice notes from calls are handled by a speech-to-text model first, then follow 
 - **Text-to-speech:** software that turns written words into spoken audio
 - **OCR:** optical character recognition, turning images of text into real text
 - **Classifier:** a model that sorts an input into one of a fixed set of labels
+
+## Next up
+
+Models, big or small, only run when some code calls them. [App hosting](/map/app-hosting/) covers where that code of your own lives and runs.

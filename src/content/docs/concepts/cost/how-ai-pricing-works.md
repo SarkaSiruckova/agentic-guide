@@ -4,7 +4,10 @@ description: How AI providers charge for models, what makes up a bill, and how t
 tags: [cost]
 lastReviewed: 2026-10-02
 snapshot: true
+published: 2026-10-02
 ---
+
+An agent that is safe and works well still has to be affordable. If the model is the engine and tokens are its fuel, this chapter is about the fuel bill, starting with how providers charge for what you use.
 
 **In one line:** most AI use is billed by the token, with the text you send and the text you get back priced separately, and everything else (thinking, tools, subscriptions) is a variation on that.
 
@@ -132,3 +135,7 @@ If the same job ran on a large-tier model, the range rises to about $5 to $25 pe
 - **Pay as you go:** paying only for the usage you consume, with no fixed fee
 - **Seat:** one person's licence for a subscription product
 - **Credits:** prepaid units that are drawn down as you use a service
+
+## Next up
+
+Two discounts appear on almost every pricing page, and both reward planning ahead. [Prompt caching and batch processing](/concepts/cost/prompt-caching-and-batch-processing/) explains how they work.

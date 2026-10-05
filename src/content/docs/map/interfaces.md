@@ -6,7 +6,10 @@ lastReviewed: 2026-10-02
 snapshot: true
 sidebar:
   order: 11
+published: 2026-10-02
 ---
+
+The map ends at the top of the stack, where a person meets the agent. Every layer below, from chips to logs, is reached through this one.
 
 **In one line:** the interface is the place where a person meets the agent, whether that is a chat window, a command line, a dashboard, a spreadsheet or a message in the team chat.
 
@@ -49,7 +52,7 @@ Interfaces fall into a few families.
 - **A dashboard or internal tool.** A small web app built for one job, such as a page where an associate pastes a company name and sees a summary, with buttons to approve actions. You control exactly what is shown.
 - **Spreadsheets and documents with built-in AI.** The assistant sits inside the tools people already use all day, so there is nothing new to learn.
 - **Email.** People send a request to an address, or forward a message, and get a reply. Slow, but needs no new habit.
-- **Messaging channels.** Teams, Slack and WhatsApp, where the agent appears as a participant. These are covered in their own section later (see /channels/).
+- **Messaging channels.** Teams, Slack and WhatsApp, where the agent appears as a participant. These are covered in their own section later (see [Comms channels](/channels/)).
 
 ## Example providers (snapshot, as of October 2026)
 
@@ -113,3 +116,7 @@ Throughout, the developer uses a coding assistant to build and change the agent.
 - **Channel:** a messaging service where an agent can send and receive messages
 - **Approval step:** a pause where a person confirms an action before it runs
 - **Retention period:** how long stored data is kept before deletion
+
+## Next up
+
+That completes the layers. [One question through every layer](/map/one-question-through-every-layer/) puts them together by following a single request from the interface down to the data and back.

@@ -4,7 +4,10 @@ description: The connected, permissioned layer that sits between your raw system
 tags: [data]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+This page pulls the whole chapter together. Connectors, databases, retrieval, entity resolution, freshness and permissions are the parts, and the context layer is how they combine into the maps and road knowledge every agent drives by.
 
 **In one line:** a context layer is the set of connected, permissioned and reasonably fresh sources, plus the logic that gathers the right information from them for each question, sitting between your raw systems and the agents or people who ask.
 
@@ -115,3 +118,7 @@ The most common mistake is starting with the architecture instead of a question 
 - **Context layer:** connected, permissioned sources plus logic that assembles information per question
 - **Entity:** a real-world thing in your data, such as a company or a person
 - **Source of truth:** the system whose record wins when copies disagree
+
+## Next up
+
+The car now has an engine, controls and maps, but it still needs somewhere to run. Chapter 5, Running agents for real, starts with [serverless functions](/concepts/running-things/serverless-functions/): small pieces of code that run only when something calls them.

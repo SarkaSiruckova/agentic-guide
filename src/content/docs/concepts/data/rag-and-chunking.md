@@ -4,7 +4,10 @@ description: How an assistant finds the relevant passages in a large pile of doc
 tags: [data, foundations]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Databases answer counting questions, but the reasons behind decisions usually sit in documents. RAG is how an assistant finds the few passages that matter in a large pile of text and answers from them.
 
 **In one line:** RAG (retrieval-augmented generation) means fetching the passages most relevant to a question first, putting them in front of the model, and letting it answer from them, and chunking is how the documents get cut into pieces so the right part can be found.
 
@@ -98,7 +101,7 @@ Notice the model didn't read all the PDFs. It read about six chunks, and it said
 - **Tables and scans are hard.** Tables in PDFs and scanned pages often come out as jumbled text, which weakens everything downstream.
 - **Counting questions suit databases.** "How many companies?" is better answered by a query than by retrieval. See [how LLMs talk to databases](/concepts/data/how-llms-talk-to-databases/).
 
-The most common mistake is building the index once and never testing it. Keep a short list of real questions with known answers and check that retrieval finds the right chunks. This is a form of [evals](/concepts/agents/evals/).
+The most common mistake is building the index once and never testing it. Keep a short list of real questions with known answers and check that retrieval finds the right chunks. This is a form of [evals](/concepts/agents/evals/) (repeatable tests that check an AI system gives the right answers, covered in chapter 5).
 
 ## Often confused with
 
@@ -131,3 +134,7 @@ A short way to remember it: prompting tells the model what to do, RAG gives it w
 - **RAG:** fetching relevant passages first, then having a model answer from them
 - **Reranking:** re-ordering retrieved results with a more careful model so the best come first
 - **Similarity search:** finding the stored items whose embeddings are closest to the question's
+
+## Next up
+
+RAG is one of three ways to give a model knowledge or change how it responds. [Fine-tuning vs prompting vs RAG](/concepts/how-models-work/fine-tuning-vs-prompting-vs-rag/) explains how to choose between them.

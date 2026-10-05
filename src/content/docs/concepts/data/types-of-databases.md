@@ -4,7 +4,10 @@ description: A plain-language tour of relational, document, key-value, search, v
 tags: [data]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Data that fits in tables and data that lives in free text need different homes. This page tours the main kinds of database and the question each one answers best.
 
 **In one line:** a database is an organised store that software can search and update reliably, and the different types are built around different shapes of question.
 
@@ -52,7 +55,7 @@ The categories overlap more than the list suggests. Many relational databases ca
 
 Most small teams use only a few of these directly. The CRM already is a database. The file storage already has a search function. What you might add is one relational database for tidy facts the agents need.
 
-Where the data lives matters for the [context layer](/concepts/data/what-a-context-layer-is/). Agents ask questions of these stores through [tools](/concepts/agents/tool-use/), often by writing queries, which is covered in [how LLMs talk to databases](/concepts/data/how-llms-talk-to-databases/).
+Where the data lives matters for the [context layer](/concepts/data/what-a-context-layer-is/) (the connected setup that gathers the right information for each question, covered at the end of this chapter). Agents ask questions of these stores through [tools](/concepts/agents/tool-use/), often by writing queries, which is covered in [how LLMs talk to databases](/concepts/data/how-llms-talk-to-databases/).
 
 Databases hold [structured data](/concepts/data/structured-vs-unstructured-data/) most naturally. Unstructured text can go into a search engine or vector database so that it can be found by words or meaning.
 
@@ -101,3 +104,7 @@ The most common mistake is picking a database because it sounds modern for AI, b
 - **Search engine:** indexes words in text to find and rank matching documents
 - **SQL:** a standard language for querying relational databases
 - **Vector database:** stores embeddings to find items with similar meaning
+
+## Next up
+
+A store is no use to an agent until it can get in. [APIs, OAuth and API keys](/concepts/data/apis-oauth-and-api-keys/) explains how software reaches a system and proves it is allowed to.

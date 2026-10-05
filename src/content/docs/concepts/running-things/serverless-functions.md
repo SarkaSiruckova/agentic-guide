@@ -4,7 +4,10 @@ description: Small pieces of code that run only when something calls them, on a 
 tags: [infrastructure, automation]
 lastReviewed: 2026-10-02
 snapshot: true
+published: 2026-10-02
 ---
+
+With a model as the engine, a harness as the rest of the car and a context layer as its maps, an agent is ready to drive. Running it for real means taking it out on real roads every day without anyone watching, and that starts with a place for its code to run.
 
 **In one line:** a serverless function is a small piece of code that runs only when something triggers it, on a platform that manages the machines, so you pay for the runs rather than for waiting around.
 
@@ -63,7 +66,7 @@ Poor fits:
 - **Heavy, continuous work.** Constant, high-volume processing may cost more than a regular server.
 - **Anything needing local files that must persist.** Local disk space, if any, is temporary.
 
-Keys and passwords the function needs belong in its environment settings, not in the code (see [environment variables and secrets](/concepts/running-things/environment-variables-and-secrets/)). When a function chains with others, an [orchestration tool](/concepts/running-things/orchestration-tools/) may be a better home for the overall flow.
+Keys and passwords the function needs belong in its environment settings, not in the code (see [environment variables and secrets](/concepts/running-things/environment-variables-and-secrets/)). When a function chains with others, an [orchestration tool](/concepts/running-things/orchestration-tools/) (software that runs a chain of steps across apps in order, covered later in this chapter) may be a better home for the overall flow.
 
 **Snapshot, as of October 2026.** Limits differ between platforms and change over time, so check the current documentation before designing around them. As an illustration only: AWS Lambda's documentation lists a maximum run time of 15 minutes for standard functions, memory settings from 128 MB to about 10 GB, a 6 MB cap on request and response size for direct calls, and a default of 1,000 concurrent runs per region that can be raised on request. It describes itself as built for short-lived tasks that do not keep state between runs. Azure Functions' documentation says its older consumption plan can scale to zero when idle, which can slow the first request, and gives a default run time of 5 minutes and a maximum of 10 minutes, with web-triggered functions capped at about 4 minutes. Newer plan types on both platforms offer ways to keep instances ready to reduce cold starts.
 
@@ -118,3 +121,7 @@ A common mistake is putting a whole agent in one function and finding out at min
 - **Cold start:** the extra delay when a function starts after being idle
 - **Concurrency:** how many runs of a function happen at the same time
 - **Timeout:** the maximum time a function may run before being stopped
+
+## Next up
+
+A function that reaches a CRM or a model needs a key to get in. [Environment variables and secrets](/concepts/running-things/environment-variables-and-secrets/) explains where those keys should live.

@@ -4,7 +4,10 @@ description: How software decides that different records, names and email addres
 tags: [data]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Graphs, searches and counts all assume each company or person appears once. Entity resolution is the work that makes that true, by deciding which records, names and addresses belong to the same real-world thing.
 
 **In one line:** entity resolution is deciding which records, names and addresses refer to the same real-world company or person, so each one ends up with a single trusted record.
 
@@ -60,7 +63,7 @@ It is a poor place for silent decisions. A model can be wrong with full confiden
 
 Matching is not a one-off clean-up. New records arrive every day, so the check should run when data comes in. It also connects to [keeping data fresh](/concepts/data/keeping-data-fresh/): a merge in one system has to reach the copies elsewhere.
 
-The goal is one trusted record per entity, often called a **golden record** or canonical record. Other systems hold an ID that points to it, so everyone agrees which Acme they mean. This is a central job of a [context layer](/concepts/data/what-a-context-layer-is/), and a [knowledge graph](/concepts/data/knowledge-graphs/) depends on it, because a graph with two nodes for one company gives wrong answers about its connections.
+The goal is one trusted record per entity, often called a **golden record** or canonical record. Other systems hold an ID that points to it, so everyone agrees which Acme they mean. This is a central job of a [context layer](/concepts/data/what-a-context-layer-is/) (the connected setup that assembles the right information for each question, covered at the end of this chapter), and a [knowledge graph](/concepts/data/knowledge-graphs/) depends on it, because a graph with two nodes for one company gives wrong answers about its connections.
 
 ## Worked example
 
@@ -115,3 +118,7 @@ The most common mistake is matching on name alone. Prefer exact keys, and use na
 - **Golden record:** the single trusted record kept for an entity
 - **Missed match:** failing to join records that describe the same entity
 - **Normalisation:** cleaning text into a standard form before comparing
+
+## Next up
+
+One clean record is only useful while it stays true. [Keeping data fresh](/concepts/data/keeping-data-fresh/) covers how copies drift from the original and how to keep an agent's view current.

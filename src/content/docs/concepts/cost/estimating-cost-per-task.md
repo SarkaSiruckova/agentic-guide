@@ -4,7 +4,10 @@ description: A step-by-step method for working out what an AI task will cost bef
 tags: [cost, agents]
 lastReviewed: 2026-10-02
 snapshot: false
+published: 2026-10-02
 ---
+
+Prices, discounts and routing are the parts of the fuel bill. This page adds them up into the figure that matters for a decision: the cost of one finished task, worked out before you build and checked once it runs.
 
 **In one line:** to estimate the cost of a task, list the model calls it makes, count the tokens in each, multiply by the price, add the extras, pad the result, and then replace your guesses with measurements from real runs.
 
@@ -130,3 +133,7 @@ The most common mistake is estimating from a single chat reply and ignoring the 
 - **Safety margin:** extra added to an estimate to cover guesses that run low
 - **Spending cap:** a hard limit on spend after which calls are refused or stopped
 - **Long tail:** the few unusually long or costly runs that drive much of the total
+
+## Next up
+
+This page closes the concept chapters, so every part of the car now has a name, from the engine to the fuel bill. Chapter 8 zooms out to the whole road network, the companies and products at each layer, starting with [the map](/map/).
