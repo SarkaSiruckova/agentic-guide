@@ -15,6 +15,16 @@ A [system prompt](/using-ai/system-prompts/) sets standing rules for every conve
 
 *Snapshot, as of October 2026. Menu names and plan details come from Anthropic's help pages at support.claude.com. Apps change often, so if a label looks different, search the help centre for the feature's name.*
 
+## The jargon: concepts covered on this page
+
+- **Project:** a workspace in the Claude apps with its own knowledge, instructions and chats
+- **Project knowledge:** files uploaded to a Project for Claude to use in its chats
+- **Project instructions:** standing rules that apply only to chats in one Project
+- **Memory:** a summary of past chats that Claude keeps and brings into new ones
+- **Chat search:** letting Claude look through earlier conversations on request
+- **Incognito chat:** a chat saved to neither history nor memory
+- **Instruction file:** a plain text file of standing rules an agent reads at the start of each session
+
 ## Why it matters
 
 A model forgets everything when a chat ends. Without help, you would paste the same background, the same file and the same "please use British spelling" into every new conversation. That is tedious, and it wastes tokens.
@@ -121,16 +131,6 @@ Outside both, memory has learned that Jo likes short answers with headings. When
 - [Skills and instruction files](/agents/skills-and-instruction-files/): standing rules kept in files next to the work
 - [Recommended settings](/using-ai/recommended-settings/): privacy and memory settings worth checking
 - [RAG and chunking](/data/rag-and-chunking/): how large Project knowledge gets searched
-
-## The proper terms
-
-- **Project:** a workspace in the Claude apps with its own knowledge, instructions and chats
-- **Project knowledge:** files uploaded to a Project for Claude to use in its chats
-- **Project instructions:** standing rules that apply only to chats in one Project
-- **Memory:** a summary of past chats that Claude keeps and brings into new ones
-- **Chat search:** letting Claude look through earlier conversations on request
-- **Incognito chat:** a chat saved to neither history nor memory
-- **Instruction file:** a plain text file of standing rules an agent reads at the start of each session
 
 ## Next up
 

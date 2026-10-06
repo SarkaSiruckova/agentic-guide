@@ -13,6 +13,13 @@ Everything a [context layer](/data/what-a-context-layer-is/) gathers, along with
 
 **In one line:** context engineering is deciding what goes into the model's context window at each step, so it has what it needs and little else.
 
+## The jargon: concepts covered on this page
+
+- **Compression:** shortening older material so it takes less space in the window
+- **Context engineering:** choosing and maintaining everything a model sees
+- **Context layer:** the sources and logic that assemble the right information for each question
+- **Selection:** fetching only the material that is relevant to the question
+
 ## Why it matters
 
 A prompt is one piece of what a model sees. In an agent, the model also sees tool descriptions, earlier steps, fetched documents and tool results. Its answer depends on all of it.
@@ -97,13 +104,6 @@ The most common mistake is treating a bigger window as the fix. Choosing well be
 - [Tokens and context windows](/start/tokens-and-context-windows/): the limit this works within
 - [The agent loop](/agents/the-agent-loop/): why the choosing repeats every round
 - [What a context layer is](/data/what-a-context-layer-is/): where the material being chosen comes from
-
-## The proper terms
-
-- **Compression:** shortening older material so it takes less space in the window
-- **Context engineering:** choosing and maintaining everything a model sees
-- **Context layer:** the sources and logic that assemble the right information for each question
-- **Selection:** fetching only the material that is relevant to the question
 
 ## Next up
 

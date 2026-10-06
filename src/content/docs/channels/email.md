@@ -13,6 +13,18 @@ Chat apps give an agent a bot slot to sit in. Email has none and accepts message
 
 **In one line:** email lets an agent start work when a message arrives, answer colleagues who write to it, or prepare messages to people outside, and it is also the channel where the most untrusted text arrives.
 
+## The jargon: concepts covered on this page
+
+- **Delegated permission:** access an app uses on behalf of a signed-in person
+- **Application permission:** access an app holds in its own right, with no person present
+- **Shared mailbox:** an inbox several people or an agent can read together
+- **IMAP:** a standard for reading mail from a server
+- **SMTP:** a standard for sending mail between servers
+- **SPF:** a check that a mail server is allowed to send for a domain
+- **DKIM:** a signature showing a message came from a domain and was not altered
+- **DMARC:** a domain's rule for mail that fails SPF and DKIM checks
+- **Spoofing:** faking the sender of a message
+
 ## Why it matters
 
 Everyone already uses email, and a firm's most useful raw material often lands there: introductions, founder updates, investor letters, forwarded decks. An agent that can read a shared mailbox can turn that stream into records without anyone retyping it.
@@ -130,18 +142,6 @@ Sample Ventures runs a shared intros mailbox. Founders and other investors send 
 - [Prompt injection](/running/prompt-injection/): why email text cannot be trusted
 - [Human in the loop](/agents/human-in-the-loop/): drafts that a person approves
 - [Auth and secrets](/map/auth-and-secrets/): delegated and application access
-
-## The proper terms
-
-- **Delegated permission:** access an app uses on behalf of a signed-in person
-- **Application permission:** access an app holds in its own right, with no person present
-- **Shared mailbox:** an inbox several people or an agent can read together
-- **IMAP:** a standard for reading mail from a server
-- **SMTP:** a standard for sending mail between servers
-- **SPF:** a check that a mail server is allowed to send for a domain
-- **DKIM:** a signature showing a message came from a domain and was not altered
-- **DMARC:** a domain's rule for mail that fails SPF and DKIM checks
-- **Spoofing:** faking the sender of a message
 
 ## Next up
 

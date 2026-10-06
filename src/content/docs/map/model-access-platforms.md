@@ -13,6 +13,17 @@ One layer above the chips sits the doorway to the model itself. This page covers
 
 **In one line:** a model access platform is the doorway your software uses to send text to a model and get an answer back, and there are three kinds of door: the model maker's own, a big cloud's, or a gateway that fronts many.
 
+## The jargon: concepts covered on this page
+
+- **Model access platform:** a service your software calls to use an AI model
+- **API key:** a secret string that identifies your program to a service
+- **Gateway:** a service that sits in front of many model providers
+- **Aggregator:** a hosted gateway that sells access to many providers on one account
+- **Fallback:** automatically trying another model or provider when one fails
+- **Rate limit:** a cap on requests or text per minute
+- **Model garden or catalogue:** a cloud's list of models you can choose from
+- **Data processing region:** the place where a request is actually run
+
 ## Why it matters
 
 Your agent needs a model to think with, but you almost never run one yourself. Your software sends a request over the internet to a service that runs the model, and the answer comes back. The question is which service, and that choice quietly decides your bill, your sign-in, your data terms and how easily you can switch models later.
@@ -110,17 +121,6 @@ The firm never needed to decide on chips or hosting. It chose a door, and wrote 
 - [APIs, OAuth and API keys](/agents/apis-oauth-and-api-keys/): how your program proves who it is
 - [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/): the contract questions behind every door
 - [Compute and cloud](/map/compute-and-cloud/): the chips and regions underneath all three routes
-
-## The proper terms
-
-- **Model access platform:** a service your software calls to use an AI model
-- **API key:** a secret string that identifies your program to a service
-- **Gateway:** a service that sits in front of many model providers
-- **Aggregator:** a hosted gateway that sells access to many providers on one account
-- **Fallback:** automatically trying another model or provider when one fails
-- **Rate limit:** a cap on requests or text per minute
-- **Model garden or catalogue:** a cloud's list of models you can choose from
-- **Data processing region:** the place where a request is actually run
 
 ## Next up
 

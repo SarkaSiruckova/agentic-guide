@@ -13,6 +13,13 @@ sidebar:
 
 **In one line:** a multimodal model can take in more than one kind of material, such as text, images and documents, so you can share things as they are instead of retyping them.
 
+## The jargon: concepts covered on this page
+
+- **Multimodal model:** a model that handles more than one kind of material, such as text and images
+- **Modality:** a kind of material, such as text, images, audio or video
+- **OCR:** optical character recognition, software that turns a picture of text into editable text
+- **Transcription:** turning speech in a recording into written text
+
 ## Why it matters
 
 Plenty of everyday information is not plain text. Pitch decks and reports are full of charts. Invoices arrive as scans. A screenshot shows exactly what an error message said.
@@ -94,13 +101,6 @@ The model saved time finding the data. Checking against the source caught the er
 - [Hallucination and grounding](/start/hallucination-and-grounding/): why chart readings must be checked
 - [Claude apps](/using-ai/claude-apps/): where uploads happen
 - [Projects and memory](/using-ai/projects-and-memory/): keeping files you use often in one place
-
-## The proper terms
-
-- **Multimodal model:** a model that handles more than one kind of material, such as text and images
-- **Modality:** a kind of material, such as text, images, audio or video
-- **OCR:** optical character recognition, software that turns a picture of text into editable text
-- **Transcription:** turning speech in a recording into written text
 
 ## Next up
 

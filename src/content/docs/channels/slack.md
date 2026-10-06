@@ -13,6 +13,18 @@ Slack is the other main team chat, built on the same pattern of a registered app
 
 **In one line:** a Slack app with a bot user lets colleagues message your agent in direct messages or channels, and Slack calls your code every time something happens.
 
+## The jargon: concepts covered on this page
+
+- **Slack app:** a program registered with Slack that can read events and post messages
+- **Bot user:** an account-like identity an app uses to post in Slack
+- **Scope:** a named permission an app asks for
+- **Bot token:** a secret string that lets an app act as its bot
+- **Request URL:** the public address where Slack sends events
+- **Socket Mode:** receiving Slack events over a websocket instead of a public address
+- **Signing secret:** a value used to check that a request came from Slack
+- **Block Kit:** Slack's format for rich messages with buttons and layouts
+- **Slash command:** a typed shortcut such as /ask that triggers an app
+
 ## Why it matters
 
 Many small firms and startups run on Slack. If the agent lives there, people can ask a question in a thread, get an answer where the discussion already is, and let others see it.
@@ -124,18 +136,6 @@ Sample Ventures wants a bot, "Scout", that answers questions about portfolio com
 - [Microsoft Teams](/channels/microsoft-teams/): the same idea for a Microsoft 365 firm
 - [Human in the loop](/agents/human-in-the-loop/): approval buttons before writes
 - [Least privilege](/running/least-privilege/): small scopes and narrow access
-
-## The proper terms
-
-- **Slack app:** a program registered with Slack that can read events and post messages
-- **Bot user:** an account-like identity an app uses to post in Slack
-- **Scope:** a named permission an app asks for
-- **Bot token:** a secret string that lets an app act as its bot
-- **Request URL:** the public address where Slack sends events
-- **Socket Mode:** receiving Slack events over a websocket instead of a public address
-- **Signing secret:** a value used to check that a request came from Slack
-- **Block Kit:** Slack's format for rich messages with buttons and layouts
-- **Slash command:** a typed shortcut such as /ask that triggers an app
 
 ## Next up
 

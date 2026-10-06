@@ -13,6 +13,15 @@ With [RAG](/data/rag-and-chunking/) in hand, there are three ways to give a mode
 
 **In one line:** prompting changes what you ask, RAG changes what the model reads, and fine-tuning changes the model itself, so the sensible order is to try them in that order and fine-tune only when the first two cannot fix the problem.
 
+## The jargon: concepts covered on this page
+
+- **Adapter:** a small trained add-on layer that changes a frozen model's behaviour
+- **Few-shot prompting:** putting a few worked examples in the prompt to show the pattern
+- **Fine-tuning:** training an existing model further on your own examples
+- **Full fine-tuning:** updating all of a model's parameters during further training
+- **LoRA:** a lightweight fine-tuning method that trains small adapters instead of the whole model
+- **Training data:** the example inputs and desired outputs used to fine-tune a model
+
 ## Why it matters
 
 When an assistant gives a poor answer, it is tempting to reach for the most powerful-sounding fix: "let's train it on our data". That is usually the slowest, most expensive and least flexible option.
@@ -115,15 +124,6 @@ Two years later the fund logs thousands of emails a month across several teams, 
 - [Prompt engineering](/using-ai/prompt-engineering/): the first rung of the ladder
 - [Evals](/running/evals/): how to tell whether any of these changes helped
 - [Pre-training and post-training](/under-the-hood/pre-training-and-post-training/): where the original training ends and fine-tuning begins
-
-## The proper terms
-
-- **Adapter:** a small trained add-on layer that changes a frozen model's behaviour
-- **Few-shot prompting:** putting a few worked examples in the prompt to show the pattern
-- **Fine-tuning:** training an existing model further on your own examples
-- **Full fine-tuning:** updating all of a model's parameters during further training
-- **LoRA:** a lightweight fine-tuning method that trains small adapters instead of the whole model
-- **Training data:** the example inputs and desired outputs used to fine-tune a model
 
 ## Next up
 

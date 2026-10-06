@@ -13,6 +13,17 @@ Training gives a model its knowledge and habits, stored as an enormous set of nu
 
 **In one line:** parameters are the learned numbers inside a model that make up its size, while temperature is a setting you can sometimes change to make its answers more predictable or more varied.
 
+## The jargon: concepts covered on this page
+
+- **Maximum output length:** the cap on how many tokens a reply may contain
+- **Parameters:** the learned numbers inside a model that make up its knowledge
+- **Sampling:** choosing the next token from the model's list of likely options
+- **Stop sequence:** a piece of text that ends the reply when the model writes it
+- **Temperature:** a setting that makes output more predictable when low and more varied when high
+- **Top-k:** a setting that limits the choice to the k most likely tokens
+- **Top-p:** a setting that limits the choice to the most likely options adding up to a set probability
+- **Weights:** another name for a model's parameters
+
 ## Why it matters
 
 Model descriptions are full of both. You will see "a 70 billion parameter model" in one sentence and "set the temperature to 0" in the next, and they sound like the same sort of thing. They are not.
@@ -108,17 +119,6 @@ Same model, same firm, opposite settings, because the jobs want opposite things:
 - [Hallucination and grounding](/start/hallucination-and-grounding/): why low temperature does not fix made-up answers
 - [Tool use](/agents/tool-use/): where the other meaning of "parameters" appears
 - [Inference](/under-the-hood/inference/): the stage at which sampling happens
-
-## The proper terms
-
-- **Maximum output length:** the cap on how many tokens a reply may contain
-- **Parameters:** the learned numbers inside a model that make up its knowledge
-- **Sampling:** choosing the next token from the model's list of likely options
-- **Stop sequence:** a piece of text that ends the reply when the model writes it
-- **Temperature:** a setting that makes output more predictable when low and more varied when high
-- **Top-k:** a setting that limits the choice to the k most likely tokens
-- **Top-p:** a setting that limits the choice to the most likely options adding up to a set probability
-- **Weights:** another name for a model's parameters
 
 ## Next up
 

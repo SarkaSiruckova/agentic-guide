@@ -13,6 +13,15 @@ The provider pages in this section are parallel snapshots of individual carmaker
 
 **In one line:** Anthropic is the AI company that makes the Claude family of closed-weight models, sold through its own apps and API, through big clouds, and through coding and agent tools.
 
+## The jargon: concepts covered on this page
+
+- **Claude:** Anthropic's family of language models and its assistant
+- **Agent SDK:** a library for building your own agents on Claude Code's engine
+- **Managed agents:** an agent loop that the provider hosts for you
+- **Zero data retention:** a contract setting where inputs and outputs are not stored
+- **Trusted access programme:** limited release of a model to vetted organisations
+- **Linux Foundation:** a non-profit that hosts shared open technology projects
+
 ## Why it matters
 
 Anthropic is one of the main providers a small firm will meet when building agents. Its Claude models, its coding tool (Claude Code) and its agent library (the Agent SDK) are used directly, and are also built into other products.
@@ -89,15 +98,6 @@ Terms differ between consumer plans and commercial products, and they change. Re
 - [Data terms at a glance](/models/data-terms-at-a-glance/): comparing training and retention terms across providers
 - [MCP](/agents/mcp/): the standard Anthropic created
 - [Model access platforms](/map/model-access-platforms/): the three routes to reach a model
-
-## The proper terms
-
-- **Claude:** Anthropic's family of language models and its assistant
-- **Agent SDK:** a library for building your own agents on Claude Code's engine
-- **Managed agents:** an agent loop that the provider hosts for you
-- **Zero data retention:** a contract setting where inputs and outputs are not stored
-- **Trusted access programme:** limited release of a model to vetted organisations
-- **Linux Foundation:** a non-profit that hosts shared open technology projects
 
 ## Next up
 

@@ -13,6 +13,17 @@ A skill is a packaged set of instructions that an agent opens only when a job ne
 
 **In one line:** in Claude, a skill is a folder with a SKILL.md file of instructions (and sometimes scripts) that you turn on once, and Claude then uses by itself whenever a request matches the skill's description.
 
+## The jargon: concepts covered on this page
+
+- **Skill:** a folder of instructions, and optionally files and scripts, that Claude loads when a task matches
+- **SKILL.md:** the required main file of a skill
+- **Frontmatter:** the header at the top of SKILL.md holding the name and description
+- **Description:** the line Claude reads to decide whether to use a skill
+- **Code execution:** Claude's ability to run code in a sandbox, which skills need
+- **Personal skill:** a Claude Code skill that works in all your projects
+- **Project skill:** a Claude Code skill stored with one project and shared with everyone on it
+- **Agent Skills specification:** the open format skills follow, so they work across tools
+
 ## Why it matters
 
 If you keep correcting Claude the same way, such as "use this format", "always include these sections", "follow these steps", you are doing the same work twice. A skill writes that correction down once. From then on, the right instructions arrive whenever the matching job does.
@@ -138,17 +149,6 @@ Jo wrote the instructions once, and they now arrive only when the job does.
 - [System prompts and custom instructions](/using-ai/system-prompts/): instructions that apply to every chat
 - [Claude Code and the API](/building/claude-code-and-the-api/): where folder-based skills come into their own
 - [Prompt injection](/running/prompt-injection/): the main risk in skills from untrusted sources
-
-## The proper terms
-
-- **Skill:** a folder of instructions, and optionally files and scripts, that Claude loads when a task matches
-- **SKILL.md:** the required main file of a skill
-- **Frontmatter:** the header at the top of SKILL.md holding the name and description
-- **Description:** the line Claude reads to decide whether to use a skill
-- **Code execution:** Claude's ability to run code in a sandbox, which skills need
-- **Personal skill:** a Claude Code skill that works in all your projects
-- **Project skill:** a Claude Code skill stored with one project and shared with everyone on it
-- **Agent Skills specification:** the open format skills follow, so they work across tools
 
 ## Next up
 

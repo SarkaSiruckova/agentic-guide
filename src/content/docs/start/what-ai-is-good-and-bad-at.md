@@ -13,6 +13,13 @@ A model that sometimes states false things with confidence is still very useful,
 
 **In one line:** AI assistants are strong at working with words and patterns, weak at exact facts and figures they have not been given, and should never be the one accountable for a decision.
 
+## The jargon: concepts covered on this page
+
+- **Extraction:** pulling specific details, such as names, dates or amounts, out of text
+- **Jagged frontier:** the uneven shape of AI ability, strong at some hard tasks and weak at some easy ones
+- **Knowledge cutoff:** the date the model's training text stops, after which it knows nothing unless given sources
+- **Non-determinism:** getting different outputs from the same input on different runs
+
 ## Why it matters
 
 Most disappointment with AI comes from mismatched expectations. Some people ask it for things it does badly, get a wrong answer, and give up. Others trust it with everything and get caught out by a confident mistake.
@@ -91,13 +98,6 @@ A simple way to sort any task:
 - [Tool use](/agents/tool-use/): how calculators, search and files cover a model's blind spots
 - [Reasoning models](/using-ai/reasoning-models/): models that think step by step, which helps on harder problems
 - [Human in the loop](/agents/human-in-the-loop/): keeping a person on the decisions that matter
-
-## The proper terms
-
-- **Extraction:** pulling specific details, such as names, dates or amounts, out of text
-- **Jagged frontier:** the uneven shape of AI ability, strong at some hard tasks and weak at some easy ones
-- **Knowledge cutoff:** the date the model's training text stops, after which it knows nothing unless given sources
-- **Non-determinism:** getting different outputs from the same input on different runs
 
 ## Next up
 

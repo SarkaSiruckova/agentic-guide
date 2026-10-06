@@ -13,6 +13,16 @@ Each provider page has a short data section. This page puts the business and API
 
 **In one line:** before you send personal data or confidential material to a model provider, check six things in its official business terms: training, retention, contract, location, sub-processors and security evidence.
 
+## The jargon: concepts covered on this page
+
+- **Data processing agreement:** a contract setting how a vendor handles your personal data
+- **Sub-processor:** another company the vendor passes your data to
+- **Zero data retention:** an arrangement where the provider stores no inputs or outputs
+- **Abuse monitoring:** checks a provider runs to catch banned uses
+- **Data residency:** the country or region where data is stored or processed
+- **Standard Contractual Clauses:** standard contract terms for sending personal data abroad
+- **Restricted transfer:** sending personal data to a country outside the UK
+
 ## Why it matters
 
 A model provider is a company that receives your text. What it may do with that text is set by its terms, and those terms are not the same for a free chat app, a business plan and an API product from the same company.
@@ -119,16 +129,6 @@ She finds that two providers answer most questions on public pages and two leave
 - [How to judge a new model](/models/how-to-judge-a-new-model/): where data terms fit in a model check
 - [Open-weight options](/models/open-weight-options/): running a model yourself instead
 - [Audit trails](/running/audit-trails/): keeping a record of what you checked and what the agent did
-
-## The proper terms
-
-- **Data processing agreement:** a contract setting how a vendor handles your personal data
-- **Sub-processor:** another company the vendor passes your data to
-- **Zero data retention:** an arrangement where the provider stores no inputs or outputs
-- **Abuse monitoring:** checks a provider runs to catch banned uses
-- **Data residency:** the country or region where data is stored or processed
-- **Standard Contractual Clauses:** standard contract terms for sending personal data abroad
-- **Restricted transfer:** sending personal data to a country outside the UK
 
 ## Next up
 

@@ -13,6 +13,14 @@ Narrow keys and closed exits, covered in [data exfiltration through tools](/runn
 
 **In one line:** an audit trail is a lasting, protected record of who did what, to which record, when, and with what result, kept so that someone can review and explain it later.
 
+## The jargon: concepts covered on this page
+
+- **Append-only:** a record where entries can be added but not changed or removed
+- **Audit event:** one entry recording who did what, to what, when and the result
+- **Audit trail:** a lasting protected record of actions kept for accountability
+- **Retention period:** how long records are kept before deletion
+- **Tamper-resistant:** protected so records cannot be quietly altered
+
 ## Why it matters
 
 Sooner or later someone asks, "who changed this?" It may be a partner noticing a wrong figure, a colleague wondering why a record vanished, or an outside reviewer checking how the firm handles investor data. Without a record, the honest answer is "we do not know".
@@ -100,14 +108,6 @@ The trail did three jobs: it identified what happened, separated the associate f
 - [Human in the loop](/agents/human-in-the-loop/): approvals and refusals belong in the trail
 - [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/): how long to keep logs, and the personal data in them
 - [Least privilege](/running/least-privilege/): separate agent identities make a trail meaningful
-
-## The proper terms
-
-- **Append-only:** a record where entries can be added but not changed or removed
-- **Audit event:** one entry recording who did what, to what, when and the result
-- **Audit trail:** a lasting protected record of actions kept for accountability
-- **Retention period:** how long records are kept before deletion
-- **Tamper-resistant:** protected so records cannot be quietly altered
 
 ## Next up
 

@@ -13,6 +13,17 @@ After WhatsApp's rules, Telegram is the lightest channel in this section of the 
 
 **In one line:** a Telegram bot is an account run by code instead of a person, and it is the quickest way to put an agent behind a chat app.
 
+## The jargon: concepts covered on this page
+
+- **Bot token:** a secret string that lets code act as a Telegram bot
+- **BotFather:** Telegram's official bot for creating and managing bots
+- **Long polling:** repeatedly asking a server whether anything new has arrived
+- **Privacy mode:** a setting limiting which group messages a bot can see
+- **Inline keyboard:** buttons shown under a message that send a callback when pressed
+- **Cloud chat:** a Telegram chat stored on Telegram's servers, not end-to-end encrypted by default
+- **Secret chat:** a one to one Telegram chat with end-to-end encryption
+- **Allowlist:** a short list of approved senders, with everyone else ignored
+
 ## Why it matters
 
 Telegram is the easiest channel to start with. There is no company approval step, no app review and no admin console. You message a bot called BotFather, get a token, and your code can be chatting within an hour.
@@ -119,17 +130,6 @@ An associate at Sample Ventures wants to try a personal research assistant, usin
 - [Slack](/channels/slack/): a workspace tool with admin approval and retention controls
 - [Microsoft Teams](/channels/microsoft-teams/): the Microsoft 365 route
 - [Least privilege](/running/least-privilege/): why an allowlist beats an obscure username
-
-## The proper terms
-
-- **Bot token:** a secret string that lets code act as a Telegram bot
-- **BotFather:** Telegram's official bot for creating and managing bots
-- **Long polling:** repeatedly asking a server whether anything new has arrived
-- **Privacy mode:** a setting limiting which group messages a bot can see
-- **Inline keyboard:** buttons shown under a message that send a callback when pressed
-- **Cloud chat:** a Telegram chat stored on Telegram's servers, not end-to-end encrypted by default
-- **Secret chat:** a one to one Telegram chat with end-to-end encryption
-- **Allowlist:** a short list of approved senders, with everyone else ignored
 
 ## Next up
 

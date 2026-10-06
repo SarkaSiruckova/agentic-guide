@@ -13,6 +13,16 @@ Database queries work when you know which field to ask about (see [how LLMs talk
 
 **In one line:** an embedding turns a piece of text (or an image) into a long list of numbers, so that pieces with similar meaning end up close together and can be found by distance.
 
+## The jargon: concepts covered on this page
+
+- **Chunk:** a smaller piece of a document, embedded on its own
+- **Cosine similarity:** a score for how closely two vectors point the same way
+- **Embedding:** a list of numbers that represents the meaning of a piece of content
+- **Embedding model:** a model that turns content into embeddings, separate from a chat model
+- **Semantic search:** finding items by meaning instead of exact words
+- **Vector:** an ordered list of numbers, here the address of an embedding
+- **Vector database:** a database built to find the nearest vectors quickly
+
 ## Why it matters
 
 Ordinary search matches words. Search for "fraud" and you find notes that contain the word "fraud". A note that says "chargebacks are hurting margins" is about the same worry, but it never uses that word, so keyword search misses it.
@@ -95,16 +105,6 @@ The most common mistake is trusting the top result without reading it. Treat emb
 - [What an LLM is](/start/what-an-llm-is/): the chat model is a different kind of model from an embedding model
 - [RAG and chunking](/data/rag-and-chunking/): embeddings find the passages, chunking decides what a passage is
 - [Types of databases](/data/types-of-databases/): where vectors are stored
-
-## The proper terms
-
-- **Chunk:** a smaller piece of a document, embedded on its own
-- **Cosine similarity:** a score for how closely two vectors point the same way
-- **Embedding:** a list of numbers that represents the meaning of a piece of content
-- **Embedding model:** a model that turns content into embeddings, separate from a chat model
-- **Semantic search:** finding items by meaning instead of exact words
-- **Vector:** an ordered list of numbers, here the address of an embedding
-- **Vector database:** a database built to find the nearest vectors quickly
 
 ## Next up
 

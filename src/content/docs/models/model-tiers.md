@@ -13,6 +13,17 @@ Every carmaker sells a range of engines, from small and frugal to large and powe
 
 **In one line:** a model family is a set of related models from one provider, and a tier is the size-and-speed level within it, so you can pick the cheap fast one for simple jobs and the heavyweight for hard ones.
 
+## The jargon: concepts covered on this page
+
+- **Model family:** a set of related models sold under one name
+- **Tier:** a size and speed level within a family
+- **Reasoning effort:** a setting for how long a model thinks before answering
+- **Alias:** a model name that points at whichever version the provider chooses
+- **Snapshot:** a fixed version of a model that does not change
+- **Pinning:** choosing a fixed model version so results stay repeatable
+- **Deprecation:** a provider's notice that a model will be switched off
+- **Retirement:** the date a model stops answering requests
+
 ## Why it matters
 
 Nobody sells one model any more. Each provider sells a family, with a larger model that handles hard work, a smaller one that answers quickly and cheaply, and often something in between. Picking the right level for each job is one of the biggest levers you have on cost and speed.
@@ -96,17 +107,6 @@ She writes each model name into one settings file, not into the code. When a pro
 - [How to judge a new model](/models/how-to-judge-a-new-model/): a repeatable test for each launch
 - [Model access platforms](/map/model-access-platforms/): the doors through which tiers are reached
 - [Estimating cost per task](/running/estimating-cost-per-task/): turning a tier choice into a number
-
-## The proper terms
-
-- **Model family:** a set of related models sold under one name
-- **Tier:** a size and speed level within a family
-- **Reasoning effort:** a setting for how long a model thinks before answering
-- **Alias:** a model name that points at whichever version the provider chooses
-- **Snapshot:** a fixed version of a model that does not change
-- **Pinning:** choosing a fixed model version so results stay repeatable
-- **Deprecation:** a provider's notice that a model will be switched off
-- **Retirement:** the date a model stops answering requests
 
 ## Next up
 

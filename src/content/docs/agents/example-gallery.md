@@ -13,6 +13,13 @@ Tools, connectors, skills, memory, approvals and [subagents](/agents/subagents-a
 
 **In one line:** most useful AI setups are a few familiar pieces joined together, and the label (chat, workflow, automation or agent) depends on who decides the next step.
 
+## The jargon: concepts covered on this page
+
+- **Connector:** a link that lets Claude read from or act in another app
+- **Scheduled task:** a saved instruction that runs on a timetable without you starting it
+- **Model step:** one step in a workflow where a model does the work, such as writing a reply
+- **Read-only access:** permission to look at data but not change or send it
+
 ## Why it matters
 
 Reading about parts one at a time can leave you unsure where to start. Seeing whole setups shows which pieces tend to go together, how much effort each takes, and where a person still needs to look before anything happens.
@@ -109,13 +116,6 @@ For the bigger picture of how these pieces sit together, follow a single request
 - [Skills in Claude](/agents/skills-in-claude/): saving a set of steps Claude can reuse
 - [Triggers and scheduling](/building/triggers-and-scheduling/): starting work without pressing a button
 - [Safety basics](/agents/safety-basics/): what to check before connecting anything
-
-## The proper terms
-
-- **Connector:** a link that lets Claude read from or act in another app
-- **Scheduled task:** a saved instruction that runs on a timetable without you starting it
-- **Model step:** one step in a workflow where a model does the work, such as writing a reply
-- **Read-only access:** permission to look at data but not change or send it
 
 ## Next up
 

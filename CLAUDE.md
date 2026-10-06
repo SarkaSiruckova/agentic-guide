@@ -86,7 +86,7 @@ Pages in Parts 1 to 3 are written for people who do not code. Building pages (Pa
 Every page leads into the next, so the guide reads as one story.
 
 - **Opening bridge:** one or two sentences directly after the frontmatter, before "**In one line:**". Link the page to the one before it and say what this page adds. It must still make sense to someone arriving from search: never "as we covered".
-- **Next up:** a final `## Next up` section after "The proper terms". One or two sentences on why the next page follows, ending with a link to it.
+- **Next up:** a final `## Next up` section after "Related". One or two sentences on why the next page follows, ending with a link to it.
 - **When inserting a page,** update the Next up of the page before it, and write this page's Next up to point at the page after it.
 - **Later terms:** if a sentence depends on a term whose page comes later in the order, add a short plain gloss the first time, such as "tool use (letting the model call other software, covered in Part 3)". Refer to "Part N", never "chapter N".
 - **The car metaphor** runs through the guide. Use it only where it helps, and keep the mapping: model = engine, tokens = fuel, context window = what the driver can see, prompt = directions, system prompt = standing rules of the road, tools = controls, agent loop = driving, harness = the rest of the car, memory = logbook, MCP = a standard socket, data and the context layer = maps and road knowledge, permissions = keys, security = locks and alarm, cost = fuel bill, the map = road network, model makers = carmakers, building (Part 4) = the garage.
@@ -110,7 +110,15 @@ Tags must come from `tags.yml`. Add a new tag there (with label, description and
 
 ## Concept page template
 
-Every concept page in Parts 1 to 7 follows `templates/concept.md`. Keep the section headings exactly as written there so every page reads the same way. Practical "in Claude" pages, building pages and electives can adapt the template where a section doesn't fit, but keep the same voice.
+Every concept page in Parts 1 to 7 follows `templates/concept.md`. Keep the section headings exactly as written there so every page reads the same way.
+
+Three sections are turned into designed blocks at build time by `src/plugins/rehype-guide-blocks.mjs` (styles in `src/styles/custom.css`), so their markdown must keep the expected shape:
+
+- `## The jargon: concepts covered on this page`, placed right after the "In one line" sentence, followed by one list of `- **Term:** meaning` lines. It becomes the jargon card: term boxes, plus a button that reveals each meaning. The glossary is built from these lists.
+- `## Related`, followed by one list where every line starts with a link: `- [Page](/path/): note`. It becomes link tiles.
+- `## Next up`, always the last section, ending with a link to the next page. It becomes the Next up box, with a button for the last link.
+
+If a section does not match this shape, it is shown as plain markdown instead, so check the test build. Practical "in Claude" pages, building pages and electives can adapt the template where a section doesn't fit, but keep the same voice.
 
 ## Diagrams
 

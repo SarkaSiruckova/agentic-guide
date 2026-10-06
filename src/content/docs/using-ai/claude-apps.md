@@ -15,6 +15,15 @@ Once you have chosen between [free, a subscription or the API](/start/free-vs-su
 
 *Snapshot, as of October 2026. Anthropic adds, renames and moves features often, so check its help pages at support.claude.com for current details.*
 
+## The jargon: concepts covered on this page
+
+- **Chat:** a single conversation with the model
+- **Project:** a workspace with its own chats, files and instructions
+- **Cowork:** Claude's agent mode in the desktop app for multi-step tasks on your files
+- **Claude in Chrome:** a browser extension that lets Claude act in web pages
+- **Artifact:** a document or small app Claude builds in a side panel
+- **Research:** a mode that runs several searches and returns a cited answer
+
 ## Why it matters
 
 Most people only ever use the chat box. That works, but it means re-explaining the same background every time, pasting the same files again, and asking a chat to do jobs it cannot reach, like tidying a folder on your laptop.
@@ -99,15 +108,6 @@ Each research question gets its own chat inside the Project, so the brief is alw
 - [Projects and memory](/using-ai/projects-and-memory/): keeping background across chats
 - [Connectors in Claude](/agents/connectors-in-claude/): linking Claude to your other apps
 - [Claude Code and the API](/building/claude-code-and-the-api/): the tools for building your own
-
-## The proper terms
-
-- **Chat:** a single conversation with the model
-- **Project:** a workspace with its own chats, files and instructions
-- **Cowork:** Claude's agent mode in the desktop app for multi-step tasks on your files
-- **Claude in Chrome:** a browser extension that lets Claude act in web pages
-- **Artifact:** a document or small app Claude builds in a side panel
-- **Research:** a mode that runs several searches and returns a cited answer
 
 ## Next up
 

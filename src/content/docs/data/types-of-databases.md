@@ -13,6 +13,17 @@ Data that fits in tables and data that lives in free text (see [structured vs un
 
 **In one line:** a database is an organised store that software can search and update reliably, and the different types are built around different shapes of question.
 
+## The jargon: concepts covered on this page
+
+- **Database:** an organised store that software can search and update reliably
+- **Document database:** stores flexible, self-contained records, usually as JSON
+- **Graph database:** stores things and the links between them
+- **Key-value store:** stores a value under a name for fast lookup
+- **Relational database:** stores data in linked tables, queried with SQL
+- **Search engine:** indexes words in text to find and rank matching documents
+- **SQL:** a standard language for querying relational databases
+- **Vector database:** stores embeddings to find items with similar meaning
+
 ## Why it matters
 
 "Database" sounds like one thing, but there are several designs, each good at a different job. Picking the wrong one makes simple questions slow or awkward.
@@ -95,17 +106,6 @@ The most common mistake is picking a database because it sounds modern for AI, b
 - [Embeddings](/data/embeddings/): what a vector database stores
 - [Knowledge graphs](/data/knowledge-graphs/): the idea behind graph databases
 - [How LLMs talk to databases](/data/how-llms-talk-to-databases/): how an agent actually queries them
-
-## The proper terms
-
-- **Database:** an organised store that software can search and update reliably
-- **Document database:** stores flexible, self-contained records, usually as JSON
-- **Graph database:** stores things and the links between them
-- **Key-value store:** stores a value under a name for fast lookup
-- **Relational database:** stores data in linked tables, queried with SQL
-- **Search engine:** indexes words in text to find and rank matching documents
-- **SQL:** a standard language for querying relational databases
-- **Vector database:** stores embeddings to find items with similar meaning
 
 ## Next up
 

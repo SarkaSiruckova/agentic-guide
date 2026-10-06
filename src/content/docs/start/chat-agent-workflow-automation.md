@@ -13,6 +13,15 @@ A [language model](/start/what-an-llm-is/) on its own only predicts text; what i
 
 **In one line:** chat, workflow, automation and agent are four different ways of getting work done with AI, and what separates them is who decides the next step.
 
+## The jargon: concepts covered on this page
+
+- **Agent:** a system where the model itself chooses each next step to reach a goal
+- **Automation:** a trigger joined to a workflow, so it runs without anyone starting it
+- **Chat:** a back-and-forth with a model where you decide each next step
+- **Tool:** an action a model is allowed to take, such as searching a database or sending a message
+- **Trigger:** an event, such as a new email arriving, that starts something automatically
+- **Workflow:** a fixed list of steps that runs the same way every time
+
 ## Why it matters
 
 People say "agent" for almost anything that uses AI. Vendors do it, articles do it, colleagues do it. When one word covers everything, you can't tell what a product actually does, what it could get wrong, or what it will cost to run.
@@ -135,15 +144,6 @@ The most common mistake is using an agent where a workflow would do, or calling 
 - [Agentic harness](/agents/agentic-harness/): everything around the model that turns it into an agent
 - [Glossary](/reference/glossary/): every term in one line
 - [Orchestration tools](/building/orchestration-tools/): software for building workflows and automations
-
-## The proper terms
-
-- **Agent:** a system where the model itself chooses each next step to reach a goal
-- **Automation:** a trigger joined to a workflow, so it runs without anyone starting it
-- **Chat:** a back-and-forth with a model where you decide each next step
-- **Tool:** an action a model is allowed to take, such as searching a database or sending a message
-- **Trigger:** an event, such as a new email arriving, that starts something automatically
-- **Workflow:** a fixed list of steps that runs the same way every time
 
 ## Next up
 

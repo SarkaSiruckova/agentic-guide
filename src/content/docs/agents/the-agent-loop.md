@@ -13,6 +13,14 @@ A single [tool call](/agents/tool-use/) is one move of the controls. The agent l
 
 **In one line:** the agent loop is the cycle of decide, act and look at the result that an agent repeats until the goal is met or something stops it.
 
+## The jargon: concepts covered on this page
+
+- **Agent loop:** the repeating cycle of deciding, acting and observing
+- **Observation:** the result of an action, added to the record
+- **ReAct:** short for "reason and act", the name of the pattern
+- **Round:** one trip through the loop
+- **Step limit:** a cap on the number of rounds before the loop is stopped
+
 ## Why it matters
 
 A single tool call answers a single question. Most real jobs take several steps, and you can't know in advance which ones, because what you find at step two decides what you do at step three. The loop is what lets a model handle that.
@@ -99,14 +107,6 @@ The most common mistakes are running an agent with no limits, and giving it tool
 - [Agentic harness](/agents/agentic-harness/): the software that runs the loop and sets its limits
 - [Estimating cost per task](/running/estimating-cost-per-task/): why a growing record makes loops cost more
 - [Rate limits, retries and failures](/running/rate-limits-retries-and-failures/): what to do when a step fails
-
-## The proper terms
-
-- **Agent loop:** the repeating cycle of deciding, acting and observing
-- **Observation:** the result of an action, added to the record
-- **ReAct:** short for "reason and act", the name of the pattern
-- **Round:** one trip through the loop
-- **Step limit:** a cap on the number of rounds before the loop is stopped
 
 ## Next up
 

@@ -13,6 +13,17 @@ This is one of a set of parallel provider snapshots, each with the same headings
 
 **In one line:** xAI builds the Grok family of models, offered through the Grok app, the X platform and a developer API, and it is now part of SpaceX.
 
+## The jargon: concepts covered on this page
+
+- **Zero data retention:** a setting where prompts and outputs are not stored after use
+- **Community licence:** a custom open-weight licence with conditions beyond a standard one
+- **Acceptable use policy:** a list of uses a licence or service forbids
+- **SOC 2 Type II:** an audit report on a provider's security controls over time
+- **Business associate agreement:** a contract for handling US health data
+- **Single sign-on:** one company login used across many services
+- **Regional endpoint:** a service address that keeps processing within a chosen region
+- **Multi-agent mode:** several agents working on one question in parallel
+
 ## Why it matters
 
 Grok is the one major assistant that is closely tied to a social network: Grok is available inside X, and its web search tools can search X posts. That makes it a different kind of product from the others in this section, with different data terms depending on where you use it.
@@ -88,17 +99,6 @@ For what a data processing agreement is and when you need one, see [GDPR, data r
 - [Data terms at a glance](/models/data-terms-at-a-glance/): provider terms side by side
 - [Model access platforms](/map/model-access-platforms/): direct, cloud and gateway routes
 - [Prompt injection](/running/prompt-injection/): a risk to weigh with any model that reads live web or social content
-
-## The proper terms
-
-- **Zero data retention:** a setting where prompts and outputs are not stored after use
-- **Community licence:** a custom open-weight licence with conditions beyond a standard one
-- **Acceptable use policy:** a list of uses a licence or service forbids
-- **SOC 2 Type II:** an audit report on a provider's security controls over time
-- **Business associate agreement:** a contract for handling US health data
-- **Single sign-on:** one company login used across many services
-- **Regional endpoint:** a service address that keeps processing within a chosen region
-- **Multi-agent mode:** several agents working on one question in parallel
 
 ## Next up
 

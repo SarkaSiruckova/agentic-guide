@@ -13,6 +13,16 @@ Once you know what kinds of model exist, a practical question follows: who holds
 
 **In one line:** a closed-weight model can only be used through its provider's service, while an open-weight model publishes its learned numbers so anyone can download and run it, under a licence that sets the rules.
 
+## The jargon: concepts covered on this page
+
+- **Weights:** the learned numbers that make up a model
+- **Closed-weight model:** a model usable only through its provider's service
+- **Open-weight model:** a model whose weights are published for anyone to download and run
+- **Open source AI:** a system released with weights, training code and data information under open terms
+- **Licence:** the legal terms that set what you may do with a model
+- **Self-hosting:** running a model on infrastructure you control
+- **Hosted open model:** an open model run for you by a third party
+
 ## Why it matters
 
 When you pick a model, you are also picking who holds it. With a closed model, your text travels to the provider, is processed on their machines, and comes back. With an open model, you can bring the model to your text instead.
@@ -95,16 +105,6 @@ Her conclusion: "open weights" is not a privacy answer on its own. A downloaded 
 - [Inference](/under-the-hood/inference/): what running a model involves, wherever it runs
 - [Permissions and access control](/data/permissions-and-access-control/): who can reach the data once a model is connected
 - [Open-model hosting](/map/open-model-hosting/): who runs an open model for you
-
-## The proper terms
-
-- **Weights:** the learned numbers that make up a model
-- **Closed-weight model:** a model usable only through its provider's service
-- **Open-weight model:** a model whose weights are published for anyone to download and run
-- **Open source AI:** a system released with weights, training code and data information under open terms
-- **Licence:** the legal terms that set what you may do with a model
-- **Self-hosting:** running a model on infrastructure you control
-- **Hosted open model:** an open model run for you by a third party
 
 ## Next up
 

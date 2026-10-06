@@ -13,6 +13,13 @@ sidebar:
 
 **In one line:** a reasoning model writes out its own working before it answers, which helps on hard, multi-step problems but takes longer and uses more of your allowance.
 
+## The jargon: concepts covered on this page
+
+- **Reasoning model:** a language model trained to think step by step before answering
+- **Extended thinking:** the setting that lets a model think before replying, as named in the Claude apps
+- **Chain of thought:** the working a model writes out before its answer
+- **Effort level:** a setting for how much a model should think, from low to max
+
 ## Why it matters
 
 Some questions can be answered at a glance, such as "what is the capital of France?". Others need working out, such as "if flour goes up and butter goes up, what should a croissant cost to keep the same margin?". A model answering straight away can jump to the wrong answer on the second kind.
@@ -91,13 +98,6 @@ The most common mistake is leaving maximum thinking on for everything. Match the
 - [Prompt engineering](/using-ai/prompt-engineering/): a clear question matters more than any setting
 - [Hallucination and grounding](/start/hallucination-and-grounding/): why even careful reasoning needs checking
 - [LLMs, LRMs and LQMs](/under-the-hood/llms-lrms-and-lqms/): how reasoning models are trained, in the optional deep dives
-
-## The proper terms
-
-- **Reasoning model:** a language model trained to think step by step before answering
-- **Extended thinking:** the setting that lets a model think before replying, as named in the Claude apps
-- **Chain of thought:** the working a model writes out before its answer
-- **Effort level:** a setting for how much a model should think, from low to max
 
 ## Next up
 

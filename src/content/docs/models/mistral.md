@@ -13,6 +13,15 @@ This is one of a set of parallel provider snapshots, each with the same headings
 
 **In one line:** Mistral AI is a Paris-based lab that offers a mix of downloadable open-weight models and commercial models, reachable through its own apps and developer platform, through big clouds, or on your own hardware.
 
+## The jargon: concepts covered on this page
+
+- **Open weights:** model files published for anyone to download and run
+- **Apache 2.0:** a permissive licence allowing commercial use with few conditions
+- **OCR:** software that reads text from scanned pages and images
+- **Mixture of experts:** a model design that activates only part of its parameters per word
+- **Data processing addendum:** a contract schedule setting how a supplier handles your personal data
+- **Zero retention:** a setting where the provider keeps no copy of your requests
+
 ## Why it matters
 
 Mistral is the European model provider covered in this guide. For a UK firm that is weighing where its data is processed, a provider that is incorporated in France and says it hosts its own service in the EU is a different conversation from a US or Chinese one. That is a fact about contracts and location, not a verdict on quality.
@@ -97,15 +106,6 @@ Self-hosted open weights stay on your own infrastructure, so none of the hosted-
 - [Data terms at a glance](/models/data-terms-at-a-glance/): a side-by-side view of provider data terms
 - [Specialised models](/map/specialised-models/): OCR, embeddings and speech models
 - [Model access platforms](/map/model-access-platforms/): the doors to reach a model
-
-## The proper terms
-
-- **Open weights:** model files published for anyone to download and run
-- **Apache 2.0:** a permissive licence allowing commercial use with few conditions
-- **OCR:** software that reads text from scanned pages and images
-- **Mixture of experts:** a model design that activates only part of its parameters per word
-- **Data processing addendum:** a contract schedule setting how a supplier handles your personal data
-- **Zero retention:** a setting where the provider keeps no copy of your requests
 
 ## Next up
 

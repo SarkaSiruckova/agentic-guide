@@ -15,6 +15,22 @@ Security, from prompt injection through to [audit trails](/running/audit-trails/
 
 This page is general information to help you ask better questions. It is not legal advice. For a real decision, speak to a lawyer or your organisation's data protection lead.
 
+## The jargon: concepts covered on this page
+
+- **Personal data:** any information about an identifiable living person
+- **Controller:** the organisation that decides why and how personal data is used
+- **Processor:** an organisation that handles personal data on a controller's behalf
+- **Sub-processor:** another company a processor uses to handle the data
+- **Lawful basis:** the legal reason that makes using personal data allowed
+- **Data minimisation:** using only the personal data you actually need
+- **Storage limitation:** keeping personal data no longer than necessary
+- **Data retention:** how long data is kept before deletion
+- **Data processing agreement (DPA):** the contract setting how a vendor may handle your personal data
+- **DPIA:** a written risk review for higher-risk uses of personal data
+- **Special category data:** sensitive personal data such as health, beliefs or ethnic origin
+- **Restricted transfer:** sending personal data to a country outside the UK
+- **ICO:** the UK regulator for data protection
+
 ## Why it matters
 
 Most useful business data is about people. A CRM holds names, emails, roles and notes about founders and investors. If an agent reads those records, the information about those people moves into prompts, logs and search indexes, often at a vendor's servers.
@@ -139,22 +155,6 @@ The result is a short file: the signed DPA, the DPIA, and a one-page map of wher
 - [Permissions and access control](/data/permissions-and-access-control/): who may see personal data once it is in your systems
 - [Memory](/agents/memory/): a store of facts about people that needs retention rules
 - [RAG and chunking](/data/rag-and-chunking/): indexes hold copies of personal data that deletion must reach
-
-## The proper terms
-
-- **Personal data:** any information about an identifiable living person
-- **Controller:** the organisation that decides why and how personal data is used
-- **Processor:** an organisation that handles personal data on a controller's behalf
-- **Sub-processor:** another company a processor uses to handle the data
-- **Lawful basis:** the legal reason that makes using personal data allowed
-- **Data minimisation:** using only the personal data you actually need
-- **Storage limitation:** keeping personal data no longer than necessary
-- **Data retention:** how long data is kept before deletion
-- **Data processing agreement (DPA):** the contract setting how a vendor may handle your personal data
-- **DPIA:** a written risk review for higher-risk uses of personal data
-- **Special category data:** sensitive personal data such as health, beliefs or ethnic origin
-- **Restricted transfer:** sending personal data to a country outside the UK
-- **ICO:** the UK regulator for data protection
 
 ## Next up
 

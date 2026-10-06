@@ -13,6 +13,16 @@ This is one of a set of parallel provider snapshots, each with the same headings
 
 **In one line:** OpenAI is the AI company behind the GPT family of models and the ChatGPT app, and it sells closed models through its own apps and API as well as publishing a pair of open-weight models.
 
+## The jargon: concepts covered on this page
+
+- **GPT:** OpenAI's family of language models
+- **ChatGPT:** OpenAI's consumer and business chat app
+- **Codex:** OpenAI's coding agent
+- **Agents SDK:** OpenAI's library for building multi-agent programs
+- **Responses API:** OpenAI's API for requests that use tools
+- **gpt-oss:** OpenAI's open-weight model pair
+- **Public benefit corporation:** a company legally required to weigh a stated public mission
+
 ## Why it matters
 
 OpenAI's API request format is widely copied, so many gateways and tools accept it as a common language (see [model access platforms](/map/model-access-platforms/)). ChatGPT is also the AI app that many colleagues will already be using.
@@ -84,16 +94,6 @@ Terms differ between consumer and business products and can change. Read the cur
 - [Open-weight options](/models/open-weight-options/): where gpt-oss sits among other open models
 - [Data terms at a glance](/models/data-terms-at-a-glance/): comparing training and retention terms across providers
 - [MCP](/agents/mcp/): the standard OpenAI co-founded a foundation to host
-
-## The proper terms
-
-- **GPT:** OpenAI's family of language models
-- **ChatGPT:** OpenAI's consumer and business chat app
-- **Codex:** OpenAI's coding agent
-- **Agents SDK:** OpenAI's library for building multi-agent programs
-- **Responses API:** OpenAI's API for requests that use tools
-- **gpt-oss:** OpenAI's open-weight model pair
-- **Public benefit corporation:** a company legally required to weigh a stated public mission
 
 ## Next up
 

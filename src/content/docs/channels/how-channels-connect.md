@@ -13,6 +13,17 @@ Before looking at any single app, it helps to see the parts every channel shares
 
 **In one line:** a chat channel connects to an agent through a small app or bot registered with the chat platform, which hands each new message to your code, waits for the agent's answer and posts it back.
 
+## The jargon: concepts covered on this page
+
+- **Channel bot:** software registered with a chat platform to receive and send messages
+- **Long-lived connection:** a connection kept open so the platform can push events down it
+- **Polling:** asking the platform repeatedly whether anything new has arrived
+- **Acknowledgement:** a quick reply telling the platform an event was received
+- **Request signature:** a code proving a request came from the platform unaltered
+- **Replay attack:** resending a genuine recorded request to trigger it again
+- **Identity mapping:** matching a chat user to a real person in your systems
+- **Thread:** a linked run of messages that gives a conversation its context
+
 ## Why it matters
 
 Most people will never open a new tool to talk to an agent. They will message it where they already talk: the team chat, a messaging app, an inbox. So the question for a small firm is not "can the agent answer?" but "how does a message in that app reach it, and who is allowed to send one?"
@@ -150,20 +161,12 @@ Sample Ventures wants associates to ask the agent about portfolio companies from
 
 - [Interfaces](/map/interfaces/): the wider family of ways to reach an agent
 - [Querying vs adding information safely](/channels/querying-vs-adding-safely/): reads and writes carry different risk
-- [Slack](/channels/slack/), [Telegram](/channels/telegram/), [WhatsApp](/channels/whatsapp/) and [Microsoft Teams](/channels/microsoft-teams/): the platform details
+- [Slack](/channels/slack/): the platform details for a team chat app
+- [Telegram](/channels/telegram/): the platform details for a simple bot
+- [WhatsApp](/channels/whatsapp/): the platform details for the business API
+- [Microsoft Teams](/channels/microsoft-teams/): the platform details for a Microsoft 365 firm
 - [Permissions and access control](/data/permissions-and-access-control/): what each person may see
 - [Prompt injection](/running/prompt-injection/): why chat text is untrusted
-
-## The proper terms
-
-- **Channel bot:** software registered with a chat platform to receive and send messages
-- **Long-lived connection:** a connection kept open so the platform can push events down it
-- **Polling:** asking the platform repeatedly whether anything new has arrived
-- **Acknowledgement:** a quick reply telling the platform an event was received
-- **Request signature:** a code proving a request came from the platform unaltered
-- **Replay attack:** resending a genuine recorded request to trigger it again
-- **Identity mapping:** matching a chat user to a real person in your systems
-- **Thread:** a linked run of messages that gives a conversation its context
 
 ## Next up
 

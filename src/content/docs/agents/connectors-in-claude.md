@@ -13,6 +13,17 @@ MCP is the standard socket that lets an assistant plug into other systems. In th
 
 **In one line:** a connector is a ready-made link between Claude and another service, such as your calendar or file store, built on MCP, that you add once in settings and then switch on or off in each chat.
 
+## The jargon: concepts covered on this page
+
+- **Connector:** a link between Claude and an outside service, built on MCP
+- **Connectors directory:** Anthropic's catalogue of ready-made connectors
+- **Custom connector:** a connector you add yourself by the URL of a remote MCP server
+- **Desktop extension:** a local connector that runs on your computer in the desktop app
+- **Scope:** one slice of access listed on a sign-in consent screen
+- **Consent screen:** the page where a service shows what an app wants to do and asks you to approve
+- **Tool permission:** the setting that decides whether a tool runs freely, needs approval or is blocked
+- **Owner:** the administrator of a Team or Enterprise account
+
 ## Why it matters
 
 On its own, Claude only knows what you type or upload. Ask "what is on my calendar tomorrow?" and it can only guess. A connector lets it look, so answers come from your real data instead of your memory of it.
@@ -124,17 +135,6 @@ Claude never held Sam's password, and nothing changed in the calendar without Sa
 - [Tool use](/agents/tool-use/): how Claude decides to call a connector's tools
 - [Human in the loop](/agents/human-in-the-loop/): why approval settings matter for writing actions
 - [Least privilege](/running/least-privilege/): the habit of granting only the access a job needs
-
-## The proper terms
-
-- **Connector:** a link between Claude and an outside service, built on MCP
-- **Connectors directory:** Anthropic's catalogue of ready-made connectors
-- **Custom connector:** a connector you add yourself by the URL of a remote MCP server
-- **Desktop extension:** a local connector that runs on your computer in the desktop app
-- **Scope:** one slice of access listed on a sign-in consent screen
-- **Consent screen:** the page where a service shows what an app wants to do and asks you to approve
-- **Tool permission:** the setting that decides whether a tool runs freely, needs approval or is blocked
-- **Owner:** the administrator of a Team or Enterprise account
 
 ## Next up
 

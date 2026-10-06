@@ -13,6 +13,15 @@ The rate per token is set by the provider, as [how API pricing works](/running/h
 
 **In one line:** prompt caching makes repeated text at the start of your requests cheaper and faster, and batch processing makes non-urgent work cheaper by accepting the results later.
 
+## The jargon: concepts covered on this page
+
+- **Prompt caching:** reusing the processed start of a prompt to cut cost and delay
+- **Prefix:** the beginning of a prompt, which must match exactly to be reused
+- **Cache hit:** a request that reuses cached material
+- **Cache write:** storing the processed start of a prompt for later reuse
+- **Time to live (TTL):** how long a cache entry lasts before it expires
+- **Batch processing:** submitting many non-urgent requests together for a lower price
+
 ## Why it matters
 
 Many AI jobs repeat themselves. An agent sends the same long instructions with every request. A tagging job sends the same rules with a thousand different notes. Each time, you pay again for the model to read text it has already read.
@@ -122,15 +131,6 @@ The cache figures ignore the one-off cost of writing the cache, which is small. 
 - [Context engineering](/data/context-engineering/): ordering what goes into the prompt, including for caching
 - [The agent loop](/agents/the-agent-loop/): the growing record that caching makes cheaper
 - [Rate limits, retries and failures](/running/rate-limits-retries-and-failures/): handling items that fail in a batch
-
-## The proper terms
-
-- **Prompt caching:** reusing the processed start of a prompt to cut cost and delay
-- **Prefix:** the beginning of a prompt, which must match exactly to be reused
-- **Cache hit:** a request that reuses cached material
-- **Cache write:** storing the processed start of a prompt for later reuse
-- **Time to live (TTL):** how long a cache entry lasts before it expires
-- **Batch processing:** submitting many non-urgent requests together for a lower price
 
 ## Next up
 

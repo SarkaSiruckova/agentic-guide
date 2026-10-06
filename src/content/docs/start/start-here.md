@@ -21,7 +21,7 @@ Examples follow three fictional cases: Sample Ventures, a small venture capital 
 
 ## How each page works
 
-Every idea comes in plain words first, then its proper name, so the vocabulary builds as you go. Most pages share the same sections: a one-line definition, why it matters, how it works, a worked example, costs and limits, and the proper terms at the end.
+Every idea comes in plain words first, then its proper name, so the vocabulary builds as you go. Most pages share the same sections: a one-line definition, a jargon box listing the proper terms the page covers (with a button to show what each means), why it matters, how it works, a worked example, and costs and limits.
 
 One picture runs through the guide: the model is the engine, and everything built around it is the rest of the car.
 

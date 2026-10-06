@@ -13,6 +13,15 @@ Once models are built, run, labelled, shared and shrunk, the last question is ho
 
 **In one line:** a benchmark is a public, standard test that many models take, so their scores can be compared, useful for building a shortlist but not for making the final choice.
 
+## The jargon: concepts covered on this page
+
+- **Benchmark:** a public standard test used to compare models in general
+- **Leaderboard:** a ranked table of model scores on one or more benchmarks
+- **Contamination:** test material leaking into a model's training data and inflating its score
+- **Saturation:** when top models score near the maximum and the test stops separating them
+- **Human preference arena:** a ranking built from people voting between anonymous model answers
+- **Shortlist:** the small set of candidate models chosen for your own testing
+
 ## Why it matters
 
 New models arrive constantly, each announced with charts showing it beating the others. You need some way to tell which are worth a look.
@@ -89,15 +98,6 @@ The result: the leaderboard leader gets 22 of 25 right but sometimes mixes up th
 - [Reasoning models](/using-ai/reasoning-models/): a type of model that benchmarks often target
 - [Hallucination and grounding](/start/hallucination-and-grounding/): why a high score does not mean reliable answers
 - [Model routing](/running/model-routing/): matching models to tasks once you know how they perform
-
-## The proper terms
-
-- **Benchmark:** a public standard test used to compare models in general
-- **Leaderboard:** a ranked table of model scores on one or more benchmarks
-- **Contamination:** test material leaking into a model's training data and inflating its score
-- **Saturation:** when top models score near the maximum and the test stops separating them
-- **Human preference arena:** a ranking built from people voting between anonymous model answers
-- **Shortlist:** the small set of candidate models chosen for your own testing
 
 ## Next up
 

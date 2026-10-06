@@ -13,6 +13,16 @@ sidebar:
 
 **In one line:** switch on the safety settings before you need them: the right privacy choice, memory you have checked, trimmed connectors, protected sign-in and a spending limit.
 
+## The jargon: concepts covered on this page
+
+- **Training setting:** the choice of whether your chats can be used to train future models
+- **Incognito chat:** a chat saved to neither history nor memory
+- **Connector:** a link that lets Claude read from or act in another service
+- **Two-factor authentication:** signing in with a password plus a second proof such as a phone code
+- **Recovery codes:** one-time codes that let you back into an account if your second factor is lost
+- **Usage credits:** optional paid extra usage once a subscription allowance runs out
+- **Spend limit:** a cap on money spent, after which use stops
+
 ## Why it matters
 
 Most AI tools ship with defaults that favour convenience. That is fine for idle questions. For a small business or anyone handling other people's information, the same defaults can mean chats used in ways you did not expect, a connector with more access than it needs, or a bill nobody noticed.
@@ -101,16 +111,6 @@ A spending limit protects you from a surprise bill but can also stop work mid-ta
 - [Data terms at a glance](/models/data-terms-at-a-glance/): training and retention rules by provider
 - [Claude Code in depth](/building/claude-code-in-depth/#recommended-settings-for-claude-code): the settings checklist for Claude Code
 - [Not burning tokens](/using-ai/not-burning-tokens/): the usage side of the same discipline
-
-## The proper terms
-
-- **Training setting:** the choice of whether your chats can be used to train future models
-- **Incognito chat:** a chat saved to neither history nor memory
-- **Connector:** a link that lets Claude read from or act in another service
-- **Two-factor authentication:** signing in with a password plus a second proof such as a phone code
-- **Recovery codes:** one-time codes that let you back into an account if your second factor is lost
-- **Usage credits:** optional paid extra usage once a subscription allowance runs out
-- **Spend limit:** a cap on money spent, after which use stops
 
 ## Next up
 

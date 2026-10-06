@@ -13,6 +13,27 @@ Claude Code, the agent that builds things in a folder for you (see [Claude Code 
 
 **In one line:** the terminal is a text window where you type instructions to your computer instead of clicking, and most of the AI building tools in this guide are run from it.
 
+## The jargon: concepts covered on this page
+
+- **Terminal:** the macOS app that gives you a window for typed commands
+- **Shell:** the program that reads your typed commands and runs them
+- **zsh:** the default shell on modern Macs
+- **PowerShell:** the usual shell on Windows
+- **WSL:** Windows Subsystem for Linux, a way to run a Linux terminal inside Windows
+- **Prompt:** the text shown when the shell is ready for input
+- **Current directory:** the folder the shell is working in right now
+- **Home folder:** your personal folder, written as `~`
+- **Path:** the written address of a file or folder
+- **Absolute path:** a path that starts from the top, working from anywhere
+- **Relative path:** a path that starts from the current folder
+- **Flag:** a small add-on to a command that changes its behaviour
+- **Tab completion:** pressing Tab to finish a file or command name
+- **Package manager:** a tool that installs and tracks other software
+- **Homebrew:** a package manager for macOS command-line tools and apps
+- **winget:** the package manager built into Windows
+- **npm:** the package manager for JavaScript tools, bundled with Node.js
+- **sudo:** a command prefix that runs something with administrator rights
+
 ## Why it matters
 
 Many of the tools you will use to build agents, such as Claude Code, the GitHub and Vercel command-line tools, and package installers, have no buttons. You start them by typing a short line of text. If the window feels foreign, every setup guide feels like a wall.
@@ -162,27 +183,6 @@ Linux users will find almost everything here works as written. On Windows the id
 - [Claude Code in depth](/building/claude-code-in-depth/): an AI tool you start and steer from the terminal
 - [Environment variables and secrets](/building/environment-variables-and-secrets/): where keys belong instead of the command line
 - [Permissions and access control](/data/permissions-and-access-control/): why `sudo` and wide permissions deserve caution
-
-## The proper terms
-
-- **Terminal:** the macOS app that gives you a window for typed commands
-- **Shell:** the program that reads your typed commands and runs them
-- **zsh:** the default shell on modern Macs
-- **PowerShell:** the usual shell on Windows
-- **WSL:** Windows Subsystem for Linux, a way to run a Linux terminal inside Windows
-- **Prompt:** the text shown when the shell is ready for input
-- **Current directory:** the folder the shell is working in right now
-- **Home folder:** your personal folder, written as `~`
-- **Path:** the written address of a file or folder
-- **Absolute path:** a path that starts from the top, working from anywhere
-- **Relative path:** a path that starts from the current folder
-- **Flag:** a small add-on to a command that changes its behaviour
-- **Tab completion:** pressing Tab to finish a file or command name
-- **Package manager:** a tool that installs and tracks other software
-- **Homebrew:** a package manager for macOS command-line tools and apps
-- **winget:** the package manager built into Windows
-- **npm:** the package manager for JavaScript tools, bundled with Node.js
-- **sudo:** a command prefix that runs something with administrator rights
 
 ## Next up
 

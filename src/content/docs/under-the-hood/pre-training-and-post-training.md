@@ -13,6 +13,18 @@ Once you can estimate what a task will cost to run, a natural next question is w
 
 **In one line:** pre-training is where a model learns language and general knowledge by predicting text, and post-training is where that raw model is shaped into a helpful, safer assistant.
 
+## The jargon: concepts covered on this page
+
+- **Pre-training:** the first phase, learning language and knowledge by predicting the next token
+- **Base model:** a pre-trained model that continues text but does not reliably follow instructions
+- **Post-training:** the later steps that turn a base model into a useful assistant
+- **Instruction tuning:** training on example requests and good replies so the model follows instructions
+- **Preference training:** training a model towards answers that people or AI judges rate as better
+- **RLHF:** reinforcement learning from human feedback, a common form of preference training
+- **Safety training:** post-training that teaches a model what to decline and how to handle risk
+- **Knowledge cutoff:** the date after which the model has seen almost no training text
+- **Sycophancy:** a model's tendency to agree with or flatter the user
+
 ## Why it matters
 
 Many puzzling things about assistants make sense once you know there are two training phases. The first one decides what the model knows, and when its knowledge stops. The second one decides how it behaves: its tone, what it refuses, and how eager it is to agree with you.
@@ -89,18 +101,6 @@ A common mistake is assuming a model "learns" from your chat. Normally it does n
 - [Reasoning models](/using-ai/reasoning-models/): post-training that rewards step-by-step problem solving
 - [Fine-tuning vs prompting vs RAG](/data/fine-tuning-vs-prompting-vs-rag/): the ways you can adapt a finished model
 - [Hallucination and grounding](/start/hallucination-and-grounding/): why training alone does not keep answers true
-
-## The proper terms
-
-- **Pre-training:** the first phase, learning language and knowledge by predicting the next token
-- **Base model:** a pre-trained model that continues text but does not reliably follow instructions
-- **Post-training:** the later steps that turn a base model into a useful assistant
-- **Instruction tuning:** training on example requests and good replies so the model follows instructions
-- **Preference training:** training a model towards answers that people or AI judges rate as better
-- **RLHF:** reinforcement learning from human feedback, a common form of preference training
-- **Safety training:** post-training that teaches a model what to decline and how to handle risk
-- **Knowledge cutoff:** the date after which the model has seen almost no training text
-- **Sycophancy:** a model's tendency to agree with or flatter the user
 
 ## Next up
 

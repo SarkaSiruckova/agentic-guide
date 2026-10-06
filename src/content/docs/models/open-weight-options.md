@@ -13,6 +13,17 @@ Several of the provider pages mention models you can download. This page lines t
 
 **In one line:** an open-weight model is one you can download and run yourself, and the licence attached to it, not the word "open", tells you what a business may do with it.
 
+## The jargon: concepts covered on this page
+
+- **Open-weight model:** a model whose trained numbers are published for download
+- **Permissive licence:** a licence with few conditions, such as Apache 2.0 or MIT
+- **Community licence:** a custom licence with extra conditions such as size thresholds
+- **Acceptable-use policy:** a list of uses the licence bans
+- **Parameters:** the learned numbers inside a model
+- **Mixture of experts:** a design that uses only part of the model for each word
+- **Quantisation:** storing a model's numbers with less detail to save memory
+- **Self-hosting:** running a model on infrastructure you control
+
 ## Why it matters
 
 Open-weight models give you a choice that closed models do not: you can bring the model to your data instead of sending your data to the model's maker. For a small firm that handles confidential material, that is worth knowing about even if you never use it. If the idea is new, start with [open vs closed weights](/under-the-hood/open-vs-closed-weights/).
@@ -119,17 +130,6 @@ Then she asks where it will run. The firm has no spare graphics cards, so the mo
 - [Open-model hosting](/map/open-model-hosting/): who runs an open model for you
 - [Data terms at a glance](/models/data-terms-at-a-glance/): what major providers say about your data
 - [Model tiers](/models/model-tiers/): small, medium and large models within a family
-
-## The proper terms
-
-- **Open-weight model:** a model whose trained numbers are published for download
-- **Permissive licence:** a licence with few conditions, such as Apache 2.0 or MIT
-- **Community licence:** a custom licence with extra conditions such as size thresholds
-- **Acceptable-use policy:** a list of uses the licence bans
-- **Parameters:** the learned numbers inside a model
-- **Mixture of experts:** a design that uses only part of the model for each word
-- **Quantisation:** storing a model's numbers with less detail to save memory
-- **Self-hosting:** running a model on infrastructure you control
 
 ## Next up
 

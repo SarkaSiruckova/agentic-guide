@@ -1,10 +1,12 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import rehypeGuideBlocks from './src/plugins/rehype-guide-blocks.mjs';
 import starlight from '@astrojs/starlight';
 import mermaid from 'astro-mermaid';
 import starlightTags from 'starlight-tags';
 
 export default defineConfig({
+  markdown: { rehypePlugins: [rehypeGuideBlocks] },
   redirects: {
     '/concepts': '/start/start-here/',
     '/concepts/agents/agentic-harness': '/agents/agentic-harness/',

@@ -13,6 +13,15 @@ Claude Code and [structured outputs](/building/structured-outputs/) assume you a
 
 **In one line:** an AI code editor is a normal coding workspace with an assistant built in, an AI app builder turns a description into a running web app, and both are alternatives to working in the terminal with [Claude Code](/building/claude-code-in-depth/).
 
+## The jargon: concepts covered on this page
+
+- **IDE:** a code editor with extra tools for writing and running software
+- **AI code editor:** a code editor with an AI assistant built in
+- **Cursor rules:** standing instructions stored in a project's `.cursor/rules` folder
+- **AI app builder:** a website that generates and hosts a web app from a description
+- **Row-level security:** database rules deciding which user may see which record
+- **Lock-in:** being unable to leave a vendor without rebuilding your work
+
 ## Why it matters
 
 You will meet these tools quickly. Colleagues mention Cursor, a friend shows you an app made in an afternoon with Lovable, and a developer friend says "just use Copilot". They are all ways to get software built with AI help, but they suit different people and carry different risks.
@@ -106,15 +115,6 @@ When it works you should see the generated files in your GitHub repository, with
 - [Git and GitHub](/building/git-and-github/): the safety net under all generated work
 - [Skills and instruction files](/agents/skills-and-instruction-files/): how rules files and `AGENTS.md` fit in
 - [Least privilege](/running/least-privilege/): how to decide what a generated app may touch
-
-## The proper terms
-
-- **IDE:** a code editor with extra tools for writing and running software
-- **AI code editor:** a code editor with an AI assistant built in
-- **Cursor rules:** standing instructions stored in a project's `.cursor/rules` folder
-- **AI app builder:** a website that generates and hosts a web app from a description
-- **Row-level security:** database rules deciding which user may see which record
-- **Lock-in:** being unable to leave a vendor without rebuilding your work
 
 ## Next up
 

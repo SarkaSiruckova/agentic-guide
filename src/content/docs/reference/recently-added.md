@@ -8,6 +8,8 @@ sidebar:
 
 | Date | Change |
 | --- | --- |
+| 2026-10-06 | New page design: a jargon card at the top of every page, related pages as tiles, and a Next up box |
+| 2026-10-06 | Added real uses and examples to [LLMs, LRMs and LQMs](/under-the-hood/llms-lrms-and-lqms/) |
 | 2026-10-06 | Guide restructured into seven parts plus electives, from using AI to building agents, with new example personas and Windows notes |
 | 2026-10-06 | New page: [Example gallery](/agents/example-gallery/) |
 | 2026-10-06 | New page: [Safety basics for connected AI](/agents/safety-basics/) |

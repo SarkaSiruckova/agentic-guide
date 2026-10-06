@@ -13,6 +13,18 @@ So far the map has followed one general model, whether reached through a lab's A
 
 **In one line:** a specialised model is a model built to do one narrow job, such as embedding text, ranking search results or reading speech, so that the general chat model only has to do the thinking and writing.
 
+## The jargon: concepts covered on this page
+
+- **Specialised model:** a model trained to do one narrow job well
+- **Embedding model:** a model that turns text or images into vectors
+- **Vector:** a long list of numbers that represents meaning
+- **Reranker:** a model that re-orders search results by how well they answer a question
+- **Cross-encoder:** a model that reads a question and a passage together to score them
+- **Speech-to-text:** software that turns spoken audio into written words
+- **Text-to-speech:** software that turns written words into spoken audio
+- **OCR:** optical character recognition, turning images of text into real text
+- **Classifier:** a model that sorts an input into one of a fixed set of labels
+
 ## Why it matters
 
 When people say "AI model", they usually mean a general chat model that can write, summarise and reason about almost anything. That flexibility is useful, but it is not always the right tool. Asking a large chat model to turn 10,000 documents into searchable numbers, or to transcribe an hour of audio, is like hiring a senior lawyer to photocopy.
@@ -110,18 +122,6 @@ Voice notes from calls are handled by a speech-to-text model first, then follow 
 - [Multimodal models](/using-ai/multimodal-models/): models that handle images, audio and text together
 - [Databases and storage](/map/databases-and-storage/): where the vectors and source files live
 - [Model access platforms](/map/model-access-platforms/): where you call hosted models from
-
-## The proper terms
-
-- **Specialised model:** a model trained to do one narrow job well
-- **Embedding model:** a model that turns text or images into vectors
-- **Vector:** a long list of numbers that represents meaning
-- **Reranker:** a model that re-orders search results by how well they answer a question
-- **Cross-encoder:** a model that reads a question and a passage together to score them
-- **Speech-to-text:** software that turns spoken audio into written words
-- **Text-to-speech:** software that turns written words into spoken audio
-- **OCR:** optical character recognition, turning images of text into real text
-- **Classifier:** a model that sorts an input into one of a fixed set of labels
 
 ## Next up
 

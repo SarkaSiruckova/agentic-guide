@@ -13,6 +13,17 @@ A [trigger](/building/triggers-and-scheduling/) only answers the question of whe
 
 **In one line:** an orchestration tool is software that runs a series of steps across your apps in the right order, starting from a trigger and handling the schedule, retries and record-keeping for you.
 
+## The jargon: concepts covered on this page
+
+- **Orchestration tool:** software that runs workflow steps across apps in order
+- **Connector:** a ready-made link between a tool and an app
+- **Node:** one step in a visual workflow
+- **Run history:** the record of each run and what happened in it
+- **Low-code:** building mostly with visual tools, with small pieces of code where needed
+- **Workflow engine:** developer software that runs coded workflows reliably, resuming after failures
+- **Self-hosting:** running software on your own servers instead of the vendor's cloud
+- **Fair-code:** source-visible software with licence limits on commercial use
+
 ## Why it matters
 
 Connecting a CRM, a mailbox, a file store and a model sounds like a small job. In practice you need to sign in to each system, start the work at the right moment, pass data from step to step, retry when something fails, and keep a record of what happened. Writing all of that yourself for every workflow is slow.
@@ -110,17 +121,6 @@ The common mistake is building one flow that does everything, with broad access 
 - [MCP](/agents/mcp/): a standard way for assistants to reach tools, which some platforms support
 - [Triggers and scheduling](/building/triggers-and-scheduling/): how a flow gets started
 - [Rate limits, retries and failures](/running/rate-limits-retries-and-failures/): what the tool's error handling is doing for you
-
-## The proper terms
-
-- **Orchestration tool:** software that runs workflow steps across apps in order
-- **Connector:** a ready-made link between a tool and an app
-- **Node:** one step in a visual workflow
-- **Run history:** the record of each run and what happened in it
-- **Low-code:** building mostly with visual tools, with small pieces of code where needed
-- **Workflow engine:** developer software that runs coded workflows reliably, resuming after failures
-- **Self-hosting:** running software on your own servers instead of the vendor's cloud
-- **Fair-code:** source-visible software with licence limits on commercial use
 
 ## Next up
 

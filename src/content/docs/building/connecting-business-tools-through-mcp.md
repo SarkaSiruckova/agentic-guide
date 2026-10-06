@@ -13,6 +13,15 @@ A workflow tool such as [n8n](/building/n8n/), Claude Code and the Claude apps a
 
 **In one line:** connecting an assistant to your CRM, files and email is quick to do and easy to do badly, so start with read-only access on narrow scopes and widen only as you gain trust.
 
+## The jargon: concepts covered on this page
+
+- **Sites.Selected:** a Microsoft permission limiting an app to specifically granted SharePoint sites
+- **Conditional Access:** Microsoft rules such as multi-factor sign-in that apply before access is allowed
+- **Tool permissions:** per-tool settings in Claude: always allow, needs approval, or blocked
+- **Custom connector:** a remote MCP server you add to Claude yourself
+- **Work IQ MCP servers:** Microsoft's preview MCP servers for Microsoft 365 data
+- **OAuth scope:** one named permission, such as read or write, requested at sign-in
+
 ## Why it matters
 
 An assistant that can see the CRM, the SharePoint folders and the inbox is far more useful than one that cannot. It can answer "where are we with Acme Payments?" from your real records. It is also the moment where an AI tool stops being a chat window and becomes something that can read, and sometimes change, your organisation's data.
@@ -111,15 +120,6 @@ When it works, the assistant answers from your records, cites what it found, and
 - [Auth and secrets](/map/auth-and-secrets/): where sign-ins and keys are decided and stored
 - [Prompt injection](/running/prompt-injection/): why email and documents are risky inputs
 - [n8n](/building/n8n/): an alternative route for scheduled or event-driven jobs
-
-## The proper terms
-
-- **Sites.Selected:** a Microsoft permission limiting an app to specifically granted SharePoint sites
-- **Conditional Access:** Microsoft rules such as multi-factor sign-in that apply before access is allowed
-- **Tool permissions:** per-tool settings in Claude: always allow, needs approval, or blocked
-- **Custom connector:** a remote MCP server you add to Claude yourself
-- **Work IQ MCP servers:** Microsoft's preview MCP servers for Microsoft 365 data
-- **OAuth scope:** one named permission, such as read or write, requested at sign-in
 
 ## Next up
 

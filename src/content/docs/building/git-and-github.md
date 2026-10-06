@@ -13,6 +13,25 @@ The [terminal](/building/terminal-basics/) lets you change files with a single l
 
 **In one line:** Git keeps a history of every change to a folder of files so you can go back, and GitHub is a website that stores a copy of that history online and can trigger a website to publish.
 
+## The jargon: concepts covered on this page
+
+- **Version control:** recording every change to files so earlier versions can be restored
+- **Git:** the tool on your computer that records and manages that history
+- **GitHub:** a website that hosts copies of Git repositories
+- **Repository:** a project folder together with its full change history
+- **Commit:** a saved snapshot of the project, with a message
+- **Staging area:** where chosen changes wait before being committed
+- **Branch:** a separate line of work within a repository
+- **main:** the usual name of the primary branch
+- **Remote:** a copy of the repository stored somewhere else
+- **origin:** the default name Git gives the main remote
+- **Push:** sending local commits to the remote
+- **Pull:** fetching remote commits and merging them into your work
+- **Clone:** making a first local copy of a remote repository
+- **Diff:** a line-by-line view of what changed
+- **Revert:** making a new commit that reverses an earlier one
+- **Merge conflict:** two changes to the same lines that Git cannot combine alone
+
 ## Why it matters
 
 When you build with AI tools, files change fast. An assistant may edit twenty files in a minute, and not every edit is a good one. Without a history, "undo" means hoping you remember what the folder looked like yesterday.
@@ -169,25 +188,6 @@ Remember too that a private repo is not a vault. People get invited, repos get f
 - [Claude Code in depth](/building/claude-code-in-depth/): letting an AI tool run Git for you, with you checking
 - [Environment variables and secrets](/building/environment-variables-and-secrets/): where keys live instead of your repo
 - [Audit trails](/running/audit-trails/): the same idea of a protected record, applied to agent actions
-
-## The proper terms
-
-- **Version control:** recording every change to files so earlier versions can be restored
-- **Git:** the tool on your computer that records and manages that history
-- **GitHub:** a website that hosts copies of Git repositories
-- **Repository:** a project folder together with its full change history
-- **Commit:** a saved snapshot of the project, with a message
-- **Staging area:** where chosen changes wait before being committed
-- **Branch:** a separate line of work within a repository
-- **main:** the usual name of the primary branch
-- **Remote:** a copy of the repository stored somewhere else
-- **origin:** the default name Git gives the main remote
-- **Push:** sending local commits to the remote
-- **Pull:** fetching remote commits and merging them into your work
-- **Clone:** making a first local copy of a remote repository
-- **Diff:** a line-by-line view of what changed
-- **Revert:** making a new commit that reverses an earlier one
-- **Merge conflict:** two changes to the same lines that Git cannot combine alone
 
 ## Next up
 

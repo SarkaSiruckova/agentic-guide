@@ -13,6 +13,17 @@ sidebar:
 
 **In one line:** RAG (retrieval-augmented generation) means fetching the passages most relevant to a question first, putting them in front of the model, and letting it answer from them, and chunking is how the documents get cut into pieces so the right part can be found.
 
+## The jargon: concepts covered on this page
+
+- **Chunk:** a short piece of a document, stored and retrieved on its own
+- **Chunking:** splitting documents into pieces so retrieval can find the right part
+- **Fine-tuning:** training a model further to change its behaviour or style
+- **Hybrid search:** combining keyword search and meaning search, then merging results
+- **Index:** the searchable store of chunks and their embeddings
+- **RAG:** fetching relevant passages first, then having a model answer from them
+- **Reranking:** re-ordering retrieved results with a more careful model so the best come first
+- **Similarity search:** finding the stored items whose embeddings are closest to the question's
+
 ## Why it matters
 
 A model can only read what fits in its [context window](/start/tokens-and-context-windows/), and a data room or shared drive holds far more than that. Pasting everything in is slow, costs more, and buries the useful parts.
@@ -125,17 +136,6 @@ A short way to remember it: prompting tells the model what to do, RAG gives it w
 - [Context engineering](/data/context-engineering/): deciding what reaches the model, of which retrieval is one part
 - [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/): indexes of personal data need retention rules
 - [Fine-tuning vs prompting vs RAG](/data/fine-tuning-vs-prompting-vs-rag/): how to choose between them
-
-## The proper terms
-
-- **Chunk:** a short piece of a document, stored and retrieved on its own
-- **Chunking:** splitting documents into pieces so retrieval can find the right part
-- **Fine-tuning:** training a model further to change its behaviour or style
-- **Hybrid search:** combining keyword search and meaning search, then merging results
-- **Index:** the searchable store of chunks and their embeddings
-- **RAG:** fetching relevant passages first, then having a model answer from them
-- **Reranking:** re-ordering retrieved results with a more careful model so the best come first
-- **Similarity search:** finding the stored items whose embeddings are closest to the question's
 
 ## Next up
 

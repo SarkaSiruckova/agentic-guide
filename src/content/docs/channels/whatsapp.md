@@ -13,6 +13,16 @@ Teams and Slack reach colleagues, but founders, co-investors and advisers are mo
 
 **In one line:** WhatsApp lets a business connect an agent through an official programming interface (the WhatsApp Business Platform), but it comes with a registered business number, message templates, opt-in rules and a policy on AI assistants that you must read before you build.
 
+## The jargon: concepts covered on this page
+
+- **WhatsApp Business Platform:** Meta's developer interfaces for connecting software to WhatsApp
+- **Cloud API:** Meta-hosted interface for sending and receiving WhatsApp messages
+- **Business portfolio:** Meta's container for a firm's business assets and WhatsApp accounts
+- **Customer service window:** 24 hours after a user messages you, when free-form replies are allowed
+- **Message template:** pre-approved message wording needed to start or restart a conversation
+- **Opt-in:** a person's permission to be contacted by your business
+- **Messaging limit:** cap on how many people you can start conversations with per day
+
 ## Why it matters
 
 Almost everyone already has WhatsApp, including founders, co-investors and advisers who will never join your Slack or Teams. That makes it a natural way to reach people outside your firm. For a small VC firm it is more often the channel for external contacts than for the team itself.
@@ -117,16 +127,6 @@ The real costs are time and approvals. Template review takes effort, messaging l
 - [Slack](/channels/slack/): another staff channel with its own app rules
 - [Email](/channels/email/): the lowest-friction option for outside contacts
 - [Querying vs adding safely](/channels/querying-vs-adding-safely/): how to separate reading data from changing it
-
-## The proper terms
-
-- **WhatsApp Business Platform:** Meta's developer interfaces for connecting software to WhatsApp
-- **Cloud API:** Meta-hosted interface for sending and receiving WhatsApp messages
-- **Business portfolio:** Meta's container for a firm's business assets and WhatsApp accounts
-- **Customer service window:** 24 hours after a user messages you, when free-form replies are allowed
-- **Message template:** pre-approved message wording needed to start or restart a conversation
-- **Opt-in:** a person's permission to be contacted by your business
-- **Messaging limit:** cap on how many people you can start conversations with per day
 
 ## Next up
 

@@ -13,6 +13,14 @@ The last of the parallel provider snapshots covers Alibaba's Qwen family in full
 
 **In one line:** Qwen is Alibaba's model family, offered as an app, as a cloud API and as downloadable open weights under more than one licence, and it sits alongside a long tail of other labs that change quickly.
 
+## The jargon: concepts covered on this page
+
+- **Community licence:** a custom licence that allows broad use but adds conditions
+- **Model as a service:** selling access to a model's answers to other businesses
+- **Guard model:** a small model that screens text for unsafe content
+- **Region:** the place where a cloud service processes your request
+- **Derivative model:** a model built by training further on another model's weights
+
 ## Why it matters
 
 Qwen is one of the most frequently published open-weight families, so you will meet it even if you never sign up for an Alibaba account. Many hosts and tools list Qwen models next to the American and European ones, and several other models are built on top of Qwen weights.
@@ -91,14 +99,6 @@ Candidates such as Microsoft's Phi, AI21 and the Allen Institute's OLMo were not
 - [How to judge a new model](/models/how-to-judge-a-new-model/): a checklist for labs not on this page
 - [Data terms at a glance](/models/data-terms-at-a-glance/): provider data terms side by side
 - [Open-model hosting](/map/open-model-hosting/): who can run these weights for you
-
-## The proper terms
-
-- **Community licence:** a custom licence that allows broad use but adds conditions
-- **Model as a service:** selling access to a model's answers to other businesses
-- **Guard model:** a small model that screens text for unsafe content
-- **Region:** the place where a cloud service processes your request
-- **Derivative model:** a model built by training further on another model's weights
 
 ## Next up
 

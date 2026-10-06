@@ -13,6 +13,14 @@ The channel pages so far start from a chat app and plug any model in behind it. 
 
 **In one line:** xAI offers no ready-made chat channel for your firm's data in the way Teams or Slack do, so the realistic routes are its own Grok Bot product or using a Grok model through the API behind a bot you build.
 
+## The jargon: concepts covered on this page
+
+- **Team Bot:** one shared bot that every teammate talks to in private chats
+- **Routine:** a bot task that runs on a schedule or after an event
+- **Function calling:** the model asks your code to run a named tool
+- **Collections search:** searching documents you uploaded to the provider
+- **Persistent cloud computer:** a remote machine a bot keeps between sessions
+
 ## Why it matters
 
 "A Grok bot" can mean several different things, and mixing them up leads to wrong assumptions about data and control. There are four:
@@ -94,14 +102,6 @@ The main limit is thin channel support: no official Telegram, WhatsApp or Teams 
 - [Slack](/channels/slack/): the platform side of a Grok-powered Slack bot
 - [Telegram](/channels/telegram/): a simple bot route for any model
 - [Data terms at a glance](/models/data-terms-at-a-glance/): provider terms side by side
-
-## The proper terms
-
-- **Team Bot:** one shared bot that every teammate talks to in private chats
-- **Routine:** a bot task that runs on a schedule or after an event
-- **Function calling:** the model asks your code to run a named tool
-- **Collections search:** searching documents you uploaded to the provider
-- **Persistent cloud computer:** a remote machine a bot keeps between sessions
 
 ## Next up
 

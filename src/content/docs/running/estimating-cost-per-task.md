@@ -13,6 +13,15 @@ Prices, discounts and [model routing](/running/model-routing/) are the parts of 
 
 **In one line:** to estimate the cost of a task, list the model calls it makes, count the tokens in each, multiply by the price, add the extras, pad the result, and then replace your guesses with measurements from real runs.
 
+## The jargon: concepts covered on this page
+
+- **Input tokens:** the text a model reads in a call, including instructions and the record so far
+- **Output tokens:** the text a model writes in a call, charged at a higher rate
+- **Cost per task:** the full cost of one finished job, across all its calls
+- **Safety margin:** extra added to an estimate to cover guesses that run low
+- **Spending cap:** a hard limit on spend after which calls are refused or stopped
+- **Long tail:** the few unusually long or costly runs that drive much of the total
+
 ## Why it matters
 
 AI prices are quoted per token, but nobody buys tokens. You buy outcomes: a briefing written, an email filed, a deal summarised. To decide whether an agent is worth building, you need the cost of one finished task.
@@ -126,15 +135,6 @@ The most common mistake is estimating from a single chat reply and ignoring the 
 - [Prompt caching and batch processing](/running/prompt-caching-and-batch-processing/): the two main ways to cut the repeated-input bill
 - [Model routing](/running/model-routing/): using a cheaper model for the easy calls
 - [The agent loop](/agents/the-agent-loop/): why the record grows and the rounds add up
-
-## The proper terms
-
-- **Input tokens:** the text a model reads in a call, including instructions and the record so far
-- **Output tokens:** the text a model writes in a call, charged at a higher rate
-- **Cost per task:** the full cost of one finished job, across all its calls
-- **Safety margin:** extra added to an estimate to cover guesses that run low
-- **Spending cap:** a hard limit on spend after which calls are refused or stopped
-- **Long tail:** the few unusually long or costly runs that drive much of the total
 
 ## Next up
 

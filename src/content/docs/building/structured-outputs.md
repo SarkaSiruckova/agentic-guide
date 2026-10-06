@@ -13,6 +13,18 @@ Once you build with the [API](/building/claude-code-and-the-api/), the model's a
 
 **In one line:** structured outputs make a model return its answer in a fixed shape, such as JSON that follows a defined layout, instead of free-flowing text, so other software can read it without guessing.
 
+## The jargon: concepts covered on this page
+
+- **Structured output:** a model answer returned in a fixed, machine-readable shape
+- **Schema:** a description of the fields, types and required parts of the output
+- **JSON:** a text format for data, written as named fields and values
+- **JSON mode:** a setting that makes output valid JSON without checking your fields
+- **Constrained decoding:** forcing the model's output to follow a schema as it writes
+- **Validation:** checking that output has the right fields and types
+- **Enum:** a fixed list of allowed values for a field
+- **Null:** the data value meaning "nothing here"
+- **Extraction:** pulling clean fields out of messy text
+
 ## Why it matters
 
 A model's natural output is prose. That is fine for a person, but awkward for software. If a program needs the company name, the stage and the amount raised from an email, it cannot reliably pick them out of a paragraph.
@@ -116,18 +128,6 @@ The most common mistake is trusting the output because it parsed. Parsing proves
 - [Structured vs unstructured data](/data/structured-vs-unstructured-data/): extraction turns the second into the first
 - [Hallucination and grounding](/start/hallucination-and-grounding/): why a valid shape can still hold wrong values
 - [Prompt engineering](/using-ai/prompt-engineering/): the weakest option, asking nicely, is a prompting technique
-
-## The proper terms
-
-- **Structured output:** a model answer returned in a fixed, machine-readable shape
-- **Schema:** a description of the fields, types and required parts of the output
-- **JSON:** a text format for data, written as named fields and values
-- **JSON mode:** a setting that makes output valid JSON without checking your fields
-- **Constrained decoding:** forcing the model's output to follow a schema as it writes
-- **Validation:** checking that output has the right fields and types
-- **Enum:** a fixed list of allowed values for a field
-- **Null:** the data value meaning "nothing here"
-- **Extraction:** pulling clean fields out of messy text
 
 ## Next up
 

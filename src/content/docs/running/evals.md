@@ -13,6 +13,15 @@ Traces, the step-by-step records described in [observability](/running/observabi
 
 **In one line:** an eval is a test for an AI system: a set of example inputs with a clear idea of what a good result looks like, run again every time you change something, so you can see whether things got better or worse.
 
+## The jargon: concepts covered on this page
+
+- **Benchmark:** a public standard test used to compare models in general
+- **Eval:** a repeatable test of an AI system against example cases
+- **Expected output:** the correct or ideal result recorded for a test case
+- **LLM as judge:** using a second model to mark another model's output
+- **Regression:** something that used to work breaks after a change
+- **Rubric:** a short checklist used to mark a result
+
 ## Why it matters
 
 Models do not behave like ordinary software. Ask the same question twice and the wording may differ. Change one sentence in a prompt and an answer you liked yesterday can quietly get worse today.
@@ -102,15 +111,6 @@ The most common mistake is skipping evals until something goes wrong in front of
 - [Prompt engineering](/using-ai/prompt-engineering/): evals tell you whether a prompt change helped
 - [The agent loop](/agents/the-agent-loop/): for agents, check the route taken as well as the final answer
 - [Benchmarks](/under-the-hood/benchmarks/): public tests, for shortlisting rather than deciding
-
-## The proper terms
-
-- **Benchmark:** a public standard test used to compare models in general
-- **Eval:** a repeatable test of an AI system against example cases
-- **Expected output:** the correct or ideal result recorded for a test case
-- **LLM as judge:** using a second model to mark another model's output
-- **Regression:** something that used to work breaks after a change
-- **Rubric:** a short checklist used to mark a result
 
 ## Next up
 

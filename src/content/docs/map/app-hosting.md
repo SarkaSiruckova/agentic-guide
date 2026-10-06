@@ -13,6 +13,17 @@ With the models covered, the map moves to your own code: the glue that receives 
 
 **In one line:** app hosting is the layer that keeps your own code running on someone else's computers, so a website, an API or a scheduled agent job works without you leaving a laptop switched on.
 
+## The jargon: concepts covered on this page
+
+- **App hosting:** a service that runs your code on its computers and keeps it available
+- **Deployment:** one built version of your app, put live on a host
+- **Preview deployment:** a temporary live copy of a change, for testing before it goes public
+- **Container:** a sealed bundle of code and everything it needs to run
+- **Serverless:** running code without managing the machine; the platform starts it when called
+- **Cold start:** the extra delay when idle code has to wake up
+- **Region:** the geographic location of the data centres where your app runs
+- **Custom domain:** your own web address pointing at a hosted app
+
 ## Why it matters
 
 Once you move past chatting with a model and start building your own tools, your code needs a home. A script on your laptop stops when the laptop sleeps. It cannot receive a message from the CRM at 3am, and nobody else can use it.
@@ -111,17 +122,6 @@ Sample Ventures wants a small internal assistant that answers questions about th
 - [Triggers and scheduling](/building/triggers-and-scheduling/): starting jobs on a timer or an event
 - [Auth and secrets](/map/auth-and-secrets/): the wider layer for sign-ins and key storage
 - [Compute and cloud](/map/compute-and-cloud/): the machines underneath these platforms
-
-## The proper terms
-
-- **App hosting:** a service that runs your code on its computers and keeps it available
-- **Deployment:** one built version of your app, put live on a host
-- **Preview deployment:** a temporary live copy of a change, for testing before it goes public
-- **Container:** a sealed bundle of code and everything it needs to run
-- **Serverless:** running code without managing the machine; the platform starts it when called
-- **Cold start:** the extra delay when idle code has to wake up
-- **Region:** the geographic location of the data centres where your app runs
-- **Custom domain:** your own web address pointing at a hosted app
 
 ## Next up
 

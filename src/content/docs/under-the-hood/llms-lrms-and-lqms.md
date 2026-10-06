@@ -13,6 +13,18 @@ Model labels such as LLM, LRM and LQM are used loosely, and the reasoning models
 
 **In one line:** LLM, LRM and LQM are informal labels for models built around text, step-by-step reasoning, and numbers or simulation, and the useful question is always what a model is built to do and how you can check it.
 
+## The jargon: concepts covered on this page
+
+- **LLM:** large language model, trained on text to predict and generate language
+- **LRM:** large reasoning model, a language model trained to think step by step first
+- **LQM:** large quantitative model, an informal label for models built around numbers or simulation
+- **Quantitative model:** any model that produces numeric predictions from data or equations
+- **Simulation:** a computer model of a real system, used to predict how it behaves
+- **Reinforcement learning:** training by trial and error, rewarding outcomes that turn out well
+- **Verifiable task:** a task whose answer can be checked automatically, such as maths or code tests
+- **Thinking budget:** a cap on how many tokens a model may spend thinking
+- **Faithfulness:** how accurately shown reasoning reflects what actually produced the answer
+
 ## Why it matters
 
 New labels appear constantly, and some are science, some are marketing. Without a way to sort them, it is easy to buy, or ask for, the wrong thing. "We need a quantitative model" can mean three very different things depending on who is speaking.
@@ -57,6 +69,20 @@ When you see one of these labels, translate it into plain questions:
 Language models and reasoning models are available from many providers as ordinary assistants. Quantitative models of the specialised kind are usually sold for a specific field, such as chemistry or revenue forecasting, and are used by specialists.
 
 For everyday quantitative work, the usual pattern is a language model that uses [tool use](/agents/tool-use/) to call something exact: a spreadsheet, a script, a database query, or a financial library. The model decides what to calculate and explains the result. The tool does the arithmetic.
+
+## Real uses and examples
+
+**Snapshot, as of October 2026.** Names change often, so this table lists model families and products rather than versions.
+
+| | What it is used for | Well-known examples |
+| --- | --- | --- |
+| Language models | Chat, drafting, summarising, translation, answering questions over documents | The models behind Claude, ChatGPT and Gemini; open-weight families such as Llama, Mistral, Qwen and DeepSeek |
+| Reasoning models | Code, maths, multi-step planning, tricky analysis where you want the working | The thinking or extended-thinking modes of Claude, ChatGPT and Gemini; DeepSeek's reasoning line, now folded into its main models |
+| Scientific and quantitative models | Predicting protein shapes, forecasting weather, discovering materials, screening drug and catalyst candidates | Google DeepMind's AlphaFold (proteins), WeatherNext (weather) and GNoME (new crystal materials); SandboxAQ's models for catalysts and drug discovery |
+
+Two things stand out. First, the language and reasoning rows are now mostly the same products: the big labs build one family of models and let you switch thinking on, or let the model decide how much to think. Second, the scientific models are not chat assistants. Most are research tools built for one narrow kind of problem, and few of them call themselves "LQMs".
+
+The two kinds are starting to meet. In May 2026 SandboxAQ announced that some of its scientific models can be reached from Claude through [MCP](/agents/mcp/), so a researcher asks in plain English and the language model calls the specialist model for the numbers. That is the pattern the diagram above describes: the language model talks and plans, the specialist does the exact work.
 
 ## Worked example
 
@@ -109,18 +135,6 @@ The model attempts each task many times and is rewarded when the final answer is
 - [Reasoning models](/using-ai/reasoning-models/): when to switch thinking on in everyday use
 - [Tool use](/agents/tool-use/): how a language model calls a spreadsheet or script for exact numbers
 - [Benchmarks](/under-the-hood/benchmarks/): how claims about a model's ability are tested
-
-## The proper terms
-
-- **LLM:** large language model, trained on text to predict and generate language
-- **LRM:** large reasoning model, a language model trained to think step by step first
-- **LQM:** large quantitative model, an informal label for models built around numbers or simulation
-- **Quantitative model:** any model that produces numeric predictions from data or equations
-- **Simulation:** a computer model of a real system, used to predict how it behaves
-- **Reinforcement learning:** training by trial and error, rewarding outcomes that turn out well
-- **Verifiable task:** a task whose answer can be checked automatically, such as maths or code tests
-- **Thinking budget:** a cap on how many tokens a model may spend thinking
-- **Faithfulness:** how accurately shown reasoning reflects what actually produced the answer
 
 ## Next up
 

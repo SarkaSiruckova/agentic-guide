@@ -15,6 +15,19 @@ A hosting service such as [Vercel](/building/vercel/) can publish your pages and
 
 *Snapshot, as of October 2026. Dashboard layouts, key names and free-plan rules change, so check Supabase's own documentation when something here does not match your screen.*
 
+## The jargon: concepts covered on this page
+
+- **Project:** one Supabase database plus its sign-in, storage and APIs
+- **Table:** a named grid of data, like a spreadsheet tab
+- **Row:** one record in a table
+- **SQL:** the standard language for asking databases questions
+- **Publishable key:** a low-privilege key that is safe in browsers
+- **Secret key:** a high-privilege key for servers only
+- **Row level security:** database rules deciding which rows each caller can touch
+- **Policy:** one row level security rule attached to a table
+- **Postgres:** a widely used open source relational database
+- **pgvector:** a Postgres add-on for storing and searching embeddings
+
 ## Why it matters
 
 Sooner or later an agent setup needs somewhere of its own to put things. A log of what the agent did. A table of sync times. A search index of meeting notes. You do not want to cram these into the CRM, and a spreadsheet gets messy fast.
@@ -126,19 +139,6 @@ Supabase's documentation also adds that you should use a development project rat
 - [Environment variables and secrets](/building/environment-variables-and-secrets/): where keys should live
 - [Least privilege](/running/least-privilege/): why agents get only the access they need
 - [MCP](/agents/mcp/): the standard that lets Claude Code talk to Supabase
-
-## The proper terms
-
-- **Project:** one Supabase database plus its sign-in, storage and APIs
-- **Table:** a named grid of data, like a spreadsheet tab
-- **Row:** one record in a table
-- **SQL:** the standard language for asking databases questions
-- **Publishable key:** a low-privilege key that is safe in browsers
-- **Secret key:** a high-privilege key for servers only
-- **Row level security:** database rules deciding which rows each caller can touch
-- **Policy:** one row level security rule attached to a table
-- **Postgres:** a widely used open source relational database
-- **pgvector:** a Postgres add-on for storing and searching embeddings
 
 ## Next up
 

@@ -13,6 +13,15 @@ This is one of a set of parallel provider snapshots, each with the same headings
 
 **In one line:** Meta publishes the Llama family as downloadable open-weight models under a custom licence, and has also launched a separate, currently proprietary family called Muse.
 
+## The jargon: concepts covered on this page
+
+- **Community licence:** a custom licence for open weights with conditions beyond standard terms
+- **Monthly active users:** the number of distinct people using a product in a month
+- **Mixture of experts:** a design where only part of the model runs for each token
+- **Public preview:** a service open to use but still changing, with fewer guarantees
+- **Fine-tuned model:** a model trained a little further on extra examples
+- **Derivative work:** a new model or product built from an existing one
+
 ## Why it matters
 
 Llama is a widely used example of a large company publishing a model's weights for anyone to download. Many hosting companies, cloud services and tools offer Llama models, so you will meet the name even if you never contact Meta.
@@ -93,15 +102,6 @@ Muse Spark is currently proprietary, per Meta's announcement.
 - [Open vs closed weights](/under-the-hood/open-vs-closed-weights/): what the term does and does not promise
 - [Quantisation](/under-the-hood/quantisation/): shrinking models so they fit smaller hardware
 - [Data terms at a glance](/models/data-terms-at-a-glance/): provider terms side by side
-
-## The proper terms
-
-- **Community licence:** a custom licence for open weights with conditions beyond standard terms
-- **Monthly active users:** the number of distinct people using a product in a month
-- **Mixture of experts:** a design where only part of the model runs for each token
-- **Public preview:** a service open to use but still changing, with fewer guarantees
-- **Fine-tuned model:** a model trained a little further on extra examples
-- **Derivative work:** a new model or product built from an existing one
 
 ## Next up
 

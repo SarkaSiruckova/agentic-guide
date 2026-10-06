@@ -13,6 +13,14 @@ The simplest [safety habit](/agents/safety-basics/) with connected AI is to keep
 
 **In one line:** human-in-the-loop means a person is built into an agent's process at chosen points, to approve an action, review a result or step in when the agent is unsure.
 
+## The jargon: concepts covered on this page
+
+- **Approval gate:** a point where the agent must wait for a person's yes
+- **Audit log:** a record of what was proposed, who decided and what happened
+- **Human-in-the-loop:** a person is built into the agent's process at chosen points
+- **Review afterwards:** letting the agent act, then checking a log or sample later
+- **Rubber-stamping:** approving without reading, usually because there are too many requests
+
 ## Why it matters
 
 An agent makes its own decisions about what to do next, and it will sometimes get them wrong. It might misread a request, pick the wrong record or act on a bad instruction hidden in a document. Most of the time that is a minor irritation. For some actions it is a real problem.
@@ -109,14 +117,6 @@ Common mistakes are putting checkpoints on everything, so people tune out, and o
 - [The agent loop](/agents/the-agent-loop/): where the pause happens, and how the loop carries on afterwards
 - [Prompt injection](/running/prompt-injection/): why approvals on risky actions matter
 - [Audit trails](/running/audit-trails/): the lasting record of approvals given and refused
-
-## The proper terms
-
-- **Approval gate:** a point where the agent must wait for a person's yes
-- **Audit log:** a record of what was proposed, who decided and what happened
-- **Human-in-the-loop:** a person is built into the agent's process at chosen points
-- **Review afterwards:** letting the agent act, then checking a log or sample later
-- **Rubber-stamping:** approving without reading, usually because there are too many requests
 
 ## Next up
 

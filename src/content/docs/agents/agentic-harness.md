@@ -13,6 +13,13 @@ The [agent loop](/agents/the-agent-loop/) is only a short piece of software, and
 
 **In one line:** the harness is all the software and settings around a model (the loop, tools, instructions, memory, permissions, limits and logs) that turns a model that writes text into an agent that gets work done.
 
+## The jargon: concepts covered on this page
+
+- **Agentic harness:** the software and settings around a model that make it an agent
+- **Harness engineering:** designing and tuning the parts of a harness to improve reliability
+- **Agent framework:** a code toolkit for building your own agent harness
+- **Guardrail:** a rule enforced by the harness, such as a limit or an approval step
+
 ## Why it matters
 
 A model on its own cannot do anything except read text and write text. To get an agent, someone has to build the machinery around it: something that runs the steps, offers tools, holds the instructions, keeps track of what has happened and stops it when needed.
@@ -112,13 +119,6 @@ The first week, the logs show the agent suggesting an angel who already invested
 - [Human in the loop](/agents/human-in-the-loop/): where the harness asks a person to approve
 - [Observability](/running/observability/): the logging layer that lets you see what the agent did
 - [Agent frameworks](/map/agent-frameworks/): code libraries for building the harness
-
-## The proper terms
-
-- **Agentic harness:** the software and settings around a model that make it an agent
-- **Harness engineering:** designing and tuning the parts of a harness to improve reliability
-- **Agent framework:** a code toolkit for building your own agent harness
-- **Guardrail:** a rule enforced by the harness, such as a limit or an approval step
 
 ## Next up
 

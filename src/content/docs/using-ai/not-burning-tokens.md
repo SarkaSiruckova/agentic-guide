@@ -13,6 +13,14 @@ sidebar:
 
 **In one line:** keep each chat short and focused, send the model less to read, and use the smallest model that does the job.
 
+## The jargon: concepts covered on this page
+
+- **Usage window:** a time period after which a subscription allowance resets
+- **Usage credits:** optional paid extra usage once a subscription allowance runs out
+- **Context management:** the app summarising older messages so a long chat can continue
+- **Extended thinking:** a setting that lets the model reason before answering, at extra cost
+- **Model picker:** the menu in the chat box for choosing which model answers
+
 ## Why it matters
 
 A token is a small chunk of text, and every token a model reads or writes counts against something: a subscription's usage allowance, or an API bill. Most waste comes from a few habits, not from any single big request. Long chats, huge pasted documents and unused connectors quietly add up.
@@ -97,14 +105,6 @@ When things go wrong:
 - [Free, subscription or API](/start/free-vs-subscription-vs-api/): the two billing worlds in more detail
 - [Prompt caching and batch processing](/running/prompt-caching-and-batch-processing/): how repeated text gets cheaper for builders
 - [Recommended settings](/using-ai/recommended-settings/): spending limits and connector hygiene
-
-## The proper terms
-
-- **Usage window:** a time period after which a subscription allowance resets
-- **Usage credits:** optional paid extra usage once a subscription allowance runs out
-- **Context management:** the app summarising older messages so a long chat can continue
-- **Extended thinking:** a setting that lets the model reason before answering, at extra cost
-- **Model picker:** the menu in the chat box for choosing which model answers
 
 ## Next up
 

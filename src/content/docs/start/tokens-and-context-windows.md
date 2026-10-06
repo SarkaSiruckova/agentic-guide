@@ -13,6 +13,13 @@ Chats, workflows and agents all feed text to a language model, which reads and w
 
 **In one line:** a token is the small piece of text a model reads and writes, and the context window is the limit on how many tokens it can handle at once.
 
+## The jargon: concepts covered on this page
+
+- **Context window (or context length):** the maximum number of tokens a model can handle at once
+- **Input tokens / output tokens:** the tokens you send in, and the tokens the model writes back
+- **Retrieval:** fetching only the relevant passages into the window
+- **Token:** a small piece of text, roughly three-quarters of an English word
+
 ## Why it matters
 
 These two ideas explain a lot of things that otherwise seem arbitrary. They explain why a model "forgets" the start of a long conversation, why pasting in a big document can fail, and why long sessions cost more than short ones.
@@ -88,13 +95,6 @@ The most common mistake is pasting everything in "just in case". Put in what the
 - [The agent loop](/agents/the-agent-loop/): why agent runs fill the window quickly
 - [Hallucination and grounding](/start/hallucination-and-grounding/): what happens when the model can't see the facts it needs
 - [Context engineering](/data/context-engineering/): choosing what goes into the window
-
-## The proper terms
-
-- **Context window (or context length):** the maximum number of tokens a model can handle at once
-- **Input tokens / output tokens:** the tokens you send in, and the tokens the model writes back
-- **Retrieval:** fetching only the relevant passages into the window
-- **Token:** a small piece of text, roughly three-quarters of an English word
 
 ## Next up
 

@@ -13,6 +13,19 @@ Your code now keeps its keys in [environment variables](/building/environment-va
 
 **In one line:** Vercel is a hosting service that watches a GitHub repository, builds your site every time you push a change, and publishes it at a web address.
 
+## The jargon: concepts covered on this page
+
+- **Production branch:** the branch whose pushes become the live site
+- **Production deployment:** a built version of the site, assigned to the live address
+- **Framework preset:** Vercel's saved build settings for a framework such as Astro
+- **Build command:** the command that turns your source files into a finished site
+- **Build log:** the record of what happened while a deployment was built
+- **Instant Rollback:** pointing the live domain back at an earlier deployment
+- **Deployment Protection:** Vercel's controls over who can open your deployment addresses
+- **Hobby plan:** Vercel's free tier for personal, non-commercial projects
+- **DNS record:** an entry telling the internet which server a domain name points to
+- **Maximum duration:** the longest time a function may run before it is stopped
+
 ## Why it matters
 
 Writing a website is half the job. The other half is putting it somewhere the world can reach, and keeping it updated without copying files by hand. Vercel does that second half for you.
@@ -122,19 +135,6 @@ Know that a private GitHub repository does not make the site private. The site V
 - [Environment variables and secrets](/building/environment-variables-and-secrets/): how to keep keys out of your code
 - [Serverless functions](/building/serverless-functions/): the short-lived code Vercel can run for you
 - [Terminal basics](/building/terminal-basics/): the window for the command-line route
-
-## The proper terms
-
-- **Production branch:** the branch whose pushes become the live site
-- **Production deployment:** a built version of the site, assigned to the live address
-- **Framework preset:** Vercel's saved build settings for a framework such as Astro
-- **Build command:** the command that turns your source files into a finished site
-- **Build log:** the record of what happened while a deployment was built
-- **Instant Rollback:** pointing the live domain back at an earlier deployment
-- **Deployment Protection:** Vercel's controls over who can open your deployment addresses
-- **Hobby plan:** Vercel's free tier for personal, non-commercial projects
-- **DNS record:** an entry telling the internet which server a domain name points to
-- **Maximum duration:** the longest time a function may run before it is stopped
 
 ## Next up
 

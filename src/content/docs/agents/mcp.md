@@ -13,6 +13,17 @@ Every system has its own API and its own sign-in, so connecting an assistant to 
 
 **In one line:** MCP (Model Context Protocol) is an open standard for connecting AI assistants to tools and data, so a connector is built once and works with many assistants.
 
+## The jargon: concepts covered on this page
+
+- **MCP (Model Context Protocol):** an open standard for connecting AI assistants to tools and data
+- **MCP server:** a connector that exposes a system's tools, data and prompts through MCP
+- **MCP client:** the part of an assistant that talks to MCP servers
+- **Host:** the assistant application that contains the model and the MCP client
+- **Resource:** read-only content a server offers to the assistant as context
+- **Local server:** an MCP server that runs on your own computer
+- **Remote server:** an MCP server reached over the internet
+- **Prompt injection:** hidden instructions in text that try to steer a model's behaviour
+
 ## Why it matters
 
 An assistant is only useful for business work if it can reach your systems: the CRM, the shared files, the database. Before a common standard, every assistant needed its own custom connector for every system. Ten assistants and ten systems meant up to a hundred separate pieces of glue.
@@ -104,17 +115,6 @@ The assistant never held a password and never had more access than the account a
 - [APIs, OAuth and API keys](/agents/apis-oauth-and-api-keys/): what sits underneath many servers, and how sign-in works
 - [Prompt injection](/running/prompt-injection/): the main risk when connected tools return untrusted text
 - [Least privilege](/running/least-privilege/): how to decide what a connected server may do
-
-## The proper terms
-
-- **MCP (Model Context Protocol):** an open standard for connecting AI assistants to tools and data
-- **MCP server:** a connector that exposes a system's tools, data and prompts through MCP
-- **MCP client:** the part of an assistant that talks to MCP servers
-- **Host:** the assistant application that contains the model and the MCP client
-- **Resource:** read-only content a server offers to the assistant as context
-- **Local server:** an MCP server that runs on your own computer
-- **Remote server:** an MCP server reached over the internet
-- **Prompt injection:** hidden instructions in text that try to steer a model's behaviour
 
 ## Next up
 

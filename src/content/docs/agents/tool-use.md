@@ -13,6 +13,16 @@ Using AI well in the apps, and keeping the fuel bill low, is mostly about what y
 
 **In one line:** tool use is how a model asks for something to be done, such as searching a database, while the software around it does the actual work and hands back the result.
 
+## The jargon: concepts covered on this page
+
+- **Function calling:** another name for tool use, common in developer documentation
+- **Parameters:** the inputs a tool needs, such as a company name
+- **Read tool / write tool:** a tool that only looks things up, or one that changes something
+- **Tool:** an action a model is allowed to request
+- **Tool call:** the model's structured request to use a tool
+- **Tool result:** what the tool sends back, added to the conversation as text
+- **Tool use:** the way a model requests actions and the software around it carries them out
+
 ## Why it matters
 
 On its own, a model does one thing: it reads text and writes text. It can't open your CRM, check today's date or send a message. Without tools, it can only answer from what it learned in training and what you paste into the conversation.
@@ -110,16 +120,6 @@ The most common mistake is handing a model every tool "just in case". Give it th
 - [MCP](/agents/mcp/): a standard way to connect tools to many assistants
 - [Structured outputs](/building/structured-outputs/): getting tool inputs and answers in a fixed shape (Part 4)
 - [Least privilege](/running/least-privilege/): limiting what each tool can touch (Part 6)
-
-## The proper terms
-
-- **Function calling:** another name for tool use, common in developer documentation
-- **Parameters:** the inputs a tool needs, such as a company name
-- **Read tool / write tool:** a tool that only looks things up, or one that changes something
-- **Tool:** an action a model is allowed to request
-- **Tool call:** the model's structured request to use a tool
-- **Tool result:** what the tool sends back, added to the conversation as text
-- **Tool use:** the way a model requests actions and the software around it carries them out
 
 ## Next up
 

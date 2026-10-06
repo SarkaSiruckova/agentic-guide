@@ -13,6 +13,16 @@ A map is only useful if the roads on it still exist. Clean, matched records go o
 
 **In one line:** keeping data fresh means making sure that what an agent reads is still true in the system where the information actually lives.
 
+## The jargon: concepts covered on this page
+
+- **Cache:** a short-lived copy kept to avoid asking the source again
+- **Event:** a message saying something changed in a system
+- **Freshness:** how closely a copy matches the current state of the source
+- **Polling:** repeatedly asking a system whether anything has changed
+- **Source of truth:** the system officially considered right about a fact
+- **Stale data:** a copy that no longer matches its source
+- **Webhook:** a message one system sends to another when something happens
+
 ## Why it matters
 
 Information changes. A company raises money, a founder leaves, a document is replaced. The original system, such as the CRM, is updated within minutes.
@@ -98,16 +108,6 @@ The most common mistake is building a copy and forgetting that it is one. Name e
 - [Hallucination and grounding](/start/hallucination-and-grounding/): grounding in stale sources gives confident wrong answers
 - [Triggers and scheduling](/building/triggers-and-scheduling/): how refresh jobs get started
 - [Serverless functions](/building/serverless-functions/): a common home for small update jobs
-
-## The proper terms
-
-- **Cache:** a short-lived copy kept to avoid asking the source again
-- **Event:** a message saying something changed in a system
-- **Freshness:** how closely a copy matches the current state of the source
-- **Polling:** repeatedly asking a system whether anything has changed
-- **Source of truth:** the system officially considered right about a fact
-- **Stale data:** a copy that no longer matches its source
-- **Webhook:** a message one system sends to another when something happens
 
 ## Next up
 

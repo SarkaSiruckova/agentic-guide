@@ -13,6 +13,17 @@ Each layer of the map has had its own page. This one follows a single ordinary q
 
 **In one line:** one ordinary question passes through every layer of the map, and following it shows what each layer is for and where things can break.
 
+## The jargon: concepts covered on this page
+
+- **Agent harness:** the program that runs the agent loop and connects model and tools
+- **Tool call:** a request from the model for the harness to run an action
+- **Connector:** a ready-made link between an agent and a system such as a CRM
+- **Index:** a prepared catalogue of documents that makes searching fast
+- **Stale index:** a search catalogue that has not caught up with recent changes
+- **Rate limit:** a cap on how many requests a provider accepts in a period
+- **Trace:** the full record of one agent run, step by step
+- **Prompt injection:** hidden instructions in text that try to steer a model
+
 ## Why it matters
 
 The layer pages explain each piece on its own. That can make an agent sound like ten separate products. In practice a single question touches nearly all of them within a few seconds, and a failure in any one can look like "the AI got it wrong".
@@ -110,17 +121,6 @@ Leave out the rest for now: no second data source, no database of your own, no c
 - [Databases and storage](/map/databases-and-storage/): where the data and indexes live
 - [Observability and evals](/map/observability-and-evals/): the record that lets you fix what went wrong
 - [What a context layer is](/data/what-a-context-layer-is/): the data side of this path, seen as a whole
-
-## The proper terms
-
-- **Agent harness:** the program that runs the agent loop and connects model and tools
-- **Tool call:** a request from the model for the harness to run an action
-- **Connector:** a ready-made link between an agent and a system such as a CRM
-- **Index:** a prepared catalogue of documents that makes searching fast
-- **Stale index:** a search catalogue that has not caught up with recent changes
-- **Rate limit:** a cap on how many requests a provider accepts in a period
-- **Trace:** the full record of one agent run, step by step
-- **Prompt injection:** hidden instructions in text that try to steer a model
 
 ## Next up
 

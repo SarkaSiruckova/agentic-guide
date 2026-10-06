@@ -15,6 +15,20 @@ With your files tracked in [Git](/building/git-and-github/), you can let an agen
 
 *Snapshot, as of October 2026. Claude Code changes quickly. Commands and menu names here come from Anthropic's documentation at code.claude.com, so check there if something looks different on your machine.*
 
+## The jargon: concepts covered on this page
+
+- **Permission mode:** a setting for how much Claude Code does without asking
+- **Allow, ask and deny rules:** standing permissions for specific tools or commands
+- **CLAUDE.md:** a file of standing instructions Claude Code reads each session
+- **Auto memory:** notes Claude Code writes itself between sessions
+- **Hook:** a command that runs automatically at a set moment
+- **Deny rule:** a settings entry that blocks a tool or path outright
+- **Managed settings:** organisation-wide settings that individuals cannot override
+- **Sandbox:** an operating-system boundary limiting which files and sites commands can reach
+- **Checkpoint:** a snapshot of your files taken before each prompt
+- **Compaction:** summarising a long conversation to free up context space
+- **Diff:** a view of exactly which lines changed
+
 ## Why it matters
 
 A chat window can only talk. Claude Code can act: it can open your files, edit them, run a script and check the result. That is what makes it useful for building a website, tidying a folder of notes or maintaining a set of instructions, and also what makes it worth handling carefully.
@@ -278,20 +292,6 @@ Check usage with `/usage` (`/cost` is an alias). On subscription plans it shows 
 - [Git and GitHub](/building/git-and-github/): the safety net under every session
 - [Human in the loop](/agents/human-in-the-loop/): why approval steps matter
 - [Prompt injection](/running/prompt-injection/): the main risk when an agent reads outside content
-
-## The proper terms
-
-- **Permission mode:** a setting for how much Claude Code does without asking
-- **Allow, ask and deny rules:** standing permissions for specific tools or commands
-- **CLAUDE.md:** a file of standing instructions Claude Code reads each session
-- **Auto memory:** notes Claude Code writes itself between sessions
-- **Hook:** a command that runs automatically at a set moment
-- **Deny rule:** a settings entry that blocks a tool or path outright
-- **Managed settings:** organisation-wide settings that individuals cannot override
-- **Sandbox:** an operating-system boundary limiting which files and sites commands can reach
-- **Checkpoint:** a snapshot of your files taken before each prompt
-- **Compaction:** summarising a long conversation to free up context space
-- **Diff:** a view of exactly which lines changed
 
 ## Next up
 

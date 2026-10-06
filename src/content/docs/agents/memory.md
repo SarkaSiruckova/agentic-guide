@@ -13,6 +13,14 @@ Skills and instruction files are know-how a person writes down on purpose; memor
 
 **In one line:** memory is information saved outside the model and brought back into its context window later, which is the only way an assistant can seem to remember anything from an earlier conversation.
 
+## The jargon: concepts covered on this page
+
+- **Long-term memory:** notes saved outside the model that persist between conversations
+- **Memory store:** the place where saved notes are kept
+- **Memory poisoning:** planting a false or harmful note so it affects later conversations
+- **Persistence:** saving information outside the context window so it survives the conversation
+- **Short-term memory:** what is in the context window during the current conversation
+
 ## Why it matters
 
 A model starts every conversation blank. It does not recall yesterday's chat, your preferences or the decision you made last week. Anything it appears to remember has been put in front of it again.
@@ -116,14 +124,6 @@ The most common mistake is assuming memory is a record of everything. It is a sm
 - [RAG and chunking](/data/rag-and-chunking/): the other way to bring saved knowledge back into the window
 - [Skills and instruction files](/agents/skills-and-instruction-files/): memory you write and control yourself
 - [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/): memories about people are personal data
-
-## The proper terms
-
-- **Long-term memory:** notes saved outside the model that persist between conversations
-- **Memory store:** the place where saved notes are kept
-- **Memory poisoning:** planting a false or harmful note so it affects later conversations
-- **Persistence:** saving information outside the context window so it survives the conversation
-- **Short-term memory:** what is in the context window during the current conversation
 
 ## Next up
 

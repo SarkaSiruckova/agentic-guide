@@ -13,6 +13,17 @@ Once an agent runs with its own keys and access, the next need is seeing what it
 
 **In one line:** this layer is the set of tools that record what your agents did (observability) and check whether they do their job well (evals), so you can fix problems instead of guessing at them.
 
+## The jargon: concepts covered on this page
+
+- **Trace:** the full record of one agent run, step by step
+- **Span:** one step inside a trace, such as a model call or tool call
+- **Trace store:** the place where traces are saved and searched
+- **Eval set:** a fixed list of test questions with known good answers
+- **LLM-as-judge:** using one model to score another model's answers
+- **OpenTelemetry:** an open standard for collecting traces, metrics and logs
+- **Alert:** an automatic warning when a measure goes outside normal range
+- **Self-hosting:** running software on your own servers instead of the vendor's cloud
+
 ## Why it matters
 
 This layer answers two questions. "What actually happened on that run?" and "Is the agent any good, and did my last change make it better or worse?" The first is [observability](/running/observability/). The second is [evals](/running/evals/).
@@ -102,17 +113,6 @@ Sample Ventures, the fictional fund, has an assistant that answers questions abo
 - [Audit trails](/running/audit-trails/): the accountability record, which is different from debugging traces
 - [Estimating cost per task](/running/estimating-cost-per-task/): turning recorded runs into a real cost per question
 - [One question through every layer](/map/one-question-through-every-layer/): where the recording step sits in a full run
-
-## The proper terms
-
-- **Trace:** the full record of one agent run, step by step
-- **Span:** one step inside a trace, such as a model call or tool call
-- **Trace store:** the place where traces are saved and searched
-- **Eval set:** a fixed list of test questions with known good answers
-- **LLM-as-judge:** using one model to score another model's answers
-- **OpenTelemetry:** an open standard for collecting traces, metrics and logs
-- **Alert:** an automatic warning when a measure goes outside normal range
-- **Self-hosting:** running software on your own servers instead of the vendor's cloud
 
 ## Next up
 

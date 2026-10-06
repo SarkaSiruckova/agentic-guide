@@ -13,6 +13,19 @@ Every chat channel follows the same pattern: a registered bot, an address that r
 
 **In one line:** a Teams bot is a small web service that Teams sends messages to, so colleagues can talk to your agent in the chat window they already have open.
 
+## The jargon: concepts covered on this page
+
+- **Tenant:** an organisation's own private space within Microsoft 365
+- **Activity:** the message Teams sends to a bot for each event
+- **Messaging endpoint:** the HTTPS address where Teams delivers a bot's activities
+- **App manifest:** the settings file inside an app package
+- **Sideloading:** installing an app directly without going through a catalogue
+- **Resource-specific consent:** permission granted by a team or chat owner for one conversation
+- **Adaptive Card:** a message with a set layout, inputs and buttons
+- **Microsoft Entra:** Microsoft's identity and sign-in system
+- **Microsoft Purview:** Microsoft's tools for retention, audit and eDiscovery
+- **eDiscovery:** searching and exporting stored messages for legal or regulatory needs
+
 ## Why it matters
 
 If a firm already lives in Microsoft 365, Teams is where questions get asked all day. An agent that answers there needs no new app, no new login and no training. People just message it like a colleague.
@@ -143,19 +156,6 @@ Sample Ventures wants associates to ask the agent about companies in the pipelin
 - [Human in the loop](/agents/human-in-the-loop/): approval cards before an agent acts
 - [Auth and secrets](/map/auth-and-secrets/): Entra identities and where credentials live
 - [Connecting business tools through MCP](/building/connecting-business-tools-through-mcp/): how the agent reaches your data
-
-## The proper terms
-
-- **Tenant:** an organisation's own private space within Microsoft 365
-- **Activity:** the message Teams sends to a bot for each event
-- **Messaging endpoint:** the HTTPS address where Teams delivers a bot's activities
-- **App manifest:** the settings file inside an app package
-- **Sideloading:** installing an app directly without going through a catalogue
-- **Resource-specific consent:** permission granted by a team or chat owner for one conversation
-- **Adaptive Card:** a message with a set layout, inputs and buttons
-- **Microsoft Entra:** Microsoft's identity and sign-in system
-- **Microsoft Purview:** Microsoft's tools for retention, audit and eDiscovery
-- **eDiscovery:** searching and exporting stored messages for legal or regulatory needs
 
 ## Next up
 

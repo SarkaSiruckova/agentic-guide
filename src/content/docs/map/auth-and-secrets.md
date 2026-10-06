@@ -13,6 +13,21 @@ Every layer so far makes calls into some other system, and each call has to prov
 
 **In one line:** this layer decides who or what is allowed into each system, and keeps the keys and sign-ins that prove it somewhere safe, instead of scattered through files and chats.
 
+## The jargon: concepts covered on this page
+
+- **Authentication:** proving who you are to a system
+- **Authorisation:** deciding what an authenticated identity may do
+- **Identity provider:** the service that holds accounts and verifies sign-ins
+- **Single sign-on (SSO):** one login that works across many applications
+- **Token:** a short-lived pass issued after sign-in
+- **Service account:** a non-human account used by software
+- **App registration:** a record telling an identity provider that an application exists
+- **Admin consent:** an administrator approving an app's permissions for the whole organisation
+- **Delegated permission:** access that lets an app act as a signed-in person
+- **Application permission:** access that lets an app act on its own, without a person
+- **Secrets store:** a protected service that holds keys and passwords and hands them out on request
+- **Rotation:** replacing a key or secret with a new one on a regular basis
+
 ## Why it matters
 
 Every connection an agent makes needs a way to say "it's me, and I'm allowed". That proof is a password, a key or a token. If it leaks, whoever holds it can act as the agent. If it is too powerful, a mistake or an attack does more damage.
@@ -114,21 +129,6 @@ Sample Ventures, the fictional fund, wants an agent that reads the data room fol
 - [Permissions and access control](/data/permissions-and-access-control/): deciding what each identity may do
 - [Least privilege](/running/least-privilege/): the rule that shapes every choice on this page
 - [Audit trails](/running/audit-trails/): the record that makes separate identities worth having
-
-## The proper terms
-
-- **Authentication:** proving who you are to a system
-- **Authorisation:** deciding what an authenticated identity may do
-- **Identity provider:** the service that holds accounts and verifies sign-ins
-- **Single sign-on (SSO):** one login that works across many applications
-- **Token:** a short-lived pass issued after sign-in
-- **Service account:** a non-human account used by software
-- **App registration:** a record telling an identity provider that an application exists
-- **Admin consent:** an administrator approving an app's permissions for the whole organisation
-- **Delegated permission:** access that lets an app act as a signed-in person
-- **Application permission:** access that lets an app act on its own, without a person
-- **Secrets store:** a protected service that holds keys and passwords and hands them out on request
-- **Rotation:** replacing a key or secret with a new one on a regular basis
 
 ## Next up
 

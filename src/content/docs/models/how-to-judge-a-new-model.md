@@ -13,6 +13,16 @@ Carmakers launch new engines every season, and the brochure always says the new 
 
 **In one line:** when a new model launches, read the announcement as marketing, check the practical and legal details, then test it on your own work before you change anything.
 
+## The jargon: concepts covered on this page
+
+- **Model family:** a line of related models from one maker
+- **Eval:** a repeatable test set used to score an AI system
+- **Blind scoring:** marking outputs without knowing which model wrote them
+- **Noise:** random variation between runs that can look like a real difference
+- **Staged rollout:** moving to a new model gradually, with a way back
+- **Deprecation:** a provider announcing that a model will be retired
+- **Harness:** the code around a model that adds tools, prompts and memory
+
 ## Why it matters
 
 New models arrive often, each with a launch post that says it is better. Switching on that basis is risky. A model that looks stronger in a chart can be slower, more expensive, less careful with your kind of text, or covered by data terms that do not suit you.
@@ -131,16 +141,6 @@ She switches one low-risk task, keeps the old model configured, and re-runs the 
 - [Data terms at a glance](/models/data-terms-at-a-glance/): the data questions to ask any provider
 - [Model routing](/running/model-routing/): sending different tasks to different models, and switching back
 - [Model tiers](/models/model-tiers/): how models in one family are sized and priced
-
-## The proper terms
-
-- **Model family:** a line of related models from one maker
-- **Eval:** a repeatable test set used to score an AI system
-- **Blind scoring:** marking outputs without knowing which model wrote them
-- **Noise:** random variation between runs that can look like a real difference
-- **Staged rollout:** moving to a new model gradually, with a way back
-- **Deprecation:** a provider announcing that a model will be retired
-- **Harness:** the code around a model that adds tools, prompts and memory
 
 ## Next up
 

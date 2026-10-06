@@ -13,6 +13,14 @@ Since [prompt injection](/running/prompt-injection/) cannot be fully prevented, 
 
 **In one line:** least privilege means each person, program or agent gets the minimum access its job needs, and nothing more, for no longer than needed.
 
+## The jargon: concepts covered on this page
+
+- **Blast radius:** how much damage one mistake or compromise can cause
+- **Least privilege:** giving only the minimum access a job needs
+- **Scope:** a limit written into a credential, such as read-only access to mail
+- **Service account:** a shared identity used by software rather than a person
+- **Time-limited credential:** access that expires after a set period or task
+
 ## Why it matters
 
 Giving an agent broad access is the easy path. One account, full permissions, everything works first time. Nobody has to work out in advance what it will need.
@@ -105,14 +113,6 @@ Now a hidden instruction arrives in an email. At worst it could add a bogus cont
 - [APIs, OAuth and API keys](/agents/apis-oauth-and-api-keys/): where scopes on tokens are set
 - [Prompt injection](/running/prompt-injection/): why a fooled agent should have little to misuse
 - [MCP](/agents/mcp/): connect only the tools a job needs
-
-## The proper terms
-
-- **Blast radius:** how much damage one mistake or compromise can cause
-- **Least privilege:** giving only the minimum access a job needs
-- **Scope:** a limit written into a credential, such as read-only access to mail
-- **Service account:** a shared identity used by software rather than a person
-- **Time-limited credential:** access that expires after a set period or task
 
 ## Next up
 

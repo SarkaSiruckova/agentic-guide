@@ -13,6 +13,14 @@ A first agent usually answers one kind of question from one data source (see [yo
 
 **In one line:** structured data fits into tables with fixed fields, such as a stage or an amount, while unstructured data is free-form text such as emails, documents and call notes.
 
+## The jargon: concepts covered on this page
+
+- **Extraction:** pulling structured fields out of free text
+- **JSON:** a text format that labels each value, used to pass data between programs
+- **Semi-structured data:** data with some labelled structure but loose or varying fields
+- **Structured data:** data in tables with fixed fields and types
+- **Unstructured data:** free-form content such as documents, emails and notes
+
 ## Why it matters
 
 Most people picture "data" as a spreadsheet. But most of what a firm knows is not in a neat table. It is in emails, meeting notes, decks, PDFs and chat messages.
@@ -94,14 +102,6 @@ The most common mistake is trying to force all information into fields. Some kno
 - [Types of databases](/data/types-of-databases/): where structured data is kept
 - [RAG and chunking](/data/rag-and-chunking/): how unstructured text is searched and fed to a model
 - [How LLMs talk to databases](/data/how-llms-talk-to-databases/): how structured data is queried
-
-## The proper terms
-
-- **Extraction:** pulling structured fields out of free text
-- **JSON:** a text format that labels each value, used to pass data between programs
-- **Semi-structured data:** data with some labelled structure but loose or varying fields
-- **Structured data:** data in tables with fixed fields and types
-- **Unstructured data:** free-form content such as documents, emails and notes
 
 ## Next up
 

@@ -15,6 +15,16 @@ Once you have an idea of [which AI to use](/start/which-ai-should-i-use/), the n
 
 *Snapshot, as of October 2026. Plans and prices change often, so check the provider's own pricing page before you buy.*
 
+## The jargon: concepts covered on this page
+
+- **Free tier:** a no-cost plan with a small usage allowance
+- **Subscription:** a fixed monthly fee for one person's use of the apps
+- **Seat:** one person's licence on a team or business plan
+- **Usage limit:** the cap on how much you can use a plan before it resets
+- **Pay as you go:** paying only for what you use, with no fixed fee
+- **API key:** a secret string your software sends to prove it may use the API
+- **MTok:** one million tokens, the usual unit on API pricing pages
+
 ## Why it matters
 
 The same model can be reached in all three ways, and they are billed completely differently. Picking the wrong one either wastes money or leaves you hitting a limit halfway through your work.
@@ -90,16 +100,6 @@ Jo, a freelance researcher, works the other way round. Jo reads and writes all d
 - [How API pricing works](/running/how-api-pricing-works/): per-token rates, tiers and discounts in detail
 - [The Claude apps](/using-ai/claude-apps/): what the subscription actually gets you
 - [APIs, OAuth and API keys](/agents/apis-oauth-and-api-keys/): how software proves who it is
-
-## The proper terms
-
-- **Free tier:** a no-cost plan with a small usage allowance
-- **Subscription:** a fixed monthly fee for one person's use of the apps
-- **Seat:** one person's licence on a team or business plan
-- **Usage limit:** the cap on how much you can use a plan before it resets
-- **Pay as you go:** paying only for what you use, with no fixed fee
-- **API key:** a secret string your software sends to prove it may use the API
-- **MTok:** one million tokens, the usual unit on API pricing pages
 
 ## Next up
 

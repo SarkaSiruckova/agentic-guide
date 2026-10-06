@@ -13,6 +13,17 @@ With models, data and connectors in place, something has to do the driving: ask 
 
 **In one line:** an agent framework is a ready-made library or platform that runs the agent loop and wires up tools and memory for you, so you write only the parts that are specific to your firm.
 
+## The jargon: concepts covered on this page
+
+- **Agent framework:** a library or platform that supplies the agent loop and common parts
+- **SDK (software development kit):** a code package for building with a particular service
+- **Orchestration:** coordinating steps, tools or agents so work happens in the right order
+- **Handoff:** passing a task from one agent to another
+- **Guardrail:** a check on an agent's input or output that can block it
+- **Tracing:** recording each step an agent takes so you can inspect it later
+- **Durable execution:** saving progress so a long job can resume after a failure
+- **No-code builder:** a visual tool for assembling agents without writing code
+
 ## Why it matters
 
 Building an agent from nothing means writing the [agent loop](/agents/the-agent-loop/): send the task to the model, read its request for a tool, run the tool, feed back the result, and repeat until done. Then you add retries, limits, logging, memory and a way to ask a person for approval. None of that is hard, but it adds up, and it is the same work for everyone.
@@ -132,17 +143,6 @@ She starts with path one. After a month, the associates ask for deeper research 
 - [Subagents and multi-agent systems](/agents/subagents-and-multi-agent-systems/): when splitting work across agents helps, and when it does not
 - [Orchestration tools](/building/orchestration-tools/): the lighter alternative for fixed workflows
 - [Evals](/running/evals/): the tests no framework supplies for you
-
-## The proper terms
-
-- **Agent framework:** a library or platform that supplies the agent loop and common parts
-- **SDK (software development kit):** a code package for building with a particular service
-- **Orchestration:** coordinating steps, tools or agents so work happens in the right order
-- **Handoff:** passing a task from one agent to another
-- **Guardrail:** a check on an agent's input or output that can block it
-- **Tracing:** recording each step an agent takes so you can inspect it later
-- **Durable execution:** saving progress so a long job can resume after a failure
-- **No-code builder:** a visual tool for assembling agents without writing code
 
 ## Next up
 

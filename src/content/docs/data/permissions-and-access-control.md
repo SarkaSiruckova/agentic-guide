@@ -13,6 +13,15 @@ Connections, search and fresh copies decide what an agent can reach. Permissions
 
 **In one line:** permissions and access control decide who can see and do what, and for an agent they must be enforced by the systems holding the data, not left to the agent's good behaviour.
 
+## The jargon: concepts covered on this page
+
+- **Access control:** the system that enforces who may see and do what
+- **Audit log:** a record of who asked for what and what happened
+- **Authorisation:** deciding what an identified person or program may do
+- **Least privilege:** giving an identity only the access its job needs
+- **Permission:** a rule allowing a specific person or program to do something
+- **Service account:** a shared identity used by software rather than a person
+
 ## Why it matters
 
 People in a firm do not all see the same things. Some folders are restricted to partners, some records hold sensitive notes, and some actions, such as sending an email, are limited to a few people.
@@ -116,15 +125,6 @@ The most common mistake is giving the agent a broad account for convenience and 
 - [System prompts](/using-ai/system-prompts/): useful for guidance, not for enforcement
 - [Human in the loop](/agents/human-in-the-loop/): approvals for actions that are risky or hard to undo
 - [Least privilege](/running/least-privilege/): the principle for deciding what to grant
-
-## The proper terms
-
-- **Access control:** the system that enforces who may see and do what
-- **Audit log:** a record of who asked for what and what happened
-- **Authorisation:** deciding what an identified person or program may do
-- **Least privilege:** giving an identity only the access its job needs
-- **Permission:** a rule allowing a specific person or program to do something
-- **Service account:** a shared identity used by software rather than a person
 
 ## Next up
 

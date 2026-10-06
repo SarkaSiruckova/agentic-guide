@@ -13,6 +13,13 @@ A language model can only work with what is in its context window and what it le
 
 **In one line:** hallucination is when a model states something false with confidence, and grounding is giving it real source material to answer from, so its answers can be checked.
 
+## The jargon: concepts covered on this page
+
+- **Citation:** a pointer from a claim back to the source it came from
+- **Grounding:** giving a model real source material to answer from
+- **Hallucination:** a confident statement from a model that is false or invented
+- **Retrieval:** fetching the relevant passages from a larger collection
+
 ## Why it matters
 
 This is the biggest trust problem with AI. A made-up figure, date or citation reads just as smoothly as a correct one, so you can't spot it by tone.
@@ -94,13 +101,6 @@ The most common mistake is trusting an answer because it reads well. Check the s
 - [Tool use](/agents/tool-use/): how a model fetches real sources
 - [Tokens and context windows](/start/tokens-and-context-windows/): grounding only works for what fits in the window
 - [Context engineering](/data/context-engineering/): choosing which sources reach the model
-
-## The proper terms
-
-- **Citation:** a pointer from a claim back to the source it came from
-- **Grounding:** giving a model real source material to answer from
-- **Hallucination:** a confident statement from a model that is false or invented
-- **Retrieval:** fetching the relevant passages from a larger collection
 
 ## Next up
 

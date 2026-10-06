@@ -13,6 +13,14 @@ sidebar:
 
 **In one line:** data exfiltration is data leaving the place it should stay, and for an agent, every tool that can send something outside is a possible exit.
 
+## The jargon: concepts covered on this page
+
+- **Allowlist:** a short list of approved destinations or actions, with everything else blocked
+- **Data exfiltration:** sensitive data leaving the place it should stay
+- **Egress:** data or traffic leaving a system or network
+- **Outbound channel:** any tool or route an agent can use to send something out
+- **Redaction:** removing or masking sensitive details before data is shared
+
 ## Why it matters
 
 Most people picture a data leak as someone breaking in. With agents, the more common picture is quieter. The agent is already inside, it can already read the sensitive material, and one of its tools can carry something out.
@@ -117,14 +125,6 @@ The usual mistake is securing the data store carefully and then giving the agent
 - [Human in the loop](/agents/human-in-the-loop/): approvals for outbound actions
 - [Permissions and access control](/data/permissions-and-access-control/): limit what the agent can reach in the first place
 - [Observability](/running/observability/): spot unusual outbound activity
-
-## The proper terms
-
-- **Allowlist:** a short list of approved destinations or actions, with everything else blocked
-- **Data exfiltration:** sensitive data leaving the place it should stay
-- **Egress:** data or traffic leaving a system or network
-- **Outbound channel:** any tool or route an agent can use to send something out
-- **Redaction:** removing or masking sensitive details before data is shared
 
 ## Next up
 

@@ -13,6 +13,16 @@ Tables answer "list all X" and retrieval answers "what did the documents say". S
 
 **In one line:** a knowledge graph stores facts as things (people, companies, funds) joined by labelled relationships (works at, founded, invested in), so you can follow the connections to answer questions like "how are these two people linked?"
 
+## The jargon: concepts covered on this page
+
+- **Cypher:** a query language for graph databases, used to find paths and patterns
+- **Edge:** a labelled link between two nodes, such as "founded"
+- **GraphRAG:** retrieval that uses a graph's links to choose which passages to fetch
+- **Knowledge graph:** facts stored as nodes joined by labelled relationships
+- **Node:** a thing in a graph, such as a person, company or fund
+- **Ontology:** the agreed list of node types and relationship types in a graph
+- **Triple:** one fact written as thing, relationship, thing
+
 ## Why it matters
 
 Much of what a VC firm knows is about relationships. Who founded which company, who worked with whom before, who introduced whom, which fund backed what. These facts live in different places: a CRM, email, notes, a spreadsheet.
@@ -111,16 +121,6 @@ A rule of thumb: counting and listing suit tables, connecting suits a graph. For
 - [Types of databases](/data/types-of-databases/): where graph databases sit among the other kinds
 - [RAG and chunking](/data/rag-and-chunking/): graph-aware retrieval builds on ordinary retrieval
 - [What a context layer is](/data/what-a-context-layer-is/): a graph can be one part of it
-
-## The proper terms
-
-- **Cypher:** a query language for graph databases, used to find paths and patterns
-- **Edge:** a labelled link between two nodes, such as "founded"
-- **GraphRAG:** retrieval that uses a graph's links to choose which passages to fetch
-- **Knowledge graph:** facts stored as nodes joined by labelled relationships
-- **Node:** a thing in a graph, such as a person, company or fund
-- **Ontology:** the agreed list of node types and relationship types in a graph
-- **Triple:** one fact written as thing, relationship, thing
 
 ## Next up
 

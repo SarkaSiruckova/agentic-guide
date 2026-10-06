@@ -13,6 +13,17 @@ Code on a hosting platform, with its keys stored safely and a database such as [
 
 **In one line:** a trigger is whatever starts a piece of work on its own, such as the clock reaching Monday 8am, a new email arriving, or someone pressing a button.
 
+## The jargon: concepts covered on this page
+
+- **Trigger:** the signal that starts a job without a person typing
+- **Schedule:** a clock-based trigger such as every Monday at 8am
+- **Cron:** a compact five-field notation for schedules
+- **Event:** something happening in another system that starts a job
+- **Webhook:** a web address that another system calls to announce an event
+- **Polling:** repeatedly asking a system whether anything is new
+- **Idempotent:** safe to repeat, because doing it twice gives the same result as once
+- **UTC:** the world reference time, with no daylight saving changes
+
 ## Why it matters
 
 A chat assistant waits for you to type. Most useful automation cannot wait for that. A weekly briefing has to appear before the team meeting, and a new introduction email should be logged whether or not anyone remembers.
@@ -82,7 +93,6 @@ One Monday the online shop's system is unavailable at 8am. The agent's attempt f
 
 One day the shop system delivers the same event twice. The job first checks the baking list for that order number. It finds it and stops. The list has one entry, not two. That check is the idempotency.
 
-
 ## Costs and limits
 
 - **Polling costs more as it gets faster.** Checking every minute uses ten times the requests of checking every ten minutes, and may hit [rate limits](/running/rate-limits-retries-and-failures/) (caps on how many requests a service accepts, covered in Part 6). Use events where the other system offers them.
@@ -101,17 +111,6 @@ One day the shop system delivers the same event twice. The job first checks the 
 - [Serverless functions](/building/serverless-functions/): small pieces of code that a timer or event can start
 - [Human-in-the-loop](/agents/human-in-the-loop/): approvals for risky actions in jobs nobody is watching
 - [Observability](/running/observability/): the logs and alerts that show whether unattended jobs ran
-
-## The proper terms
-
-- **Trigger:** the signal that starts a job without a person typing
-- **Schedule:** a clock-based trigger such as every Monday at 8am
-- **Cron:** a compact five-field notation for schedules
-- **Event:** something happening in another system that starts a job
-- **Webhook:** a web address that another system calls to announce an event
-- **Polling:** repeatedly asking a system whether anything is new
-- **Idempotent:** safe to repeat, because doing it twice gives the same result as once
-- **UTC:** the world reference time, with no daylight saving changes
 
 ## Next up
 

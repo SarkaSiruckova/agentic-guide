@@ -13,6 +13,17 @@ Graphs, searches and counts all assume each company or person appears once. Enti
 
 **In one line:** entity resolution is deciding which records, names and addresses refer to the same real-world company or person, so each one ends up with a single trusted record.
 
+## The jargon: concepts covered on this page
+
+- **Deduplication:** finding and removing duplicate records for the same entity
+- **Entity:** a real-world thing your data describes, such as a company or person
+- **Entity resolution:** deciding which records refer to the same real-world entity
+- **False merge:** wrongly joining records that describe different entities
+- **Fuzzy matching:** matching text that is similar but not identical, such as typos
+- **Golden record:** the single trusted record kept for an entity
+- **Missed match:** failing to join records that describe the same entity
+- **Normalisation:** cleaning text into a standard form before comparing
+
 ## Why it matters
 
 The same company shows up under many names. "Acme Payments Ltd", "Acme Pay" and a website domain such as acmepayments.example can all be the same business. Two email addresses can belong to one person who changed jobs.
@@ -109,17 +120,6 @@ The most common mistake is matching on name alone. Prefer exact keys, and use na
 - [Knowledge graphs](/data/knowledge-graphs/): a graph only works if each entity appears once
 - [Keeping data fresh](/data/keeping-data-fresh/): merges and changes have to reach every copy
 - [Human in the loop](/agents/human-in-the-loop/): unsure matches are a good place for a person to decide
-
-## The proper terms
-
-- **Deduplication:** finding and removing duplicate records for the same entity
-- **Entity:** a real-world thing your data describes, such as a company or person
-- **Entity resolution:** deciding which records refer to the same real-world entity
-- **False merge:** wrongly joining records that describe different entities
-- **Fuzzy matching:** matching text that is similar but not identical, such as typos
-- **Golden record:** the single trusted record kept for an entity
-- **Missed match:** failing to join records that describe the same entity
-- **Normalisation:** cleaning text into a standard form before comparing
 
 ## Next up
 

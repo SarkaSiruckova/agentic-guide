@@ -13,6 +13,15 @@ Knowing which kind of store holds what (see [types of databases](/data/types-of-
 
 **In one line:** a model cannot reach a database itself, so the software around it sends the query and returns the rows, and how much freedom the model gets over that query decides how useful and how safe the setup is.
 
+## The jargon: concepts covered on this page
+
+- **Least privilege:** giving an account only the access it needs and nothing more
+- **Read-only access:** a login that can look at data but not change it
+- **Row limit:** a cap on how many rows a query may return
+- **Schema:** the description of a database's tables and columns
+- **SQL:** the standard language for querying relational databases
+- **Text-to-SQL:** a model writing a SQL query from a plain-language question
+
 ## Why it matters
 
 Most of a firm's facts sit in databases: companies, people, notes, interactions. If an assistant can only talk, it can't answer "how many seed-stage companies did we log last month?". Someone has to connect the model to the data.
@@ -97,15 +106,6 @@ The most common mistake is giving the assistant a powerful login "to make it eas
 - [Permissions and access control](/data/permissions-and-access-control/): how to limit what the database account can see and do
 - [MCP](/agents/mcp/): a standard way to package database and API tools
 - [RAG and chunking](/data/rag-and-chunking/): the pattern for text rather than rows
-
-## The proper terms
-
-- **Least privilege:** giving an account only the access it needs and nothing more
-- **Read-only access:** a login that can look at data but not change it
-- **Row limit:** a cap on how many rows a query may return
-- **Schema:** the description of a database's tables and columns
-- **SQL:** the standard language for querying relational databases
-- **Text-to-SQL:** a model writing a SQL query from a plain-language question
 
 ## Next up
 

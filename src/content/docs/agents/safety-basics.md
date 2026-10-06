@@ -13,6 +13,14 @@ Connectors, skills and [memory](/agents/memory/) let an assistant read your acco
 
 **In one line:** once an AI can read your accounts and take actions, text written by strangers can try to steer it, so give it only the access each job needs and keep risky actions behind your approval.
 
+## The jargon: concepts covered on this page
+
+- **Prompt injection:** text the model was only meant to read being treated as an instruction
+- **Indirect prompt injection:** the same, hidden in an email, web page or file rather than typed by the user
+- **Lethal trifecta:** private data, untrusted content and a way to send data out, all in one agent
+- **Least privilege:** the minimum access a job needs, for no longer than needed
+- **Data exfiltration:** data leaving the place it should stay
+
 ## Why it matters
 
 A chat assistant on its own can only say something wrong. Connect it to your email, files or calendar, and it can read private material and do things: send, share, edit, delete. In the car picture, you have handed over the keys, so the locks and the alarm now matter.
@@ -71,14 +79,6 @@ Tighter access means a few more clicks and the odd refusal. That is the trade-of
 - [Data exfiltration through tools](/running/data-exfiltration-through-tools/): the full version, in Part 6
 - [Connectors in Claude](/agents/connectors-in-claude/): where the permission screens and approvals live
 - [Skills in Claude](/agents/skills-in-claude/): adding and checking skills
-
-## The proper terms
-
-- **Prompt injection:** text the model was only meant to read being treated as an instruction
-- **Indirect prompt injection:** the same, hidden in an email, web page or file rather than typed by the user
-- **Lethal trifecta:** private data, untrusted content and a way to send data out, all in one agent
-- **Least privilege:** the minimum access a job needs, for no longer than needed
-- **Data exfiltration:** data leaving the place it should stay
 
 ## Next up
 

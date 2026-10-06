@@ -13,6 +13,16 @@ Retries keep an unattended agent going when a service fails, as [rate limits, re
 
 **In one line:** observability is being able to look back at exactly what an agent saw, decided and did on a run, round by round, so you can explain why it behaved as it did.
 
+## The jargon: concepts covered on this page
+
+- **Alert:** an automatic warning when a run looks wrong or unusual
+- **Log:** a timestamped record of something that happened
+- **Observability:** the ability to see what a system did and why
+- **Redaction:** blanking out sensitive details before data is stored
+- **Retention:** how long records are kept before deletion
+- **Span:** one step inside a trace, such as a model call or tool call
+- **Trace:** the full step-by-step record of one agent run
+
 ## Why it matters
 
 An agent works in the middle of a process you cannot see. You ask a question, you get an answer, and a dozen steps happened in between. When the answer is wrong, the answer alone does not tell you why.
@@ -104,16 +114,6 @@ The most common mistake is adding observability after the first serious incident
 - [Audit trails](/running/audit-trails/): the accountability record, as opposed to the builder's view
 - [Estimating cost per task](/running/estimating-cost-per-task/): turning measured runs into a realistic cost
 - [Observability and evals tooling](/map/observability-and-evals/): example platforms
-
-## The proper terms
-
-- **Alert:** an automatic warning when a run looks wrong or unusual
-- **Log:** a timestamped record of something that happened
-- **Observability:** the ability to see what a system did and why
-- **Redaction:** blanking out sensitive details before data is stored
-- **Retention:** how long records are kept before deletion
-- **Span:** one step inside a trace, such as a model call or tool call
-- **Trace:** the full step-by-step record of one agent run
 
 ## Next up
 

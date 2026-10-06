@@ -15,6 +15,16 @@ An agent that is safe and handles data properly, as [GDPR, data retention and DP
 
 *For the basics of free plans, subscriptions and when you need the API at all, see [free, subscription or API](/start/free-vs-subscription-vs-api/). This page assumes you are paying per token.*
 
+## The jargon: concepts covered on this page
+
+- **MTok:** one million tokens, the usual unit for pricing
+- **Input tokens:** the tokens you send to the model
+- **Output tokens:** the tokens the model writes back
+- **Thinking tokens:** hidden working a reasoning model writes before answering
+- **Tier:** a size band of models, from small and cheap to large and expensive
+- **Long-context pricing:** a higher rate some providers charge for very large prompts
+- **Credits:** prepaid units that are drawn down as you use a service
+
 ## Why it matters
 
 An agent can run hundreds of times a day without anyone watching. A cost that looks tiny per request can become a real line in the budget, and a cost that looks fine in a test can jump when the real data arrives.
@@ -125,16 +135,6 @@ If the same job ran on a large-tier model, the range rises to about $5.40 to $25
 - [Prompt caching and batch processing](/running/prompt-caching-and-batch-processing/): the two main discounts
 - [Model routing](/running/model-routing/): sending easy jobs to cheap models and hard ones to strong models
 - [Estimating cost per task](/running/estimating-cost-per-task/): working out a budget before you build
-
-## The proper terms
-
-- **MTok:** one million tokens, the usual unit for pricing
-- **Input tokens:** the tokens you send to the model
-- **Output tokens:** the tokens the model writes back
-- **Thinking tokens:** hidden working a reasoning model writes before answering
-- **Tier:** a size band of models, from small and cheap to large and expensive
-- **Long-context pricing:** a higher rate some providers charge for very large prompts
-- **Credits:** prepaid units that are drawn down as you use a service
 
 ## Next up
 

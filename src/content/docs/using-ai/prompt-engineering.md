@@ -13,6 +13,15 @@ Whichever app you type into, the answer depends heavily on what you type, becaus
 
 **In one line:** prompt engineering is writing the instructions and background you give a model so that it does what you actually want.
 
+## The jargon: concepts covered on this page
+
+- **Chain-of-thought:** asking a model to reason step by step before it answers
+- **Few-shot prompting:** including a few examples in the prompt
+- **Prompt:** the text you send to a model
+- **Prompt engineering:** writing prompts so a model does what you intended
+- **Prompt template:** a saved prompt with blanks to fill in
+- **Zero-shot prompting:** asking with no examples
+
 ## Why it matters
 
 The same model can give a vague, generic answer or a sharp, useful one, depending only on how it was asked. A model can't read your mind or see your situation. It has only the words you gave it.
@@ -118,15 +127,6 @@ The most common mistake is writing a vague request and then blaming the model fo
 - [Context engineering](/data/context-engineering/): choosing everything the model sees
 - [What an LLM is](/start/what-an-llm-is/): why the model depends so heavily on its input
 - [Evals](/running/evals/): how to test whether a prompt change really helped
-
-## The proper terms
-
-- **Chain-of-thought:** asking a model to reason step by step before it answers
-- **Few-shot prompting:** including a few examples in the prompt
-- **Prompt:** the text you send to a model
-- **Prompt engineering:** writing prompts so a model does what you intended
-- **Prompt template:** a saved prompt with blanks to fill in
-- **Zero-shot prompting:** asking with no examples
 
 ## Next up
 

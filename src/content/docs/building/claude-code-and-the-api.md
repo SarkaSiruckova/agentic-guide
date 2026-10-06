@@ -15,6 +15,15 @@ The [example gallery](/agents/example-gallery/) showed what finished agents can 
 
 *Snapshot, as of October 2026. Anthropic reshapes these products often, so check its documentation for current details.*
 
+## The jargon: concepts covered on this page
+
+- **Claude Code:** Anthropic's agent that works in a folder of files on your behalf
+- **Plan mode:** a Claude Code mode that proposes changes without making them
+- **Claude API:** the interface programs use to send requests to Claude
+- **Developer console:** the web account where API keys and billing are managed
+- **Agent SDK:** a library that packages Claude Code's agent for your own software
+- **CLAUDE.md:** the rulebook file Claude Code reads at the start of each session
+
 ## Why it matters
 
 The [Claude apps](/using-ai/claude-apps/) are built for people chatting and delegating. Building something that lasts, such as a website, a script or an agent that runs every morning, needs files you can see, change and keep, and sometimes software that calls the model with nobody watching.
@@ -116,15 +125,6 @@ A month later the team wants a short summary of every new company added to the l
 - [Claude Code in depth](/building/claude-code-in-depth/): permissions, CLAUDE.md, skills and settings
 - [Agent frameworks](/map/agent-frameworks/): ways to build your own agents
 - [Anthropic](/models/anthropic/): the company and its model families
-
-## The proper terms
-
-- **Claude Code:** Anthropic's agent that works in a folder of files on your behalf
-- **Plan mode:** a Claude Code mode that proposes changes without making them
-- **Claude API:** the interface programs use to send requests to Claude
-- **Developer console:** the web account where API keys and billing are managed
-- **Agent SDK:** a library that packages Claude Code's agent for your own software
-- **CLAUDE.md:** the rulebook file Claude Code reads at the start of each session
 
 ## Next up
 

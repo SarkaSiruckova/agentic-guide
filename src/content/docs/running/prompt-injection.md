@@ -13,6 +13,15 @@ sidebar:
 
 **In one line:** prompt injection is when text that a model was only meant to read gets treated as an instruction, so whoever wrote that text can steer what the agent does.
 
+## The jargon: concepts covered on this page
+
+- **Direct prompt injection:** a user types instructions meant to override the agent's rules
+- **Indirect prompt injection:** instructions hidden in content the agent reads, such as an email or web page
+- **Jailbreak:** getting a model to break its own built-in safety rules
+- **Lethal trifecta:** private data, untrusted content and an outbound channel combined in one agent
+- **Prompt injection:** text read as data that a model treats as an instruction
+- **Untrusted content:** text from a source you do not control
+
 ## Why it matters
 
 An agent reads a lot of text it did not write: emails, web pages, shared documents, results from tools. Most of it is harmless. But anyone who can put text in front of your agent has a chance to talk to it, even if they have no account and no access to your systems.
@@ -118,15 +127,6 @@ The same hidden text in the same email becomes a line in a log instead of a leak
 - [Least privilege](/running/least-privilege/): limits what a fooled agent can reach
 - [Human in the loop](/agents/human-in-the-loop/): a person approves the actions that matter
 - [Tool use](/agents/tool-use/): why tool results are an entry point for hidden instructions
-
-## The proper terms
-
-- **Direct prompt injection:** a user types instructions meant to override the agent's rules
-- **Indirect prompt injection:** instructions hidden in content the agent reads, such as an email or web page
-- **Jailbreak:** getting a model to break its own built-in safety rules
-- **Lethal trifecta:** private data, untrusted content and an outbound channel combined in one agent
-- **Prompt injection:** text read as data that a model treats as an instruction
-- **Untrusted content:** text from a source you do not control
 
 ## Next up
 

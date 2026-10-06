@@ -13,6 +13,18 @@ sidebar:
 
 **In one line:** connected systems fail often in small ways, so a well-built job waits and retries the safe things, gives up after a limit, and tells a person when it cannot finish.
 
+## The jargon: concepts covered on this page
+
+- **Rate limit:** a cap on how many requests or tokens a service accepts in a period
+- **429:** the HTTP status code meaning too many requests
+- **Retry-After:** a header telling you how long to wait before retrying
+- **Exponential backoff:** waiting longer after each failed attempt, roughly doubling each time
+- **Jitter:** a small random addition to waits so clients do not retry together
+- **Timeout:** a deadline after which a call is abandoned
+- **Idempotency key:** a unique label that lets a repeated action be recognised and skipped
+- **Dead-letter queue:** a holding list for failed items awaiting human review
+- **Retry storm:** many retries at once that worsen an outage
+
 ## Why it matters
 
 Every connection between systems can fail: the CRM is slow, the model provider is busy, a sign-in has expired, the network drops. On a good day you will not notice. Across thousands of calls over months, you will meet every one of these.
@@ -108,18 +120,6 @@ The whole import finishes a few minutes later than the naive one would have, and
 - [Observability](/running/observability/): the logs and alerts that make failures visible
 - [The agent loop](/agents/the-agent-loop/): why a failed tool call needs a clear message and a step limit
 - [Model routing](/running/model-routing/): switching to another model when one is unavailable
-
-## The proper terms
-
-- **Rate limit:** a cap on how many requests or tokens a service accepts in a period
-- **429:** the HTTP status code meaning too many requests
-- **Retry-After:** a header telling you how long to wait before retrying
-- **Exponential backoff:** waiting longer after each failed attempt, roughly doubling each time
-- **Jitter:** a small random addition to waits so clients do not retry together
-- **Timeout:** a deadline after which a call is abandoned
-- **Idempotency key:** a unique label that lets a repeated action be recognised and skipped
-- **Dead-letter queue:** a holding list for failed items awaiting human review
-- **Retry storm:** many retries at once that worsen an outage
 
 ## Next up
 

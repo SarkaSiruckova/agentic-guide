@@ -13,6 +13,14 @@ Once one business system is [connected read-only and narrowly](/building/connect
 
 **In one line:** build one read-only agent that answers one kind of question from one data source, test it against ten questions you have checked by hand, and only then let it grow.
 
+## The jargon: concepts covered on this page
+
+- **Test set:** a fixed list of questions with checked answers, rerun after every change
+- **Read-only access:** permission to look at data but not change it
+- **Smallest honest version:** the minimum build that does a real job and shows its working
+- **Draft-only step:** an action that prepares output without sending or filing it
+- **Scope creep:** adding features and access faster than you can test them
+
 ## Why it matters
 
 The guide so far has explained the pieces: models, tools, connectors, permissions, cost. It is easy to read all that and still not know where to start. The risk of starting badly is real. An agent that can read everything, write anywhere and run on a schedule can do a lot of damage before anyone notices.
@@ -133,14 +141,6 @@ Limits to keep in mind: an agent is only as good as its data and permissions, a 
 - [Evals](/running/evals/): how to build and run the test set
 - [Human in the loop](/agents/human-in-the-loop/): the approval step before any write
 - [Estimating cost per task](/running/estimating-cost-per-task/): the last step, made concrete
-
-## The proper terms
-
-- **Test set:** a fixed list of questions with checked answers, rerun after every change
-- **Read-only access:** permission to look at data but not change it
-- **Smallest honest version:** the minimum build that does a real job and shows its working
-- **Draft-only step:** an action that prepares output without sending or filing it
-- **Scope creep:** adding features and access faster than you can test them
 
 ## Next up
 

@@ -13,6 +13,13 @@ Once [permissions](/data/permissions-and-access-control/) decide what each perso
 
 **In one line:** a context layer is the set of connected, permissioned and reasonably fresh sources, plus the logic that gathers the right information from them for each question, sitting between your raw systems and the agents or people who ask.
 
+## The jargon: concepts covered on this page
+
+- **Connector:** a connection that lets software read from, or write to, a source system
+- **Context layer:** connected, permissioned sources plus logic that assembles information per question
+- **Entity:** a real-world thing in your data, such as a company or a person
+- **Source of truth:** the system whose record wins when copies disagree
+
 ## Why it matters
 
 Most of what a firm knows is scattered. Company details sit in a CRM (customer relationship management system), documents sit in shared file storage, numbers sit in a database, and half the story sits in email. No single place holds the full picture.
@@ -113,13 +120,6 @@ The most common mistake is starting with the architecture instead of a question 
 - [Permissions and access control](/data/permissions-and-access-control/): how the layer decides what each person may see
 - [MCP](/agents/mcp/): a common standard for connecting agents to sources
 - [The map](/map/): where each layer of the infrastructure sits
-
-## The proper terms
-
-- **Connector:** a connection that lets software read from, or write to, a source system
-- **Context layer:** connected, permissioned sources plus logic that assembles information per question
-- **Entity:** a real-world thing in your data, such as a company or a person
-- **Source of truth:** the system whose record wins when copies disagree
 
 ## Next up
 

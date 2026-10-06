@@ -13,6 +13,18 @@ Small pieces of code, such as [serverless functions](/building/serverless-functi
 
 **In one line:** an environment variable is a named setting a program reads from its surroundings instead of from its code, and a secret is the sensitive kind, such as an API key or a password, that must never be written into code or shared.
 
+## The jargon: concepts covered on this page
+
+- **Environment variable:** a named value a program reads from where it runs
+- **Secret:** a sensitive value, such as a key or password, that must stay private
+- **.env file:** a local file holding environment variables for development
+- **.gitignore:** a file telling git which files never to track or commit
+- **Secrets manager:** a service that stores, controls and rotates secrets
+- **Rotation:** replacing a key with a new one and retiring the old
+- **Revoke:** switching a key off so it no longer works
+- **Secret scanning:** automatic detection of credentials committed to a repository
+- **Push protection:** blocking a push that contains a recognised secret
+
 ## Why it matters
 
 Almost every useful agent or automation needs a key to something: the CRM, the file store, the model provider. The tempting shortcut is to paste the key straight into the code. It works at once, and it is how most leaks begin.
@@ -99,18 +111,6 @@ The most common mistake is treating a private repository as a safe place for sec
 - [Least privilege](/running/least-privilege/): why each key should get the minimum access
 - [Prompt injection](/running/prompt-injection/): why secrets must never be placed where a model can repeat them
 - [Serverless functions](/building/serverless-functions/): a typical place where secrets are supplied as settings
-
-## The proper terms
-
-- **Environment variable:** a named value a program reads from where it runs
-- **Secret:** a sensitive value, such as a key or password, that must stay private
-- **.env file:** a local file holding environment variables for development
-- **.gitignore:** a file telling git which files never to track or commit
-- **Secrets manager:** a service that stores, controls and rotates secrets
-- **Rotation:** replacing a key with a new one and retiring the old
-- **Revoke:** switching a key off so it no longer works
-- **Secret scanning:** automatic detection of credentials committed to a repository
-- **Push protection:** blocking a push that contains a recognised secret
 
 ## Next up
 

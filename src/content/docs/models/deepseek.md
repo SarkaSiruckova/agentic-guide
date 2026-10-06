@@ -13,6 +13,15 @@ This is one of a set of parallel provider snapshots, each with the same headings
 
 **In one line:** DeepSeek is a Chinese AI lab that publishes its models as open weights and also runs its own chat app and API, and for a UK buyer the hosted service and the downloadable weights raise very different data questions.
 
+## The jargon: concepts covered on this page
+
+- **MIT licence:** a short permissive licence allowing commercial use with few conditions
+- **Distillation:** training a smaller model to copy a larger model's behaviour
+- **Mixture of experts:** a design that activates only part of the model for each word
+- **Data protection representative:** a named contact for regulators when a company is based abroad
+- **Adequacy decision:** an official finding that a country's data protection is equivalent
+- **Standard contractual clauses:** approved contract terms that allow personal data to leave the UK or EU
+
 ## Why it matters
 
 DeepSeek is widely discussed because it publishes the weights of its models, including large reasoning models, under a permissive licence. That means other companies and cloud platforms can host them, and you can run them yourself.
@@ -90,15 +99,6 @@ The official sources checked for this page show no UK ban on the app. Regulatory
 - [Data terms at a glance](/models/data-terms-at-a-glance/): hosted terms side by side
 - [Open-model hosting](/map/open-model-hosting/): who runs open models for you
 - [How to judge a new model](/models/how-to-judge-a-new-model/): a checklist for any newcomer
-
-## The proper terms
-
-- **MIT licence:** a short permissive licence allowing commercial use with few conditions
-- **Distillation:** training a smaller model to copy a larger model's behaviour
-- **Mixture of experts:** a design that activates only part of the model for each word
-- **Data protection representative:** a named contact for regulators when a company is based abroad
-- **Adequacy decision:** an official finding that a country's data protection is equivalent
-- **Standard contractual clauses:** approved contract terms that allow personal data to leave the UK or EU
 
 ## Next up
 

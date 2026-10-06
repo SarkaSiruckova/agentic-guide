@@ -13,6 +13,14 @@ Whatever the channel, the same moment comes once a message arrives: the agent mu
 
 **In one line:** reading information and writing information are different risk levels, so an agent reached through a chat channel should be read-only by default and should only write after it knows who is asking, shows what it will change and gets a clear yes.
 
+## The jargon: concepts covered on this page
+
+- **Read-only access:** permission to view data but not to change it
+- **Staging area:** a holding place where new data waits for review
+- **Idempotency key:** a unique ID that makes repeating a request harmless
+- **Superseded:** replaced by a newer version but kept in history
+- **Red line:** a rule that is not bent, whatever the request
+
 ## Why it matters
 
 A wrong answer to a question is annoying. A wrong write is worse, because it sits in your records and gets trusted later. A mistaken note on a company, a duplicated contact or an overwritten field can quietly spread into reports, summaries and other agents' answers.
@@ -139,14 +147,6 @@ The two messages look similar and carry quite different risks. The first can cha
 - [Permissions and access control](/data/permissions-and-access-control/): limiting what each person can ask for
 - [Prompt injection](/running/prompt-injection/): why added and retrieved text is untrusted
 - [Audit trails](/running/audit-trails/): recording who did what, and when
-
-## The proper terms
-
-- **Read-only access:** permission to view data but not to change it
-- **Staging area:** a holding place where new data waits for review
-- **Idempotency key:** a unique ID that makes repeating a request harmless
-- **Superseded:** replaced by a newer version but kept in history
-- **Red line:** a rule that is not bent, whatever the request
 
 ## Next up
 

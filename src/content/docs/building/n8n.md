@@ -13,6 +13,16 @@ sidebar:
 
 **In one line:** n8n is a workflow automation tool where you drag steps onto a canvas to connect your apps, with built-in steps for AI models and agents.
 
+## The jargon: concepts covered on this page
+
+- **Trigger node:** the step that starts a workflow when something happens
+- **Credentials:** stored sign-in details that let a node use an app
+- **Execution:** one run of a workflow, manual or automatic
+- **Error workflow:** a separate workflow that starts when another one fails
+- **AI Agent node:** an n8n step that lets a model choose and call tools
+- **Data redaction:** hiding the input and output of runs while keeping their metadata
+- **Sustainable Use License:** n8n's licence allowing internal business use but not resale or hosting for others
+
 ## Why it matters
 
 Many useful jobs at a small business are the same few steps repeated. An enquiry arrives, someone looks up the customer, drafts a reply, and tells the rest of the team. Doing that by hand wastes time, and wiring it up in code is more than most people want to take on.
@@ -123,16 +133,6 @@ When it works, each node shows the data it produced during a test run, and later
 - [Rate limits, retries and failures](/running/rate-limits-retries-and-failures/): why runs fail and how to recover
 - [Human in the loop](/agents/human-in-the-loop/): where a person should approve before the workflow acts
 - [Connecting business tools through MCP](/building/connecting-business-tools-through-mcp/): how to reach the CRM and files safely
-
-## The proper terms
-
-- **Trigger node:** the step that starts a workflow when something happens
-- **Credentials:** stored sign-in details that let a node use an app
-- **Execution:** one run of a workflow, manual or automatic
-- **Error workflow:** a separate workflow that starts when another one fails
-- **AI Agent node:** an n8n step that lets a model choose and call tools
-- **Data redaction:** hiding the input and output of runs while keeping their metadata
-- **Sustainable Use License:** n8n's licence allowing internal business use but not resale or hosting for others
 
 ## Next up
 

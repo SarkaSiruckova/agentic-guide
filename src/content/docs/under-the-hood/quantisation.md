@@ -13,6 +13,15 @@ Open-weight models can be downloaded and run on your own hardware, but large one
 
 **In one line:** quantisation shrinks a model by storing its numbers with less precision, like compressing a photo, so it fits in less memory and runs on smaller hardware, usually with a small loss in quality.
 
+## The jargon: concepts covered on this page
+
+- **Quantisation:** storing a model's numbers with fewer bits to save memory
+- **Precision:** how exactly a number is stored, set by its bit count
+- **Bit:** the smallest unit of computer storage, a 0 or a 1
+- **Full precision:** the original, higher bit format a model was trained or shared in
+- **4 bit / 8 bit:** common quantisation levels, using that many bits per weight
+- **Quantised model:** a model whose weights have been stored at lower precision
+
 ## Why it matters
 
 A model is a very large pile of numbers (its weights, see [what an LLM is](/start/what-an-llm-is/)). Those numbers have to sit in memory while the model runs. A big model in its original form can need expensive, specialised hardware.
@@ -90,15 +99,6 @@ This is a tiny [eval](/running/evals/): a handful of real cases, checked the sam
 - [Inference](/under-the-hood/inference/): the running of a model, where memory and speed matter
 - [Evals](/running/evals/): how to check a quantised model on your own cases
 - [Parameters and temperature](/under-the-hood/parameters-and-temperature/): what the numbers being compressed are
-
-## The proper terms
-
-- **Quantisation:** storing a model's numbers with fewer bits to save memory
-- **Precision:** how exactly a number is stored, set by its bit count
-- **Bit:** the smallest unit of computer storage, a 0 or a 1
-- **Full precision:** the original, higher bit format a model was trained or shared in
-- **4 bit / 8 bit:** common quantisation levels, using that many bits per weight
-- **Quantised model:** a model whose weights have been stored at lower precision
 
 ## Next up
 

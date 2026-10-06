@@ -13,6 +13,16 @@ The map ends at the top of the stack, where a person meets the agent. Every laye
 
 **In one line:** the interface is the place where a person meets the agent, whether that is a chat window, a command line, a dashboard, a spreadsheet or a message in the team chat.
 
+## The jargon: concepts covered on this page
+
+- **Interface:** the surface a person uses to reach an agent
+- **Command line (CLI):** a text-only window where you type commands
+- **Coding assistant:** an AI tool that reads and edits code for developers
+- **Internal tool:** a small app built for one team's own work
+- **Channel:** a messaging service where an agent can send and receive messages
+- **Approval step:** a pause where a person confirms an action before it runs
+- **Retention period:** how long stored data is kept before deletion
+
 ## Why it matters
 
 Every other layer sits out of sight. The interface is the only part people touch, so it decides who will actually use the agent and how much they trust it.
@@ -106,16 +116,6 @@ Throughout, the developer uses a coding assistant to build and change the agent.
 - [Chat, agent, workflow and automation](/start/chat-agent-workflow-automation/): how a chat window differs from an agent behind it
 - [Permissions and access control](/data/permissions-and-access-control/): making sure the agent sees only what the person may see
 - [One question through every layer](/map/one-question-through-every-layer/): a question travelling from the interface to the data and back
-
-## The proper terms
-
-- **Interface:** the surface a person uses to reach an agent
-- **Command line (CLI):** a text-only window where you type commands
-- **Coding assistant:** an AI tool that reads and edits code for developers
-- **Internal tool:** a small app built for one team's own work
-- **Channel:** a messaging service where an agent can send and receive messages
-- **Approval step:** a pause where a person confirms an action before it runs
-- **Retention period:** how long stored data is kept before deletion
 
 ## Next up
 

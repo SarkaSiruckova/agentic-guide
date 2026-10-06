@@ -106,3 +106,249 @@
   background-color: var(--sl-color-black) !important;
   color: var(--sl-color-gray-2) !important;
 }
+
+/* ------------------------------------------------------------------
+   Designed blocks built by src/plugins/rehype-guide-blocks.mjs
+   ------------------------------------------------------------------ */
+
+/* Shared: headings inside the blocks (they opt out of Starlight's content styles) */
+.sl-markdown-content :is(.guide-jargon, .guide-related, .guide-next) h2 {
+  font-family: var(--sl-font);
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--sl-color-white);
+}
+.sl-markdown-content :is(.guide-jargon, .guide-related, .guide-next) {
+  font-family: var(--guide-body-font);
+}
+.sl-markdown-content :is(.guide-jargon, .guide-related, .guide-next) :is(h2, .sl-heading-wrapper) {
+  margin: 0;
+}
+.sl-markdown-content :is(.guide-jargon, .guide-related, .guide-next) * + * {
+  margin-top: 0;
+}
+
+/* The jargon card */
+.sl-markdown-content .guide-jargon {
+  background: var(--sl-color-accent-low);
+  border-left: 4px solid var(--guide-marker);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-top: 1.75rem;
+}
+.sl-markdown-content .guide-jargon h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: var(--sl-color-white);
+}
+.sl-markdown-content .guide-jargon-count {
+  font-family: var(--sl-font);
+  font-size: var(--sl-text-sm);
+  color: var(--sl-color-gray-3);
+  margin: 0.15rem 0 0.9rem;
+}
+.sl-markdown-content ul.guide-jargon-terms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sl-markdown-content ul.guide-jargon-terms li,
+.sl-markdown-content .guide-jargon-defs > div {
+  background: color-mix(in srgb, var(--sl-color-black) 35%, transparent);
+  border: 1px solid color-mix(in srgb, var(--sl-color-accent) 40%, transparent);
+  border-radius: 8px;
+}
+.sl-markdown-content ul.guide-jargon-terms li {
+  font-family: var(--sl-font);
+  font-weight: 600;
+  font-size: 0.92rem;
+  line-height: 1.3;
+  color: var(--sl-color-accent-high);
+  padding: 0.4rem 0.75rem;
+  margin: 0;
+  max-width: none;
+}
+.sl-markdown-content .guide-jargon-details {
+  margin-top: 1rem;
+}
+.sl-markdown-content .guide-jargon-details summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--sl-font);
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--sl-color-black);
+  background: var(--sl-color-accent);
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+}
+.sl-markdown-content .guide-jargon-details summary::-webkit-details-marker {
+  display: none;
+}
+.sl-markdown-content .guide-jargon-details summary:focus-visible {
+  outline: 2px solid var(--guide-marker);
+  outline-offset: 2px;
+}
+.sl-markdown-content .guide-jargon-details .chev {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+.sl-markdown-content .guide-jargon-details[open] .chev {
+  transform: rotate(180deg);
+}
+.sl-markdown-content .guide-jargon-details .when-open,
+.sl-markdown-content .guide-jargon-details[open] .when-closed {
+  display: none;
+}
+.sl-markdown-content .guide-jargon-details[open] .when-open {
+  display: inline;
+}
+.sl-markdown-content .guide-jargon:has(.guide-jargon-details[open]) .guide-jargon-terms {
+  display: none;
+}
+.sl-markdown-content .guide-jargon-defs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin: 1rem 0 0;
+}
+.sl-markdown-content .guide-jargon-defs > div {
+  padding: 0.6rem 0.85rem;
+  margin: 0;
+}
+.sl-markdown-content .guide-jargon-defs dt {
+  font-family: var(--sl-font);
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--sl-color-accent-high);
+}
+.sl-markdown-content .guide-jargon-defs dd {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--sl-color-gray-1);
+}
+
+/* Related: link tiles */
+.sl-markdown-content .guide-related {
+  border-top: 2px solid var(--sl-color-gray-5);
+  margin-top: 2.75rem;
+  padding-top: 1.75rem;
+}
+.sl-markdown-content .guide-related h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.sl-markdown-content .guide-related-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.sl-markdown-content a.guide-related-tile {
+  display: block;
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  margin: 0;
+  transition: border-color 0.15s;
+}
+.sl-markdown-content a.guide-related-tile:hover {
+  border-color: var(--sl-color-accent);
+}
+.guide-related-title {
+  display: block;
+  font-family: var(--sl-font);
+  font-weight: 600;
+  color: var(--sl-color-white);
+}
+.guide-related-note {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--sl-color-gray-3);
+}
+.guide-related-note a {
+  color: inherit;
+}
+
+/* Next up box */
+.sl-markdown-content .guide-next {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  border: 1px solid var(--sl-color-accent);
+  border-radius: 12px;
+  padding: 1.1rem 1.5rem;
+  margin-top: 1.75rem;
+}
+.sl-markdown-content .guide-next h2 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sl-color-accent);
+}
+.sl-markdown-content .guide-next h2 + *,
+.sl-markdown-content .guide-next .sl-heading-wrapper + * {
+  margin-top: 0.35rem;
+}
+.sl-markdown-content .guide-next p {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin: 0;
+}
+.sl-markdown-content .guide-next p + p {
+  margin-top: 0.5rem;
+}
+.sl-markdown-content a.guide-next-button {
+  flex-shrink: 0;
+  font-family: var(--sl-font);
+  font-weight: 600;
+  font-size: 0.92rem;
+  background: var(--sl-color-accent);
+  color: var(--sl-color-black);
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  margin: 0;
+}
+.sl-markdown-content a.guide-next-button:hover {
+  background: var(--sl-color-accent-high);
+}
+/* The heading anchor icon would look odd inside the cards */
+.sl-markdown-content :is(.guide-jargon, .guide-related, .guide-next) .sl-anchor-link {
+  display: none;
+}
+
+@media (max-width: 50rem) {
+  .sl-markdown-content .guide-jargon-defs,
+  .sl-markdown-content .guide-related-grid {
+    grid-template-columns: 1fr;
+  }
+  .sl-markdown-content .guide-next {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+/* Starlight sizes the heading wrapper itself; inside the blocks the h2 sets the size */
+.sl-markdown-content :is(.guide-jargon, .guide-related, .guide-next) .sl-heading-wrapper {
+  font-size: inherit;
+  line-height: inherit;
+  display: block;
+}
+/* Links inside the blocks keep the guide's normal link look */
+.sl-markdown-content :is(.guide-jargon-defs, .guide-next-text) a {
+  color: var(--sl-color-white);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

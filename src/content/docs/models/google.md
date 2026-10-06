@@ -13,6 +13,17 @@ This is one of a set of parallel provider snapshots, each with the same headings
 
 **In one line:** Google makes the Gemini family of closed models, the open-weight Gemma models, and sells access through a consumer app, a developer API, Workspace, and an enterprise cloud platform, each with its own data terms.
 
+## The jargon: concepts covered on this page
+
+- **Model family:** a group of related models released under one name
+- **Tier:** a size and capability level within a family, such as Pro or Flash
+- **Open-weight model:** a model whose learned numbers are published for download
+- **Apache 2.0:** a permissive open licence with few conditions on reuse
+- **Prohibited use policy:** a list of uses a licence forbids
+- **Grounding:** connecting a model's answer to a live source such as search
+- **Data processing addendum:** a contract schedule setting how a provider handles your data
+- **Data residency:** a control over which region stores and processes your data
+
 ## Why it matters
 
 Google is one of the few companies that does everything in the chain: it builds the models, runs the cloud they live on, and ships the apps people already use, such as Gmail and Docs. If a firm uses Google Workspace, an assistant built on Gemini sits very close to its existing email, calendar and files.
@@ -101,17 +112,6 @@ The practical lesson: a free API key and a Workspace account can sit at opposite
 - [Open-weight options](/models/open-weight-options/): Gemma alongside other downloadable models
 - [Data terms at a glance](/models/data-terms-at-a-glance/): the provider terms side by side
 - [Agent frameworks](/map/agent-frameworks/): where ADK fits among the tools for building agents
-
-## The proper terms
-
-- **Model family:** a group of related models released under one name
-- **Tier:** a size and capability level within a family, such as Pro or Flash
-- **Open-weight model:** a model whose learned numbers are published for download
-- **Apache 2.0:** a permissive open licence with few conditions on reuse
-- **Prohibited use policy:** a list of uses a licence forbids
-- **Grounding:** connecting a model's answer to a live source such as search
-- **Data processing addendum:** a contract schedule setting how a provider handles your data
-- **Data residency:** a control over which region stores and processes your data
 
 ## Next up
 

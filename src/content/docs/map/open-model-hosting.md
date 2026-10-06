@@ -13,6 +13,17 @@ Closed models are reached through their makers' doors or a big cloud's. Open-wei
 
 **In one line:** open-model hosting is the question of who actually runs an open-weight model, because downloading the model is free but running it needs chips, software and someone to look after both.
 
+## The jargon: concepts covered on this page
+
+- **Open-weight model:** a model whose trained numbers are published for download
+- **Hosted inference:** a company runs a model for you and you call it by API
+- **Inference server:** software that loads a model and answers requests
+- **Dedicated deployment:** model capacity reserved for you alone
+- **Self-hosting:** running the model on servers you control
+- **Quantisation:** storing a model's numbers at lower precision to save memory
+- **GPU:** a chip that does many calculations at once
+- **Local model:** a model running on your own computer
+
 ## Why it matters
 
 An [open-weight model](/under-the-hood/open-vs-closed-weights/) is one whose trained numbers (the weights) are published for anyone to download. That sounds like you can just use it, but a model file does nothing on its own. Something has to load it onto expensive chips, accept requests, and send answers back.
@@ -116,17 +127,6 @@ An associate at Sample Ventures, the fictional fund, suggests running an open mo
 - [Model access platforms](/map/model-access-platforms/): the other ways to reach models, including closed ones
 - [Compute and cloud](/map/compute-and-cloud/): where rented chips come from
 - [Inference](/under-the-hood/inference/): what a model server is doing on each request
-
-## The proper terms
-
-- **Open-weight model:** a model whose trained numbers are published for download
-- **Hosted inference:** a company runs a model for you and you call it by API
-- **Inference server:** software that loads a model and answers requests
-- **Dedicated deployment:** model capacity reserved for you alone
-- **Self-hosting:** running the model on servers you control
-- **Quantisation:** storing a model's numbers at lower precision to save memory
-- **GPU:** a chip that does many calculations at once
-- **Local model:** a model running on your own computer
 
 ## Next up
 

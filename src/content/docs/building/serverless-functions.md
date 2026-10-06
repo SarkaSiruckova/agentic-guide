@@ -13,6 +13,17 @@ Tools such as [AI code editors and app builders](/building/cursor-and-app-builde
 
 **In one line:** a serverless function is a small piece of code that runs only when something triggers it, on a platform that manages the machines, so you pay for the runs rather than for waiting around.
 
+## The jargon: concepts covered on this page
+
+- **Serverless:** running code on a platform that manages the servers for you
+- **Function as a service (FaaS):** a platform that runs your small functions on demand
+- **Trigger:** the event that starts a function
+- **Webhook:** a message one system sends to a web address when something happens
+- **Stateless:** keeping no memory between runs
+- **Cold start:** the extra delay when a function starts after being idle
+- **Concurrency:** how many runs of a function happen at the same time
+- **Timeout:** the maximum time a function may run before being stopped
+
 ## Why it matters
 
 Plenty of useful jobs are tiny and occasional: receive a message from another app, update a record, send a reminder every Monday. Renting a computer to sit idle 99 per cent of the time, and keeping it secure and updated, is a lot of effort for that.
@@ -112,17 +123,6 @@ A common mistake is putting a whole agent in one function and finding out at min
 - [Tool use](/agents/tool-use/): a function can be the thing a tool runs
 - [Keeping data fresh](/data/keeping-data-fresh/): webhooks and scheduled functions are common ways to do it
 - [Environment variables and secrets](/building/environment-variables-and-secrets/): where a function's keys should live
-
-## The proper terms
-
-- **Serverless:** running code on a platform that manages the servers for you
-- **Function as a service (FaaS):** a platform that runs your small functions on demand
-- **Trigger:** the event that starts a function
-- **Webhook:** a message one system sends to a web address when something happens
-- **Stateless:** keeping no memory between runs
-- **Cold start:** the extra delay when a function starts after being idle
-- **Concurrency:** how many runs of a function happen at the same time
-- **Timeout:** the maximum time a function may run before being stopped
 
 ## Next up
 

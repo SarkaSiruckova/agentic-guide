@@ -13,6 +13,12 @@ Once you know which jobs suit AI, the next question is which assistant to use fo
 
 **In one line:** the major assistants are close enough in everyday ability that the best choice usually depends on where your work already lives, the data terms you need, and what you mostly want it for.
 
+## The jargon: concepts covered on this page
+
+- **AI assistant:** a chat app built on a language model, such as ChatGPT or Claude
+- **Business plan:** a paid plan for organisations, usually with stricter data terms
+- **Open-weight model:** a model whose files can be downloaded and run outside the maker's own service
+
 ## Why it matters
 
 Picking an assistant feels like a big decision, and the headlines make it sound like one model is always ahead. In practice the lead changes often, and for drafting, summarising and explaining the main assistants all do well.
@@ -61,12 +67,6 @@ Every assistant still makes confident mistakes. Switching provider does not remo
 - [Data terms at a glance](/models/data-terms-at-a-glance/): training, retention and contracts side by side
 - [Open-weight options](/models/open-weight-options/): models you can download and run yourself
 - [What AI is good and bad at](/start/what-ai-is-good-and-bad-at/): which tasks suit any of them
-
-## The proper terms
-
-- **AI assistant:** a chat app built on a language model, such as ChatGPT or Claude
-- **Business plan:** a paid plan for organisations, usually with stricter data terms
-- **Open-weight model:** a model whose files can be downloaded and run outside the maker's own service
 
 ## Next up
 

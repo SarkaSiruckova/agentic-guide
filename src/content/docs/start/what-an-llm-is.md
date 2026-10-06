@@ -13,6 +13,15 @@ Every chat assistant and AI agent runs on the same kind of program, a large lang
 
 **In one line:** a large language model (LLM) is a program trained on huge amounts of text to predict what comes next, and that one skill turns out to be enough to write, summarise, answer questions and follow instructions.
 
+## The jargon: concepts covered on this page
+
+- **Inference:** using a trained model to get a reply
+- **Knowledge cutoff:** the point in time where the model's training text ends
+- **Large language model (LLM):** a model trained on huge amounts of text to predict what comes next
+- **Parameters (or weights):** the internal numbers a model learns during training (the word is also used for a tool's inputs)
+- **Token:** the small piece of text a model reads and writes
+- **Training:** adjusting a model's internal numbers by showing it large amounts of text
+
 ## Why it matters
 
 Everything else in this guide sits on top of an LLM. Chat assistants, agents and the tools that connect to your email or files all use one as their engine.
@@ -110,15 +119,6 @@ The most common mistake is treating an LLM as a database or a search engine. It 
 - [Embeddings](/data/embeddings/): how text becomes numbers that capture meaning
 - [Pre-training and post-training](/under-the-hood/pre-training-and-post-training/): how a model gets its knowledge and manners
 - [Inference](/under-the-hood/inference/): what happens when you send a prompt
-
-## The proper terms
-
-- **Inference:** using a trained model to get a reply
-- **Knowledge cutoff:** the point in time where the model's training text ends
-- **Large language model (LLM):** a model trained on huge amounts of text to predict what comes next
-- **Parameters (or weights):** the internal numbers a model learns during training (the word is also used for a tool's inputs)
-- **Token:** the small piece of text a model reads and writes
-- **Training:** adjusting a model's internal numbers by showing it large amounts of text
 
 ## Next up
 

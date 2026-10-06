@@ -13,6 +13,16 @@ Discounts such as [prompt caching and batch processing](/running/prompt-caching-
 
 **In one line:** model routing means using different models for different jobs or steps, so easy work goes to a small, cheap, fast model and hard work goes to a stronger, costlier one.
 
+## The jargon: concepts covered on this page
+
+- **Model routing:** choosing which model handles each request or step
+- **Router:** the logic that picks a model for each request
+- **Cascade:** trying a cheap model first and escalating if a check fails
+- **Escalation:** passing a request to a stronger model after a weaker one falls short
+- **Fallback:** a backup model used when the first choice fails or is unavailable
+- **Gateway:** a service giving one doorway to many models, often with routing built in
+- **Load balancing:** spreading identical requests across several copies of a model or provider
+
 ## Why it matters
 
 Models come in sizes. A small model is quick and cheap but makes more mistakes on hard problems. A large one is slower and costs more, but copes with subtle reasoning and careful writing. If you use the large model for everything, you pay premium prices for work such as sorting emails or pulling a date out of a sentence, which a small model does fine.
@@ -103,16 +113,6 @@ The most common mistake is adding routing on day one. Start with one good-enough
 - [Estimating cost per task](/running/estimating-cost-per-task/): how to work out what a routed task would cost
 - [Rate limits, retries and failures](/running/rate-limits-retries-and-failures/): the failures that fallback routing is built to survive
 - [Subagents and multi-agent systems](/agents/subagents-and-multi-agent-systems/): helpers that can each run on their own model
-
-## The proper terms
-
-- **Model routing:** choosing which model handles each request or step
-- **Router:** the logic that picks a model for each request
-- **Cascade:** trying a cheap model first and escalating if a check fails
-- **Escalation:** passing a request to a stronger model after a weaker one falls short
-- **Fallback:** a backup model used when the first choice fails or is unavailable
-- **Gateway:** a service giving one doorway to many models, often with routing built in
-- **Load balancing:** spreading identical requests across several copies of a model or provider
 
 ## Next up
 

@@ -11,6 +11,10 @@ Opening bridge: one or two sentences linking this page to the one before it in t
 
 **In one line:** a plain-English definition someone could repeat to a colleague.
 
+## The jargon: concepts covered on this page
+
+- **Term:** what it means, in a few words (one line each, in alphabetical order; the site turns this list into the jargon card with a "Show what they mean" button)
+
 ## Why it matters
 
 The problem this solves, or what goes wrong without it. Two or three short paragraphs at most.
@@ -39,12 +43,8 @@ The term this gets mixed up with, and the difference in one or two sentences. Re
 
 ## Related
 
-- [Related concept](/path/to/page/): one line on how it connects
-
-## The proper terms
-
-- **Term:** what it means, in a few words
+- [Related concept](/path/to/page/): one line on how it connects (the site turns this list into link tiles; start every line with the link)
 
 ## Next up
 
-One or two sentences on why the next page in the reading order follows, ending with a link to it.
+One or two sentences on why the next page in the reading order follows, ending with a link to it. The site turns this into the Next up box, with a button for the last link in the section.

@@ -13,6 +13,20 @@ An agent's harness can only offer tools that reach real systems, and those syste
 
 **In one line:** an API is a defined way for one program to ask another system for things, and API keys and OAuth are the two main ways the program proves who it is and what it is allowed to do.
 
+## The jargon: concepts covered on this page
+
+- **Access token:** a short-lived credential an app uses to call an API
+- **API:** a defined way for software to request data or actions from a system
+- **API key:** a secret string that identifies the calling program
+- **Authentication:** proving who a person or program is
+- **Authorisation:** deciding what an identified person or program may do
+- **Delegated access:** acting with a user's own permissions
+- **JSON:** a plain text format for structured data
+- **OAuth:** a standard for letting an app act for a user without their password
+- **Rate limit:** a cap on how many requests are allowed in a given time
+- **Refresh token:** a longer-lived credential used to get new access tokens
+- **Scope:** a specific permission an app asks for, such as read files
+
 ## Why it matters
 
 An agent that works with company data has to reach that data somehow. The CRM, the shared file store and the database all hold information behind a login. The agent cannot click through a screen the way a person does.
@@ -117,20 +131,6 @@ The most common mistake is pasting a key into a place that is shared, such as a 
 - [Permissions and access control](/data/permissions-and-access-control/): what an identity may see and do once connected
 - [Keeping data fresh](/data/keeping-data-fresh/): live reads rely on a working connection
 - [Auth and secrets](/map/auth-and-secrets/): where identity and keys fit in the wider stack
-
-## The proper terms
-
-- **Access token:** a short-lived credential an app uses to call an API
-- **API:** a defined way for software to request data or actions from a system
-- **API key:** a secret string that identifies the calling program
-- **Authentication:** proving who a person or program is
-- **Authorisation:** deciding what an identified person or program may do
-- **Delegated access:** acting with a user's own permissions
-- **JSON:** a plain text format for structured data
-- **OAuth:** a standard for letting an app act for a user without their password
-- **Rate limit:** a cap on how many requests are allowed in a given time
-- **Refresh token:** a longer-lived credential used to get new access tokens
-- **Scope:** a specific permission an app asks for, such as read files
 
 ## Next up
 

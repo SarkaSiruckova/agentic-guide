@@ -13,6 +13,15 @@ sidebar:
 
 **In one line:** a system prompt is a set of standing instructions given to a model before the conversation begins, setting its role, rules and tone for everything that follows.
 
+## The jargon: concepts covered on this page
+
+- **Custom instructions:** a user-added layer on top of a product's own system prompt
+- **Project instructions:** custom instructions that apply only within one Project
+- **Role:** the label on each message: system, user or assistant
+- **Style:** a saved setting for how Claude writes, such as concise or formal
+- **System prompt:** standing instructions set by the builder, sent before every conversation
+- **User prompt:** the message a person types in the conversation
+
 ## Why it matters
 
 When you use a product built on a model, you don't retype its rules each time. Something tells the model it is a research assistant, to keep answers short, and to refuse certain requests. That something is the system prompt.
@@ -114,15 +123,6 @@ The most common mistake is relying on the prompt alone for rules that really mat
 - [Context engineering](/data/context-engineering/): what else goes into the context window
 - [Tool use](/agents/tool-use/): the better place to enforce limits
 - [Skills and instruction files](/agents/skills-and-instruction-files/): reusable know-how kept outside the system prompt
-
-## The proper terms
-
-- **Custom instructions:** a user-added layer on top of a product's own system prompt
-- **Project instructions:** custom instructions that apply only within one Project
-- **Role:** the label on each message: system, user or assistant
-- **Style:** a saved setting for how Claude writes, such as concise or formal
-- **System prompt:** standing instructions set by the builder, sent before every conversation
-- **User prompt:** the message a person types in the conversation
 
 ## Next up
 

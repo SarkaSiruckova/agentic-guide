@@ -13,6 +13,16 @@ A trained model is an engine on a workbench until someone runs it. Inference is 
 
 **In one line:** inference is the model doing its job, reading your prompt and writing a reply one token at a time, as opposed to training, which is how the model was built in the first place.
 
+## The jargon: concepts covered on this page
+
+- **Decode:** the stage where the model writes its reply one token at a time
+- **GPU:** a chip built for large amounts of parallel arithmetic, used to run models
+- **Inference:** using a trained model to produce output from a prompt
+- **Prefill:** the stage where the model reads and processes the whole prompt
+- **Streaming:** sending the reply to you piece by piece as it is produced
+- **Time to first token:** the wait between sending a prompt and the first piece of reply
+- **Tokens per second:** how fast the model generates its reply once it has started
+
 ## Why it matters
 
 Training happens once, at the provider, and you never see it. Inference happens every time anyone sends a request, and it is the part you wait for and pay for.
@@ -113,16 +123,6 @@ If this is slow every day, the options are: send only the relevant sections inst
 - [Tokens and context windows](/start/tokens-and-context-windows/): what is being counted, and how much fits
 - [Quantisation](/under-the-hood/quantisation/): one way to run a model faster and on smaller hardware
 - [How AI pricing works](/running/how-api-pricing-works/): how inference turns into a bill
-
-## The proper terms
-
-- **Decode:** the stage where the model writes its reply one token at a time
-- **GPU:** a chip built for large amounts of parallel arithmetic, used to run models
-- **Inference:** using a trained model to produce output from a prompt
-- **Prefill:** the stage where the model reads and processes the whole prompt
-- **Streaming:** sending the reply to you piece by piece as it is produced
-- **Time to first token:** the wait between sending a prompt and the first piece of reply
-- **Tokens per second:** how fast the model generates its reply once it has started
 
 ## Next up
 

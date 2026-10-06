@@ -13,6 +13,17 @@ The map starts at the bottom of the stack, the ground every road is built on. Be
 
 **In one line:** compute and cloud is the bottom layer of AI: the specialised chips and data centres that do the actual calculating, rented by the hour from a handful of large providers.
 
+## The jargon: concepts covered on this page
+
+- **GPU:** graphics processing unit, a chip that does many calculations at once
+- **Accelerator:** a chip built to speed up AI maths
+- **TPU:** tensor processing unit, Google's custom AI chip
+- **Cloud:** computing power rented over the internet instead of owned
+- **Region:** a named area where a cloud provider groups its data centres
+- **Availability zone:** a separate data centre building or group within a region
+- **Data residency:** the country or area where data is stored
+- **CLOUD Act:** a US law letting authorities request data from US providers held abroad
+
 ## Why it matters
 
 Every other layer on this map sits on top of this one. When an agent answers a question, a chip somewhere in a data centre does the arithmetic, and the question and your data travel there and back.
@@ -102,17 +113,6 @@ A partner later asks, "Could Acme Payments' pitch deck leave the UK?" She can an
 - [Inference](/under-the-hood/inference/): the work these chips do when a model answers
 - [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/): the legal side of where data goes
 - [App hosting](/map/app-hosting/): the next layer up, where your own software runs on the cloud
-
-## The proper terms
-
-- **GPU:** graphics processing unit, a chip that does many calculations at once
-- **Accelerator:** a chip built to speed up AI maths
-- **TPU:** tensor processing unit, Google's custom AI chip
-- **Cloud:** computing power rented over the internet instead of owned
-- **Region:** a named area where a cloud provider groups its data centres
-- **Availability zone:** a separate data centre building or group within a region
-- **Data residency:** the country or area where data is stored
-- **CLOUD Act:** a US law letting authorities request data from US providers held abroad
 
 ## Next up
 

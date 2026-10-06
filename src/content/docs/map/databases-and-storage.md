@@ -13,6 +13,17 @@ App hosting runs your code; this layer holds the data that code works with. It i
 
 **In one line:** databases and storage are the places your information is kept, and the first job of any agent setup is to decide which place is the original and which are only copies built for searching.
 
+## The jargon: concepts covered on this page
+
+- **System of record:** the one place a given fact officially lives
+- **Index:** a copy of data arranged for fast searching
+- **Relational database:** data in linked tables, queried with SQL
+- **Document store:** a database of flexible, JSON-like records
+- **Vector database:** a store that finds items by closeness of meaning
+- **Graph database:** a database built around things and the links between them
+- **Object storage:** cloud storage for whole files, held in buckets or containers
+- **Backup:** a saved copy of data you can restore after a loss
+
 ## Why it matters
 
 An agent is only as useful as the information it can reach. A model knows a lot about the world, but nothing about your deals, your contacts or last week's meeting notes. That information sits in systems you already own, and the question is where, and in what shape.
@@ -105,17 +116,6 @@ Sample Ventures wants an assistant that can answer questions about companies, pe
 - [RAG and chunking](/data/rag-and-chunking/): how documents are split and searched by meaning
 - [Keeping data fresh](/data/keeping-data-fresh/): how an index stays in step with its source
 - [Specialised models](/map/specialised-models/): the embedding and parsing models that fill the index
-
-## The proper terms
-
-- **System of record:** the one place a given fact officially lives
-- **Index:** a copy of data arranged for fast searching
-- **Relational database:** data in linked tables, queried with SQL
-- **Document store:** a database of flexible, JSON-like records
-- **Vector database:** a store that finds items by closeness of meaning
-- **Graph database:** a database built around things and the links between them
-- **Object storage:** cloud storage for whole files, held in buckets or containers
-- **Backup:** a saved copy of data you can restore after a loss
 
 ## Next up
 

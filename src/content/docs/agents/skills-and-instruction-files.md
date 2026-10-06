@@ -13,6 +13,15 @@ Connectors give an assistant new places to reach. Instruction files and skills g
 
 **In one line:** instruction files and skills are saved written guidance that an agent reads, so you teach it how you work once instead of explaining it in every conversation.
 
+## The jargon: concepts covered on this page
+
+- **Instruction file:** a text file the agent reads at the start of work
+- **Skill:** a packaged, named set of instructions loaded when relevant
+- **SKILL.md:** the main file of a skill, holding its description and steps
+- **AGENTS.md:** an open-format instruction file read by many coding assistants
+- **Progressive disclosure:** loading detail only when a task needs it
+- **Load on demand:** reading a skill's full content only when a request matches it
+
 ## Why it matters
 
 Agents do not remember you. Start a new session and the agent knows nothing about your conventions, your preferred format or the steps of a job you have explained ten times. Without a fix, you retype the same instructions again and again, and each version comes out slightly different.
@@ -111,15 +120,6 @@ Nothing changes for requests that have nothing to do with cake orders: the skill
 - [Tool use](/agents/tool-use/): the actions skills teach the agent to use well
 - [Memory](/agents/memory/): what an agent keeps over time, compared with what you write deliberately
 - [MCP](/agents/mcp/): the connection layer that skills often rely on
-
-## The proper terms
-
-- **Instruction file:** a text file the agent reads at the start of work
-- **Skill:** a packaged, named set of instructions loaded when relevant
-- **SKILL.md:** the main file of a skill, holding its description and steps
-- **AGENTS.md:** an open-format instruction file read by many coding assistants
-- **Progressive disclosure:** loading detail only when a task needs it
-- **Load on demand:** reading a skill's full content only when a request matches it
 
 ## Next up
 

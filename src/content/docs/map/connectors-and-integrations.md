@@ -13,6 +13,17 @@ Data sits in many systems, and an agent cannot reach any of them on its own. Thi
 
 **In one line:** connectors and integrations are the links between an agent and the systems that hold your data, and each kind differs in who builds it, who keeps it working and what access it uses.
 
+## The jargon: concepts covered on this page
+
+- **Connector:** a ready-made link between an agent or tool and another system
+- **Integration:** any working link between two systems, built by anyone
+- **API:** a system's official interface for other software to talk to
+- **Webhook:** an automatic call a system sends you when something changes
+- **MCP server:** a standard wrapper that exposes a system's tools to assistants
+- **Service account:** a non-human account that connects as the app, not a person
+- **Delegated access:** a connection acting with the permissions of a signed-in person
+- **Change notification:** Microsoft's name for webhook alerts about changed data
+
 ## Why it matters
 
 A model on its own knows nothing about your firm. The facts live in other systems: the CRM, SharePoint, a shared mailbox, a calendar, a database. For an agent to read or change any of them, something has to connect the two.
@@ -110,17 +121,6 @@ An associate asks the question. The assistant searches the CRM, looks in the dat
 - [Orchestration tools](/building/orchestration-tools/): platforms whose connector libraries do much of the work
 - [Data exfiltration through tools](/running/data-exfiltration-through-tools/): why unknown connectors are a risk
 - [Auth and secrets](/map/auth-and-secrets/): where the sign-ins behind each connection are decided and stored
-
-## The proper terms
-
-- **Connector:** a ready-made link between an agent or tool and another system
-- **Integration:** any working link between two systems, built by anyone
-- **API:** a system's official interface for other software to talk to
-- **Webhook:** an automatic call a system sends you when something changes
-- **MCP server:** a standard wrapper that exposes a system's tools to assistants
-- **Service account:** a non-human account that connects as the app, not a person
-- **Delegated access:** a connection acting with the permissions of a signed-in person
-- **Change notification:** Microsoft's name for webhook alerts about changed data
 
 ## Next up
 

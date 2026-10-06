@@ -13,6 +13,14 @@ With tools, connections, memory and approvals in place, a single agent can take 
 
 **In one line:** a subagent is a helper agent that one agent sends off to do part of a job, with its own clean context window, instructions and tools, and a multi-agent system is a setup where several agents work together this way.
 
+## The jargon: concepts covered on this page
+
+- **Multi-agent system:** a setup where several agents work together on one job
+- **Orchestrator:** the agent that splits a task, delegates and combines results
+- **Parallel execution:** running several workers at the same time
+- **Subagent:** a helper agent with its own context window, instructions and tools
+- **Worker:** a subagent that does one piece of a task and reports back
+
 ## Why it matters
 
 A single agent keeps everything in one running record. After many [rounds](/agents/the-agent-loop/), that record fills with search results, notes and half-finished thoughts. The model has more to wade through, answers get less focused, and the cost of every round goes up.
@@ -112,14 +120,6 @@ The most common mistake is building a team of agents for a task that one agent c
 - [The agent loop](/agents/the-agent-loop/): every worker runs its own loop
 - [Context engineering](/data/context-engineering/): subagents are the "isolate" move
 - [Observability](/running/observability/): the way to see what each agent did when something goes wrong
-
-## The proper terms
-
-- **Multi-agent system:** a setup where several agents work together on one job
-- **Orchestrator:** the agent that splits a task, delegates and combines results
-- **Parallel execution:** running several workers at the same time
-- **Subagent:** a helper agent with its own context window, instructions and tools
-- **Worker:** a subagent that does one piece of a task and reports back
 
 ## Next up
 
