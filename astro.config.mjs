@@ -6,7 +6,9 @@ import mermaid from 'astro-mermaid';
 import starlightTags from 'starlight-tags';
 
 export default defineConfig({
-  markdown: { rehypePlugins: [rehypeGuideBlocks] },
+  // The options object is not used by the plugin. Bump `revision` whenever the plugin changes,
+  // so the build cache re-renders every page instead of reusing stale output.
+  markdown: { rehypePlugins: [[rehypeGuideBlocks, { revision: 2 }]] },
   redirects: {
     '/concepts': '/start/start-here/',
     '/concepts/agents/agentic-harness': '/agents/agentic-harness/',
