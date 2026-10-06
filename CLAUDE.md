@@ -116,7 +116,7 @@ Three sections are turned into designed blocks at build time by `src/plugins/reh
 
 - `## The jargon: concepts covered on this page`, placed right after the "In one line" sentence, followed by one list of `- **Term:** meaning` lines. It becomes the jargon card: term boxes, plus a button that reveals each meaning. The glossary is built from these lists.
 - `## Related`, followed by one list where every line starts with a link: `- [Page](/path/): note`. It becomes link tiles.
-- `## Next up`, always the last section, ending with a link to the next page. It becomes the Next up box, with a button for the last link.
+- `## Next up`, always the last section, ending with a link to the next page. It is removed from the article and shown in the page navigation at the bottom (`src/components/Pagination.astro`): a small "Previous" box and a larger "Next up: [title]" box with this text and an arrow button. The title and arrow follow the sidebar order, so the link in the text must point to the same page.
 
 If a section does not match this shape, it is shown as plain markdown instead, so check the test build. Practical "in Claude" pages, building pages and electives can adapt the template where a section doesn't fit, but keep the same voice.
 

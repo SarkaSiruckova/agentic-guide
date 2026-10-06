@@ -150,4 +150,4 @@ The two messages look similar and carry quite different risks. The first can cha
 
 ## Next up
 
-This is the last elective, and the end of the guide: it has gone from what a model is to an agent people can safely reach from the apps they already use. When a term slips, the [glossary](/reference/glossary/) is the quickest place to return to, and [Start here](/start/start-here/) lays out the reading paths if you want to go round again by a different route.
+This is the last elective, and the end of the guide: it has gone from what a model is to an agent people can safely reach from the apps they already use. [Start here](/start/start-here/) lays out the reading paths if you want to go round again by a different route, and when a term slips, the [glossary](/reference/glossary/) is the quickest place to return to.

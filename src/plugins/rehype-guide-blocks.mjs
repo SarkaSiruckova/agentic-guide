@@ -5,7 +5,7 @@
  *   ## The jargon: ...   + a list of "- **Term:** meaning"  -> jargon card
  *                          (term boxes, plus a "Show what they mean" toggle)
  *   ## Related           + a list of "- [Page](/path/): note" -> link tiles
- *   ## Next up           + paragraph(s) ending with a link    -> next-up box
+ *   ## Next up           + paragraph(s)  -> removed here; Pagination.astro shows it
  *
  * Blocks carry Starlight's not-content class so its default content styles
  * (details markers, list spacing) stay out of the way; custom.css styles them.
@@ -153,7 +153,8 @@ export default function rehypeGuideBlocks() {
           if (!isBlank(kids[j])) body.push(kids[j]);
           j++;
         }
-        out.push(buildNext(node, body));
+        // The Next up text is shown in the bottom navigation box instead
+        // (src/components/Pagination.astro), so drop it from the article.
         i = j - 1;
         continue;
       }

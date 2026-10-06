@@ -88,7 +88,7 @@ export default defineConfig({
     starlight({
       title: 'Agentic AI Field Guide',
       description: 'A plain-language, growing guide to agentic AI.',
-      lastUpdated: true,
+      lastUpdated: false,
       plugins: [starlightTags()],
       customCss: [
         '@fontsource/literata/400.css',
@@ -101,6 +101,7 @@ export default defineConfig({
       ],
       components: {
         PageTitle: './src/components/PageTitle.astro',
+        Pagination: './src/components/Pagination.astro',
       },
       sidebar: [
         { label: '1. Start here', collapsed: true, items: [{ autogenerate: { directory: 'start' } }] },

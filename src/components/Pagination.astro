@@ -1,0 +1,173 @@
+---
+/**
+ * Bottom navigation: a small "Previous" box and a larger "Next up" box.
+ * The next page's title and link come from the sidebar order; the sentence
+ * under it comes from the page's own "## Next up" section, which the rehype
+ * add-on removes from the article body so it only appears here.
+ */
+const { pagination, entry } = Astro.locals.starlightRoute;
+const { prev, next } = pagination;
+
+const body: string = (entry as { body?: string }).body ?? '';
+const match = body.match(/(?:^|\n)## Next up[ \t]*\n([\s\S]*?)(?=\n## |\s*$)/);
+const nextText = match ? match[1].trim() : '';
+
+// Minimal inline markdown: escape, then links, bold, italics and code.
+function inline(md: string): string {
+  let s = md.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  s = s.replace(/`([^`]+)`/g, '<code>$1</code>');
+  s = s.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, '<a href="$2">$1</a>');
+  s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  s = s.replace(/(^|[^*])\*([^*\s][^*]*)\*/g, '$1<em>$2</em>');
+  return s;
+}
+const paragraphs = nextText ? nextText.split(/\n\s*\n/).map((p) => inline(p.replace(/\n/g, ' '))) : [];
+---
+
+{
+  (prev || next) && (
+    <nav class:list={['guide-pager', 'print:hidden', { 'has-prev': !!prev, 'has-next': !!next }]} aria-label="Pagination">
+      {prev && (
+        <a class="guide-pager-prev" href={prev.href} rel="prev">
+          <span class="guide-pager-arrow" aria-hidden="true">←</span>
+          <span>
+            <span class="guide-pager-kicker">Previous</span>
+            <span class="guide-pager-prev-title">{prev.label}</span>
+          </span>
+        </a>
+      )}
+      {next && (
+        <div class="guide-pager-next">
+          <div class="guide-pager-next-text">
+            <p class="guide-pager-next-title">
+              <span class="guide-pager-kicker">Next up:</span> <a href={next.href}>{next.label}</a>
+            </p>
+            {paragraphs.map((p) => <p class="guide-pager-next-body" set:html={p} />)}
+          </div>
+          <a class="guide-pager-button" href={next.href} rel="next" aria-label={`Next: ${next.label}`}>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      )}
+    </nav>
+  )
+}
+
+<style>
+  .guide-pager {
+    display: grid;
+    gap: 1rem;
+    align-items: stretch;
+  }
+  .guide-pager.has-prev.has-next {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2.4fr);
+  }
+  .guide-pager-prev {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 12px;
+    padding: 1rem 1.1rem;
+    text-decoration: none;
+    color: var(--sl-color-gray-2);
+    transition: border-color 0.15s;
+  }
+  .guide-pager-prev:hover {
+    border-color: var(--sl-color-gray-3);
+  }
+  .guide-pager-arrow {
+    font-size: 1.1rem;
+    color: var(--sl-color-gray-3);
+    flex-shrink: 0;
+  }
+  .guide-pager-kicker {
+    display: block;
+    font-family: var(--sl-font);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--sl-color-gray-3);
+  }
+  .guide-pager-prev-title {
+    display: block;
+    font-family: var(--sl-font);
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.3;
+    color: var(--sl-color-white);
+    margin-top: 0.15rem;
+  }
+  .guide-pager-next {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    border: 1px solid var(--sl-color-accent);
+    border-radius: 12px;
+    padding: 1.1rem 1.25rem 1.1rem 1.5rem;
+  }
+  .guide-pager-next-text {
+    flex: 1;
+    min-width: 0;
+  }
+  .guide-pager-next-title {
+    margin: 0;
+    font-family: var(--sl-font);
+    font-weight: 600;
+    font-size: 1.15rem;
+    line-height: 1.35;
+    color: var(--sl-color-white);
+  }
+  .guide-pager-next-title .guide-pager-kicker {
+    display: inline;
+    font-size: inherit;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--sl-color-accent);
+  }
+  .guide-pager-next-title a {
+    color: var(--sl-color-white);
+    text-decoration: none;
+  }
+  .guide-pager-next-title a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .guide-pager-next-body {
+    margin: 0.4rem 0 0;
+    font-family: var(--guide-body-font);
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--sl-color-gray-2);
+  }
+  .guide-pager-next-body :global(a) {
+    color: var(--sl-color-white);
+    text-underline-offset: 3px;
+  }
+  .guide-pager-button {
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 999px;
+    background: var(--sl-color-accent);
+    color: var(--sl-color-black);
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background 0.15s, transform 0.15s;
+  }
+  .guide-pager-button:hover {
+    background: var(--sl-color-accent-high);
+    transform: translateX(2px);
+  }
+  @media (max-width: 50rem) {
+    .guide-pager.has-prev.has-next {
+      grid-template-columns: 1fr;
+    }
+    .guide-pager-next {
+      order: -1;
+    }
+  }
+</style>

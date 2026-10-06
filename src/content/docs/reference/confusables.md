@@ -142,4 +142,4 @@ Three ways to use the same family of models, built for different jobs.
 
 ## Next up
 
-To see what has been added or updated lately, head to [Recently added](/reference/recently-added/).
+To find pages by topic instead of by reading order, [Browse by tag](/tags/) groups every page under its tags.

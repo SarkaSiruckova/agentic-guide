@@ -47,4 +47,4 @@ The term this gets mixed up with, and the difference in one or two sentences. Re
 
 ## Next up
 
-One or two sentences on why the next page in the reading order follows, ending with a link to it. The site turns this into the Next up box, with a button for the last link in the section.
+One or two sentences on why the next page in the reading order follows, ending with a link to it. The site shows this text in the bottom navigation box, under "Next up: [next page title]", next to a small "Previous" box.
