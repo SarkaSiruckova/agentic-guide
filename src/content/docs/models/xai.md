@@ -23,15 +23,15 @@ The company's structure has also changed this year. A reader who learned about "
 
 ## What it offers (as of October 2026)
 
-**Models.** Grok is the family name. xAI's documentation currently lists a flagship general-purpose Grok model for chat, code and reasoning, with a configurable level of reasoning (see [reasoning models](/concepts/how-models-work/reasoning-models/)) and a context window of around half a million tokens (see [tokens and context windows](/concepts/how-models-work/tokens-and-context-windows/)). The documentation did not present a clear Pro, Flash style tier ladder when this page was written, so check xAI's model page for the current list.
+**Models.** Grok is the family name. xAI's documentation currently lists a flagship general-purpose Grok model for chat, code and reasoning, with a configurable level of reasoning (see [reasoning models](/using-ai/reasoning-models/)) and a context window of around half a million tokens (see [tokens and context windows](/start/tokens-and-context-windows/)). The documentation did not present a clear Pro, Flash style tier ladder when this page was written, so check xAI's model page for the current list.
 
 The same documentation lists separate model lines called Grok Imagine for image and video generation, and a voice API for real-time conversation, text to speech and speech to text.
 
 **Apps.** The Grok app runs on the web, iOS and Android, and Grok is also available inside X. xAI's page lists live search of the web and X, voice conversation, image and video generation, and a multi-agent mode where several agents work on a hard question in parallel. There is a free tier and a paid upgrade called SuperGrok.
 
-**Developer API.** xAI's documentation lists tool calling (see [tool use](/concepts/agents/tool-use/)), web search, X search, code execution, structured outputs and a batch API on some models. It notes that without search tools enabled, Grok knows only what was in its training data.
+**Developer API.** xAI's documentation lists tool calling (see [tool use](/agents/tool-use/)), web search, X search, code execution, structured outputs and a batch API on some models. It notes that without search tools enabled, Grok knows only what was in its training data.
 
-**Coding agent.** xAI published "Grok Build", a coding agent harness and terminal interface (a tool run by typing commands in a text window, covered in chapter 10), as open source in July 2026 (see [agentic harness](/concepts/agents/agentic-harness/)).
+**Coding agent.** xAI published "Grok Build", a coding agent harness and terminal interface (a tool run by typing commands in a text window, covered in [terminal basics](/building/terminal-basics/)), as open source in July 2026 (see [agentic harness](/agents/agentic-harness/)).
 
 ## How to reach it
 
@@ -61,7 +61,7 @@ Grok's current models are offered as a service only, and this page found no publ
 - **Grok-1.** Released in March 2024 with its weights and architecture. The repository states the code and weights are under the **Apache 2.0** licence.
 - **Grok 2.** The weights were later published on Hugging Face under a custom **Grok 2 Community License Agreement**. The licence text allows use, copying, distribution and modification, including commercial use if you follow xAI's acceptable use policy. It forbids using the materials, derivatives or outputs to train or improve foundational, large language or general-purpose AI models (apart from changes to the materials themselves), requires a "Powered by xAI" display and a licence notice, and ends if you sue over patent or copyright infringement.
 
-Check xAI's pages and Hugging Face for any later releases. See [open vs closed weights](/concepts/how-models-work/open-vs-closed-weights/).
+Check xAI's pages and Hugging Face for any later releases. See [open vs closed weights](/under-the-hood/open-vs-closed-weights/).
 
 ## Data and compliance notes
 
@@ -72,7 +72,7 @@ xAI's pages show different terms depending on the product. Terms vary by plan, s
 - **Grok on X.** xAI's documents say use of Grok on X is governed by the X Privacy Policy and X Terms, not xAI's own.
 - **Signing in with X.** The terms say xAI can access X profile, post history and Grok on X conversation history if you log in with X credentials.
 
-For what a data processing agreement is and when you need one, see [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/).
+For what a data processing agreement is and when you need one, see [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/).
 
 ## Things to watch
 
@@ -87,7 +87,7 @@ For what a data processing agreement is and when you need one, see [GDPR, data r
 - [Open-weight options](/models/open-weight-options/): older Grok weights alongside other downloadable models
 - [Data terms at a glance](/models/data-terms-at-a-glance/): provider terms side by side
 - [Model access platforms](/map/model-access-platforms/): direct, cloud and gateway routes
-- [Prompt injection](/concepts/security/prompt-injection/): a risk to weigh with any model that reads live web or social content
+- [Prompt injection](/running/prompt-injection/): a risk to weigh with any model that reads live web or social content
 
 ## The proper terms
 

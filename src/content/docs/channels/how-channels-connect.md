@@ -52,11 +52,11 @@ Registration is where the platform decides who can add the agent to a workspace,
 
 There are three ways for your code to learn that a message exists.
 
-- **Webhook.** The platform sends an HTTP request to a web address you give it each time something happens. A [webhook](/concepts/running-things/triggers-and-scheduling/) needs a public address that is always reachable. Slack, Telegram, Meta's WhatsApp platform and the Bot Framework all support this.
+- **Webhook.** The platform sends an HTTP request to a web address you give it each time something happens. A [webhook](/building/triggers-and-scheduling/) needs a public address that is always reachable. Slack, Telegram, Meta's WhatsApp platform and the Bot Framework all support this.
 - **Long-lived connection (socket).** Your code opens a connection to the platform and keeps it open, and events flow down it. You need no public address. Slack offers this as Socket Mode, and its documentation presents it as an alternative to a public HTTP address.
 - **Polling.** Your code asks "anything new?" on a schedule, or holds the question open until there is something. Telegram's `getUpdates` method works this way. Telegram's documentation says it and webhooks are mutually exclusive: while a webhook is set, `getUpdates` does not work. It also says undelivered updates are kept for no longer than 24 hours.
 
-Polling is the simplest and slower. Webhooks and sockets are faster. The trade-off is the same one described in [keeping data fresh](/concepts/data/keeping-data-fresh/): how soon you hear about a change versus how much plumbing you maintain.
+Polling is the simplest and slower. Webhooks and sockets are faster. The trade-off is the same one described in [keeping data fresh](/data/keeping-data-fresh/): how soon you hear about a change versus how much plumbing you maintain.
 
 ### Acknowledge fast, answer later
 
@@ -66,10 +66,10 @@ Platforms set deadlines because they cannot hold thousands of connections open w
 
 1. Receive the event and check it is genuine.
 2. Reply "received" straight away.
-3. Hand the work to a background job or [workflow](/concepts/running-things/orchestration-tools/).
+3. Hand the work to a background job or [workflow](/building/orchestration-tools/).
 4. Post the real answer later, ideally with a short "working on it" message in between.
 
-Retries cause a side effect. If your "received" is late, the platform may send the same event again, and the agent answers twice. Meta's documentation tells you to expect this and to deduplicate. Store an event ID and skip repeats. See [rate limits, retries and failures](/concepts/running-things/rate-limits-retries-and-failures/).
+Retries cause a side effect. If your "received" is late, the platform may send the same event again, and the agent answers twice. Meta's documentation tells you to expect this and to deduplicate. Store an event ID and skip repeats. See [rate limits, retries and failures](/running/rate-limits-retries-and-failures/).
 
 ### Signing: is this message really from the platform?
 
@@ -79,13 +79,13 @@ A **request signature** works like a wax seal. The platform and your app share a
 
 Slack documents this with a signing secret, an `X-Slack-Signature` header and a timestamp check that rejects requests more than five minutes old. Meta signs payloads with your app secret in an `X-Hub-Signature-256` header. Telegram lets you set a secret token that comes back in an `X-Telegram-Bot-Api-Secret-Token` header. Microsoft's Bot Framework uses a signed token in the `Authorization` header, which your bot checks for the right issuer, audience, expiry and signature.
 
-The timestamp check blocks a **replay attack**, where someone records a genuine signed request and sends it again later. Keep the signing secret in [environment variables and secrets](/concepts/running-things/environment-variables-and-secrets/), never in the code. Many official libraries do the check for you once you give them the secret.
+The timestamp check blocks a **replay attack**, where someone records a genuine signed request and sends it again later. Keep the signing secret in [environment variables and secrets](/building/environment-variables-and-secrets/), never in the code. Many official libraries do the check for you once you give them the secret.
 
 ### Identity mapping: who is this, really?
 
 The platform tells you a user ID, such as a Slack member ID or a Telegram user number. That is not your firm's idea of a person. **Identity mapping** is the step that turns "chat user X" into "this associate, with this role, in our systems".
 
-Do it with an explicit list or a sign-in link, not by trusting a display name. Names can be copied, and display names are not proof of anything. The mapped identity then decides what the agent may read or write for that message, following [permissions and access control](/concepts/data/permissions-and-access-control/) and [least privilege](/concepts/security/least-privilege/). If the sender is not on the list, the agent should answer politely and do nothing else.
+Do it with an explicit list or a sign-in link, not by trusting a display name. Names can be copied, and display names are not proof of anything. The mapped identity then decides what the agent may read or write for that message, following [permissions and access control](/data/permissions-and-access-control/) and [least privilege](/running/least-privilege/). If the sender is not on the list, the agent should answer politely and do nothing else.
 
 ### The agent and its permissions
 
@@ -97,14 +97,14 @@ Each platform renders text its own way: its own bold syntax, buttons, cards, len
 
 ### Conversation threads and state
 
-A chat thread gives the agent a natural unit of conversation. Store the thread ID with the conversation so follow-up questions arrive with context. The agent itself does not remember anything between calls, so what you store and replay is its [memory](/concepts/agents/memory/), and it takes space in the [context window](/concepts/how-models-work/tokens-and-context-windows/). Decide how long a thread's history lives before it is dropped.
+A chat thread gives the agent a natural unit of conversation. Store the thread ID with the conversation so follow-up questions arrive with context. The agent itself does not remember anything between calls, so what you store and replay is its [memory](/agents/memory/), and it takes space in the [context window](/start/tokens-and-context-windows/). Decide how long a thread's history lives before it is dropped.
 
 ## Risks that come with every channel
 
 - **Group chats leak.** An answer posted to a channel is visible to everyone in it, including people who could not have asked the question themselves. Check who is in the room, or answer sensitive questions privately.
 - **Bots may see more than you expect.** Some platforms deliver every message in a space to a bot, and others only the ones that mention it. Telegram's documentation, for example, says bots in groups run in privacy mode by default and see only commands, replies and mentions addressed to them, unless they are made group admins. Check what yours receives and collect no more than it needs.
-- **Messages are untrusted text.** A pasted email or forwarded message in chat can carry hidden instructions. See [prompt injection](/concepts/security/prompt-injection/).
-- **Logs and retention.** The platform keeps messages under its own rules, and your own logs keep them under yours. Record who asked what and what the agent did ([audit trails](/concepts/security/audit-trails/)), and decide retention with [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/) in mind.
+- **Messages are untrusted text.** A pasted email or forwarded message in chat can carry hidden instructions. See [prompt injection](/running/prompt-injection/).
+- **Logs and retention.** The platform keeps messages under its own rules, and your own logs keep them under yours. Record who asked what and what the agent did ([audit trails](/running/audit-trails/)), and decide retention with [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/) in mind.
 - **Failure.** Platforms retry, networks drop and agents time out. Plan for duplicates, silent drops and a clear "I could not do that" reply.
 
 <mark>Treat the chat platform as a public doorway: verify every request, map every sender to a real person, and let the agent do only what that person could do.</mark>
@@ -115,8 +115,8 @@ There are four common ways to wire this up.
 
 1. **A native app or built-in assistant from the platform.** The platform supplies the assistant and the plumbing, and you configure access and sources. Least code, least control over how it behaves and where data goes.
 2. **A bot you host yourself.** You register the bot, run a small service that receives events, checks signatures, maps identities, calls the agent and posts replies. Most control, most to maintain and secure.
-3. **An automation tool in the middle.** A tool such as [n8n](/setup/n8n/) receives the event, runs the steps and calls the agent. It handles the webhook, retries and scheduling for you. See [orchestration tools](/concepts/running-things/orchestration-tools/). You still own the signature check, the identity mapping and the permissions.
-4. **An MCP-based assistant that already has the channel as an integration.** Some assistants connect to chat apps through [MCP](/concepts/agents/mcp/) or built-in connectors, so the channel is a tool the assistant can use rather than a doorway into your agent. Good for an assistant that reads and posts in chat. It is a different shape from "colleagues message the agent in chat", so check which one you actually need.
+3. **An automation tool in the middle.** A tool such as [n8n](/building/n8n/) receives the event, runs the steps and calls the agent. It handles the webhook, retries and scheduling for you. See [orchestration tools](/building/orchestration-tools/). You still own the signature check, the identity mapping and the permissions.
+4. **An MCP-based assistant that already has the channel as an integration.** Some assistants connect to chat apps through [MCP](/agents/mcp/) or built-in connectors, so the channel is a tool the assistant can use rather than a doorway into your agent. Good for an assistant that reads and posts in chat. It is a different shape from "colleagues message the agent in chat", so check which one you actually need.
 
 ## Choosing
 
@@ -143,7 +143,7 @@ Sample Ventures wants associates to ask the agent about portfolio companies from
 - **Cheap to start, costly to harden.** A basic bot is quick to make. Signing, identity mapping, logging and retries are what take the time.
 - **A public address needs care.** Webhooks mean an internet-facing endpoint, so keep it small and keep secrets out of the code. A socket or polling avoids that, at the price of a process that must stay running.
 - **Platform rules change.** Limits, approval steps and permissions are set by each platform and are revised often. Check the current developer documentation before building.
-- **Waiting costs attention, not much money.** The agent's own usage drives cost (see [estimating cost per task](/concepts/cost/estimating-cost-per-task/)), not the channel.
+- **Waiting costs attention, not much money.** The agent's own usage drives cost (see [estimating cost per task](/running/estimating-cost-per-task/)), not the channel.
 - **Compliance still applies.** This page is general information, not legal advice. A regulated firm should check its own record-keeping, retention and approved-tools rules with compliance before connecting any channel.
 
 ## Related
@@ -151,8 +151,8 @@ Sample Ventures wants associates to ask the agent about portfolio companies from
 - [Interfaces](/map/interfaces/): the wider family of ways to reach an agent
 - [Querying vs adding information safely](/channels/querying-vs-adding-safely/): reads and writes carry different risk
 - [Slack](/channels/slack/), [Telegram](/channels/telegram/), [WhatsApp](/channels/whatsapp/) and [Microsoft Teams](/channels/microsoft-teams/): the platform details
-- [Permissions and access control](/concepts/data/permissions-and-access-control/): what each person may see
-- [Prompt injection](/concepts/security/prompt-injection/): why chat text is untrusted
+- [Permissions and access control](/data/permissions-and-access-control/): what each person may see
+- [Prompt injection](/running/prompt-injection/): why chat text is untrusted
 
 ## The proper terms
 

@@ -17,7 +17,7 @@ This is one of a set of parallel provider snapshots, each with the same headings
 
 Mistral is the European model provider covered in this guide. For a UK firm that is weighing where its data is processed, a provider that is incorporated in France and says it hosts its own service in the EU is a different conversation from a US or Chinese one. That is a fact about contracts and location, not a verdict on quality.
 
-It also matters because Mistral mixes two business models. Some of its models are published as [open weights](/concepts/how-models-work/open-vs-closed-weights/) under a standard permissive licence, so anyone can run them. Others are sold only through paid services. Knowing which is which saves you from assuming "Mistral" means one thing.
+It also matters because Mistral mixes two business models. Some of its models are published as [open weights](/under-the-hood/open-vs-closed-weights/) under a standard permissive licence, so anyone can run them. Others are sold only through paid services. Knowing which is which saves you from assuming "Mistral" means one thing.
 
 <mark>With Mistral, the licence and the route matter more than the brand: one model may be free to download and run, while its sibling is only sold as a service.</mark>
 
@@ -31,7 +31,7 @@ Mistral's own documentation groups its models into families rather than one line
 | Ministral | A series of small models for lighter hardware, with text and vision |
 | OCR | Document models that read scanned pages and PDFs and return text with layout information such as bounding boxes and block labels |
 | Codestral | A model family for code completion |
-| Embedding models | Models that turn text or code into numbers for search (see [embeddings](/concepts/how-models-work/embeddings/)) |
+| Embedding models | Models that turn text or code into numbers for search (see [embeddings](/data/embeddings/)) |
 | Voxtral | Speech models for transcription and text to speech |
 | Moderation and safety models | Models that screen text for unsafe content |
 
@@ -68,7 +68,7 @@ Mistral publishes many weights, but not all, and the licences differ by model. R
 - **Modified MIT.** The Hugging Face card for the Medium model says "Modified MIT License", with exceptions for companies with large revenue. Mistral's own overview describes Medium as commercial, so the two pages are worth reading together before you rely on either.
 - **Other terms.** The overview lists the text to speech model under CC BY-NC 4.0, which is non-commercial. Premier-tier models such as OCR, Codestral and the embedding models are sold through Mistral's services.
 
-For plain definitions of these terms, see [open vs closed weights](/concepts/how-models-work/open-vs-closed-weights/).
+For plain definitions of these terms, see [open vs closed weights](/under-the-hood/open-vs-closed-weights/).
 
 ## Data and compliance notes
 
@@ -80,7 +80,7 @@ These notes come from Mistral's own legal pages and may change. They are not leg
 - **Retention.** The privacy policy gives 30 rolling days for API data for abuse monitoring, unless zero retention is enabled. Vibe conversations are kept until deleted.
 - **Training.** The privacy policy says input and output may be used for training "subject to your opt-out" for consumers, with an account setting to object. Terms for paid and enterprise plans can differ, so confirm yours.
 
-Self-hosted open weights stay on your own infrastructure, so none of the hosted-service terms apply to them. See [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/).
+Self-hosted open weights stay on your own infrastructure, so none of the hosted-service terms apply to them. See [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/).
 
 ## Things to watch
 

@@ -9,15 +9,15 @@ sidebar:
 published: 2026-10-02
 ---
 
-With models, data and connectors in place, something has to do the driving: ask the model, use a tool, look at the result, and go again. This layer is the ready-made software that does that, the build-or-buy side of the [agentic harness](/concepts/agents/agentic-harness/).
+With models, data and connectors in place, something has to do the driving: ask the model, use a tool, look at the result, and go again. This layer is the ready-made software that does that, the build-or-buy side of the [agentic harness](/agents/agentic-harness/).
 
 **In one line:** an agent framework is a ready-made library or platform that runs the agent loop and wires up tools and memory for you, so you write only the parts that are specific to your firm.
 
 ## Why it matters
 
-Building an agent from nothing means writing the [agent loop](/concepts/agents/the-agent-loop/): send the task to the model, read its request for a tool, run the tool, feed back the result, and repeat until done. Then you add retries, limits, logging, memory and a way to ask a person for approval. None of that is hard, but it adds up, and it is the same work for everyone.
+Building an agent from nothing means writing the [agent loop](/agents/the-agent-loop/): send the task to the model, read its request for a tool, run the tool, feed back the result, and repeat until done. Then you add retries, limits, logging, memory and a way to ask a person for approval. None of that is hard, but it adds up, and it is the same work for everyone.
 
-A framework supplies that shared machinery. It is, in effect, a pre-built [agentic harness](/concepts/agents/agentic-harness/). You get a working agent sooner, and you inherit years of fixes from other people's mistakes.
+A framework supplies that shared machinery. It is, in effect, a pre-built [agentic harness](/agents/agentic-harness/). You get a working agent sooner, and you inherit years of fixes from other people's mistakes.
 
 The risk is that a framework also makes choices for you, and some of them are hard to undo later. Which framework you pick matters less than knowing what it does for you and what it leaves to you.
 
@@ -30,19 +30,19 @@ Think of a framework as a kitchen with the appliances already installed. You sti
 Most frameworks provide some mix of these:
 
 - **The loop.** The decide, act, observe cycle, with a cap on rounds so a stuck agent stops.
-- **Tool wiring.** A neat way to describe a function or an [MCP](/concepts/agents/mcp/) server so the model can call it (see [tool use](/concepts/agents/tool-use/)).
-- **Memory helpers.** Ways to keep a conversation or notes between runs (see [memory](/concepts/agents/memory/)).
-- **Multi-step flows.** Ways to chain steps, branch, or pass work between several agents (see [subagents and multi-agent systems](/concepts/agents/subagents-and-multi-agent-systems/)).
-- **Approval hooks.** Places to pause for a person (see [human in the loop](/concepts/agents/human-in-the-loop/)).
-- **Tracing hooks.** A record of every step, which feeds [observability](/concepts/agents/observability/).
+- **Tool wiring.** A neat way to describe a function or an [MCP](/agents/mcp/) server so the model can call it (see [tool use](/agents/tool-use/)).
+- **Memory helpers.** Ways to keep a conversation or notes between runs (see [memory](/agents/memory/)).
+- **Multi-step flows.** Ways to chain steps, branch, or pass work between several agents (see [subagents and multi-agent systems](/agents/subagents-and-multi-agent-systems/)).
+- **Approval hooks.** Places to pause for a person (see [human in the loop](/agents/human-in-the-loop/)).
+- **Tracing hooks.** A record of every step, which feeds [observability](/running/observability/).
 
 What you still own, whatever you pick:
 
 - **Prompts and instructions.** What the agent is for and how it should behave.
 - **The tools themselves.** What they do, and what they are allowed to touch.
-- **Permissions and credentials.** Which accounts the agent uses (see [least privilege](/concepts/security/least-privilege/)).
-- **Evals.** Tests that show whether the agent is actually right (see [evals](/concepts/agents/evals/)).
-- **Security.** Defences against [prompt injection](/concepts/security/prompt-injection/) and data leaving through tools.
+- **Permissions and credentials.** Which accounts the agent uses (see [least privilege](/running/least-privilege/)).
+- **Evals.** Tests that show whether the agent is actually right (see [evals](/running/evals/)).
+- **Security.** Defences against [prompt injection](/running/prompt-injection/) and data leaving through tools.
 
 ```mermaid
 flowchart TD
@@ -93,7 +93,7 @@ Lab SDKs are built around their maker's models first. Some support other provide
 
 ## Choosing between them
 
-Start with the simplest thing that works. For a small team, that is often an orchestration tool with an AI step (see [orchestration tools](/concepts/running-things/orchestration-tools/)), or a lab SDK if you have someone who can write a little code. Reach for a heavier framework only when you can name the need it solves.
+Start with the simplest thing that works. For a small team, that is often an orchestration tool with an AI step (see [orchestration tools](/building/orchestration-tools/)), or a lab SDK if you have someone who can write a little code. Reach for a heavier framework only when you can name the need it solves.
 
 Questions to ask:
 
@@ -118,7 +118,7 @@ She starts with path one. After a month, the associates ask for deeper research 
 
 ## Costs and limits
 
-- **The framework is usually free; the model calls are not.** Agents that loop many times, or use several agents, spend more tokens (see [how AI pricing works](/concepts/cost/how-ai-pricing-works/)).
+- **The framework is usually free; the model calls are not.** Agents that loop many times, or use several agents, spend more tokens (see [how AI pricing works](/running/how-api-pricing-works/)).
 - **Fast-changing code.** Versions change, features are renamed, and old tutorials stop working. Budget time for upgrades.
 - **Hidden behaviour.** A framework may add its own instructions or retry rules that you did not write. Read what actually gets sent to the model.
 - **Lock-in.** The more of your logic lives in a framework's special objects, the harder it is to leave.
@@ -127,11 +127,11 @@ She starts with path one. After a month, the associates ask for deeper research 
 
 ## Related
 
-- [The agent loop](/concepts/agents/the-agent-loop/): the cycle every framework implements
-- [Agentic harness](/concepts/agents/agentic-harness/): the wider set of parts a framework gives you a head start on
-- [Subagents and multi-agent systems](/concepts/agents/subagents-and-multi-agent-systems/): when splitting work across agents helps, and when it does not
-- [Orchestration tools](/concepts/running-things/orchestration-tools/): the lighter alternative for fixed workflows
-- [Evals](/concepts/agents/evals/): the tests no framework supplies for you
+- [The agent loop](/agents/the-agent-loop/): the cycle every framework implements
+- [Agentic harness](/agents/agentic-harness/): the wider set of parts a framework gives you a head start on
+- [Subagents and multi-agent systems](/agents/subagents-and-multi-agent-systems/): when splitting work across agents helps, and when it does not
+- [Orchestration tools](/building/orchestration-tools/): the lighter alternative for fixed workflows
+- [Evals](/running/evals/): the tests no framework supplies for you
 
 ## The proper terms
 

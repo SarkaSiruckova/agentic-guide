@@ -2,14 +2,14 @@
 title: Anthropic
 description: A neutral snapshot of Anthropic, the company behind the Claude models, covering its products, how to reach them, licensing and data terms.
 tags: [foundations, tools]
-lastReviewed: 2026-10-02
+lastReviewed: 2026-10-06
 snapshot: true
 sidebar:
   order: 2
 published: 2026-10-05
 ---
 
-The provider pages in this chapter are parallel snapshots of individual carmakers, listed in no order of merit. This one covers Anthropic, the maker of the Claude models and the creator of MCP.
+The provider pages in this section are parallel snapshots of individual carmakers, listed in no order of merit. This one covers Anthropic, the maker of the Claude models and the creator of MCP.
 
 **In one line:** Anthropic is the AI company that makes the Claude family of closed-weight models, sold through its own apps and API, through big clouds, and through coding and agent tools.
 
@@ -17,7 +17,7 @@ The provider pages in this chapter are parallel snapshots of individual carmaker
 
 Anthropic is one of the main providers a small firm will meet when building agents. Its Claude models, its coding tool (Claude Code) and its agent library (the Agent SDK) are used directly, and are also built into other products.
 
-It also created MCP, the open standard for connecting assistants to tools and data (see [MCP](/concepts/agents/mcp/)). Even if you use a different model provider, you are likely to meet MCP.
+It also created MCP, the open standard for connecting assistants to tools and data (see [MCP](/agents/mcp/)). Even if you use a different model provider, you are likely to meet MCP.
 
 <mark>Anthropic's consumer apps and its commercial products come with different data terms, so check which one you are actually using.</mark>
 
@@ -38,12 +38,12 @@ Anthropic also describes a further tier, Mythos, as available only to vetted org
 
 **Apps.** Claude is available as a chat and work assistant on web, desktop and mobile. Anthropic's product pages also list Claude Code, a Chrome extension, a Slack integration, and an integration inside Microsoft 365 apps. Which plan includes which feature varies, so check the current plan page.
 
-**Developer API.** The Claude API (on the Claude Platform) is the direct route for software. It supports tool use, so a model can request actions (see [tool use](/concepts/agents/tool-use/)).
+**Developer API.** The Claude API (on the Claude Platform) is the direct route for software. It supports tool use, so a model can request actions (see [tool use](/agents/tool-use/)).
 
 **Agent and coding products.**
 
-- **Claude Code** is an agentic coding tool. Anthropic's documentation says it runs in the terminal (the text window where you type commands, covered in chapter 10), in code editors, in a desktop app and in the browser.
-- **The Agent SDK** is a library, in Python and TypeScript, that gives your own program the same agent loop and tools that power Claude Code (see [the agent loop](/concepts/agents/the-agent-loop/) and [agentic harness](/concepts/agents/agentic-harness/)).
+- **Claude Code** is an agentic coding tool. Anthropic's documentation says it runs in the terminal (the text window where you type commands, covered in [terminal basics](/building/terminal-basics/)), in code editors, in a desktop app and in the browser.
+- **The Agent SDK** is a library, in Python and TypeScript, that gives your own program the same agent loop and tools that power Claude Code (see [the agent loop](/agents/the-agent-loop/) and [agentic harness](/agents/agentic-harness/)).
 - **Managed Agents** is a hosted option where Anthropic runs the agent loop for you in a managed sandbox, configured through the API.
 
 **MCP.** Anthropic created MCP. In December 2025 it announced that it was donating MCP to the Agentic AI Foundation, a new fund under the Linux Foundation, co-founded with Block and OpenAI. Anthropic says MCP stays a neutral, open standard.
@@ -59,7 +59,7 @@ Model availability differs by door. See [model access platforms](/map/model-acce
 
 ## Licence and openness
 
-Claude models are closed-weight: you cannot download them and can only use them through a service. See [open vs closed weights](/concepts/how-models-work/open-vs-closed-weights/).
+Claude models are closed-weight: you cannot download them and can only use them through a service. See [open vs closed weights](/under-the-hood/open-vs-closed-weights/).
 
 Use of the Agent SDK is governed by Anthropic's Commercial Terms of Service, according to its documentation, except where a component carries a different licence. MCP itself is an open standard.
 
@@ -67,7 +67,7 @@ Anthropic's deprecation page also states a commitment to preserve the weights of
 
 ## Data and compliance notes
 
-Terms differ between consumer plans and commercial products, and they change. Read the current pages and your own contract. See [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/) for the questions to ask.
+Terms differ between consumer plans and commercial products, and they change. Read the current pages and your own contract. See [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/) for the questions to ask.
 
 - **Commercial products (API, Team, Enterprise).** Anthropic's Commercial Terms say that Anthropic may not train models on Customer Content from the services, and that a Data Processing Addendum is incorporated by reference.
 - **Retention for the API.** Anthropic's privacy page says inputs and outputs are deleted from its backend within 30 days, with exceptions for longer-retention services, custom agreements such as zero data retention, policy enforcement and legal requirements. It states that content flagged for policy violations can be kept longer.
@@ -87,7 +87,7 @@ Terms differ between consumer plans and commercial products, and they change. Re
 - [Model tiers](/models/model-tiers/): how Fable, Opus, Sonnet and Haiku fit the general idea
 - [OpenAI](/models/openai/): the same snapshot for another major provider
 - [Data terms at a glance](/models/data-terms-at-a-glance/): comparing training and retention terms across providers
-- [MCP](/concepts/agents/mcp/): the standard Anthropic created
+- [MCP](/agents/mcp/): the standard Anthropic created
 - [Model access platforms](/map/model-access-platforms/): the three routes to reach a model
 
 ## The proper terms

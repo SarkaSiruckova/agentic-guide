@@ -9,7 +9,7 @@ sidebar:
 published: 2026-10-02
 ---
 
-With the models covered, the map moves to your own code: the glue that receives a request, calls a model and returns a result. This layer is where that code runs, and it is the practical home of [serverless functions](/concepts/running-things/serverless-functions/) and scheduled jobs.
+With the models covered, the map moves to your own code: the glue that receives a request, calls a model and returns a result. This layer is where that code runs, and it is the practical home of [serverless functions](/building/serverless-functions/) and scheduled jobs.
 
 **In one line:** app hosting is the layer that keeps your own code running on someone else's computers, so a website, an API or a scheduled agent job works without you leaving a laptop switched on.
 
@@ -45,10 +45,10 @@ There are four shapes of workload, and platforms differ in which ones they suit:
 
 - **Static sites and front ends.** Files that do not change per visitor, such as a documentation site or a dashboard's pages. They are the simplest to host and often very cheap. This guide is a static site.
 - **Back-end services.** Code that stays running and answers requests, such as an API that an assistant calls. Often packaged in a container (a sealed bundle of code plus everything it needs to run).
-- **Serverless functions.** Small pieces of code that start when called and stop when done. You do not manage any machine. See [serverless functions](/concepts/running-things/serverless-functions/).
-- **Scheduled jobs and workers.** Code that runs on a timer or picks tasks off a queue, such as "check for new filings every morning". See [triggers and scheduling](/concepts/running-things/triggers-and-scheduling/).
+- **Serverless functions.** Small pieces of code that start when called and stop when done. You do not manage any machine. See [serverless functions](/building/serverless-functions/).
+- **Scheduled jobs and workers.** Code that runs on a timer or picks tasks off a queue, such as "check for new filings every morning". See [triggers and scheduling](/building/triggers-and-scheduling/).
 
-Agent work stretches these. An [agent loop](/concepts/agents/the-agent-loop/) may call a model many times and wait on slow tools, so it can run for minutes. That is longer than some serverless limits allow, which is why time limits are a first-order question for agents.
+Agent work stretches these. An [agent loop](/agents/the-agent-loop/) may call a model many times and wait on slow tools, so it can run for minutes. That is longer than some serverless limits allow, which is why time limits are a first-order question for agents.
 
 ## Example providers (snapshot, as of October 2026)
 
@@ -76,7 +76,7 @@ This section describes things that change often. Check each provider's current d
 - **What shape is the workload?** A website and a few short functions suit a front-end platform. A long-running agent worker suits an app platform or a container service.
 - **How long can a job run?** Check the maximum duration for your plan, and what happens at the limit (the job is cut off). For long agent runs, look for background workers, queues or jobs rather than a request-bound function.
 - **Does it deploy from git?** You want a push to deploy, with a preview first and an easy way back to the previous version.
-- **Where do secrets go?** The platform should store [environment variables and secrets](/concepts/running-things/environment-variables-and-secrets/) separately from code, and let you set them per environment (preview versus production).
+- **Where do secrets go?** The platform should store [environment variables and secrets](/building/environment-variables-and-secrets/) separately from code, and let you set them per environment (preview versus production).
 - **Logs.** Can you see what a failed run did, for how long are logs kept, and who can read them? Logs may contain personal data.
 - **Who can reach the dashboard?** Whoever can edit settings can often read secrets or redeploy code. Use single sign-on and multi-factor sign-in where offered, and keep the admin list short.
 - **Region and data location.** Choose a region close to your data and inside the jurisdiction you need. Some platforms let you pick; some default to the US.
@@ -106,9 +106,9 @@ Sample Ventures wants a small internal assistant that answers questions about th
 
 ## Related
 
-- [Serverless functions](/concepts/running-things/serverless-functions/): code that runs only when called
-- [Environment variables and secrets](/concepts/running-things/environment-variables-and-secrets/): how to keep keys out of your code
-- [Triggers and scheduling](/concepts/running-things/triggers-and-scheduling/): starting jobs on a timer or an event
+- [Serverless functions](/building/serverless-functions/): code that runs only when called
+- [Environment variables and secrets](/building/environment-variables-and-secrets/): how to keep keys out of your code
+- [Triggers and scheduling](/building/triggers-and-scheduling/): starting jobs on a timer or an event
 - [Auth and secrets](/map/auth-and-secrets/): the wider layer for sign-ins and key storage
 - [Compute and cloud](/map/compute-and-cloud/): the machines underneath these platforms
 

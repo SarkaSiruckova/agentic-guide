@@ -3,14 +3,14 @@ title: Comms channels
 description: Talking to agents through chat apps and email.
 tags: [channels]
 snapshot: true
-lastReviewed: 2026-10-05
+lastReviewed: 2026-10-06
 sidebar:
   order: 0
   label: Channels overview
 published: 2026-10-02
 ---
 
-With a first agent built and tested, the last step is letting people reach it without opening a new tool. This chapter covers how to connect an agent or context layer to the apps people already use, both to ask questions and to add information.
+An agent is only useful if people can reach it. Once you have built one (Part 4 of the guide ends with building a first agent), the last elective covers how to connect an agent or context layer to the chat apps and email people already use, both to ask questions and to add information.
 
 Platform rules change often, so every channel page is a snapshot as of October 2026. The two pages that stay true whatever the platform are the first and the last.
 

@@ -31,7 +31,7 @@ It also matters because Google has several "front doors" to the same family of m
 | Flash | Google's pages describe its Flash models as built for complex enterprise workflows |
 | Flash-Lite | A lighter tier; Google says its lighter variants prioritise cost efficiency and speed for high-volume use |
 
-Alongside these, Google lists specialised models for live voice conversation, text to speech, speech to text, image generation, video generation (Veo), music (Lyria), embeddings (see [embeddings](/concepts/how-models-work/embeddings/)) and robotics. Which generations are current changes often, so check the model list on Google's site rather than this page.
+Alongside these, Google lists specialised models for live voice conversation, text to speech, speech to text, image generation, video generation (Veo), music (Lyria), embeddings (see [embeddings](/data/embeddings/)) and robotics. Which generations are current changes often, so check the model list on Google's site rather than this page.
 
 **Gemma (open weights).** Gemma is a separate family of smaller models whose weights Google publishes for download. Google's documentation lists sizes from small ones aimed at phones and laptops up to larger ones for servers. Gemma is not the same thing as Gemini: it is a different, smaller family built for people who want to run a model themselves.
 
@@ -42,7 +42,7 @@ Alongside these, Google lists specialised models for live voice conversation, te
 - **Gemini API.** The route for developers, with a web tool called Google AI Studio for trying prompts and creating API keys. Official software kits exist for Python, JavaScript, Java and Go.
 - **Gemini Enterprise Agent Platform.** Google Cloud's enterprise platform for building and running agents. Google's own page says it was formerly called Vertex AI. It includes a catalogue of 200+ Google and third-party models (see [model access platforms](/map/model-access-platforms/)).
 - **Agent Development Kit (ADK).** Google's open-source framework for building agents, in Python, TypeScript, Go, Java and Kotlin. Its documentation says it works with Gemini, Claude, OpenAI models and locally run models, and agents can run on your own infrastructure or on Google Cloud. See [agent frameworks](/map/agent-frameworks/).
-- **Antigravity.** Google describes it as its agentic development platform, with a desktop app, a terminal tool (one you run by typing commands in a text window, covered in chapter 10), an SDK and an IDE (a code editor). Google also maintains an open-source terminal agent called Gemini CLI. Google has been reorganising its coding-agent products, so check which one is current before choosing.
+- **Antigravity.** Google describes it as its agentic development platform, with a desktop app, a terminal tool (one you run by typing commands in a text window, covered in [terminal basics](/building/terminal-basics/)), an SDK and an IDE (a code editor). Google also maintains an open-source terminal agent called Gemini CLI. Google has been reorganising its coding-agent products, so check which one is current before choosing.
 
 ## How to reach it
 
@@ -72,7 +72,7 @@ Gemini is **closed-weight**: you can only use it through a service. Gemma is **o
 - Google's Gemma pages state that the newest generation is released under the **Apache 2.0** licence, a standard permissive licence.
 - Earlier Gemma generations use Google's own **Gemma Terms of Use**. Those let you use, modify and distribute the models, but require you to pass on the use restrictions, include a copy of the terms, mark modified files, and follow a Prohibited Use Policy.
 
-So the answer to "can we use Gemma commercially?" depends on which generation you download. Read the licence that ships with that exact download. For the wider picture, see [open vs closed weights](/concepts/how-models-work/open-vs-closed-weights/).
+So the answer to "can we use Gemma commercially?" depends on which generation you download. Read the licence that ships with that exact download. For the wider picture, see [open vs closed weights](/under-the-hood/open-vs-closed-weights/).
 
 ## Data and compliance notes
 
@@ -84,7 +84,7 @@ Google's own pages show clearly different terms for each route. These are summar
 - **Workspace.** Google's Workspace privacy page says content is not human reviewed or used to train generative AI models outside your domain without permission.
 - **Gemini Enterprise Agent Platform.** Google's cloud documentation says Google will not use your data to train or fine-tune models without your prior permission or instruction. It describes default in-memory caching for 24 hours, abuse-monitoring logging (with exceptions available for zero data retention), and some features, such as grounding with Google Search, that retain prompts for 30 days. Its practices sit under the Cloud Data Processing Addendum, with project-level data residency controls.
 
-The practical lesson: a free API key and a Workspace account can sit at opposite ends of the privacy range. See [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/).
+The practical lesson: a free API key and a Workspace account can sit at opposite ends of the privacy range. See [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/).
 
 ## Things to watch
 

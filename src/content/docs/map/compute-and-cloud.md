@@ -29,7 +29,7 @@ Without understanding it, the questions a client or regulator may ask ("where do
 
 Chips built only for AI maths are called **accelerators**. Some are GPUs, and some are custom designs, such as Google's TPUs (tensor processing units) and Amazon's Trainium chips. They all do the same broad job: run the heavy number-crunching faster and for less energy than a general chip could.
 
-**Two jobs, one kind of chip.** Building a model (training) needs thousands of these chips working together for weeks. Using a model to answer a question is called [inference](/concepts/how-models-work/inference/), and needs far less per question, but it happens millions of times. A small firm only ever pays, directly or indirectly, for inference.
+**Two jobs, one kind of chip.** Building a model (training) needs thousands of these chips working together for weeks. Using a model to answer a question is called [inference](/under-the-hood/inference/), and needs far less per question, but it happens millions of times. A small firm only ever pays, directly or indirectly, for inference.
 
 **What "the cloud" means.** The cloud is other people's computers, rented by the hour over the internet. Instead of buying a server, you ask a provider for some computing power and pay for the time you use. The provider owns the data centres, the power, the cooling and the chips.
 
@@ -51,7 +51,7 @@ flowchart TD
   GPU --> M["Model runs and answers"]
 ```
 
-**Whose law applies.** Where the data sits is one question. Which company holds it is another. A cloud provider is a company, and it is subject to the laws of the country where it is based. For example, US law (the CLOUD Act of 2018) lets US authorities require US-based providers to hand over data they control, even if it is stored abroad. Providers can challenge requests, and the UK and US have a separate agreement covering some cross-border requests. This is a normal factor in vendor assessment, not a reason for alarm. It is the reason a data processing agreement and a choice of region both matter (see [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/)).
+**Whose law applies.** Where the data sits is one question. Which company holds it is another. A cloud provider is a company, and it is subject to the laws of the country where it is based. For example, US law (the CLOUD Act of 2018) lets US authorities require US-based providers to hand over data they control, even if it is stored abroad. Providers can challenge requests, and the UK and US have a separate agreement covering some cross-border requests. This is a normal factor in vendor assessment, not a reason for alarm. It is the reason a data processing agreement and a choice of region both matter (see [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/)).
 
 ## Example providers (snapshot, as of October 2026)
 
@@ -99,8 +99,8 @@ A partner later asks, "Could Acme Payments' pitch deck leave the UK?" She can an
 
 - [Model access platforms](/map/model-access-platforms/): how a program reaches a model without owning any chips
 - [Open-model hosting](/map/open-model-hosting/): what changes if you run a model yourself on rented chips
-- [Inference](/concepts/how-models-work/inference/): the work these chips do when a model answers
-- [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/): the legal side of where data goes
+- [Inference](/under-the-hood/inference/): the work these chips do when a model answers
+- [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/): the legal side of where data goes
 - [App hosting](/map/app-hosting/): the next layer up, where your own software runs on the cloud
 
 ## The proper terms

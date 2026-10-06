@@ -52,7 +52,7 @@ flowchart TD
 - **Qwen Community License.** The card for another recent model states the Qwen Community License. Its text, as checked, allows broad commercial use, asks for the model name to be shown in very large products (over 100 million monthly users or US$20 million monthly revenue), and requires a separate commercial licence to resell the model as a service or to build standalone AI coding or office assistant products. Internal use is allowed.
 - **API only.** The top tier is documented as a Model Studio API product.
 
-Always open the licence file for the exact model. See [open vs closed weights](/concepts/how-models-work/open-vs-closed-weights/).
+Always open the licence file for the exact model. See [open vs closed weights](/under-the-hood/open-vs-closed-weights/).
 
 ## Data and compliance notes
 
@@ -60,7 +60,7 @@ Always open the licence file for the exact model. See [open vs closed weights](/
 - **Qwen consumer app.** The consumer app's data location and retention terms were not verified for this page. Read its privacy policy directly.
 - **Open weights.** Running the weights on your own infrastructure means requests never reach Alibaba. A third-party host applies its own terms.
 
-See [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/).
+See [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/).
 
 ## Things to watch
 

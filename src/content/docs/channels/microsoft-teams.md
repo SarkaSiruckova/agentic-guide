@@ -27,7 +27,7 @@ This page is general information as of October 2026. Microsoft renames and resha
 
 Three terms first. A **tenant** is your organisation's own Microsoft 365 space. A **Teams app** is a package that adds something to Teams. A **bot** (Microsoft now often says **agent**) is the part of an app that can send and receive chat messages.
 
-When someone writes to the bot, Teams does not hand the text to your laptop. It sends a small message called an **activity** over HTTPS to an address you registered, called the **messaging endpoint**. Your code receives the activity, runs the [agent loop](/concepts/agents/the-agent-loop/), and sends a reply back through Teams.
+When someone writes to the bot, Teams does not hand the text to your laptop. It sends a small message called an **activity** over HTTPS to an address you registered, called the **messaging endpoint**. Your code receives the activity, runs the [agent loop](/agents/the-agent-loop/), and sends a reply back through Teams.
 
 ```mermaid
 flowchart TD
@@ -43,7 +43,7 @@ flowchart TD
   B --> G["Answer appears in chat"]
 ```
 
-The endpoint has to be reachable from the internet, so it usually lives on a [serverless function](/concepts/running-things/serverless-functions/) or a small hosted app. Teams does not call a laptop behind a firewall.
+The endpoint has to be reachable from the internet, so it usually lives on a [serverless function](/building/serverless-functions/) or a small hosted app. Teams does not call a laptop behind a firewall.
 
 ### Where the bot can live
 
@@ -61,14 +61,14 @@ Agents can take many seconds. Microsoft documents streaming for agents, with sho
 
 ### Approval buttons
 
-Teams can show an **Adaptive Card**, which is a message with a layout and buttons that the bot defines. It suits a [human in the loop](/concepts/agents/human-in-the-loop/) step: the card shows the exact note the agent wants to save, with Approve and Cancel buttons.
+Teams can show an **Adaptive Card**, which is a message with a layout and buttons that the bot defines. It suits a [human in the loop](/agents/human-in-the-loop/) step: the card shows the exact note the agent wants to save, with Approve and Cancel buttons.
 
 ## What you need
 
 - **A Microsoft 365 tenant** with Teams, and an admin willing to allow the app.
 - **A bot registration.** Microsoft's documentation describes creating an Azure Bot resource, which gives the bot an identity and points Teams at your messaging endpoint. Microsoft's own pages use both "Azure Bot" and "Azure AI Bot Service" for it, so expect naming to drift.
 - **A Microsoft Entra app identity.** Entra is Microsoft's sign-in and identity system. The bot has its own identity there, with an app ID and either a secret or a managed identity. See [auth and secrets](/map/auth-and-secrets/). Microsoft's page says new multi-tenant bot registrations are deprecated and recommends single-tenant or a user-assigned managed identity.
-- **Credentials stored safely.** Any secret goes in [environment variables and secrets](/concepts/running-things/environment-variables-and-secrets/), never in the app package.
+- **Credentials stored safely.** Any secret goes in [environment variables and secrets](/building/environment-variables-and-secrets/), never in the app package.
 - **An app package.** A zip file with the manifest and icons. Microsoft's Developer Portal and Microsoft 365 Agents Toolkit (formerly Teams Toolkit) help create it.
 - **A public HTTPS endpoint** to receive activities.
 - **Someone who can code.** Pro-code routes need a developer. Low-code routes are described below.
@@ -94,7 +94,7 @@ Admins can also use **app permission policies** to limit which users can use whi
 
 **Message formats.** Bots can send rich text, pictures and Adaptive Cards. Users can send text and pictures to a bot. Microsoft states a message size limit of roughly 100 KB and advises staying under 80 KB. Microsoft's card reference lists limits on card version and number of buttons, and says Adaptive Cards in Teams cannot upload files.
 
-**Rate limits.** Teams limits how fast a bot can post, per conversation and per app. If you go over, Teams returns an HTTP 429 error and your code should wait and retry. See [rate limits, retries and failures](/concepts/running-things/rate-limits-retries-and-failures/). A chatty agent that posts many progress messages can hit these limits, so send fewer, better messages.
+**Rate limits.** Teams limits how fast a bot can post, per conversation and per app. If you go over, Teams returns an HTTP 429 error and your code should wait and retry. See [rate limits, retries and failures](/running/rate-limits-retries-and-failures/). A chatty agent that posts many progress messages can hit these limits, so send fewer, better messages.
 
 **Private channels.** Microsoft's docs say agents cannot post messages or Adaptive Cards in private channel conversations.
 
@@ -104,13 +104,13 @@ Admins can also use **app permission policies** to limit which users can use whi
 
 ## Security and compliance
 
-**Who can message it.** Anyone who can find the app and has it available in Teams. Use app permission policies to limit it to named people or groups. In a one to one chat, the activity carries the sender's identity from Entra, so your code can check it against an allowed list. See [permissions and access control](/concepts/data/permissions-and-access-control/).
+**Who can message it.** Anyone who can find the app and has it available in Teams. Use app permission policies to limit it to named people or groups. In a one to one chat, the activity carries the sender's identity from Entra, so your code can check it against an allowed list. See [permissions and access control](/data/permissions-and-access-control/).
 
 **Verifying the sender.** Requests to your endpoint should be checked as really coming from Teams. The exact mechanism is not covered here, but the Microsoft SDKs are built to handle it, so use them rather than writing your own checks. An endpoint that accepts unchecked calls lets anyone pretend to be Teams.
 
 **Channels versus private chats.** A channel reply is seen by everyone in the channel, including any answer built from private data. Keep the agent to one to one chats until you have mapped who can see what. The agent should apply the asker's own access rights, not its own.
 
-**Less is more with RSC.** Reading all messages in a channel means the agent ingests everything said there, including text from guests or others. That makes [prompt injection](/concepts/security/prompt-injection/) easier. Stay with @mention only unless you have a clear reason.
+**Less is more with RSC.** Reading all messages in a channel means the agent ingests everything said there, including text from guests or others. That makes [prompt injection](/running/prompt-injection/) easier. Stay with @mention only unless you have a clear reason.
 
 **Records.** Microsoft's Purview documentation says retention policies cover Teams chat and channel messages, including card content, and that the data is kept in hidden mailbox folders. Purview Audit records many Teams activities, and the default audit retention for standard audit is stated as 180 days. The retention page does not single out bot messages, and this guide has not verified how they are treated. Treat a bot's messages as chat messages and ask your Microsoft 365 admin and compliance lead to confirm how they are retained and searched for eDiscovery.
 
@@ -140,9 +140,9 @@ Sample Ventures wants associates to ask the agent about companies in the pipelin
 
 - [How channels connect](/channels/how-channels-connect/): the general pattern behind every chat channel
 - [Querying vs adding safely](/channels/querying-vs-adding-safely/): letting colleagues ask and add without opening risks
-- [Human in the loop](/concepts/agents/human-in-the-loop/): approval cards before an agent acts
+- [Human in the loop](/agents/human-in-the-loop/): approval cards before an agent acts
 - [Auth and secrets](/map/auth-and-secrets/): Entra identities and where credentials live
-- [Connecting business tools through MCP](/setup/connecting-business-tools-through-mcp/): how the agent reaches your data
+- [Connecting business tools through MCP](/building/connecting-business-tools-through-mcp/): how the agent reaches your data
 
 ## The proper terms
 

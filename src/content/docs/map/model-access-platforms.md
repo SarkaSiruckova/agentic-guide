@@ -25,7 +25,7 @@ Without a plan, firms end up with several accounts, several invoices and several
 
 ## How it works
 
-A request to a model is an ordinary web request: your program sends the prompt and an **API key** (a secret that proves who you are), and the service replies with the model's answer. See [APIs, OAuth and API keys](/concepts/data/apis-oauth-and-api-keys/) for how keys work.
+A request to a model is an ordinary web request: your program sends the prompt and an **API key** (a secret that proves who you are), and the service replies with the model's answer. See [APIs, OAuth and API keys](/agents/apis-oauth-and-api-keys/) for how keys work.
 
 There are three routes:
 
@@ -46,13 +46,13 @@ flowchart TD
   G --> L3["Other hosts"]
 ```
 
-**What a gateway does.** Many gateways accept requests in one common format (often the format popularised by OpenAI's API) and translate them for each provider. That means switching models can be a one-line change rather than a rewrite. Gateways can also add **fallbacks** (if one provider fails, try another), spending limits per person or project, and one place to see usage. This links to [model routing](/concepts/cost/model-routing/), where requests are sent to cheaper or stronger models depending on the task.
+**What a gateway does.** Many gateways accept requests in one common format (often the format popularised by OpenAI's API) and translate them for each provider. That means switching models can be a one-line change rather than a rewrite. Gateways can also add **fallbacks** (if one provider fails, try another), spending limits per person or project, and one place to see usage. This links to [model routing](/running/model-routing/), where requests are sent to cheaper or stronger models depending on the task.
 
 **What changes with each door.**
 
 - **Features.** A lab's own API tends to get new features first. Other doors may lag on the newest ones, or offer them in a slightly different form. Check that the specific feature you need exists on the door you choose.
-- **Limits.** Each door has its own [rate limits](/concepts/running-things/rate-limits-retries-and-failures/), meaning caps on how many requests or how much text you can send per minute. The limits you have with a lab are not the limits you get through a cloud or a gateway.
-- **Contracts and data terms.** Each door has its own terms on logging, retention, and training on your data. Reading them is part of the job (see [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/)).
+- **Limits.** Each door has its own [rate limits](/running/rate-limits-retries-and-failures/), meaning caps on how many requests or how much text you can send per minute. The limits you have with a lab are not the limits you get through a cloud or a gateway.
+- **Contracts and data terms.** Each door has its own terms on logging, retention, and training on your data. Reading them is part of the job (see [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/)).
 - **One more hop.** A gateway adds another company or another piece of software between you and the model. That is one more party that sees your text, and one more thing that can fail.
 
 ## Example providers (snapshot, as of October 2026)
@@ -78,7 +78,7 @@ There is no ranking here. The right door depends on what you already have and wh
 - **Where is data processed, and what is logged?** Ask for the region of processing, how long prompts are kept, and whether they are used to train. A gateway adds its own answers to these questions on top of the model provider's.
 - **Who do we need to trust?** With a hosted gateway, text passes through the gateway and then the model provider. With a self-run one, it passes through your own server.
 - **How hard is it to switch?** Using a common request format and keeping model names in settings (not scattered through code) keeps the door replaceable.
-- **Who gets the invoice, and who controls keys?** One bill is convenient, but a single shared key for everything is a risk. Give each app or person its own key where you can (see [least privilege](/concepts/security/least-privilege/)).
+- **Who gets the invoice, and who controls keys?** One bill is convenient, but a single shared key for everything is a risk. Give each app or person its own key where you can (see [least privilege](/running/least-privilege/)).
 
 Lock-in here is mostly about convenience: the more you use one platform's extra features (its agents, its storage, its guardrails), the more work it is to leave. Plain "send text, get text" calls move easily.
 
@@ -96,7 +96,7 @@ The firm never needed to decide on chips or hosting. It chose a door, and wrote 
 
 ## Costs and limits
 
-- **You usually pay by usage.** Charges follow how much text goes in and out, so costs grow with use (see [how AI pricing works](/concepts/cost/how-ai-pricing-works/)). Gateways may add their own fee or margin on top of the provider's charges; check how each one charges.
+- **You usually pay by usage.** Charges follow how much text goes in and out, so costs grow with use (see [how AI pricing works](/running/how-api-pricing-works/)). Gateways may add their own fee or margin on top of the provider's charges; check how each one charges.
 - **Spending limits are not automatic.** Set budgets and alerts early. A looping agent can use a surprising amount.
 - **Rate limits differ by door.** A limit that was fine in testing can block a busy workflow in production. Build in retries and backoff.
 - **Feature lag.** The newest capabilities may arrive on a cloud or gateway later than on the maker's own API.
@@ -105,10 +105,10 @@ The firm never needed to decide on chips or hosting. It chose a door, and wrote 
 
 ## Related
 
-- [Model routing](/concepts/cost/model-routing/): sending each request to the model that suits it, which gateways often support
-- [Rate limits, retries and failures](/concepts/running-things/rate-limits-retries-and-failures/): what to expect when a door says "too many requests"
-- [APIs, OAuth and API keys](/concepts/data/apis-oauth-and-api-keys/): how your program proves who it is
-- [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/): the contract questions behind every door
+- [Model routing](/running/model-routing/): sending each request to the model that suits it, which gateways often support
+- [Rate limits, retries and failures](/running/rate-limits-retries-and-failures/): what to expect when a door says "too many requests"
+- [APIs, OAuth and API keys](/agents/apis-oauth-and-api-keys/): how your program proves who it is
+- [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/): the contract questions behind every door
 - [Compute and cloud](/map/compute-and-cloud/): the chips and regions underneath all three routes
 
 ## The proper terms

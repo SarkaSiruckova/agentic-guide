@@ -1,29 +1,26 @@
 ---
 title: Agentic AI Field Guide
-description: "A plain-language guide to agentic AI, from the first idea to building real agents."
+description: "A plain-language guide to AI and agents, from the first idea to building your own."
 template: splash
 hero:
-  tagline: Agentic AI in plain language, from the very first idea to building agents that work on real data.
+  tagline: AI and agents in plain language, from the very first idea to building agents that work on real data.
   actions:
-    - text: Start with chapter 1
-      link: /start-here/glossary/
+    - text: Start here
+      link: /start/start-here/
       icon: right-arrow
 ---
 
 import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 
-This guide is for curious beginners. Every idea comes in plain words first, then its proper name, so the vocabulary builds as you go. Read the chapters in order and each one builds on the last. Or jump in anywhere: every page points back to what it relies on.
+This guide is for anyone curious about AI. Every idea comes in plain words first, then its proper name, so the vocabulary builds as you go. The parts run from using AI well to building your own agents. Start at the beginning, or pick the reading path that fits you on the first page.
 
 <CardGrid>
-  <LinkCard title="1. The basics" description="Vocabulary, agents vs automations, what a model is." href="/start-here/glossary/" />
-  <LinkCard title="2. How models work" description="Training, inference, embeddings, reasoning." href="/concepts/how-models-work/pre-training-and-post-training/" />
-  <LinkCard title="3. How agents work" description="Tools, the agent loop, harnesses, memory, MCP." href="/concepts/talking-to-models/structured-outputs/" />
-  <LinkCard title="4. Data and the context layer" description="Databases, RAG, permissions, context layers." href="/concepts/data/structured-vs-unstructured-data/" />
-  <LinkCard title="5. Running agents for real" description="Hosting, scheduling, failures, evals." href="/concepts/running-things/serverless-functions/" />
-  <LinkCard title="6. Security and compliance" description="Prompt injection, least privilege, GDPR." href="/concepts/security/prompt-injection/" />
-  <LinkCard title="7. Cost" description="Pricing, caching, routing, budgeting." href="/concepts/cost/how-ai-pricing-works/" />
-  <LinkCard title="8. The map" description="How the whole industry stack fits together." href="/map/" />
-  <LinkCard title="9. Model landscape" description="The main model makers, compared." href="/models/" />
-  <LinkCard title="10. Setup and practice" description="Hands-on tools, from terminal to first agent." href="/setup/" />
-  <LinkCard title="11. Comms channels" description="Talking to agents in Teams, Slack and more." href="/channels/" />
+  <LinkCard title="1. Start here" description="What AI is, what it can do, and which to use." href="/start/start-here/" />
+  <LinkCard title="2. Using AI well" description="The Claude apps, prompting, Projects and settings." href="/using-ai/claude-apps/" />
+  <LinkCard title="3. How agents work" description="Tools, connectors, skills, safety and real examples." href="/agents/tool-use/" />
+  <LinkCard title="4. Building your own" description="Claude Code, hosting, scheduling, a first agent." href="/building/claude-code-and-the-api/" />
+  <LinkCard title="5. Data and the context layer" description="Databases, search, RAG and permissions." href="/data/structured-vs-unstructured-data/" />
+  <LinkCard title="6. Running it for real" description="Failures, testing, security, compliance and cost." href="/running/rate-limits-retries-and-failures/" />
+  <LinkCard title="7. Under the hood" description="Optional deep dives into how models work." href="/under-the-hood/pre-training-and-post-training/" />
+  <LinkCard title="Electives and reference" description="The industry map, model makers, chat channels, glossary." href="/map/" />
 </CardGrid>

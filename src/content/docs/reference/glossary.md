@@ -1,0 +1,499 @@
+---
+title: Glossary
+description: Every term in one line, linked to its full page.
+published: 2026-10-02
+sidebar:
+  order: 1
+---
+
+This is the reference for the whole guide: every term in one line, in alphabetical order, each linked to its full page. Use it any time a word stops you, and click through for the full explanation.
+
+- [429](/running/rate-limits-retries-and-failures/): the HTTP status code meaning too many requests
+- [Absolute path](/building/terminal-basics/): a path that starts from the top, working from anywhere
+- [Abuse monitoring](/models/data-terms-at-a-glance/): checks a provider runs to catch banned uses
+- [Accelerator](/map/compute-and-cloud/): a chip built to speed up AI maths
+- [Access control](/data/permissions-and-access-control/): the system that enforces who may see and do what
+- [Access token](/agents/apis-oauth-and-api-keys/): a short-lived credential an app uses to call an API
+- [Adapter](/data/fine-tuning-vs-prompting-vs-rag/): a small trained add-on layer that changes a frozen model's behaviour
+- [Adaptive Card](/channels/microsoft-teams/): a message with a set layout, inputs and buttons
+- [Adequacy decision](/models/deepseek/): an official finding that a country's data protection is equivalent
+- [Admin consent](/map/auth-and-secrets/): an administrator approving an app's permissions for the whole organisation
+- [Agent](/start/chat-agent-workflow-automation/): a system where the model itself chooses each next step to reach a goal
+- [Agent framework](/agents/agentic-harness/): a code toolkit for building your own agent harness
+- [Agent loop](/agents/the-agent-loop/): the repeating cycle of deciding, acting and observing until the goal is met
+- [Agent SDK](/building/claude-code-and-the-api/): a library that packages Claude Code's agent for your own software
+- [Agent Skills specification](/agents/skills-in-claude/): the open format skills follow, so they work across tools
+- [Agentic harness](/agents/agentic-harness/): the software and settings around a model that make it an agent
+- [Agents SDK](/models/openai/): OpenAI's library for building multi-agent programs
+- [AGENTS.md](/agents/skills-and-instruction-files/): an open-format instruction file read by many coding assistants
+- [Aggregator](/map/model-access-platforms/): a hosted gateway that sells access to many providers on one account
+- [AI Agent node](/building/n8n/): an n8n step that lets a model choose and call tools
+- [AI app builder](/building/cursor-and-app-builders/): a website that generates and hosts a web app from a description
+- [AI assistant](/start/which-ai-should-i-use/): a chat app built on a language model, such as ChatGPT or Claude
+- [AI code editor](/building/cursor-and-app-builders/): a code editor with an AI assistant built in
+- [Allow, ask and deny rules](/building/claude-code-in-depth/): standing permissions for specific tools or commands
+- [Allowlist](/running/data-exfiltration-through-tools/): a short list of approved destinations or actions, with everything else blocked
+- [Apache 2.0](/models/google/): a permissive open licence with few conditions on reuse
+- [API](/agents/apis-oauth-and-api-keys/): a defined way for software to request data or actions from a system
+- [API billing](/building/claude-code-and-the-api/): pay-as-you-go charges based on tokens used
+- [API key](/agents/apis-oauth-and-api-keys/): a secret string that identifies the calling program
+- [App hosting](/map/app-hosting/): a service that runs your code on its computers and keeps it available
+- [App registration](/map/auth-and-secrets/): a record telling an identity provider that an application exists
+- [Append-only](/running/audit-trails/): a record where entries can be added but not changed or removed
+- [Application permission](/map/auth-and-secrets/): access that lets an app act on its own, without a person
+- [Artifact](/using-ai/claude-apps/): a document or small app Claude builds in a side panel
+- [Audit event](/running/audit-trails/): one entry recording who did what, to what, when and the result
+- [Audit log](/data/permissions-and-access-control/): a record of who asked for what and what happened
+- [Audit trail](/running/audit-trails/): a lasting protected record of actions kept for accountability
+- [Authentication](/agents/apis-oauth-and-api-keys/): proving who a person or program is
+- [Authorisation](/agents/apis-oauth-and-api-keys/): deciding what an identified person or program may do
+- [Auto memory](/building/claude-code-in-depth/): notes Claude Code writes itself between sessions
+- [Automation](/start/chat-agent-workflow-automation/): a trigger joined to a workflow, so it runs without anyone starting it
+- [Availability zone](/map/compute-and-cloud/): a separate data centre building or group within a region
+- [Base model](/under-the-hood/pre-training-and-post-training/): a pre-trained model that continues text but does not reliably follow instructions
+- [Batch processing](/running/prompt-caching-and-batch-processing/): submitting many non-urgent requests together for a lower price
+- [Benchmark](/under-the-hood/benchmarks/): a public standard test used to compare models in general
+- [Blast radius](/running/least-privilege/): how much damage one mistake or compromise can cause
+- [Block Kit](/channels/slack/): Slack's format for rich messages with buttons and layouts
+- [Bot user](/channels/slack/): an account-like identity an app uses to post in Slack
+- [BotFather](/channels/telegram/): Telegram's official bot for creating and managing bots
+- [Branch](/building/git-and-github/): a separate line of work within a repository
+- [Business plan](/start/which-ai-should-i-use/): a paid plan for organisations, usually with stricter data terms
+- [Cache](/data/keeping-data-fresh/): a short-lived copy kept to avoid asking the source again
+- [Cascade](/running/model-routing/): trying a cheap model first and escalating if a check fails
+- [Chain of thought](/using-ai/reasoning-models/): the step-by-step working a model writes before its answer; also the prompting trick of asking a model to show its steps ([prompting](/using-ai/prompt-engineering/))
+- [Change notification](/map/connectors-and-integrations/): Microsoft's name for webhook alerts about changed data
+- [Channel](/map/interfaces/): a messaging service where an agent can send and receive messages
+- [Channel bot](/channels/how-channels-connect/): software registered with a chat platform to receive and send messages
+- [Chat](/start/chat-agent-workflow-automation/): a back-and-forth with a model where you decide each next step
+- [Chat search](/using-ai/projects-and-memory/): letting Claude look through earlier conversations on request
+- [ChatGPT](/models/openai/): OpenAI's consumer and business chat app
+- [Checkpoint](/building/claude-code-in-depth/): a snapshot of your files taken before each prompt
+- [Chunk](/data/rag-and-chunking/): a short piece of a document, stored and retrieved on its own
+- [Chunking](/data/rag-and-chunking/): splitting documents into pieces so retrieval can find the right part
+- [Citation](/start/hallucination-and-grounding/): a pointer from a claim back to the source it came from
+- [Classifier](/map/specialised-models/): a model that sorts an input into one of a fixed set of labels
+- [Claude API](/building/claude-code-and-the-api/): the interface programs use to send requests to Claude
+- [Claude Code](/building/claude-code-and-the-api/): Anthropic's coding agent that works in a folder on your computer
+- [Claude Console](/building/claude-code-and-the-api/): the web account where API keys and billing are managed
+- [Claude in Chrome](/using-ai/claude-apps/): a browser extension that lets Claude act in web pages
+- [CLAUDE.md](/building/claude-code-in-depth/): a file of standing instructions Claude Code reads each session
+- [Clone](/building/git-and-github/): making a first local copy of a remote repository
+- [Closed-weight model](/under-the-hood/open-vs-closed-weights/): a model usable only through its provider's service
+- [Cloud](/map/compute-and-cloud/): computing power rented over the internet instead of owned
+- [CLOUD Act](/map/compute-and-cloud/): a US law letting authorities request data from US providers held abroad
+- [Cloud API](/channels/whatsapp/): Meta-hosted interface for sending and receiving WhatsApp messages
+- [Cloud chat](/channels/telegram/): a Telegram chat stored on Telegram's servers, not end-to-end encrypted by default
+- [Code execution](/agents/skills-in-claude/): Claude's ability to run code in a sandbox, which skills need
+- [Codex](/models/openai/): OpenAI's coding agent
+- [Coding assistant](/map/interfaces/): an AI tool that reads and edits code for developers
+- [Cold start](/building/serverless-functions/): the extra delay when a function starts after being idle
+- [Command line (CLI)](/map/interfaces/): a text-only window where you type commands
+- [Commit](/building/git-and-github/): a saved snapshot of the project, with a message
+- [Community licence](/models/qwen-and-other-labs/): a custom licence that allows broad use but adds conditions
+- [Compaction](/building/claude-code-in-depth/): summarising a long conversation to free up context space
+- [Concurrency](/building/serverless-functions/): how many runs of a function happen at the same time
+- [Connector](/data/what-a-context-layer-is/): a connection that lets software read from, or write to, a source system
+- [Connectors directory](/agents/connectors-in-claude/): Anthropic's catalogue of ready-made connectors
+- [Consent screen](/agents/connectors-in-claude/): the page where a service shows what an app wants to do and asks you to approve
+- [Constrained decoding](/building/structured-outputs/): forcing the model's output to follow a schema as it writes
+- [Container](/map/app-hosting/): a sealed bundle of code and everything it needs to run
+- [Contamination](/under-the-hood/benchmarks/): test material leaking into a model's training data and inflating its score
+- [Context engineering](/data/context-engineering/): choosing and maintaining everything a model sees in its context window
+- [Context layer](/data/context-engineering/): the sources and logic that assemble the right information for each question
+- [Context management](/using-ai/not-burning-tokens/): the app summarising older messages so a long chat can continue
+- [Context window](/start/tokens-and-context-windows/): the maximum number of tokens a model can handle at once; also called context length
+- [Controller](/running/gdpr-data-retention-and-dpas/): the organisation that decides why and how personal data is used
+- [Cosine similarity](/data/embeddings/): a score for how closely two vectors point the same way
+- [Cost per task](/running/estimating-cost-per-task/): the full cost of one finished job, across all its calls
+- [Cowork](/building/claude-code-and-the-api/): Anthropic's agent mode for multi-step file and task work
+- [Credits](/running/how-api-pricing-works/): prepaid units that are drawn down as you use a service
+- [Cron](/building/triggers-and-scheduling/): a compact five-field notation for schedules
+- [Cross-encoder](/map/specialised-models/): a model that reads a question and a passage together to score them
+- [Current directory](/building/terminal-basics/): the folder the shell is working in right now
+- [Cursor rules](/building/cursor-and-app-builders/): standing instructions stored in a project's `.cursor/rules` folder
+- [Custom connector](/building/connecting-business-tools-through-mcp/): a remote MCP server you add to Claude yourself
+- [Custom instructions](/using-ai/system-prompts/): a user-added layer on top of a product's own system prompt
+- [Customer service window](/channels/whatsapp/): 24 hours after a user messages you, when free-form replies are allowed
+- [Cypher](/data/knowledge-graphs/): a query language for graph databases, used to find paths and patterns
+- [Data exfiltration](/running/data-exfiltration-through-tools/): sensitive data leaving the place it should stay
+- [Data minimisation](/running/gdpr-data-retention-and-dpas/): using only the personal data you actually need
+- [Data processing addendum](/models/mistral/): a contract schedule setting how a supplier handles your personal data
+- [Data processing agreement (DPA)](/running/gdpr-data-retention-and-dpas/): the contract setting how a vendor may handle your personal data
+- [Data processing region](/map/model-access-platforms/): the place where a request is actually run
+- [Data residency](/map/compute-and-cloud/): the country or area where data is stored
+- [Data retention](/running/gdpr-data-retention-and-dpas/): how long data is kept before deletion
+- [Database](/data/types-of-databases/): an organised store that software can search and update reliably
+- [Dead-letter queue](/running/rate-limits-retries-and-failures/): a holding list for failed items awaiting human review
+- [Decode](/under-the-hood/inference/): the stage where the model writes its reply one token at a time
+- [Dedicated deployment](/map/open-model-hosting/): model capacity reserved for you alone
+- [Deduplication](/data/entity-resolution/): finding and removing duplicate records for the same entity
+- [Delegated access](/agents/apis-oauth-and-api-keys/): acting with a user's own permissions
+- [Delegated permission](/map/auth-and-secrets/): access that lets an app act as a signed-in person
+- [Deny rule](/building/claude-code-in-depth/): a settings entry that blocks a tool or path outright
+- [Deployment Protection](/building/vercel/): Vercel's controls over who can open your deployment addresses
+- [Deprecation](/models/model-tiers/): a provider's notice that a model will be switched off
+- [Derivative model](/models/qwen-and-other-labs/): a model built by training further on another model's weights
+- [Desktop extension](/agents/connectors-in-claude/): a local connector that runs on your computer in the desktop app
+- [Developer console](/building/claude-code-and-the-api/): the web account where API keys and billing are managed
+- [Diff](/building/git-and-github/): a line-by-line view of what changed
+- [Direct prompt injection](/running/prompt-injection/): a user types instructions meant to override the agent's rules
+- [Distillation](/models/deepseek/): training a smaller model to copy a larger model's behaviour
+- [DKIM](/channels/email/): a signature showing a message came from a domain and was not altered
+- [DMARC](/channels/email/): a domain's rule for mail that fails SPF and DKIM checks
+- [Document database](/data/types-of-databases/): a database that stores flexible, JSON-like records instead of fixed tables (also called a document store)
+- [DPIA](/running/gdpr-data-retention-and-dpas/): a written risk review for higher-risk uses of personal data
+- [Draft-only step](/building/your-first-agent/): an action that prepares output without sending or filing it
+- [Durable execution](/map/agent-frameworks/): saving progress so a long job can resume after a failure
+- [Edge](/data/knowledge-graphs/): a labelled link between two nodes, such as "founded"
+- [eDiscovery](/channels/microsoft-teams/): searching and exporting stored messages for legal or regulatory needs
+- [Effort level](/using-ai/reasoning-models/): a setting for how much a model should think, from low to max
+- [Effort setting](/using-ai/reasoning-models/): a provider control for how much thinking a model should do
+- [Egress](/running/data-exfiltration-through-tools/): data or traffic leaving a system or network
+- [Embedding](/data/embeddings/): a list of numbers that represents the meaning of a piece of content
+- [Embedding model](/data/embeddings/): a model that turns content into embeddings, separate from a chat model
+- [Encoder](/using-ai/multimodal-models/): a component that turns an image or audio into numbers a model can read
+- [Entity](/data/entity-resolution/): a real-world thing your data describes, such as a company or person
+- [Entity resolution](/data/entity-resolution/): deciding which records refer to the same real-world entity
+- [Enum](/building/structured-outputs/): a fixed list of allowed values for a field
+- [Environment variable](/building/environment-variables-and-secrets/): a named value a program reads from where it runs
+- [Error workflow](/building/n8n/): a separate workflow that starts when another one fails
+- [Eval](/running/evals/): a repeatable test of an AI system against example cases
+- [Event](/data/keeping-data-fresh/): a message saying something changed in a system
+- [Exponential backoff](/running/rate-limits-retries-and-failures/): waiting longer after each failed attempt, roughly doubling each time
+- [Extended thinking](/using-ai/reasoning-models/): the setting that lets a model think before replying, as named in the Claude apps
+- [Extraction](/data/structured-vs-unstructured-data/): pulling structured fields out of free text
+- [Fair-code](/building/orchestration-tools/): source-visible software with licence limits on commercial use
+- [Faithfulness](/using-ai/reasoning-models/): how accurately shown reasoning reflects what actually produced the answer
+- [Fallback](/running/model-routing/): a backup model used when the first choice fails or is unavailable
+- [False merge](/data/entity-resolution/): wrongly joining records that describe different entities
+- [Few-shot prompting](/using-ai/prompt-engineering/): including a few examples in the prompt
+- [Fine-tuning](/data/fine-tuning-vs-prompting-vs-rag/): training an existing model further on your own examples
+- [Free tier](/start/free-vs-subscription-vs-api/): a no-cost plan with a small usage allowance
+- [Freshness](/data/keeping-data-fresh/): how closely a copy matches the current state of the source
+- [Frontmatter](/agents/skills-in-claude/): the header at the top of SKILL.md holding the name and description
+- [Full fine-tuning](/data/fine-tuning-vs-prompting-vs-rag/): updating all of a model's parameters during further training
+- [Function as a service (FaaS)](/building/serverless-functions/): a platform that runs your small functions on demand
+- [Function calling](/agents/tool-use/): another name for tool use, common in developer documentation
+- [Fuzzy matching](/data/entity-resolution/): matching text that is similar but not identical, such as typos
+- [Gateway](/running/model-routing/): a service giving one doorway to many models, often with routing built in
+- [Git](/building/git-and-github/): the tool on your computer that records and manages that history
+- [GitHub](/building/git-and-github/): a website that hosts copies of Git repositories
+- [Golden record](/data/entity-resolution/): the single trusted record kept for an entity
+- [GPT](/models/openai/): OpenAI's family of language models
+- [gpt-oss](/models/openai/): OpenAI's open-weight model pair
+- [GPU](/under-the-hood/inference/): a chip built for large amounts of parallel arithmetic, used to run models
+- [Graph database](/data/types-of-databases/): stores things and the links between them
+- [GraphRAG](/data/knowledge-graphs/): retrieval that uses a graph's links to choose which passages to fetch
+- [Grounding](/start/hallucination-and-grounding/): giving a model real source material to answer from, so its answers can be checked
+- [Guard model](/models/qwen-and-other-labs/): a small model that screens text for unsafe content
+- [Guardrail](/agents/agentic-harness/): a rule enforced by the harness, such as a limit or an approval step
+- [Hallucination](/start/hallucination-and-grounding/): a confident statement from a model that is false or invented
+- [Handoff](/map/agent-frameworks/): passing a task from one agent to another
+- [Harness engineering](/agents/agentic-harness/): designing and tuning the parts of a harness to improve reliability
+- [Hobby plan](/building/vercel/): Vercel's free tier for personal, non-commercial projects
+- [Home folder](/building/terminal-basics/): your personal folder, written as `~`
+- [Homebrew](/building/terminal-basics/): a package manager for macOS command-line tools and apps
+- [Hook](/building/claude-code-in-depth/): a command that runs automatically at a set moment
+- [Hosted inference](/map/open-model-hosting/): a company runs a model for you and you call it by API
+- [Hosted open model](/under-the-hood/open-vs-closed-weights/): an open model run for you by a third party
+- [Human preference arena](/under-the-hood/benchmarks/): a ranking built from people voting between anonymous model answers
+- [Human-in-the-loop](/agents/human-in-the-loop/): a person is built into the agent's process at chosen points
+- [Hybrid search](/data/rag-and-chunking/): combining keyword search and meaning search, then merging results
+- [ICO](/running/gdpr-data-retention-and-dpas/): the UK regulator for data protection
+- [IDE](/building/cursor-and-app-builders/): a code editor with extra tools for writing and running software
+- [Idempotency key](/running/rate-limits-retries-and-failures/): a unique label that lets a repeated action be recognised and skipped
+- [Idempotent](/building/triggers-and-scheduling/): safe to repeat, because doing it twice gives the same result as once
+- [Identity mapping](/channels/how-channels-connect/): matching a chat user to a real person in your systems
+- [Identity provider](/map/auth-and-secrets/): the service that holds accounts and verifies sign-ins
+- [IMAP](/channels/email/): a standard for reading mail from a server
+- [Incognito chat](/using-ai/projects-and-memory/): a chat saved to neither history nor memory
+- [Index](/data/rag-and-chunking/): the searchable store of chunks and their embeddings
+- [Indirect prompt injection](/running/prompt-injection/): instructions hidden in content the agent reads, such as an email or web page
+- [Inference](/under-the-hood/inference/): using a trained model to produce output from a prompt
+- [Inference server](/map/open-model-hosting/): software that loads a model and answers requests
+- [Inline keyboard](/channels/telegram/): buttons shown under a message that send a callback when pressed
+- [Input modality](/using-ai/multimodal-models/): a kind of material a model can take in
+- [Input tokens](/running/how-api-pricing-works/): the tokens you send to the model
+- [Instant Rollback](/building/vercel/): pointing the live domain back at an earlier deployment
+- [Instruction file](/agents/skills-and-instruction-files/): a text file the agent reads at the start of work
+- [Instruction tuning](/under-the-hood/pre-training-and-post-training/): training on example requests and good replies so the model follows instructions
+- [Integration](/map/connectors-and-integrations/): any working link between two systems, built by anyone
+- [Interface](/map/interfaces/): the surface a person uses to reach an agent
+- [Internal tool](/map/interfaces/): a small app built for one team's own work
+- [Jagged frontier](/start/what-ai-is-good-and-bad-at/): the uneven shape of AI ability, strong at some hard tasks and weak at some easy ones
+- [Jailbreak](/running/prompt-injection/): getting a model to break its own built-in safety rules
+- [Jitter](/running/rate-limits-retries-and-failures/): a small random addition to waits so clients do not retry together
+- [JSON](/data/structured-vs-unstructured-data/): a text format that labels each value, used to pass data between programs
+- [JSON mode](/building/structured-outputs/): a setting that makes output valid JSON without checking your fields
+- [Key-value store](/data/types-of-databases/): stores a value under a name for fast lookup
+- [Knowledge cutoff](/start/what-an-llm-is/): the point in time where a model's training text ends
+- [Knowledge graph](/data/knowledge-graphs/): facts stored as nodes joined by labelled relationships
+- [Large language model (LLM)](/start/what-an-llm-is/): a model trained on huge amounts of text to predict what comes next
+- [Lawful basis](/running/gdpr-data-retention-and-dpas/): the legal reason that makes using personal data allowed
+- [Leaderboard](/under-the-hood/benchmarks/): a ranked table of model scores on one or more benchmarks
+- [Least privilege](/running/least-privilege/): giving only the minimum access a job needs
+- [Lethal trifecta](/running/prompt-injection/): private data, untrusted content and an outbound channel combined in one agent
+- [LLM-as-judge](/running/evals/): using a second model to score or mark another model's output against criteria
+- [Load balancing](/running/model-routing/): spreading identical requests across several copies of a model or provider
+- [Local model](/map/open-model-hosting/): a model running on your own computer
+- [Long polling](/channels/telegram/): repeatedly asking a server whether anything new has arrived
+- [Long-context pricing](/running/how-api-pricing-works/): a higher rate some providers charge for very large prompts
+- [Long-lived connection](/channels/how-channels-connect/): a connection kept open so the platform can push events down it
+- [Long-term memory](/agents/memory/): notes saved outside the model that persist between conversations
+- [LoRA](/data/fine-tuning-vs-prompting-vs-rag/): a lightweight fine-tuning method that trains small adapters instead of the whole model
+- [LQM](/under-the-hood/llms-lrms-and-lqms/): large quantitative model, an informal label for models built around numbers or simulation
+- [LRM](/under-the-hood/llms-lrms-and-lqms/): large reasoning model, a language model trained to think step by step first
+- [Managed settings](/using-ai/recommended-settings/): organisation-wide settings that individuals cannot override
+- [Maximum output length](/under-the-hood/parameters-and-temperature/): the cap on how many tokens a reply may contain
+- [MCP (Model Context Protocol)](/agents/mcp/): an open standard for connecting AI assistants to tools and data
+- [MCP client](/agents/mcp/): the part of an assistant that talks to MCP servers
+- [MCP host](/agents/mcp/): the assistant application that contains the model and the MCP client
+- [MCP server](/agents/mcp/): a connector that exposes a system's tools, data and prompts through MCP
+- [Memory](/agents/memory/): what an AI system saves between conversations and hands back to the model later; in the Claude apps, a summary of past chats ([in practice](/using-ai/projects-and-memory/))
+- [Memory poisoning](/agents/memory/): planting a false or harmful note so it affects later conversations
+- [Merge conflict](/building/git-and-github/): two changes to the same lines that Git cannot combine alone
+- [Message template](/channels/whatsapp/): pre-approved message wording needed to start or restart a conversation
+- [Messaging endpoint](/channels/microsoft-teams/): the HTTPS address where Teams delivers a bot's activities
+- [Messaging limit](/channels/whatsapp/): cap on how many people you can start conversations with per day
+- [Microsoft Entra](/channels/microsoft-teams/): Microsoft's identity and sign-in system
+- [Microsoft Purview](/channels/microsoft-teams/): Microsoft's tools for retention, audit and eDiscovery
+- [Missed match](/data/entity-resolution/): failing to join records that describe the same entity
+- [MIT licence](/models/deepseek/): a short permissive licence allowing commercial use with few conditions
+- [Mixture of experts](/models/meta/): a design where only part of the model runs for each token
+- [Modality](/using-ai/multimodal-models/): a kind of material, such as text, images, audio or video
+- [Model access platform](/map/model-access-platforms/): a service your software calls to use an AI model
+- [Model as a service](/models/qwen-and-other-labs/): selling access to a model's answers to other businesses
+- [Model family](/models/model-tiers/): a set of related models sold under one name
+- [Model picker](/using-ai/not-burning-tokens/): the menu in the chat box for choosing which model answers
+- [Model routing](/running/model-routing/): choosing which model handles each request or step
+- [Model step](/agents/example-gallery/): one step in a workflow where a model does the work, such as writing a reply
+- [MTok](/running/how-api-pricing-works/): one million tokens, the usual unit for pricing
+- [Multi-agent system](/agents/subagents-and-multi-agent-systems/): a setup where several agents work together on one job
+- [Multimodal model](/using-ai/multimodal-models/): a model that handles more than one kind of material, such as text and images
+- [No-code builder](/map/agent-frameworks/): a visual tool for assembling agents without writing code
+- [Node](/data/knowledge-graphs/): a thing in a graph, such as a person, company or fund
+- [Non-determinism](/start/what-ai-is-good-and-bad-at/): getting different outputs from the same input on different runs
+- [Normalisation](/data/entity-resolution/): cleaning text into a standard form before comparing
+- [npm](/building/terminal-basics/): the package manager for JavaScript tools, bundled with Node.js
+- [OAuth](/agents/apis-oauth-and-api-keys/): a standard for letting an app act for a user without their password
+- [Object storage](/map/databases-and-storage/): cloud storage for whole files, held in buckets or containers
+- [Observability](/running/observability/): the ability to see what a system did and why
+- [Observation](/agents/the-agent-loop/): the result of an action, added to the agent's running record
+- [OCR](/using-ai/multimodal-models/): software that turns a picture of text into editable text
+- [Ontology](/data/knowledge-graphs/): the agreed list of node types and relationship types in a graph
+- [Open source AI](/under-the-hood/open-vs-closed-weights/): a system released with weights, training code and data information under open terms
+- [Open-weight model](/under-the-hood/open-vs-closed-weights/): a model whose trained weights are published for anyone to download and run
+- [OpenTelemetry](/map/observability-and-evals/): an open standard for collecting traces, metrics and logs
+- [Orchestration](/map/agent-frameworks/): coordinating steps, tools or agents so work happens in the right order
+- [Orchestration tool](/building/orchestration-tools/): software that runs workflow steps across apps in order
+- [Orchestrator](/agents/subagents-and-multi-agent-systems/): the agent that splits a task, delegates and combines results
+- [Outbound channel](/running/data-exfiltration-through-tools/): any tool or route an agent can use to send something out
+- [Output modality](/using-ai/multimodal-models/): a kind of material a model can produce
+- [Output tokens](/running/how-api-pricing-works/): the tokens the model writes back
+- [Package manager](/building/terminal-basics/): a tool that installs and tracks other software
+- Parameters: the inputs a tool needs, such as a company name ([tool use](/agents/tool-use/)), or the internal numbers a model learns in training, also called weights ([what an LLM is](/start/what-an-llm-is/) and [parameters and temperature](/under-the-hood/parameters-and-temperature/))
+- [Path](/building/terminal-basics/): the written address of a file or folder
+- [Pay as you go](/running/how-api-pricing-works/): paying only for the usage you consume, with no fixed fee
+- [Permission](/data/permissions-and-access-control/): a rule allowing a specific person or program to do something
+- [Permission mode](/building/claude-code-in-depth/): a setting for how much Claude Code does without asking
+- [Permissive licence](/models/open-weight-options/): a licence with few conditions, such as Apache 2.0 or MIT
+- [Personal data](/running/gdpr-data-retention-and-dpas/): any information about an identifiable living person
+- [Personal skill](/agents/skills-in-claude/): a Claude Code skill that works in all your projects
+- [pgvector](/building/supabase/): a Postgres add-on for storing and searching embeddings
+- [Pinning](/models/model-tiers/): choosing a fixed model version so results stay repeatable
+- [Plan mode](/building/claude-code-and-the-api/): a Claude Code mode that proposes changes without making them
+- [Polling](/data/keeping-data-fresh/): repeatedly asking a system whether anything has changed
+- [Post-training](/under-the-hood/pre-training-and-post-training/): the later steps that turn a base model into a useful assistant
+- [Postgres](/building/supabase/): a widely used open source relational database
+- [PowerShell](/building/terminal-basics/): the usual shell on Windows
+- [Pre-training](/under-the-hood/pre-training-and-post-training/): the first phase, learning language and knowledge by predicting the next token
+- [Precision](/under-the-hood/quantisation/): how exactly a number is stored, set by its bit count
+- [Preference training](/under-the-hood/pre-training-and-post-training/): training a model towards answers that people or AI judges rate as better
+- [Prefill](/under-the-hood/inference/): the stage where the model reads and processes the whole prompt
+- [Privacy mode](/channels/telegram/): a setting limiting which group messages a bot can see
+- [Processor](/running/gdpr-data-retention-and-dpas/): an organisation that handles personal data on a controller's behalf
+- [Progressive disclosure](/agents/skills-and-instruction-files/): loading detail only when a task needs it
+- [Project](/using-ai/claude-apps/): a workspace with its own chats, files and instructions
+- [Project instructions](/using-ai/projects-and-memory/): standing rules that apply only to chats in one Project
+- [Project knowledge](/using-ai/projects-and-memory/): files uploaded to a Project for Claude to use in its chats
+- [Project skill](/agents/skills-in-claude/): a Claude Code skill stored with one project and shared with everyone on it
+- [Prompt](/using-ai/prompt-engineering/): the text you send to a model
+- [Prompt caching](/running/prompt-caching-and-batch-processing/): reusing the processed start of a prompt to cut cost and delay
+- [Prompt engineering](/using-ai/prompt-engineering/): writing prompts so a model does what you intended
+- [Prompt injection](/running/prompt-injection/): text read as data that a model treats as an instruction
+- [Prompt template](/using-ai/prompt-engineering/): a saved prompt with blanks to fill in
+- [Public benefit corporation](/models/openai/): a company legally required to weigh a stated public mission
+- [Publishable key](/building/supabase/): a low-privilege key that is safe in browsers
+- [Pull](/building/git-and-github/): fetching remote commits and merging them into your work
+- [Push](/building/git-and-github/): sending local commits to the remote
+- [Push protection](/building/environment-variables-and-secrets/): blocking a push that contains a recognised secret
+- [Quantisation](/under-the-hood/quantisation/): storing a model's numbers with fewer bits to save memory
+- [Quantised model](/under-the-hood/quantisation/): a model whose weights have been stored at lower precision
+- [Quantitative model](/under-the-hood/llms-lrms-and-lqms/): any model that produces numeric predictions from data or equations
+- [RAG](/data/rag-and-chunking/): fetching relevant passages first, then having a model answer from them
+- [Rate limit](/running/rate-limits-retries-and-failures/): a cap on how many requests or tokens a service accepts in a period
+- [ReAct](/agents/the-agent-loop/): short for "reason and act", the name of the agent loop pattern
+- [Read-only access](/data/how-llms-talk-to-databases/): a login that can look at data but not change it
+- [Reasoning effort](/models/model-tiers/): a setting for how long a model thinks before answering
+- [Reasoning model](/using-ai/reasoning-models/): a language model trained and run to think step by step before answering
+- [Reasoning trace](/using-ai/reasoning-models/): the recorded thinking a reasoning model produced, sometimes shown, summarised or hidden
+- [Recovery codes](/using-ai/recommended-settings/): one-time codes that let you back into an account if your second factor is lost
+- [Red line](/channels/querying-vs-adding-safely/): a rule that is not bent, whatever the request
+- [Redaction](/running/observability/): blanking out sensitive details before data is stored
+- [Refresh token](/agents/apis-oauth-and-api-keys/): a longer-lived credential used to get new access tokens
+- [Region](/map/compute-and-cloud/): a named area where a cloud provider groups its data centres
+- [Regression](/running/evals/): something that used to work breaks after a change
+- [Reinforcement learning](/using-ai/reasoning-models/): training by trial and error, rewarding outcomes that turn out well
+- [Relational database](/data/types-of-databases/): stores data in linked tables, queried with SQL
+- [Relative path](/building/terminal-basics/): a path that starts from the current folder
+- [Remote](/building/git-and-github/): a copy of the repository stored somewhere else
+- [Replay attack](/channels/how-channels-connect/): resending a genuine recorded request to trigger it again
+- [Repository](/building/git-and-github/): a project folder together with its full change history
+- [Request signature](/channels/how-channels-connect/): a code proving a request came from the platform unaltered
+- [Reranker](/map/specialised-models/): a model that re-orders search results by how well they answer a question
+- [Reranking](/data/rag-and-chunking/): re-ordering retrieved results with a more careful model so the best come first
+- [Research](/using-ai/claude-apps/): a mode that runs several searches and returns a cited answer
+- [Resource-specific consent](/channels/microsoft-teams/): permission granted by a team or chat owner for one conversation
+- [Responses API](/models/openai/): OpenAI's API for requests that use tools
+- [Restricted transfer](/running/gdpr-data-retention-and-dpas/): sending personal data to a country outside the UK
+- [Retention period](/running/audit-trails/): how long records or data are kept before deletion
+- [Retirement](/models/model-tiers/): the date a model stops answering requests
+- [Retrieval](/start/tokens-and-context-windows/): fetching only the relevant passages into the model's context window
+- [Retry storm](/running/rate-limits-retries-and-failures/): many retries at once that worsen an outage
+- [Retry-After](/running/rate-limits-retries-and-failures/): a header telling you how long to wait before retrying
+- [Revert](/building/git-and-github/): making a new commit that reverses an earlier one
+- [RLHF](/under-the-hood/pre-training-and-post-training/): reinforcement learning from human feedback, a common form of preference training
+- [Role](/using-ai/system-prompts/): the label on each message in a conversation: system, user or assistant
+- [Rotation](/building/environment-variables-and-secrets/): replacing a key with a new one and retiring the old
+- [Router](/running/model-routing/): the logic that picks a model for each request
+- [Row level security](/building/supabase/): database rules deciding which rows each caller can touch
+- [Rubric](/running/evals/): a short checklist used to mark a result
+- [Safety training](/under-the-hood/pre-training-and-post-training/): post-training that teaches a model what to decline and how to handle risk
+- [Sampling](/under-the-hood/parameters-and-temperature/): choosing the next token from the model's list of likely options
+- [Sandbox](/using-ai/recommended-settings/): an operating-system boundary limiting which files and sites commands can reach
+- [Saturation](/under-the-hood/benchmarks/): when top models score near the maximum and the test stops separating them
+- [Scheduled task](/agents/example-gallery/): a saved instruction that runs on a timetable without you starting it
+- [Schema](/data/how-llms-talk-to-databases/): the description of a database's tables and columns
+- [Scope](/agents/apis-oauth-and-api-keys/): a specific permission an app asks for, such as read files
+- [Scope creep](/building/your-first-agent/): adding features and access faster than you can test them
+- [SDK (software development kit)](/map/agent-frameworks/): a code package for building with a particular service
+- [Search engine](/data/types-of-databases/): indexes words in text to find and rank matching documents
+- [Seat](/running/how-api-pricing-works/): one person's licence for a subscription product
+- [Secret](/building/environment-variables-and-secrets/): a sensitive value, such as a key or password, that must stay private
+- [Secret chat](/channels/telegram/): a one to one Telegram chat with end-to-end encryption
+- [Secret key](/building/supabase/): a high-privilege key for servers only
+- [Secret scanning](/building/environment-variables-and-secrets/): automatic detection of credentials committed to a repository
+- [Secrets manager](/building/environment-variables-and-secrets/): a service that stores, controls and rotates secrets
+- [Secrets store](/map/auth-and-secrets/): a protected service that holds keys and passwords and hands them out on request
+- [Self-hosting](/under-the-hood/open-vs-closed-weights/): running a model on infrastructure you control
+- [Semantic search](/data/embeddings/): finding items by meaning instead of exact words
+- [Semi-structured data](/data/structured-vs-unstructured-data/): data with some labelled structure but loose or varying fields
+- [Serverless](/building/serverless-functions/): running code on a platform that manages the servers for you
+- [Service account](/data/permissions-and-access-control/): a shared identity used by software rather than a person
+- [Shared mailbox](/channels/email/): an inbox several people or an agent can read together
+- [Shell](/building/terminal-basics/): the program that reads your typed commands and runs them
+- [Short-term memory](/agents/memory/): what is in the context window during the current conversation
+- [Sideloading](/channels/microsoft-teams/): installing an app directly without going through a catalogue
+- [Signing secret](/channels/slack/): a value used to check that a request came from Slack
+- [Similarity search](/data/rag-and-chunking/): finding the stored items whose embeddings are closest to the question's
+- [Simulation](/under-the-hood/llms-lrms-and-lqms/): a computer model of a real system, used to predict how it behaves
+- [Single sign-on (SSO)](/map/auth-and-secrets/): one login that works across many applications
+- [Sites.Selected](/building/connecting-business-tools-through-mcp/): a Microsoft permission limiting an app to specifically granted SharePoint sites
+- [Skill](/agents/skills-and-instruction-files/): a packaged, named set of instructions loaded when relevant
+- [SKILL.md](/agents/skills-and-instruction-files/): the main file of a skill, holding its description and steps
+- [Slash command](/channels/slack/): a typed shortcut such as /ask that triggers an app
+- [Smallest honest version](/building/your-first-agent/): the minimum build that does a real job and shows its working
+- [SMTP](/channels/email/): a standard for sending mail between servers
+- [SOC 2 Type II](/models/xai/): an audit report on a provider's security controls over time
+- [Socket Mode](/channels/slack/): receiving Slack events over a websocket instead of a public address
+- [Source of truth](/data/keeping-data-fresh/): the system officially considered right about a fact
+- [Span](/running/observability/): one step inside a trace, such as a model call or tool call
+- [Special category data](/running/gdpr-data-retention-and-dpas/): sensitive personal data such as health, beliefs or ethnic origin
+- [Specialised model](/map/specialised-models/): a model trained to do one narrow job well
+- [Speech-to-text](/map/specialised-models/): software that turns spoken audio into written words
+- [Spending cap](/running/estimating-cost-per-task/): a hard limit on money spent, after which usage stops or needs approval
+- [SPF](/channels/email/): a check that a mail server is allowed to send for a domain
+- [Spoofing](/channels/email/): faking the sender of a message
+- [SQL](/data/types-of-databases/): a standard language for querying relational databases
+- [Staged rollout](/models/how-to-judge-a-new-model/): moving to a new model gradually, with a way back
+- [Staging area](/building/git-and-github/): where chosen changes wait before being committed
+- [Stale data](/data/keeping-data-fresh/): a copy that no longer matches its source
+- [Standard contractual clauses](/models/deepseek/): approved contract terms that allow personal data to leave the UK or EU
+- [Stateless](/building/serverless-functions/): keeping no memory between runs
+- [Step limit](/agents/the-agent-loop/): a cap on the number of rounds before an agent's loop is stopped
+- [Stop sequence](/under-the-hood/parameters-and-temperature/): a piece of text that ends the reply when the model writes it
+- [Storage limitation](/running/gdpr-data-retention-and-dpas/): keeping personal data no longer than necessary
+- [Streaming](/under-the-hood/inference/): sending the reply to you piece by piece as it is produced
+- [Structured data](/data/structured-vs-unstructured-data/): data in tables with fixed fields and types
+- [Structured output](/building/structured-outputs/): a model answer returned in a fixed, machine-readable shape
+- [Style](/using-ai/system-prompts/): a saved setting for how Claude writes, such as concise or formal
+- [Sub-processor](/running/gdpr-data-retention-and-dpas/): another company a processor uses to handle the data
+- [Subagent](/agents/subagents-and-multi-agent-systems/): a helper agent with its own context window, instructions and tools
+- [Subscription](/start/free-vs-subscription-vs-api/): a fixed monthly fee for one person's use of the apps
+- [sudo](/building/terminal-basics/): a command prefix that runs something with administrator rights
+- [Superseded](/channels/querying-vs-adding-safely/): replaced by a newer version but kept in history
+- [Sustainable Use License](/building/n8n/): n8n's licence allowing internal business use but not resale or hosting for others
+- [Sycophancy](/under-the-hood/pre-training-and-post-training/): a model's tendency to agree with or flatter the user
+- [System of record](/map/databases-and-storage/): the one place a given fact officially lives
+- [System prompt](/using-ai/system-prompts/): standing instructions set by the builder, sent before every conversation
+- [Tab completion](/building/terminal-basics/): pressing Tab to finish a file or command name
+- [Tamper-resistant](/running/audit-trails/): protected so records cannot be quietly altered
+- [Team Bot](/channels/xai-grok/): one shared bot that every teammate talks to in private chats
+- [Temperature](/under-the-hood/parameters-and-temperature/): a setting that makes output more predictable when low and more varied when high
+- [Tenant](/channels/microsoft-teams/): an organisation's own private space within Microsoft 365
+- [Terminal](/building/terminal-basics/): the macOS app that gives you a window for typed commands
+- [Test set](/building/your-first-agent/): a fixed list of questions with checked answers, rerun after every change
+- [Text-to-speech](/map/specialised-models/): software that turns written words into spoken audio
+- [Text-to-SQL](/data/how-llms-talk-to-databases/): a model writing a SQL query from a plain-language question
+- [Thinking budget](/using-ai/reasoning-models/): a cap on how many tokens a model may spend thinking
+- [Thinking tokens](/running/how-api-pricing-works/): hidden working a reasoning model writes before answering
+- [Tier](/models/model-tiers/): a size and speed level within a family
+- [Time to first token](/under-the-hood/inference/): the wait between sending a prompt and the first piece of reply
+- [Time to live (TTL)](/running/prompt-caching-and-batch-processing/): how long a cache entry lasts before it expires
+- [Timeout](/building/serverless-functions/): the maximum time a function may run before being stopped
+- [Token](/start/tokens-and-context-windows/): the small piece of text a model reads and writes, roughly three-quarters of an English word
+- [Tokens per second](/under-the-hood/inference/): how fast the model generates its reply once it has started
+- [Tool](/agents/tool-use/): an action a model is allowed to request, such as searching a database or sending a message
+- [Tool call](/agents/tool-use/): the model's structured request to use a tool
+- [Tool permission](/agents/connectors-in-claude/): the setting that decides whether a tool runs freely, needs approval or is blocked
+- [Tool result](/agents/tool-use/): what a tool sends back, added to the conversation as text
+- [Tool use](/agents/tool-use/): the way a model requests actions and the software around it carries them out
+- [Top-k](/under-the-hood/parameters-and-temperature/): a setting that limits the choice to the k most likely tokens
+- [Top-p](/under-the-hood/parameters-and-temperature/): a setting that limits the choice to the most likely options adding up to a set probability
+- [TPU](/map/compute-and-cloud/): tensor processing unit, Google's custom AI chip
+- [Trace](/running/observability/): the full step-by-step record of one agent run
+- [Tracing](/map/agent-frameworks/): recording each step an agent takes so you can inspect it later
+- [Training](/start/what-an-llm-is/): adjusting a model's internal numbers by showing it large amounts of text
+- [Training data](/data/fine-tuning-vs-prompting-vs-rag/): the example inputs and desired outputs used to fine-tune a model
+- [Training setting](/using-ai/recommended-settings/): the choice of whether your chats can be used to train future models
+- [Transcription](/using-ai/multimodal-models/): turning speech in audio into written text
+- [Trigger](/building/triggers-and-scheduling/): the signal that starts a job without a person typing
+- [Trigger node](/building/n8n/): the step that starts a workflow when something happens
+- [Triple](/data/knowledge-graphs/): one fact written as thing, relationship, thing
+- [Two-factor authentication](/using-ai/recommended-settings/): signing in with a password plus a second proof such as a phone code
+- [Unstructured data](/data/structured-vs-unstructured-data/): free-form content such as documents, emails and notes
+- [Usage credits](/using-ai/not-burning-tokens/): optional paid extra usage once a subscription allowance runs out
+- [Usage limit](/start/free-vs-subscription-vs-api/): the cap on how much you can use a plan before it resets
+- [Usage window](/using-ai/not-burning-tokens/): a time period after which a subscription allowance resets
+- [User prompt](/using-ai/system-prompts/): the message a person types in the conversation
+- [UTC](/building/triggers-and-scheduling/): the world reference time, with no daylight saving changes
+- [Validation](/building/structured-outputs/): checking that output has the right fields and types
+- [Vector](/data/embeddings/): an ordered list of numbers, here the address of an embedding
+- [Vector database](/data/types-of-databases/): stores embeddings to find items with similar meaning
+- [Verifiable task](/using-ai/reasoning-models/): a task with an answer that can be checked automatically, such as maths or code tests
+- [Version control](/building/git-and-github/): recording every change to files so earlier versions can be restored
+- [Webhook](/data/keeping-data-fresh/): a message one system sends to another when something happens
+- [Weights](/under-the-hood/parameters-and-temperature/): another name for a model's parameters
+- [WhatsApp Business Platform](/channels/whatsapp/): Meta's developer interfaces for connecting software to WhatsApp
+- [winget](/building/terminal-basics/): the package manager built into Windows
+- [Workflow](/start/chat-agent-workflow-automation/): a fixed list of steps that runs the same way every time
+- [Workflow engine](/building/orchestration-tools/): developer software that runs coded workflows reliably, resuming after failures
+- [WSL](/building/terminal-basics/): Windows Subsystem for Linux, a way to run a Linux terminal inside Windows
+- [Zero data retention](/models/data-terms-at-a-glance/): a contract or setting where the provider keeps no copy of your inputs and outputs
+- [Zero-shot prompting](/using-ai/prompt-engineering/): asking a model with no examples in the prompt
+- [zsh](/building/terminal-basics/): the default shell on modern Macs
+
+## Next up
+
+Some words sound alike but mean different things. [Confusables](/reference/confusables/) puts the easy-to-mix-up pairs side by side.

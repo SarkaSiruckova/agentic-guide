@@ -25,16 +25,16 @@ Without them, you either pay general-model prices for simple jobs, or you hit jo
 
 ## How it works
 
-Most specialised models are the same kind of technology as a chat model (a neural network trained on lots of examples, see [what an LLM is](/concepts/how-models-work/what-an-llm-is/)), but trained for one output. Instead of producing free-flowing text, they produce a vector, a score, a label or a transcript.
+Most specialised models are the same kind of technology as a chat model (a neural network trained on lots of examples, see [what an LLM is](/start/what-an-llm-is/)), but trained for one output. Instead of producing free-flowing text, they produce a vector, a score, a label or a transcript.
 
 Here are the main families:
 
-- **Embedding models.** They turn a piece of text (or an image) into a long list of numbers, called a vector, so that things with similar meaning end up close together. This is what makes search by meaning possible. See [embeddings](/concepts/how-models-work/embeddings/).
+- **Embedding models.** They turn a piece of text (or an image) into a long list of numbers, called a vector, so that things with similar meaning end up close together. This is what makes search by meaning possible. See [embeddings](/data/embeddings/).
 - **Rerankers.** A first search returns, say, the 50 passages that look most similar to a question. A reranker reads the question and each passage together, and scores how well each one actually answers it. You keep the top few. It is slower than the first search but more careful, so you only run it on a short list.
 - **Speech-to-text and text-to-speech.** The first turns audio into written words (transcription). The second turns written words into spoken audio. Together they let an agent take part in a phone call or a meeting.
-- **Vision and document models.** These read images, scans and PDFs. OCR (optical character recognition) turns a picture of text into real text. Document-understanding models go further and recover structure, such as which numbers sit in which table cell. See [multimodal models](/concepts/how-models-work/multimodal-models/).
+- **Vision and document models.** These read images, scans and PDFs. OCR (optical character recognition) turns a picture of text into real text. Document-understanding models go further and recover structure, such as which numbers sit in which table cell. See [multimodal models](/using-ai/multimodal-models/).
 - **Small classifiers.** Tiny models that put an input into a bucket: spam or not, which of five topics, positive or negative. They are fast and cheap enough to run on every item.
-- **Quantitative and scientific models.** Models trained on numbers, time series, molecules or proteins rather than everyday language. This area is young and the labels are still settling. See [LLMs, LRMs and LQMs](/concepts/how-models-work/llms-lrms-and-lqms/).
+- **Quantitative and scientific models.** Models trained on numbers, time series, molecules or proteins rather than everyday language. This area is young and the labels are still settling. See [LLMs, LRMs and LQMs](/under-the-hood/llms-lrms-and-lqms/).
 
 A typical document pipeline chains several of these around the general model:
 
@@ -51,7 +51,7 @@ flowchart TD
   RR --> G["General model writes the answer"]
 ```
 
-The left side runs once per document (and again when the document changes). The right side runs for every question. The general model only sees the handful of passages the specialists chose, which keeps its input short and focused. For the mechanics of splitting and searching, see [RAG and chunking](/concepts/data/rag-and-chunking/).
+The left side runs once per document (and again when the document changes). The right side runs for every question. The general model only sees the handful of passages the specialists chose, which keeps its input short and focused. For the mechanics of splitting and searching, see [RAG and chunking](/data/rag-and-chunking/).
 
 ## Example providers (snapshot, as of October 2026)
 
@@ -75,11 +75,11 @@ Ask these questions, in roughly this order:
 
 - **Does this step need a specialist at all?** For a few hundred documents, a general model with a long context window may be enough. Specialists pay off at volume, or when accuracy on one task matters.
 - **Do embeddings and the search index match?** Vectors from different embedding models cannot be compared. If you change the embedding model, you re-embed everything.
-- **Where does the data go?** A hosted API means your text leaves your systems. A self-run open model keeps it in, at the cost of running servers. See [open vs closed weights](/concepts/how-models-work/open-vs-closed-weights/).
+- **Where does the data go?** A hosted API means your text leaves your systems. A self-run open model keeps it in, at the cost of running servers. See [open vs closed weights](/under-the-hood/open-vs-closed-weights/).
 - **Language and document types.** Check the model handles your languages, handwriting, tables and scan quality. Test on a dozen of your own real documents, not a demo file.
 - **Speed.** Live voice needs answers in a fraction of a second. Overnight document processing does not.
 - **Lock-in.** Embeddings are the sticky one: your stored vectors belong to one model. Parsing and transcription are easier to swap, because the output is plain text.
-- **Evidence.** Public [benchmarks](/concepts/how-models-work/benchmarks/) rarely match your documents. Run your own small test and compare.
+- **Evidence.** Public [benchmarks](/under-the-hood/benchmarks/) rarely match your documents. Run your own small test and compare.
 
 ## Worked example
 
@@ -96,18 +96,18 @@ Voice notes from calls are handled by a speech-to-text model first, then follow 
 
 ## Costs and limits
 
-- **Cheap per call, large in total.** Embedding and transcription cost very little each, but a large archive or hours of audio adds up. Estimate volume first (see [estimating cost per task](/concepts/cost/estimating-cost-per-task/)).
+- **Cheap per call, large in total.** Embedding and transcription cost very little each, but a large archive or hours of audio adds up. Estimate volume first (see [estimating cost per task](/running/estimating-cost-per-task/)).
 - **Re-embedding is the hidden bill.** Changing embedding model means processing the whole archive again.
 - **Parsing errors travel downstream.** A misread number in an OCR step becomes a confident wrong answer later. Spot-check the parsed text, not just the final answer.
 - **Rerankers add delay.** They are worth it when the first search returns plausible but noisy results.
 - **Specialists do not reason.** They fetch and label. They will not notice that two documents contradict each other.
-- **Privacy.** Audio, scans and contracts can hold personal data. Check where each provider processes and keeps it (see [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/)).
+- **Privacy.** Audio, scans and contracts can hold personal data. Check where each provider processes and keeps it (see [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/)).
 
 ## Related
 
-- [Embeddings](/concepts/how-models-work/embeddings/): what the vectors are and why similar meanings sit close together
-- [RAG and chunking](/concepts/data/rag-and-chunking/): the retrieval pipeline these models plug into
-- [Multimodal models](/concepts/how-models-work/multimodal-models/): models that handle images, audio and text together
+- [Embeddings](/data/embeddings/): what the vectors are and why similar meanings sit close together
+- [RAG and chunking](/data/rag-and-chunking/): the retrieval pipeline these models plug into
+- [Multimodal models](/using-ai/multimodal-models/): models that handle images, audio and text together
 - [Databases and storage](/map/databases-and-storage/): where the vectors and source files live
 - [Model access platforms](/map/model-access-platforms/): where you call hosted models from
 

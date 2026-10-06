@@ -2,7 +2,7 @@
 title: How to judge a new model
 description: A practical checklist for deciding whether a newly launched AI model deserves a place in your setup, using your own tests.
 tags: [foundations, prompting]
-lastReviewed: 2026-10-02
+lastReviewed: 2026-10-06
 snapshot: false
 sidebar:
   order: 12
@@ -47,25 +47,25 @@ flowchart TD
 
 **Step 2: read the launch post critically.** A launch post is written by the people selling the model. That does not make it false, but it chooses what to show.
 
-- **Claims versus evidence.** Look for what was tested, with what settings, and who ran it. Results run by the maker are less independent than results from outside groups. See [benchmarks](/concepts/how-models-work/benchmarks/).
+- **Claims versus evidence.** Look for what was tested, with what settings, and who ran it. Results run by the maker are less independent than results from outside groups. See [benchmarks](/under-the-hood/benchmarks/).
 - **Fair comparisons.** Check that the comparison models were run under the same conditions, such as the same number of attempts, tools and thinking time.
 - **What is missing.** If the post shows only some tasks, ask what was left out.
 - **Anecdotes.** One impressive demo shows what the model can do on its best day.
 
 **Step 3: check the practicalities.** A model that cannot do what your setup needs is not a candidate, however good it is.
 
-- **Context window.** How much text fits in one request (see [tokens and context windows](/concepts/how-models-work/tokens-and-context-windows/))?
-- **Input and output modes.** Does it accept images, documents or audio, and produce what you need (see [multimodal models](/concepts/how-models-work/multimodal-models/))?
-- **Tool use and structured outputs.** Does it support [tool use](/concepts/agents/tool-use/) and [structured outputs](/concepts/talking-to-models/structured-outputs/) in the way your harness expects? Agents break when these are unreliable.
+- **Context window.** How much text fits in one request (see [tokens and context windows](/start/tokens-and-context-windows/))?
+- **Input and output modes.** Does it accept images, documents or audio, and produce what you need (see [multimodal models](/using-ai/multimodal-models/))?
+- **Tool use and structured outputs.** Does it support [tool use](/agents/tool-use/) and [structured outputs](/building/structured-outputs/) in the way your harness expects? Agents break when these are unreliable.
 - **Speed.** Time to first word and total time. A slow model can be fine for overnight jobs and wrong for a live assistant.
-- **Rate limits.** How many requests can you make per minute, and what happens when you hit the limit (see [rate limits, retries and failures](/concepts/running-things/rate-limits-retries-and-failures/))? New models often start with tight limits.
+- **Rate limits.** How many requests can you make per minute, and what happens when you hit the limit (see [rate limits, retries and failures](/running/rate-limits-retries-and-failures/))? New models often start with tight limits.
 - **Availability.** Is it offered in your region, and through the cloud platform you already use?
-- **Pricing structure.** How are input, output and extras like caching charged (see [how AI pricing works](/concepts/cost/how-ai-pricing-works/))? Compare cost per task, not per word.
+- **Pricing structure.** How are input, output and extras like caching charged (see [how AI pricing works](/running/how-api-pricing-works/))? Compare cost per task, not per word.
 - **Deprecation policy.** How much notice does the provider give before retiring a model? A short notice means rebuilding sooner.
 
 **Data terms.** Check them next, before you test with anything sensitive. New models sometimes arrive as previews with different terms from the main product, such as logging or training allowed. See [data terms at a glance](/models/data-terms-at-a-glance/) for the questions to ask.
 
-**Step 4: run your own small eval.** This is the step that matters most. An [eval](/concepts/agents/evals/) is a repeatable test: the same inputs, scored the same way, each time you change something.
+**Step 4: run your own small eval.** This is the step that matters most. An [eval](/running/evals/) is a repeatable test: the same inputs, scored the same way, each time you change something.
 
 1. **Collect 20 to 30 real cases.** Pull them from the work you actually do. Remove or anonymise names, numbers and anything confidential first. Include a few awkward ones.
 2. **Write down what good looks like.** For each case, note the right answer or a short checklist, before you see any model output. Writing it afterwards makes you grade to the answer you got.
@@ -77,9 +77,9 @@ flowchart TD
 
 **What counts as noise.** With 25 cases, one case is 4 percentage points. A difference of one or two cases can vanish if you rerun. Treat a gap as real only if it is larger than the change you see when you rerun the same model, and if it appears across several kinds of case. A gap in a single type of case is a clue to dig into, not proof.
 
-**Test in the real harness.** A chat window is not your setup. Your [agentic harness](/concepts/agents/agentic-harness/) adds your system prompt, tools, files and memory, and these change how a model behaves. A model that shines in chat can stumble when it must call tools in a long sequence. Run the test through the same code path your real work uses.
+**Test in the real harness.** A chat window is not your setup. Your [agentic harness](/agents/agentic-harness/) adds your system prompt, tools, files and memory, and these change how a model behaves. A model that shines in chat can stumble when it must call tools in a long sequence. Run the test through the same code path your real work uses.
 
-**Step 5: roll out in stages, with a way back.** Move one low-risk task first, or send a small share of traffic to the new model while watching results. Keep the old model configured so you can switch back in minutes. A setup that routes tasks to different models makes this easy (see [model routing](/concepts/cost/model-routing/)). Keep your test set and re-run it when the provider updates the model, because the same name can change behaviour over time.
+**Step 5: roll out in stages, with a way back.** Move one low-risk task first, or send a small share of traffic to the new model while watching results. Keep the old model configured so you can switch back in minutes. A setup that routes tasks to different models makes this easy (see [model routing](/running/model-routing/)). Keep your test set and re-run it when the provider updates the model, because the same name can change behaviour over time.
 
 ## In practice
 
@@ -126,10 +126,10 @@ She switches one low-risk task, keeps the old model configured, and re-runs the 
 
 ## Related
 
-- [Benchmarks](/concepts/how-models-work/benchmarks/): what public scores can and cannot tell you
-- [Evals](/concepts/agents/evals/): building and running tests for AI systems
+- [Benchmarks](/under-the-hood/benchmarks/): what public scores can and cannot tell you
+- [Evals](/running/evals/): building and running tests for AI systems
 - [Data terms at a glance](/models/data-terms-at-a-glance/): the data questions to ask any provider
-- [Model routing](/concepts/cost/model-routing/): sending different tasks to different models, and switching back
+- [Model routing](/running/model-routing/): sending different tasks to different models, and switching back
 - [Model tiers](/models/model-tiers/): how models in one family are sized and priced
 
 ## The proper terms
@@ -144,4 +144,4 @@ She switches one low-risk task, keeps the old model configured, and re-runs the 
 
 ## Next up
 
-Knowing the roads and the carmakers only goes so far without getting your hands on the tools. The next chapter is the garage: [Setup and practice](/setup/) walks through the tools you install and the habits that keep them safe.
+Knowing the carmakers is one half of the picture. The other half is how people actually reach an agent day to day, so the last elective, [Comms channels](/channels/), covers connecting an agent to the chat apps and email people already use.

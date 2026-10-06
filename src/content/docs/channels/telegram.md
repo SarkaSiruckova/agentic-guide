@@ -2,14 +2,14 @@
 title: Telegram
 description: How a Telegram bot connects to an agent, what Telegram allows, and what to think through before using it for work.
 tags: [channels, tools]
-lastReviewed: 2026-10-05
+lastReviewed: 2026-10-06
 snapshot: true
 sidebar:
   order: 5
 published: 2026-10-05
 ---
 
-After WhatsApp's rules, Telegram is the lightest channel in this chapter. This page covers how its bots work and why a firm should still decide on purpose before using one for work.
+After WhatsApp's rules, Telegram is the lightest channel in this section of the guide. This page covers how its bots work and why a firm should still decide on purpose before using one for work.
 
 **In one line:** a Telegram bot is an account run by code instead of a person, and it is the quickest way to put an agent behind a chat app.
 
@@ -50,14 +50,14 @@ flowchart TD
 ### Useful pieces for an agent
 
 - **Commands.** Short `/keyword` instructions, such as `/start` and `/help`. Telegram suggests commands when someone types a slash.
-- **Inline keyboards.** Buttons shown under a message. Pressing one sends your bot a callback, not a chat message. This is how you build an Approve and Cancel step for [human in the loop](/concepts/agents/human-in-the-loop/).
+- **Inline keyboards.** Buttons shown under a message. Pressing one sends your bot a callback, not a chat message. This is how you build an Approve and Cancel step for [human in the loop](/agents/human-in-the-loop/).
 - **Typing indicator.** A bot can send a "typing" status, which the docs say lasts about five seconds. Resend it while a slow agent works.
 - **Voice and files.** Voice messages arrive as a voice object with a file ID that your code can download. Your agent needs a speech-to-text model to understand them.
 
 ## What you need
 
 - **A Telegram account** to talk to BotFather. No company paperwork is required.
-- **A bot token.** Telegram says to treat it like a password and not share it. It can be revoked through BotFather if exposed. Keep it in an [environment variable or secret store](/concepts/running-things/environment-variables-and-secrets/), never in code.
+- **A bot token.** Telegram says to treat it like a password and not share it. It can be revoked through BotFather if exposed. Keep it in an [environment variable or secret store](/building/environment-variables-and-secrets/), never in code.
 - **A small program** that receives updates, checks the sender, calls the agent and replies. Libraries exist for most languages.
 - **A place to run it.** A laptop or small server for long polling, or a public HTTPS endpoint for webhooks.
 - **A list of allowed Telegram user IDs.** Every person has a numeric ID that arrives with each message. This list is part of your own code, not a Telegram setting.
@@ -78,7 +78,7 @@ flowchart TD
 
 ## Security and compliance
 
-**Who can message it.** Assume anyone. A bot's username can be found and messaged by any Telegram user. Without a check, a stranger could talk to your agent and, through it, to anything it can reach. The fix is an **allowlist**: your code compares each sender's numeric user ID against a short list and silently ignores everyone else. This is [least privilege](/concepts/security/least-privilege/) applied to chat. Do not rely on a hard-to-guess username as the lock.
+**Who can message it.** Assume anyone. A bot's username can be found and messaged by any Telegram user. Without a check, a stranger could talk to your agent and, through it, to anything it can reach. The fix is an **allowlist**: your code compares each sender's numeric user ID against a short list and silently ignores everyone else. This is [least privilege](/running/least-privilege/) applied to chat. Do not rely on a hard-to-guess username as the lock.
 
 **Webhook checks.** If you use a webhook, set the secret token and reject calls that lack the matching header. Otherwise anyone who learns your endpoint address can send fake updates.
 
@@ -88,9 +88,9 @@ flowchart TD
 
 **Records.** A firm may have duties to keep and search business communications, and policies about which apps are approved. Telegram does not give an organisation admin controls over a bot chat in the way Teams or Slack do, as far as the documentation shows. Ask compliance whether Telegram is on the approved list, how messages would be retained and how they could be produced if asked.
 
-**Your own logs.** The bot's host will probably store messages in logs or a database. That is now your data, with your own retention duty. See [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/) and [audit trails](/concepts/security/audit-trails/).
+**Your own logs.** The bot's host will probably store messages in logs or a database. That is now your data, with your own retention duty. See [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/) and [audit trails](/running/audit-trails/).
 
-**Untrusted text.** Forwarded messages, links and documents can contain hidden instructions. See [prompt injection](/concepts/security/prompt-injection/).
+**Untrusted text.** Forwarded messages, links and documents can contain hidden instructions. See [prompt injection](/running/prompt-injection/).
 
 ## Worked example
 
@@ -118,7 +118,7 @@ An associate at Sample Ventures wants to try a personal research assistant, usin
 - [Querying vs adding safely](/channels/querying-vs-adding-safely/): read-only questions versus actions that change data
 - [Slack](/channels/slack/): a workspace tool with admin approval and retention controls
 - [Microsoft Teams](/channels/microsoft-teams/): the Microsoft 365 route
-- [Least privilege](/concepts/security/least-privilege/): why an allowlist beats an obscure username
+- [Least privilege](/running/least-privilege/): why an allowlist beats an obscure username
 
 ## The proper terms
 

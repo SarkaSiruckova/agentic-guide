@@ -35,7 +35,7 @@ On the changed files, check:
 - No em dashes anywhere.
 - None of the banned phrases listed in `CLAUDE.md`.
 - No model version numbers.
-- No prices except on pages in `concepts/cost/` or pages marked `snapshot: true`.
+- No prices except on the cost pages (`start/free-vs-subscription-vs-api` and the cost pages in `running/`) or pages marked `snapshot: true`.
 - British spelling and sentence-case headings.
 
 ## 4. Frontmatter and tags
@@ -58,7 +58,7 @@ On the changed files, check:
 ## 7. Confirm it is live
 
 - Wait for the Vercel deployment (usually under a minute or two).
-- Check that the main new page URLs and `/start-here/glossary/` return 200 on https://agentic-guide.vercel.app.
+- Check that the main new page URLs and `/reference/glossary/` return 200 on https://agentic-guide.vercel.app.
 - If the deployment fails or a page returns 404, say so plainly and look at the build log.
 
 ## 8. Report back

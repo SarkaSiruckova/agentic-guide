@@ -15,7 +15,7 @@ Closed models are reached through their makers' doors or a big cloud's. Open-wei
 
 ## Why it matters
 
-An [open-weight model](/concepts/how-models-work/open-vs-closed-weights/) is one whose trained numbers (the weights) are published for anyone to download. That sounds like you can just use it, but a model file does nothing on its own. Something has to load it onto expensive chips, accept requests, and send answers back.
+An [open-weight model](/under-the-hood/open-vs-closed-weights/) is one whose trained numbers (the weights) are published for anyone to download. That sounds like you can just use it, but a model file does nothing on its own. Something has to load it onto expensive chips, accept requests, and send answers back.
 
 Firms look at open models for good reasons: keeping text away from a third-party lab, controlling exactly which model version runs, or lower cost for simple, high-volume jobs. Hosting is the price of those benefits, and it is where the plan often meets reality.
 
@@ -50,16 +50,16 @@ flowchart TD
 
 **Running locally.** Tools such as Ollama and llama.cpp make it simple to run models on a personal computer. They are good for experiments and for private work on small tasks. A laptop can run smaller models well, but not the largest ones at useful speed.
 
-**Quantisation.** Models need a lot of memory. [Quantisation](/concepts/how-models-work/quantisation/) shrinks them by storing each number with less precision, a bit like saving a photo at a lower quality to fit on a smaller disk. It lets bigger models fit on cheaper hardware, at some cost to accuracy. Local tools rely on it heavily. When you host yourself, choosing the level is your decision. When someone else hosts, they have made that choice for you, often without saying.
+**Quantisation.** Models need a lot of memory. [Quantisation](/under-the-hood/quantisation/) shrinks them by storing each number with less precision, a bit like saving a photo at a lower quality to fit on a smaller disk. It lets bigger models fit on cheaper hardware, at some cost to accuracy. Local tools rely on it heavily. When you host yourself, choosing the level is your decision. When someone else hosts, they have made that choice for you, often without saying.
 
-**Same model, different results.** Two hosts serving the "same" model can behave differently. They may use different quantisation, different settings, or different serving software. The answers, speed and occasionally the quality can vary. If quality matters, test on your own examples with the host you will actually use (see [evals](/concepts/agents/evals/)).
+**Same model, different results.** Two hosts serving the "same" model can behave differently. They may use different quantisation, different settings, or different serving software. The answers, speed and occasionally the quality can vary. If quality matters, test on your own examples with the host you will actually use (see [evals](/running/evals/)).
 
 **What you take on if you host.**
 
 - **Updates.** New model versions, serving software and security patches arrive constantly.
 - **Security.** An exposed model server is a door into your network. It needs sign-in, network controls and monitoring.
 - **Scaling.** One user is easy. Ten people at 9am, or an agent that fires many requests, needs capacity planning.
-- **Monitoring.** You need to know when it is slow, down, or answering badly (see [observability](/concepts/agents/observability/)).
+- **Monitoring.** You need to know when it is slow, down, or answering badly (see [observability](/running/observability/)).
 - **Cost control.** Rented GPUs bill whether busy or idle.
 
 ## Example providers (snapshot, as of October 2026)
@@ -86,7 +86,7 @@ Start with why you want an open model. The answers point to different options:
 - **"We want lower cost."** Hosted APIs for open models are often cheaper per request than closed models. Your own server only saves money at steady, heavy use.
 - **"We have no one to run it."** That points firmly to a hosted service or to not using open models at all.
 
-Further questions: Where do the hosts run (region and country)? Does the host log or keep prompts? Which quantisation does it use? Can you move to another host without changing code? Is there an agreement covering personal data (see [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/))?
+Further questions: Where do the hosts run (region and country)? Does the host log or keep prompts? Which quantisation does it use? Can you move to another host without changing code? Is there an agreement covering personal data (see [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/))?
 
 Lock-in is low if you use standard request formats and keep the model name in a setting. It rises if you build on one host's special features.
 
@@ -111,11 +111,11 @@ An associate at Sample Ventures, the fictional fund, suggests running an open mo
 
 ## Related
 
-- [Open and closed weights](/concepts/how-models-work/open-vs-closed-weights/): what makes a model open and what that does and does not mean
-- [Quantisation](/concepts/how-models-work/quantisation/): shrinking a model to fit smaller hardware
+- [Open and closed weights](/under-the-hood/open-vs-closed-weights/): what makes a model open and what that does and does not mean
+- [Quantisation](/under-the-hood/quantisation/): shrinking a model to fit smaller hardware
 - [Model access platforms](/map/model-access-platforms/): the other ways to reach models, including closed ones
 - [Compute and cloud](/map/compute-and-cloud/): where rented chips come from
-- [Inference](/concepts/how-models-work/inference/): what a model server is doing on each request
+- [Inference](/under-the-hood/inference/): what a model server is doing on each request
 
 ## The proper terms
 

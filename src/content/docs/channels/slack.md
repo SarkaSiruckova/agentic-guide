@@ -25,7 +25,7 @@ This page is general information as of October 2026. Slack's developer docs chan
 
 ## How it works
 
-A **Slack app** is the thing you register with Slack. It can have a **bot user**, which is a member-like account that appears in the workspace and posts messages. Your code runs somewhere else and talks to Slack through the Slack [API](/concepts/data/apis-oauth-and-api-keys/).
+A **Slack app** is the thing you register with Slack. It can have a **bot user**, which is a member-like account that appears in the workspace and posts messages. Your code runs somewhere else and talks to Slack through the Slack [API](/agents/apis-oauth-and-api-keys/).
 
 When something happens that your app asked about (a message in a direct chat, an @mention), Slack sends an **event**. You choose how events arrive:
 
@@ -52,7 +52,7 @@ flowchart TD
 - **@mention in a channel.** Slack has an app mention event for this. Slack's docs say you only receive it if the app is in the conversation or is invited to join.
 - **Slash commands** such as `/ask`. Good for a fixed entry point.
 - **Threads.** The bot can reply in a thread so a long answer does not flood a channel.
-- **Buttons.** Slack's **Block Kit** is its format for rich messages. A message can carry buttons, and a click sends your app an interaction payload that also needs a three-second acknowledgement. This is how you build an Approve and Cancel step for [human in the loop](/concepts/agents/human-in-the-loop/).
+- **Buttons.** Slack's **Block Kit** is its format for rich messages. A message can carry buttons, and a click sends your app an interaction payload that also needs a three-second acknowledgement. This is how you build an Approve and Cancel step for [human in the loop](/agents/human-in-the-loop/).
 
 ### Slack's own agent features
 
@@ -62,8 +62,8 @@ Slack's docs describe an "Agents" feature for AI apps, with a dedicated panel, a
 
 - **A Slack workspace** where you can create or install an app. By default, Slack members can install apps without approval, but workspace owners can switch on approval so that admins review each app. This is available on all plans.
 - **An app registered at Slack's developer site**, with the features you want switched on: a bot user, event subscriptions, and optionally slash commands and interactivity.
-- **Scopes.** A **scope** is a permission the app asks for, such as reading messages in channels it is in or posting messages. Ask for the fewest you need, in line with [least privilege](/concepts/security/least-privilege/).
-- **Tokens.** Slack's docs describe three kinds. A **bot token** (starts with `xoxb-`) acts as the bot. A **user token** (`xoxp-`) acts as a person and has the access that person has. An **app-level token** (`xapp-`) relates to the app as a whole, and is what Socket Mode uses. Slack says to treat all tokens as sensitive credentials and never commit or log them. Store them as [secrets](/concepts/running-things/environment-variables-and-secrets/).
+- **Scopes.** A **scope** is a permission the app asks for, such as reading messages in channels it is in or posting messages. Ask for the fewest you need, in line with [least privilege](/running/least-privilege/).
+- **Tokens.** Slack's docs describe three kinds. A **bot token** (starts with `xoxb-`) acts as the bot. A **user token** (`xoxp-`) acts as a person and has the access that person has. An **app-level token** (`xapp-`) relates to the app as a whole, and is what Socket Mode uses. Slack says to treat all tokens as sensitive credentials and never commit or log them. Store them as [secrets](/building/environment-variables-and-secrets/).
 - **A signing secret.** A value Slack gives your app so it can check that incoming requests really came from Slack.
 - **A place to run the code.** A laptop for Socket Mode, or a hosted endpoint for the Events API. Slack's Bolt frameworks (for JavaScript, Python and Java) handle much of the plumbing.
 
@@ -75,11 +75,11 @@ For an agent, prefer a bot token. A user token lets the agent act as a person, w
 
 **Visibility.** Events depend on scopes and on membership. Your bot sees conversations it is in. If it is not invited to a channel, it does not receive that channel's events. Slack's docs say AI features inside Slack respect what each member can already access.
 
-**Message rate.** Slack limits API calls per method, per workspace and per app. For posting messages, the docs give about one message per second per channel as a guide. If you are limited, Slack returns a 429 error with a header telling you how long to wait. See [rate limits, retries and failures](/concepts/running-things/rate-limits-retries-and-failures/).
+**Message rate.** Slack limits API calls per method, per workspace and per app. For posting messages, the docs give about one message per second per channel as a guide. If you are limited, Slack returns a 429 error with a header telling you how long to wait. See [rate limits, retries and failures](/running/rate-limits-retries-and-failures/).
 
 **Reading history.** In May 2025 Slack cut the rate for reading channel history and thread replies for new commercially distributed apps that are not in the Marketplace, to one request a minute with a small page size. Slack's changelog says internal apps built by a customer for its own workspace are not affected. A firm building its own app counts as internal, but check the current docs.
 
-**Slack MCP server.** Slack documents an [MCP](/concepts/agents/mcp/) server that lets AI apps search messages and files, send messages and read threads. Per the docs, only directory-published or internal apps may use it, authorisation is by OAuth, and workspace admins can approve and manage these integrations. Claude, Claude Code and Cursor are listed among supported clients. This is an alternative to writing your own bot when you only need an AI tool to read Slack.
+**Slack MCP server.** Slack documents an [MCP](/agents/mcp/) server that lets AI apps search messages and files, send messages and read threads. Per the docs, only directory-published or internal apps may use it, authorisation is by OAuth, and workspace admins can approve and manage these integrations. Claude, Claude Code and Cursor are listed among supported clients. This is an alternative to writing your own bot when you only need an AI tool to read Slack.
 
 **Policy on data and AI.** Slack's API terms forbid third-party apps offered to other organisations from using API data to train a large language model, bulk exporting message and file data (except under a separate agreement) and keeping persistent copies or long-term stores of other organisations' data. These terms are written for apps serving other customers. Whether and how they apply to a firm's own internal app, and to something like a context layer that stores summaries, is a question for the firm's counsel and Slack's current terms. This guide has not tested that edge.
 
@@ -91,11 +91,11 @@ Slack also states that its own AI features never use customer data to train larg
 
 **Private versus shared spaces.** A bot's answer in a public channel is visible to everyone there. If the agent has access to confidential data, an answer built from it must only go where the asker is allowed to see it.
 
-**Untrusted text.** Slack messages from guests, other apps or pasted content can contain hidden instructions. Treat message text as input, not orders. See [prompt injection](/concepts/security/prompt-injection/).
+**Untrusted text.** Slack messages from guests, other apps or pasted content can contain hidden instructions. Treat message text as input, not orders. See [prompt injection](/running/prompt-injection/).
 
 **Retention and export.** Slack documents workspace retention settings that cover messages, files, canvases and lists. On paid plans the default is to keep data for the workspace's lifetime, with custom periods available, and private channels and direct messages can have their own settings on paid plans. A bot's messages are ordinary messages in this record. Ask your Slack owner what export and legal-hold options your plan offers, and ask compliance whether Slack is approved for the kind of conversations you expect.
 
-**What your agent stores.** If the agent copies Slack content into its own database, that data now lives under your own retention rules. See [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/) and [audit trails](/concepts/security/audit-trails/).
+**What your agent stores.** If the agent copies Slack content into its own database, that data now lives under your own retention rules. See [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/) and [audit trails](/running/audit-trails/).
 
 ## Worked example
 
@@ -122,8 +122,8 @@ Sample Ventures wants a bot, "Scout", that answers questions about portfolio com
 - [How channels connect](/channels/how-channels-connect/): the shared pattern across chat channels
 - [Querying vs adding safely](/channels/querying-vs-adding-safely/): separating read access from write actions
 - [Microsoft Teams](/channels/microsoft-teams/): the same idea for a Microsoft 365 firm
-- [Human in the loop](/concepts/agents/human-in-the-loop/): approval buttons before writes
-- [Least privilege](/concepts/security/least-privilege/): small scopes and narrow access
+- [Human in the loop](/agents/human-in-the-loop/): approval buttons before writes
+- [Least privilege](/running/least-privilege/): small scopes and narrow access
 
 ## The proper terms
 

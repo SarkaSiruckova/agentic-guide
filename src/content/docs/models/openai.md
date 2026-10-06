@@ -17,7 +17,7 @@ This is one of a set of parallel provider snapshots, each with the same headings
 
 OpenAI's API request format is widely copied, so many gateways and tools accept it as a common language (see [model access platforms](/map/model-access-platforms/)). ChatGPT is also the AI app that many colleagues will already be using.
 
-OpenAI also co-founded the foundation that now hosts MCP (see below) and published AGENTS.md, an instruction-file convention for coding agents that sits alongside the ideas in [skills and instruction files](/concepts/agents/skills-and-instruction-files/).
+OpenAI also co-founded the foundation that now hosts MCP (see below) and published AGENTS.md, an instruction-file convention for coding agents that sits alongside the ideas in [skills and instruction files](/agents/skills-and-instruction-files/).
 
 <mark>ChatGPT's consumer plans and its business plans come with different data terms, so check which one you are actually using.</mark>
 
@@ -43,8 +43,8 @@ OpenAI also lists specialised models for image generation, live voice, speech ge
 
 **Coding and agent products.**
 
-- **Codex** is OpenAI's coding agent. Its documentation lists a desktop app, an editor extension, a command-line tool (one you run by typing commands in a terminal, covered in chapter 10) and a web version, and says it is included with ChatGPT Plus, Pro, Business, Edu and Enterprise plans.
-- **The Agents SDK** is an OpenAI library for building agents from agents, handoffs between them, and guardrails (see [subagents and multi-agent systems](/concepts/agents/subagents-and-multi-agent-systems/)). Its Python documentation says it can also be used with non-OpenAI models through adapters.
+- **Codex** is OpenAI's coding agent. Its documentation lists a desktop app, an editor extension, a command-line tool (one you run by typing commands in a terminal, covered in [terminal basics](/building/terminal-basics/)) and a web version, and says it is included with ChatGPT Plus, Pro, Business, Edu and Enterprise plans.
+- **The Agents SDK** is an OpenAI library for building agents from agents, handoffs between them, and guardrails (see [subagents and multi-agent systems](/agents/subagents-and-multi-agent-systems/)). Its Python documentation says it can also be used with non-OpenAI models through adapters.
 
 **Open-weight models.** In August 2025 OpenAI released gpt-oss, two open-weight models named gpt-oss-120b and gpt-oss-20b.
 
@@ -56,13 +56,13 @@ OpenAI also lists specialised models for image generation, live voice, speech ge
 
 ## Licence and openness
 
-OpenAI's flagship GPT models are closed-weight. See [open vs closed weights](/concepts/how-models-work/open-vs-closed-weights/).
+OpenAI's flagship GPT models are closed-weight. See [open vs closed weights](/under-the-hood/open-vs-closed-weights/).
 
-The gpt-oss models are the exception. OpenAI's announcement and the model card on Hugging Face both state the Apache 2.0 licence, which is a permissive licence. The announcement gives gpt-oss-120b at 117 billion parameters and gpt-oss-20b at 21 billion in total, using a design where only part of the model is active per token. They can be downloaded and run on your own hardware (see [quantisation](/concepts/how-models-work/quantisation/)).
+The gpt-oss models are the exception. OpenAI's announcement and the model card on Hugging Face both state the Apache 2.0 licence, which is a permissive licence. The announcement gives gpt-oss-120b at 117 billion parameters and gpt-oss-20b at 21 billion in total, using a design where only part of the model is active per token. They can be downloaded and run on your own hardware (see [quantisation](/under-the-hood/quantisation/)).
 
 ## Data and compliance notes
 
-Terms differ between consumer and business products and can change. Read the current pages and your own contract. See [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/).
+Terms differ between consumer and business products and can change. Read the current pages and your own contract. See [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/).
 
 - **Business products (ChatGPT Business, Enterprise, Edu, and the API).** OpenAI's enterprise privacy page says it does not train its models on business data by default, and that you own your inputs and outputs where the law allows. It says it can sign a Data Processing Addendum for ChatGPT Business, Enterprise and the API, and that it has completed SOC 2 Type 2 audits.
 - **API data controls.** OpenAI's documentation says data sent to the API is not used for training unless you opt in, and that abuse-monitoring logs are kept for 30 days by default. Eligible customers can apply for zero data retention. Regional data storage and processing is offered in several regions, including the US, EU and UK, and non-US regions need extra approval and an amended retention agreement.
@@ -83,7 +83,7 @@ Terms differ between consumer and business products and can change. Read the cur
 - [Anthropic](/models/anthropic/): the same snapshot for another major provider
 - [Open-weight options](/models/open-weight-options/): where gpt-oss sits among other open models
 - [Data terms at a glance](/models/data-terms-at-a-glance/): comparing training and retention terms across providers
-- [MCP](/concepts/agents/mcp/): the standard OpenAI co-founded a foundation to host
+- [MCP](/agents/mcp/): the standard OpenAI co-founded a foundation to host
 
 ## The proper terms
 

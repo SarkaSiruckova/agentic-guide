@@ -2,7 +2,7 @@
 title: The map
 description: How every piece of AI infrastructure fits together.
 tags: [infrastructure]
-lastReviewed: 2026-10-02
+lastReviewed: 2026-10-06
 snapshot: false
 sidebar:
   order: 0
@@ -10,7 +10,7 @@ sidebar:
 published: 2026-10-02
 ---
 
-The concept chapters ended on the fuel bill: what one task costs to run. By now you know every part of the car, from the engine to the keys. This chapter is the road network: the kinds of infrastructure that exist, what each one does, and how they connect to make an agent work. If a word is new, the [glossary](/start-here/glossary/) helps.
+Electives start here. Whether you have just finished the seven parts of the guide or arrived from a search, this is the road network: the kinds of infrastructure that exist, what each one does, and how they connect to make an agent work. If a word is new, the [glossary](/reference/glossary/) helps.
 
 Think of it as a stack. A person talks to an interface. Behind it, software runs an agent, which asks a model for decisions and uses connectors to reach your systems. Everything sits on rented computers, and every step needs a safe way to prove who is allowed to do what.
 

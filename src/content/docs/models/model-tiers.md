@@ -27,7 +27,7 @@ This section of the guide therefore talks about families and tiers, not version 
 
 Think of a restaurant kitchen. A head chef can cook anything, but is slow and expensive, so you would not ask them to butter toast. A line cook is fast and cheap and handles the routine orders. Providers sell both, and you decide who cooks what.
 
-A model's size is set in training. Bigger models (more **parameters**, the learned numbers inside, see [what an LLM is](/concepts/how-models-work/what-an-llm-is/)) tend to cope better with long, tangled or ambiguous tasks, but each answer takes more computing power. Smaller models give up some of that depth in return for speed and lower cost per answer (see [inference](/concepts/how-models-work/inference/)).
+A model's size is set in training. Bigger models (more **parameters**, the learned numbers inside, see [what an LLM is](/start/what-an-llm-is/)) tend to cope better with long, tangled or ambiguous tasks, but each answer takes more computing power. Smaller models give up some of that depth in return for speed and lower cost per answer (see [inference](/under-the-hood/inference/)).
 
 ```mermaid
 flowchart TD
@@ -40,11 +40,11 @@ flowchart TD
 
 Read the diagram from top to bottom: capability and cost per answer rise, speed falls. Where one job sits is a judgement call that you test, not a rule.
 
-**Reasoning versus non-reasoning.** Separate from size, many models can spend extra effort thinking before they answer. This is a [reasoning model](/concepts/how-models-work/reasoning-models/) behaviour. Some providers sell it as a separate family; others make it a setting on the same model, often called reasoning effort. More thinking usually means a slower, costlier answer, so it is a second dial next to the tier.
+**Reasoning versus non-reasoning.** Separate from size, many models can spend extra effort thinking before they answer. This is a [reasoning model](/using-ai/reasoning-models/) behaviour. Some providers sell it as a separate family; others make it a setting on the same model, often called reasoning effort. More thinking usually means a slower, costlier answer, so it is a second dial next to the tier.
 
-**Specialised variants.** Besides general text models, providers sell models for one job: embeddings (turning text into numbers for search, see [embeddings](/concepts/how-models-work/embeddings/)), speech in and out, image generation, and live voice. These are priced and limited separately from the chat models. See [specialised models](/map/specialised-models/).
+**Specialised variants.** Besides general text models, providers sell models for one job: embeddings (turning text into numbers for search, see [embeddings](/data/embeddings/)), speech in and out, image generation, and live voice. These are priced and limited separately from the chat models. See [specialised models](/map/specialised-models/).
 
-**Why several tiers exist.** The trade-off between speed, cost and capability cannot be removed, so providers sell points along it. This also makes [model routing](/concepts/cost/model-routing/) possible: sending each request to the tier that suits it.
+**Why several tiers exist.** The trade-off between speed, cost and capability cannot be removed, so providers sell points along it. This also makes [model routing](/running/model-routing/) possible: sending each request to the tier that suits it.
 
 **Names and versions churn.** Providers release new generations often, so a family name stays while the version behind it changes. The names also differ by provider. That is why the pages in this section describe families and tiers, and why you should check the provider's own page for what exists today.
 
@@ -72,15 +72,15 @@ Sample Ventures runs an agent over its notes and its data room. The operations l
 
 1. **Tag notes.** Each meeting note gets a sector and stage label. The task is short, repetitive and easy to check. She starts with the small, fast tier, because a wrong tag is cheap to spot and fix.
 2. **Draft a memo.** An associate wants a first-draft investment memo on Acme Payments from several sources. Quality of judgement and writing matters more than speed. She tries the mid tier first and moves up to the large tier only if drafts need heavy rewriting.
-3. **Answer from the data room.** A partner asks a question that needs reading many documents and weighing conflicting figures. This is where a larger tier, or a reasoning setting, may earn its cost. She tests it on ten past questions with known answers (see [evals](/concepts/agents/evals/)).
+3. **Answer from the data room.** A partner asks a question that needs reading many documents and weighing conflicting figures. This is where a larger tier, or a reasoning setting, may earn its cost. She tests it on ten past questions with known answers (see [evals](/running/evals/)).
 
 She writes each model name into one settings file, not into the code. When a provider announces a retirement, she changes one line, reruns the ten questions, and compares.
 
 ## Costs and limits
 
 - **Bigger is not always better for the job.** A large model on a trivial task wastes money and time. A small one on a hard task wastes people's time on rework.
-- **Tiers overlap.** A newer small model can match an older mid model on some tasks. Test on your own work, not on general claims (see [benchmarks](/concepts/how-models-work/benchmarks/)).
-- **Reasoning adds cost.** The extra thinking is billed as output text, and it adds delay. See [how AI pricing works](/concepts/cost/how-ai-pricing-works/).
+- **Tiers overlap.** A newer small model can match an older mid model on some tasks. Test on your own work, not on general claims (see [benchmarks](/under-the-hood/benchmarks/)).
+- **Reasoning adds cost.** The extra thinking is billed as output text, and it adds delay. See [how AI pricing works](/running/how-api-pricing-works/).
 - **Hard-wired names break.** Retirement dates arrive on the provider's schedule, not yours.
 - **Floating aliases can shift behaviour.** A prompt that worked well last month may behave differently after an alias moves. Pin versions for anything you depend on, and watch the retirement dates.
 - **Same name, different place.** A model reached through a cloud platform can have different features or schedules from the maker's own API.
@@ -91,11 +91,11 @@ She writes each model name into one settings file, not into the code. When a pro
 
 ## Related
 
-- [Model routing](/concepts/cost/model-routing/): sending each task to a suitable tier automatically
-- [Reasoning models](/concepts/how-models-work/reasoning-models/): the extra thinking dial that sits beside the tier
+- [Model routing](/running/model-routing/): sending each task to a suitable tier automatically
+- [Reasoning models](/using-ai/reasoning-models/): the extra thinking dial that sits beside the tier
 - [How to judge a new model](/models/how-to-judge-a-new-model/): a repeatable test for each launch
 - [Model access platforms](/map/model-access-platforms/): the doors through which tiers are reached
-- [Estimating cost per task](/concepts/cost/estimating-cost-per-task/): turning a tier choice into a number
+- [Estimating cost per task](/running/estimating-cost-per-task/): turning a tier choice into a number
 
 ## The proper terms
 

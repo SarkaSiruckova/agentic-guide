@@ -25,13 +25,13 @@ Meta now has two different lines, and they work differently. Llama can be downlo
 
 | Line | What it is | How it is offered |
 | --- | --- | --- |
-| Llama | Open-weight models. The newest generation listed on Meta's developer site is described as natively multimodal with a mixture-of-experts design (see [multimodal models](/concepts/how-models-work/multimodal-models/)) | Download, plus third-party clouds and hosts |
+| Llama | Open-weight models. The newest generation listed on Meta's developer site is described as natively multimodal with a mixture-of-experts design (see [multimodal models](/using-ai/multimodal-models/)) | Download, plus third-party clouds and hosts |
 | Muse | Meta Superintelligence Labs' newer models, including Muse Spark; the developer site also lists Muse Image, Muse Voice Transcribe and Muse Glimmer, which Meta positions for local, always-on agents | Meta AI app, Meta Model API, Muse Code |
 | SAM | Segment Anything: models that detect and outline objects in images and video | Listed on Meta's developer site and in the Meta Model API |
 
-**Llama sizes.** Meta's repository lists Llama generations from 2023 onward, in sizes from about one billion to several hundred billion parameters (see [parameters and temperature](/concepts/how-models-work/parameters-and-temperature/)). Small ones are meant for laptops and phones.
+**Llama sizes.** Meta's repository lists Llama generations from 2023 onward, in sizes from about one billion to several hundred billion parameters (see [parameters and temperature](/under-the-hood/parameters-and-temperature/)). Small ones are meant for laptops and phones.
 
-**Muse.** Meta's announcement describes Muse Spark as the first model from Meta Superintelligence Labs, powering the Meta AI app and website. Meta's later post says Muse Spark is available in Muse Code, a terminal-based coding tool (one run by typing commands in a text window, covered in chapter 10), and in the Meta Model API, and that its roadmap includes a Muse Spark open-weights release. At the time of writing Muse Spark itself was proprietary, and Meta states no date for that release.
+**Muse.** Meta's announcement describes Muse Spark as the first model from Meta Superintelligence Labs, powering the Meta AI app and website. Meta's later post says Muse Spark is available in Muse Code, a terminal-based coding tool (one run by typing commands in a text window, covered in [terminal basics](/building/terminal-basics/)), and in the Meta Model API, and that its roadmap includes a Muse Spark open-weights release. At the time of writing Muse Spark itself was proprietary, and Meta states no date for that release.
 
 **Meta AI.** This is Meta's assistant, used in its own app and website, and Meta said it would extend Muse Spark to WhatsApp, Instagram, Facebook, Messenger and Threads.
 
@@ -50,7 +50,7 @@ flowchart TD
   APP --> MUSE
 ```
 
-- **Llama, download.** Meta's pages direct you to accept the licence, then fetch the weights from Meta or from Hugging Face. You run them with your own tools on your own machines. See [inference](/concepts/how-models-work/inference/).
+- **Llama, download.** Meta's pages direct you to accept the licence, then fetch the weights from Meta or from Hugging Face. You run them with your own tools on your own machines. See [inference](/under-the-hood/inference/).
 - **Llama, via hosts.** Cloud services and specialist hosting companies run Llama for you and charge by use. See [open-model hosting](/map/open-model-hosting/) and [model access platforms](/map/model-access-platforms/).
 - **Muse, Meta Model API.** Meta's developer pages say the API is in public preview, self-serve, and accessible to developers in the US. It is compatible with the OpenAI software kit, so existing code can often point at Meta's endpoint. Check for current availability outside the US.
 - **Meta AI app.** For consumer use rather than building.
@@ -68,13 +68,13 @@ Llama is **open-weight under a custom licence**, the Llama Community Licence. Th
 
 **EU restriction.** Meta's Llama 4 acceptable use policy says that for the multimodal models in that generation, the rights are not granted to an individual domiciled in, or a company with its principal place of business in, the European Union. The same text says this does not apply to end users of products built on those models. Earlier generations may differ, so read the version you download. A firm in London should check the UK position with its own adviser, as this page has not verified it.
 
-**Not the OSI sense of open source.** The Open Source Initiative's definition asks for the training code and detailed data information, not only the weights, and free use without field or user restrictions. Llama's thresholds, naming rules and use policy are the kind of conditions that make the licence custom rather than standard. See [open vs closed weights](/concepts/how-models-work/open-vs-closed-weights/).
+**Not the OSI sense of open source.** The Open Source Initiative's definition asks for the training code and detailed data information, not only the weights, and free use without field or user restrictions. Llama's thresholds, naming rules and use policy are the kind of conditions that make the licence custom rather than standard. See [open vs closed weights](/under-the-hood/open-vs-closed-weights/).
 
 Muse Spark is currently proprietary, per Meta's announcement.
 
 ## Data and compliance notes
 
-- **Llama.** Meta does not see your prompts when you run Llama yourself. If a host runs it for you, the host's terms decide retention, training and regions. Treat each host as its own supplier and read its terms. See [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/).
+- **Llama.** Meta does not see your prompts when you run Llama yourself. If a host runs it for you, the host's terms decide retention, training and regions. Treat each host as its own supplier and read its terms. See [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/).
 - **Meta Model API.** Meta's developer page links to its general Terms of Service and Privacy Policy and gave no API-specific data handling statement on the page checked. Read those documents directly.
 - **Meta AI app.** This page did not verify the app's data terms, because Meta's privacy page could not be retrieved automatically. Read them before putting anything sensitive in.
 
@@ -90,8 +90,8 @@ Muse Spark is currently proprietary, per Meta's announcement.
 
 - [Open-weight options](/models/open-weight-options/): Llama alongside other downloadable models
 - [Open-model hosting](/map/open-model-hosting/): who runs an open model for you
-- [Open vs closed weights](/concepts/how-models-work/open-vs-closed-weights/): what the term does and does not promise
-- [Quantisation](/concepts/how-models-work/quantisation/): shrinking models so they fit smaller hardware
+- [Open vs closed weights](/under-the-hood/open-vs-closed-weights/): what the term does and does not promise
+- [Quantisation](/under-the-hood/quantisation/): shrinking models so they fit smaller hardware
 - [Data terms at a glance](/models/data-terms-at-a-glance/): provider terms side by side
 
 ## The proper terms

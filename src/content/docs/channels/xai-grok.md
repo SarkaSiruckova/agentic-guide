@@ -43,11 +43,11 @@ flowchart TD
   C --> P
 ```
 
-The API follows the same shape as other model providers. xAI's documentation says you can use the OpenAI client library by pointing it at xAI's address, and lists function calling, web search, X search, code execution, collections search (searching documents you upload) and remote [MCP](/concepts/agents/mcp/) tools. With function calling the model asks for a tool, your code runs it and sends back the result. See [tool use](/concepts/agents/tool-use/) and [the agent loop](/concepts/agents/the-agent-loop/). For the provider itself, see [xAI](/models/xai/).
+The API follows the same shape as other model providers. xAI's documentation says you can use the OpenAI client library by pointing it at xAI's address, and lists function calling, web search, X search, code execution, collections search (searching documents you upload) and remote [MCP](/agents/mcp/) tools. With function calling the model asks for a tool, your code runs it and sends back the result. See [tool use](/agents/tool-use/) and [the agent loop](/agents/the-agent-loop/). For the provider itself, see [xAI](/models/xai/).
 
 ## What you need
 
-**For your own bot.** An xAI API account and key from xAI's console, kept as a secret (see [environment variables and secrets](/concepts/running-things/environment-variables-and-secrets/)), plus whatever the chat platform needs. Each platform page covers its own setup: [Slack](/channels/slack/), [Microsoft Teams](/channels/microsoft-teams/) and [Telegram](/channels/telegram/). You also need somewhere to host the code, for example a [serverless function](/concepts/running-things/serverless-functions/).
+**For your own bot.** An xAI API account and key from xAI's console, kept as a secret (see [environment variables and secrets](/building/environment-variables-and-secrets/)), plus whatever the chat platform needs. Each platform page covers its own setup: [Slack](/channels/slack/), [Microsoft Teams](/channels/microsoft-teams/) and [Telegram](/channels/telegram/). You also need somewhere to host the code, for example a [serverless function](/building/serverless-functions/).
 
 **For Grok Bot.** xAI's documentation says access comes with a paid Cursor plan or a SuperGrok subscription, and that people sign in with a Cursor account. It also says that training opt-out, retention and account deletion follow the applicable Cursor terms. The documentation does not explain how the two companies relate, so read both sets of terms.
 
@@ -63,17 +63,17 @@ The API follows the same shape as other model providers. xAI's documentation say
 
 **Third-party route.** xAI has a post about using Grok models in OpenClaw, a separate agent tool that connects to WhatsApp, Telegram, Slack, Discord and others. That is a different product from xAI's. If a colleague suggests it, apply the same checks as for any third-party software.
 
-**API limits.** Rate limits and available models change often, so check xAI's console for current figures. See [rate limits, retries and failures](/concepts/running-things/rate-limits-retries-and-failures/).
+**API limits.** Rate limits and available models change often, so check xAI's console for current figures. See [rate limits, retries and failures](/running/rate-limits-retries-and-failures/).
 
 ## Security and compliance
 
-**Business data terms.** xAI's enterprise terms say it will not use customer content to train models, and delete content within 30 days unless the order says otherwise, with a zero data retention option. The API security FAQ says requests are stored encrypted for 30 days for auditing by default, and that zero data retention switches off some features. Consumer, X and business terms differ, so confirm which apply. See [data terms at a glance](/models/data-terms-at-a-glance/) and [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/).
+**Business data terms.** xAI's enterprise terms say it will not use customer content to train models, and delete content within 30 days unless the order says otherwise, with a zero data retention option. The API security FAQ says requests are stored encrypted for 30 days for auditing by default, and that zero data retention switches off some features. Consumer, X and business terms differ, so confirm which apply. See [data terms at a glance](/models/data-terms-at-a-glance/) and [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/).
 
-**Public posting channels.** An agent that replies in public on a social platform can disclose information to anyone. Posts are also untrusted input: a stranger can write text that tries to steer the agent. Keep a public-facing agent away from firm data, and see [data exfiltration through tools](/concepts/security/data-exfiltration-through-tools/) and [prompt injection](/concepts/security/prompt-injection/).
+**Public posting channels.** An agent that replies in public on a social platform can disclose information to anyone. Posts are also untrusted input: a stranger can write text that tries to steer the agent. Keep a public-facing agent away from firm data, and see [data exfiltration through tools](/running/data-exfiltration-through-tools/) and [prompt injection](/running/prompt-injection/).
 
 **Search tools read untrusted content.** Web and X search bring in text from strangers. That text can carry instructions, so turn these tools on only when the task needs them.
 
-**Who can message the bot, and records.** For a bot you build, the chat platform decides who can reach it, and your code should check the sender. Whether chat content must be archived is a question for compliance. See [least privilege](/concepts/security/least-privilege/) and [audit trails](/concepts/security/audit-trails/).
+**Who can message the bot, and records.** For a bot you build, the chat platform decides who can reach it, and your code should check the sender. Whether chat content must be archived is a question for compliance. See [least privilege](/running/least-privilege/) and [audit trails](/running/audit-trails/).
 
 ## Worked example
 
@@ -83,7 +83,7 @@ Compliance prefers the bot they build, because they can limit what it reads. The
 
 ## Costs and limits
 
-With the API you pay for the tokens you use, so cost grows with long conversations and heavy tool use (see [how AI pricing works](/concepts/cost/how-ai-pricing-works/)). Grok Bot comes bundled with a subscription, and xAI's pages say usage resets weekly, so heavy use can hit a cap. Hosting your own bot adds small hosting costs and your own time to maintain it.
+With the API you pay for the tokens you use, so cost grows with long conversations and heavy tool use (see [how AI pricing works](/running/how-api-pricing-works/)). Grok Bot comes bundled with a subscription, and xAI's pages say usage resets weekly, so heavy use can hit a cap. Hosting your own bot adds small hosting costs and your own time to maintain it.
 
 The main limit is thin channel support: no official Telegram, WhatsApp or Teams route, and Slack is the only chat app documented in the pages checked. Model and product names also change fast.
 

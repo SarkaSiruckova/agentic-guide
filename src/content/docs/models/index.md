@@ -3,14 +3,14 @@ title: Model landscape
 description: The main model providers and what each is good for.
 tags: [foundations]
 snapshot: true
-lastReviewed: 2026-10-02
+lastReviewed: 2026-10-06
 sidebar:
   order: 0
   label: Landscape overview
 published: 2026-10-02
 ---
 
-The [map](/map/) showed the road network: every layer a request passes through on its way to an answer. This chapter is about the carmakers, with a neutral overview of the providers and model families worth knowing about, what each is known for, and how to judge a new model when one launches.
+The [map](/map/) showed the road network: every layer a request passes through on its way to an answer. The next elective is about the carmakers, with a neutral overview of the providers and model families worth knowing about, what each is known for, and how to judge a new model when one launches.
 
 This is the fastest-changing part of the guide. Everything on the provider pages is a snapshot as of October 2026, drawn from each company's own documentation. Names, owners, licences and data terms all move, so check the source before relying on anything here. The pages deliberately avoid rankings, scores and prices.
 
@@ -43,7 +43,7 @@ Every provider page uses the same headings, so you can compare them side by side
 
 ## How this connects to the rest of the guide
 
-The [map](/map/) shows where models sit in the wider stack. The concept chapters, starting with [the basics](/concepts/agents/chat-agent-workflow-automation/), explain the ideas behind every term used here.
+The [map](/map/) shows where models sit in the wider stack. The seven parts of the guide, starting with [the basics](/start/chat-agent-workflow-automation/), explain the ideas behind every term used here.
 
 ## Next up
 

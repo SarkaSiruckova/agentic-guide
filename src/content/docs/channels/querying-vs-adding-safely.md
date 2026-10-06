@@ -2,7 +2,7 @@
 title: Querying vs adding information safely
 description: Why asking an agent a question and telling it to change something carry different risks, and how to design each path.
 tags: [channels, security]
-lastReviewed: 2026-10-05
+lastReviewed: 2026-10-06
 snapshot: false
 sidebar:
   order: 8
@@ -44,11 +44,11 @@ flowchart TD
 
 ### Read-only by default
 
-Start every channel with an agent that can only read. Add writing later, for specific record types, once the read side behaves. This is [least privilege](/concepts/security/least-privilege/) applied to the channel: if the agent has no write tool, no message can make it write.
+Start every channel with an agent that can only read. Add writing later, for specific record types, once the read side behaves. This is [least privilege](/running/least-privilege/) applied to the channel: if the agent has no write tool, no message can make it write.
 
 ### Separate paths, or separate agents
 
-The cleanest design keeps the two paths apart. One agent, or one set of tools, handles questions and holds only read access. Another handles updates and holds only the narrow write tools, and it only runs after the confirmation step. This is the idea behind [subagents and multi-agent systems](/concepts/agents/subagents-and-multi-agent-systems/): split by power, not just by topic.
+The cleanest design keeps the two paths apart. One agent, or one set of tools, handles questions and holds only read access. Another handles updates and holds only the narrow write tools, and it only runs after the confirmation step. This is the idea behind [subagents and multi-agent systems](/agents/subagents-and-multi-agent-systems/): split by power, not just by topic.
 
 A simple way to split them in chat is an explicit marker. A message starting with "log:" or a slash command means update. Everything else is a question. Explicit markers cut down on guessing, and a model that guesses wrong about intent is a model that writes when it should read.
 
@@ -57,29 +57,29 @@ A simple way to split them in chat is an explicit marker. A message starting wit
 Each of these steps guards against a different kind of mistake.
 
 1. **Confirm who is speaking.** Tie the chat user to a real colleague ([identity mapping](/channels/how-channels-connect/)). Only named people may add information, and perhaps only certain record types.
-2. **Validate the fields.** Ask the model to turn the message into a fixed shape, such as company, date, note and type, using [structured outputs](/concepts/talking-to-models/structured-outputs/). Then check the result in ordinary code: does the company exist, is the date sensible, is the length reasonable?
-3. **Restate and ask.** Show the person what will be written, in plain words, and wait for a yes. This is [human in the loop](/concepts/agents/human-in-the-loop/). Show the actual values, not "shall I go ahead?".
+2. **Validate the fields.** Ask the model to turn the message into a fixed shape, such as company, date, note and type, using [structured outputs](/building/structured-outputs/). Then check the result in ordinary code: does the company exist, is the date sensible, is the length reasonable?
+3. **Restate and ask.** Show the person what will be written, in plain words, and wait for a yes. This is [human in the loop](/agents/human-in-the-loop/). Show the actual values, not "shall I go ahead?".
 4. **Write to a staging area first.** Put new entries in a draft status or a holding table, and promote them to the main records after a check. A draft that nobody reads again is still better than a wrong record that everyone trusts.
 5. **Never overwrite.** Add a new note or a new version. Where a field must change, keep the old value in the history.
 6. **Keep source and timestamp.** Store who said it, in which channel, when, and the original message. Later you can ask "where did this come from?" and get an answer.
-7. **Avoid duplicates.** Chat platforms may deliver the same event twice, and people send the same message twice. Give each write an idempotency key (a unique ID for "this exact request") so the second attempt does nothing. See [triggers and scheduling](/concepts/running-things/triggers-and-scheduling/). Match the company to an existing record rather than creating a new one ([entity resolution](/concepts/data/entity-resolution/)).
-8. **Make undo possible, and keep a trail.** Offer "undo that" for a short time, and record every write: who, what, when, from which message ([audit trails](/concepts/security/audit-trails/)).
+7. **Avoid duplicates.** Chat platforms may deliver the same event twice, and people send the same message twice. Give each write an idempotency key (a unique ID for "this exact request") so the second attempt does nothing. See [triggers and scheduling](/building/triggers-and-scheduling/). Match the company to an existing record rather than creating a new one ([entity resolution](/data/entity-resolution/)).
+8. **Make undo possible, and keep a trail.** Offer "undo that" for a short time, and record every write: who, what, when, from which message ([audit trails](/running/audit-trails/)).
 
 ### Limits on what a chat user can ask for
 
-A chat user's request is bounded by their own access, not by what the agent can technically reach. Define, per person or role, which questions they may ask and which records they may add or change ([permissions and access control](/concepts/data/permissions-and-access-control/)). A new joiner might read pipeline notes but not LP details, and might add meeting notes but not change a deal stage.
+A chat user's request is bounded by their own access, not by what the agent can technically reach. Define, per person or role, which questions they may ask and which records they may add or change ([permissions and access control](/data/permissions-and-access-control/)). A new joiner might read pipeline notes but not LP details, and might add meeting notes but not change a deal stage.
 
 ### Preventing leaks through answers
 
-An answer is a data flow. It must respect the asker's access, and also the audience. In a group chat, everyone present sees the answer. Either answer in the group only with what everyone there may see, or send the sensitive part privately. See [data exfiltration through tools](/concepts/security/data-exfiltration-through-tools/) for how information leaks out through the outputs an agent produces.
+An answer is a data flow. It must respect the asker's access, and also the audience. In a group chat, everyone present sees the answer. Either answer in the group only with what everyone there may see, or send the sensitive part privately. See [data exfiltration through tools](/running/data-exfiltration-through-tools/) for how information leaks out through the outputs an agent produces.
 
 ### Injection through what is added or retrieved
 
-Text that arrives in a "log:" message, or text the agent pulls from a note, email or document, can contain instructions. If that text is later fed to another agent, it can steer it too. Treat all stored text as data, not orders, and keep write tools away from agents that read raw outside content. See [prompt injection](/concepts/security/prompt-injection/).
+Text that arrives in a "log:" message, or text the agent pulls from a note, email or document, can contain instructions. If that text is later fed to another agent, it can steer it too. Treat all stored text as data, not orders, and keep write tools away from agents that read raw outside content. See [prompt injection](/running/prompt-injection/).
 
 ### Correcting wrong information
 
-Mistakes happen, and they must be fixable. Provide a clear way to correct or retract an entry, and mark old versions as superseded rather than silently deleting them. Remember that copies exist elsewhere: search indexes, summaries and cached answers keep the old fact until they refresh. Plan how a correction reaches them ([keeping data fresh](/concepts/data/keeping-data-fresh/)).
+Mistakes happen, and they must be fixable. Provide a clear way to correct or retract an entry, and mark old versions as superseded rather than silently deleting them. Remember that copies exist elsewhere: search indexes, summaries and cached answers keep the old fact until they refresh. Plan how a correction reaches them ([keeping data fresh](/data/keeping-data-fresh/)).
 
 ## In practice
 
@@ -135,10 +135,10 @@ The two messages look similar and carry quite different risks. The first can cha
 ## Related
 
 - [How chat channels connect to an agent](/channels/how-channels-connect/): the plumbing underneath every channel
-- [Human in the loop](/concepts/agents/human-in-the-loop/): how and when a person approves
-- [Permissions and access control](/concepts/data/permissions-and-access-control/): limiting what each person can ask for
-- [Prompt injection](/concepts/security/prompt-injection/): why added and retrieved text is untrusted
-- [Audit trails](/concepts/security/audit-trails/): recording who did what, and when
+- [Human in the loop](/agents/human-in-the-loop/): how and when a person approves
+- [Permissions and access control](/data/permissions-and-access-control/): limiting what each person can ask for
+- [Prompt injection](/running/prompt-injection/): why added and retrieved text is untrusted
+- [Audit trails](/running/audit-trails/): recording who did what, and when
 
 ## The proper terms
 
@@ -150,4 +150,4 @@ The two messages look similar and carry quite different risks. The first can cha
 
 ## Next up
 
-This is the last page of the guide, which has gone from what a model is to an agent people can safely reach from the apps they already use. When a term slips, the [glossary](/start-here/glossary/) is the quickest place to return to, and [the map](/map/) shows where each piece fits when you plan the next build.
+This is the last elective, and the end of the guide: it has gone from what a model is to an agent people can safely reach from the apps they already use. When a term slips, the [glossary](/reference/glossary/) is the quickest place to return to, and [Start here](/start/start-here/) lays out the reading paths if you want to go round again by a different route.

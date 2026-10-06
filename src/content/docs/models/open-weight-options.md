@@ -15,7 +15,7 @@ Several of the provider pages mention models you can download. This page lines t
 
 ## Why it matters
 
-Open-weight models give you a choice that closed models do not: you can bring the model to your data instead of sending your data to the model's maker. For a small firm that handles confidential material, that is worth knowing about even if you never use it. If the idea is new, start with [open vs closed weights](/concepts/how-models-work/open-vs-closed-weights/).
+Open-weight models give you a choice that closed models do not: you can bring the model to your data instead of sending your data to the model's maker. For a small firm that handles confidential material, that is worth knowing about even if you never use it. If the idea is new, start with [open vs closed weights](/under-the-hood/open-vs-closed-weights/).
 
 The catch is that "open" covers a wide range of legal terms. Some licences are as relaxed as a standard software licence. Others add conditions about company size, naming or allowed uses. A few forbid commercial use entirely.
 
@@ -60,17 +60,17 @@ The Llama row comes from the licence on one release's model card. Meta writes a 
 5. **Outputs and training other models.** Can you use the model's answers to train or tune another model? Some licences say yes, some restrict it. If you plan to fine-tune or build a smaller model from outputs, this matters.
 6. **Jurisdiction.** Which country's law governs, and where would a dispute be heard? Some custom licences name a US state.
 
-**Weights-only licence vs open source AI.** Almost every model in the table is a weights release: you get the trained numbers and perhaps a technical report. The Open Source Initiative's Open Source AI Definition asks for more, including sufficiently detailed information about the training data and the code. Few releases meet it. A licence like Apache 2.0 on the weights is good news for you as a user, but it does not mean the whole system is open source. See [open vs closed weights](/concepts/how-models-work/open-vs-closed-weights/).
+**Weights-only licence vs open source AI.** Almost every model in the table is a weights release: you get the trained numbers and perhaps a technical report. The Open Source Initiative's Open Source AI Definition asks for more, including sufficiently detailed information about the training data and the code. Few releases meet it. A licence like Apache 2.0 on the weights is good news for you as a user, but it does not mean the whole system is open source. See [open vs closed weights](/under-the-hood/open-vs-closed-weights/).
 
-**Size classes, in plain terms.** A model's size is counted in parameters, the learned numbers inside it (see [parameters and temperature](/concepts/how-models-work/parameters-and-temperature/)). Roughly, more parameters means more memory needed to run it.
+**Size classes, in plain terms.** A model's size is counted in parameters, the learned numbers inside it (see [parameters and temperature](/under-the-hood/parameters-and-temperature/)). Roughly, more parameters means more memory needed to run it.
 
 - **Small (a few billion parameters).** Runs on a laptop or a modest single machine. Good for simple, narrow jobs.
 - **Medium (roughly 10 to 70 billion).** Needs a serious graphics card or several. Usually run on rented machines.
 - **Large (100 billion and up, some above a trillion).** Needs a cluster of data-centre cards. Some of these are "mixture of experts" designs that only use part of the model for each word, which cuts the work but not the storage.
 
-A rough rule: at full precision each billion parameters needs about 2GB of memory. [Quantisation](/concepts/how-models-work/quantisation/), which stores the numbers with less detail, can cut that to a quarter or less, at some cost in quality. Your needs are the model plus working space for the conversation, so leave headroom.
+A rough rule: at full precision each billion parameters needs about 2GB of memory. [Quantisation](/under-the-hood/quantisation/), which stores the numbers with less detail, can cut that to a quarter or less, at some cost in quality. Your needs are the model plus working space for the conversation, so leave headroom.
 
-**Open weights are not automatically private.** If you run the model on your own machine or in your own cloud account, your text stays there. If you use a third-party host for an open model, that host's data terms apply, not the model maker's licence. See [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/) and the [data terms at a glance](/models/data-terms-at-a-glance/).
+**Open weights are not automatically private.** If you run the model on your own machine or in your own cloud account, your text stays there. If you use a third-party host for an open model, that host's data terms apply, not the model maker's licence. See [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/) and the [data terms at a glance](/models/data-terms-at-a-glance/).
 
 ```mermaid
 flowchart TD
@@ -102,7 +102,7 @@ Then she asks where it will run. The firm has no spare graphics cards, so the mo
 
 - **You pay for machines, not per use.** Running a model yourself has a fixed cost that is often worth it only at steady, high volume.
 - **Licences change.** A new release can arrive with different terms, and a licence only covers the version it came with.
-- **Someone must look after it.** Updates, access control and monitoring are your job, and [prompt injection](/concepts/security/prompt-injection/) is still a risk.
+- **Someone must look after it.** Updates, access control and monitoring are your job, and [prompt injection](/running/prompt-injection/) is still a risk.
 - **Capability varies a lot by size and release.** This page makes no performance claims. Test on your own cases (see [how to judge a new model](/models/how-to-judge-a-new-model/)).
 - **Cards can be wrong or out of date.** If the licence matters to a decision, read the licence file itself and ask a lawyer.
 
@@ -114,8 +114,8 @@ Then she asks where it will run. The firm has no spare graphics cards, so the mo
 
 ## Related
 
-- [Open vs closed weights](/concepts/how-models-work/open-vs-closed-weights/): the concept behind this page
-- [Quantisation](/concepts/how-models-work/quantisation/): how large models are shrunk to fit smaller hardware
+- [Open vs closed weights](/under-the-hood/open-vs-closed-weights/): the concept behind this page
+- [Quantisation](/under-the-hood/quantisation/): how large models are shrunk to fit smaller hardware
 - [Open-model hosting](/map/open-model-hosting/): who runs an open model for you
 - [Data terms at a glance](/models/data-terms-at-a-glance/): what major providers say about your data
 - [Model tiers](/models/model-tiers/): small, medium and large models within a family

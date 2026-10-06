@@ -26,9 +26,9 @@ It is also a good case study for a distinction that applies to every provider wi
 DeepSeek's models fall into two broad families.
 
 - **V-series (general models).** DeepSeek's general-purpose family. Its current documentation lists a fast tier called Flash and a larger tier called Pro. A September 2026 announcement said Pro requests would be redirected to Flash while the Pro tier is phased out, but DeepSeek's pricing page now lists a Pro model as available, so check which applies today.
-- **R-series (reasoning models).** The family that first made DeepSeek widely known, built to think step by step before answering (see [reasoning models](/concepts/how-models-work/reasoning-models/)). In the current API documentation, reasoning appears as a mode you switch on with a "thinking" setting and an effort level, rather than as a separate model name. DeepSeek's recent announcements mention no new standalone release in this family, so treat it as a lineage that has been folded into the V-series.
+- **R-series (reasoning models).** The family that first made DeepSeek widely known, built to think step by step before answering (see [reasoning models](/using-ai/reasoning-models/)). In the current API documentation, reasoning appears as a mode you switch on with a "thinking" setting and an effort level, rather than as a separate model name. DeepSeek's recent announcements mention no new standalone release in this family, so treat it as a lineage that has been folded into the V-series.
 
-The newest model cards on DeepSeek's Hugging Face page describe mixture-of-experts designs (a model that activates only part of itself for each word), long context windows and, for the newest Flash model, native image understanding. See [multimodal models](/concepts/how-models-work/multimodal-models/).
+The newest model cards on DeepSeek's Hugging Face page describe mixture-of-experts designs (a model that activates only part of itself for each word), long context windows and, for the newest Flash model, native image understanding. See [multimodal models](/using-ai/multimodal-models/).
 
 **Products.** DeepSeek's website lists a web chat, mobile and desktop apps, and an API platform. The API documentation says it uses a format compatible with the OpenAI and Anthropic APIs, so tools built for those can often be pointed at DeepSeek by changing a web address and key.
 
@@ -56,7 +56,7 @@ DeepSeek's recent releases are open weights under the **MIT licence**, a short p
 
 Two cautions. First, this has not always been true: an earlier general model card shows code under MIT but the weights under a separate custom Model License that permits commercial use. Licences can differ by release, so check each card. Second, the R-series card lists smaller **distilled** models built on Qwen and Llama base models, and says those keep their original licences (Apache 2.0 for the Qwen-based ones; Llama licences for the Llama-based ones).
 
-See [open vs closed weights](/concepts/how-models-work/open-vs-closed-weights/).
+See [open vs closed weights](/under-the-hood/open-vs-closed-weights/).
 
 ## Data and compliance notes
 
@@ -73,12 +73,12 @@ This is where the hosted service and the weights part ways. Everything below is 
 
 The official sources checked for this page show no UK ban on the app. Regulatory positions change, so check the regulators' pages before deciding.
 
-**Open weights run elsewhere.** None of the above applies to weights you run on your own servers: no data leaves your environment unless you send it. A third-party host has its own policy and location, so read that. See [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/).
+**Open weights run elsewhere.** None of the above applies to weights you run on your own servers: no data leaves your environment unless you send it. A third-party host has its own policy and location, so read that. See [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/).
 
 ## Things to watch
 
 - **Tier and model names move fast.** DeepSeek announced in September 2026 that Pro requests would route to Flash, yet its pricing page now lists a Pro model as available, and some older names redirect. Check the live model list.
-- **"Open" does not mean "private".** Open weights are private only if you run them yourself or use a host you trust. See [prompt injection](/concepts/security/prompt-injection/) too: self-hosting does not remove it.
+- **"Open" does not mean "private".** Open weights are private only if you run them yourself or use a host you trust. See [prompt injection](/running/prompt-injection/) too: self-hosting does not remove it.
 - **Licence by release.** MIT is typical now, but older releases and the distilled models differ.
 - **Size.** The newest weights are very large. Running them yourself is a serious infrastructure job; most small firms would use a host instead.
 - **Regulatory attention may change.** The actions above date from 2025. Look for newer ones.

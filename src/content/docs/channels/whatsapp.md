@@ -43,7 +43,7 @@ flowchart TD
   W --> U
 ```
 
-Meta's documentation says it retries a failed webhook with decreasing frequency for up to seven days, so your code must cope with the same message arriving twice. It also lists mutual TLS (a way for both sides to prove who they are) as an option for securing the connection. See [how channels connect](/channels/how-channels-connect/) for the general pattern, and [serverless functions](/concepts/running-things/serverless-functions/) for a common place to host the receiving address.
+Meta's documentation says it retries a failed webhook with decreasing frequency for up to seven days, so your code must cope with the same message arriving twice. It also lists mutual TLS (a way for both sides to prove who they are) as an option for securing the connection. See [how channels connect](/channels/how-channels-connect/) for the general pattern, and [serverless functions](/building/serverless-functions/) for a common place to host the receiving address.
 
 ## What you need
 
@@ -52,7 +52,7 @@ As of October 2026, Meta's documentation lists these building blocks:
 - **A business portfolio.** This is Meta's container for your business assets, including your WhatsApp Business Account (WABA).
 - **A WhatsApp Business Account** that holds your phone numbers and analytics.
 - **A business phone number registered for the Cloud API.** Meta's phone number page says a number already in use with WhatsApp cannot be registered unless it is deleted from WhatsApp first. It must be owned by you and able to receive an SMS or voice call for verification. Mobile numbers are recommended, and a display name is required.
-- **An app and an access token.** You create an app in Meta's developer dashboard. Access uses tokens (see [APIs, OAuth and API keys](/concepts/data/apis-oauth-and-api-keys/)), and the token should be kept as a secret (see [environment variables and secrets](/concepts/running-things/environment-variables-and-secrets/)).
+- **An app and an access token.** You create an app in Meta's developer dashboard. Access uses tokens (see [APIs, OAuth and API keys](/agents/apis-oauth-and-api-keys/)), and the token should be kept as a secret (see [environment variables and secrets](/building/environment-variables-and-secrets/)).
 - **A public web address** for webhooks, and the webhook set up in the dashboard. Meta notes that some webhooks do not arrive while an app is in development mode.
 
 Meta's documentation says business verification of a portfolio brings higher throughput and other features, and it is one route to a higher messaging limit. It is not confirmed here whether verification is needed before you can start, so check Meta's current steps.
@@ -80,19 +80,19 @@ Meta's step-by-step getting started page needs a login and was not available for
 
 In plain terms, the rule targets a business whose product is a general-purpose AI assistant delivered over WhatsApp. An assistant that exists to serve your own business purpose, with AI as the means, is a different case. The Business Messaging Policy page checked had no separate AI rule. Whether a particular assistant falls inside the prohibition is Meta's call, so treat this as a point to confirm with Meta's documentation and your own advisers, not something this page can settle.
 
-The terms also restrict using Business Solution Data to train or improve AI models, with an exception for fine-tuning a model for your exclusive use. See [fine-tuning vs prompting vs RAG](/concepts/how-models-work/fine-tuning-vs-prompting-vs-rag/) for what fine-tuning means.
+The terms also restrict using Business Solution Data to train or improve AI models, with an exception for fine-tuning a model for your exclusive use. See [fine-tuning vs prompting vs RAG](/data/fine-tuning-vs-prompting-vs-rag/) for what fine-tuning means.
 
 ## Security and compliance
 
-**Who can message the bot.** Anyone with your number can send a message. Your code decides what to do with it. The webhook includes the sender's WhatsApp number, so you can keep an allowlist of known numbers and ignore or give a limited answer to everyone else. A phone number is not strong proof of identity, so do not let it authorise sensitive actions on its own. See [permissions and access control](/concepts/data/permissions-and-access-control/) and [least privilege](/concepts/security/least-privilege/).
+**Who can message the bot.** Anyone with your number can send a message. Your code decides what to do with it. The webhook includes the sender's WhatsApp number, so you can keep an allowlist of known numbers and ignore or give a limited answer to everyone else. A phone number is not strong proof of identity, so do not let it authorise sensitive actions on its own. See [permissions and access control](/data/permissions-and-access-control/) and [least privilege](/running/least-privilege/).
 
 **Check the sender of the webhook too.** Meta's documentation mentions signature validation for webhooks and mutual TLS. Without a check, anyone who finds your web address could post fake messages to it.
 
-**Messages are untrusted input.** Anything an external person sends can contain instructions aimed at your agent. See [prompt injection](/concepts/security/prompt-injection/) and [human in the loop](/concepts/agents/human-in-the-loop/).
+**Messages are untrusted input.** Anything an external person sends can contain instructions aimed at your agent. See [prompt injection](/running/prompt-injection/) and [human in the loop](/agents/human-in-the-loop/).
 
-**Encryption and storage.** Meta's documentation says every WhatsApp message "continues to be protected by Signal protocol encryption that secures messages before they leave the device", and that the platform uses industry standard encryption in transit and at rest over HTTPS with TLS. Your code receives each message as readable text, so your business and any vendor you route messages through can see it. The pages checked did not describe how long Meta keeps message content, and Meta's data processing terms say Meta acts on your instructions as processor for personal information in the Cloud API. Read the current terms and the data processing terms with your compliance lead, and see [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/).
+**Encryption and storage.** Meta's documentation says every WhatsApp message "continues to be protected by Signal protocol encryption that secures messages before they leave the device", and that the platform uses industry standard encryption in transit and at rest over HTTPS with TLS. Your code receives each message as readable text, so your business and any vendor you route messages through can see it. The pages checked did not describe how long Meta keeps message content, and Meta's data processing terms say Meta acts on your instructions as processor for personal information in the Cloud API. Read the current terms and the data processing terms with your compliance lead, and see [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/).
 
-**Records.** Messages with founders or investors may count as business records. Many regulated firms have rules on which channels may be used and how messages are kept. Ask compliance whether WhatsApp is allowed, what must be archived, and whether your agent's logs satisfy that. See [audit trails](/concepts/security/audit-trails/).
+**Records.** Messages with founders or investors may count as business records. Many regulated firms have rules on which channels may be used and how messages are kept. Ask compliance whether WhatsApp is allowed, what must be archived, and whether your agent's logs satisfy that. See [audit trails](/running/audit-trails/).
 
 **Unofficial routes.** Some open-source libraries make a program log in as a personal WhatsApp number, as if it were WhatsApp Web. They are not an official route. WhatsApp's Terms of Service, in the version checked, prohibit "bulk messaging, auto-messaging, auto-dialing, and the like", reverse engineering the service, creating accounts by automated means, and non-personal use unless authorised. No page checked describes exactly how WhatsApp enforces this, but accounts that behave like bots risk being blocked, and you would be depending on something the platform does not support and can break without notice.
 
@@ -108,7 +108,7 @@ When a founder does not reply for two days, the agent cannot write freely. It se
 
 Meta charges per message, and the charge depends on the message type. As of October 2026, Meta's pricing page says free-form messages sent inside a customer service window are not charged, template messages in the marketing category always are, and utility and authentication templates are free inside an open window and charged outside it. Rates change, so check the current rate card.
 
-The real costs are time and approvals. Template review takes effort, messaging limits start low, and each rule needs someone to own it. Quality matters too: if recipients block or report your messages, your limits and standing can suffer. Remember that [rate limits and retries](/concepts/running-things/rate-limits-retries-and-failures/) apply to your own code as well.
+The real costs are time and approvals. Template review takes effort, messaging limits start low, and each rule needs someone to own it. Quality matters too: if recipients block or report your messages, your limits and standing can suffer. Remember that [rate limits and retries](/running/rate-limits-retries-and-failures/) apply to your own code as well.
 
 ## Related
 

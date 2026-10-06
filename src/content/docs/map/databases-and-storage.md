@@ -9,7 +9,7 @@ sidebar:
 published: 2026-10-02
 ---
 
-App hosting runs your code; this layer holds the data that code works with. It is the physical side of [types of databases](/concepts/data/types-of-databases/) and the context layer: the maps and road knowledge an agent finds its way by.
+App hosting runs your code; this layer holds the data that code works with. It is the physical side of [types of databases](/data/types-of-databases/) and the context layer: the maps and road knowledge an agent finds its way by.
 
 **In one line:** databases and storage are the places your information is kept, and the first job of any agent setup is to decide which place is the original and which are only copies built for searching.
 
@@ -17,7 +17,7 @@ App hosting runs your code; this layer holds the data that code works with. It i
 
 An agent is only as useful as the information it can reach. A model knows a lot about the world, but nothing about your deals, your contacts or last week's meeting notes. That information sits in systems you already own, and the question is where, and in what shape.
 
-Data comes in different shapes, and each shape suits a different kind of store. A list of companies with fields suits a table. A pile of PDFs suits file storage. A question like "who introduced us to this founder?" follows connections, which suits a graph. See [structured vs unstructured data](/concepts/data/structured-vs-unstructured-data/) for the basic split.
+Data comes in different shapes, and each shape suits a different kind of store. A list of companies with fields suits a table. A pile of PDFs suits file storage. A question like "who introduced us to this founder?" follows connections, which suits a graph. See [structured vs unstructured data](/data/structured-vs-unstructured-data/) for the basic split.
 
 Without a clear plan you end up with the same fact in four places, each slightly different, and an agent that quotes whichever copy it found first.
 
@@ -38,14 +38,14 @@ flowchart TD
   IDX -.->|"links back to"| SP
 ```
 
-The agent mostly reads from the index, because it is quick and can search by meaning. When it needs the latest value, or when it writes something, it goes back to the system of record. Keeping the copy up to date is its own job, covered in [keeping data fresh](/concepts/data/keeping-data-fresh/). The wider idea is described in [what a context layer is](/concepts/data/what-a-context-layer-is/).
+The agent mostly reads from the index, because it is quick and can search by meaning. When it needs the latest value, or when it writes something, it goes back to the system of record. Keeping the copy up to date is its own job, covered in [keeping data fresh](/data/keeping-data-fresh/). The wider idea is described in [what a context layer is](/data/what-a-context-layer-is/).
 
 The main kinds of store:
 
-- **Relational databases.** Data in tables with rows and columns, linked by shared ids, and queried with SQL. The default choice for structured business data. See [types of databases](/concepts/data/types-of-databases/).
+- **Relational databases.** Data in tables with rows and columns, linked by shared ids, and queried with SQL. The default choice for structured business data. See [types of databases](/data/types-of-databases/).
 - **Document stores.** Each record is a flexible, JSON-like document. Handy when records vary in shape.
-- **Vector databases, or vector features inside ordinary databases.** They store embeddings (lists of numbers that represent meaning) and find the closest matches. This is the engine behind [RAG](/concepts/data/rag-and-chunking/). Many ordinary databases now offer this as an add-on, so a separate vector database is often optional.
-- **Graph databases.** Store things and the links between them, such as person, company, investor. See [knowledge graphs](/concepts/data/knowledge-graphs/).
+- **Vector databases, or vector features inside ordinary databases.** They store embeddings (lists of numbers that represent meaning) and find the closest matches. This is the engine behind [RAG](/data/rag-and-chunking/). Many ordinary databases now offer this as an add-on, so a separate vector database is often optional.
+- **Graph databases.** Store things and the links between them, such as person, company, investor. See [knowledge graphs](/data/knowledge-graphs/).
 - **File and object storage.** Whole files in folders or buckets: PDFs, decks, spreadsheets, recordings. Not queryable like a table, but ideal for documents.
 
 ## Example providers (snapshot, as of October 2026)
@@ -71,9 +71,9 @@ Also worth knowing: your CRM is itself a database with a friendly front end. For
 - **Is this a source of truth or a copy?** Decide per kind of data. Contacts and deal stages live in the CRM. A search index of meeting notes is a copy and can be rebuilt.
 - **Do you need a separate vector database?** For a few thousand documents, vector search inside Postgres or your existing database is usually enough. Dedicated services matter at larger scale or when you want the vendor to manage the index.
 - **Do you need a graph?** Only if your questions are about paths and connections ("who knows whom"). Many teams get far with tables that record relationships.
-- **Where does the data physically sit?** Check the region of each service, and where backups go. This matters for UK and EU data protection (see [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/)).
+- **Where does the data physically sit?** Check the region of each service, and where backups go. This matters for UK and EU data protection (see [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/)).
 - **Backups.** Know who does them, how often, and whether you have tested a restore. A backup you have never restored is a hope, not a backup.
-- **Access control.** An index can accidentally expose documents to people who could not open them in SharePoint. Carry permissions across, or filter results by who is asking. See [permissions and access control](/concepts/data/permissions-and-access-control/).
+- **Access control.** An index can accidentally expose documents to people who could not open them in SharePoint. Carry permissions across, or filter results by who is asking. See [permissions and access control](/data/permissions-and-access-control/).
 - **Self-managed or hosted.** Hosting costs more per month than running your own, but you do not do the updates, backups or security patches.
 - **Lock-in.** Standard formats (SQL, plain files) move easily. Vendor-specific query languages and index formats are harder to leave.
 
@@ -94,16 +94,16 @@ Sample Ventures wants an assistant that can answer questions about companies, pe
 - **Storage is cheap, searching and moving data is not free.** Keeping files costs little. Frequent reads, large transfers and embedding every document add up.
 - **Hosted databases cost more as they grow.** Costs usually rise with storage, compute and data moved out. Watch for scale-to-zero features that pause idle databases and add a short wait on first use.
 - **Stale copies mislead.** An agent that trusts a week-old index will state old facts with confidence. Show last-updated times, and read the source for anything that matters.
-- **Duplicates and mismatched names.** The same company spelled two ways creates two records. See [entity resolution](/concepts/data/entity-resolution/).
+- **Duplicates and mismatched names.** The same company spelled two ways creates two records. See [entity resolution](/data/entity-resolution/).
 - **Too many stores.** Each extra database is another thing to secure, back up and keep in sync. The common mistake is adding a vector database before checking that the existing database could do the job.
 - **Sensitive data in indexes.** Copies of confidential documents are still confidential. Treat the index with the same care as the originals.
 
 ## Related
 
-- [Types of databases](/concepts/data/types-of-databases/): the families of database and when each fits
-- [What a context layer is](/concepts/data/what-a-context-layer-is/): how stored data becomes something an agent can use
-- [RAG and chunking](/concepts/data/rag-and-chunking/): how documents are split and searched by meaning
-- [Keeping data fresh](/concepts/data/keeping-data-fresh/): how an index stays in step with its source
+- [Types of databases](/data/types-of-databases/): the families of database and when each fits
+- [What a context layer is](/data/what-a-context-layer-is/): how stored data becomes something an agent can use
+- [RAG and chunking](/data/rag-and-chunking/): how documents are split and searched by meaning
+- [Keeping data fresh](/data/keeping-data-fresh/): how an index stays in step with its source
 - [Specialised models](/map/specialised-models/): the embedding and parsing models that fill the index
 
 ## The proper terms

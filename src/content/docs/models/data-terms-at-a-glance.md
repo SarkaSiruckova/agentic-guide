@@ -17,7 +17,7 @@ Each provider page has a short data section. This page puts the business and API
 
 A model provider is a company that receives your text. What it may do with that text is set by its terms, and those terms are not the same for a free chat app, a business plan and an API product from the same company.
 
-For a UK firm, the stakes are practical. Personal data brings duties under UK data protection law, and confidential deal material brings duties to the people who shared it. The background is on [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/).
+For a UK firm, the stakes are practical. Personal data brings duties under UK data protection law, and confidential deal material brings duties to the people who shared it. The background is on [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/).
 
 This page records what each provider's own pages say as of 2 October 2026. It is a snapshot, not a recommendation, and not legal advice. Terms change, so read the current page before you rely on any line here.
 
@@ -80,7 +80,7 @@ flowchart TD
 
 Start with the plan you will actually buy, then read its terms, not the provider's general privacy page. A personal account used for work is the most common way firms end up on the wrong terms.
 
-Ask the vendor to confirm in writing anything you could not find. Keep the answers, the signed DPA and the date you checked in one place, as part of your [audit trail](/concepts/security/audit-trails/). Re-check at least once a year, and whenever a provider announces a policy change.
+Ask the vendor to confirm in writing anything you could not find. Keep the answers, the signed DPA and the date you checked in one place, as part of your [audit trail](/running/audit-trails/). Re-check at least once a year, and whenever a provider announces a policy change.
 
 ## Worked example
 
@@ -115,10 +115,10 @@ She finds that two providers answer most questions on public pages and two leave
 
 ## Related
 
-- [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/): the law and contracts behind these questions
+- [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/): the law and contracts behind these questions
 - [How to judge a new model](/models/how-to-judge-a-new-model/): where data terms fit in a model check
 - [Open-weight options](/models/open-weight-options/): running a model yourself instead
-- [Audit trails](/concepts/security/audit-trails/): keeping a record of what you checked and what the agent did
+- [Audit trails](/running/audit-trails/): keeping a record of what you checked and what the agent did
 
 ## The proper terms
 

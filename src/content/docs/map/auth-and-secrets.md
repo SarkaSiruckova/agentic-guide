@@ -9,7 +9,7 @@ sidebar:
 published: 2026-10-02
 ---
 
-Every layer so far makes calls into some other system, and each call has to prove it is allowed. This layer holds the keys: the identities, sign-ins and secrets behind every connection, the practical side of [permissions and access control](/concepts/data/permissions-and-access-control/).
+Every layer so far makes calls into some other system, and each call has to prove it is allowed. This layer holds the keys: the identities, sign-ins and secrets behind every connection, the practical side of [permissions and access control](/data/permissions-and-access-control/).
 
 **In one line:** this layer decides who or what is allowed into each system, and keeps the keys and sign-ins that prove it somewhere safe, instead of scattered through files and chats.
 
@@ -31,12 +31,12 @@ The pieces:
 
 - **Identity provider (IdP).** The service that holds your accounts and checks who someone is. It also provides **single sign-on (SSO)**: one login that works across many apps.
 - **Token.** A short-lived pass the identity provider issues after a successful sign-in. The agent shows the token to a system instead of a password.
-- **OAuth.** The standard way a person approves an app to act for them, and the app receives a limited token (see [APIs, OAuth and API keys](/concepts/data/apis-oauth-and-api-keys/)).
+- **OAuth.** The standard way a person approves an app to act for them, and the app receives a limited token (see [APIs, OAuth and API keys](/agents/apis-oauth-and-api-keys/)).
 - **API key.** A long string that works like a password for software. Simple, but it often grants wide access and does not expire on its own.
 - **Service account.** A non-human account for software. It has its own name, its own permissions and its own log trail.
-- **Secrets store.** A locked place for keys and passwords, which hands them to software only when needed (see [environment variables and secrets](/concepts/running-things/environment-variables-and-secrets/)).
-- **Permissions.** The rules about what each identity may read or change (see [permissions and access control](/concepts/data/permissions-and-access-control/)).
-- **Audit record.** A log of who did what and when (see [audit trails](/concepts/security/audit-trails/)).
+- **Secrets store.** A locked place for keys and passwords, which hands them to software only when needed (see [environment variables and secrets](/building/environment-variables-and-secrets/)).
+- **Permissions.** The rules about what each identity may read or change (see [permissions and access control](/data/permissions-and-access-control/)).
+- **Audit record.** A log of who did what and when (see [audit trails](/running/audit-trails/)).
 
 ```mermaid
 flowchart TD
@@ -49,7 +49,7 @@ flowchart TD
   VAULT --> LOG
 ```
 
-**Why an agent needs its own identity.** If an agent borrows a partner's login, every action it takes looks like the partner did it. You cannot give it less access than the partner has, you cannot turn it off without locking the partner out, and if the partner leaves, the agent breaks. A separate identity fixes all of that, and is the practical form of [least privilege](/concepts/security/least-privilege/).
+**Why an agent needs its own identity.** If an agent borrows a partner's login, every action it takes looks like the partner did it. You cannot give it less access than the partner has, you cannot turn it off without locking the partner out, and if the partner leaves, the agent breaks. A separate identity fixes all of that, and is the practical form of [least privilege](/running/least-privilege/).
 
 Some agents should act as the person asking, for example when an associate asks an assistant to find files. In that case the agent uses **delegated** access and sees only what that associate can see. Background jobs, such as a nightly sync, use **app-only** access with their own identity. Choose per job, and prefer delegated access where a person is present.
 
@@ -104,16 +104,16 @@ Sample Ventures, the fictional fund, wants an agent that reads the data room fol
 - **Secrets sprawl.** Keys copied into chats, notes, code and automation tools are the usual cause of leaks. Search for them occasionally.
 - **Expiry surprises.** Secrets and tokens expire. Without a reminder, a working agent stops on a Monday morning.
 - **Shared admin accounts.** One account used by everyone makes the audit record meaningless.
-- **Tools sign in on your behalf.** Automation platforms and chat assistants store sign-ins. Whoever can edit a flow can often use them. See [orchestration tools](/concepts/running-things/orchestration-tools/).
-- **Permissions do not stop bad instructions.** A well-scoped agent can still be tricked within its scope (see [prompt injection](/concepts/security/prompt-injection/)). Narrow access limits the damage.
+- **Tools sign in on your behalf.** Automation platforms and chat assistants store sign-ins. Whoever can edit a flow can often use them. See [orchestration tools](/building/orchestration-tools/).
+- **Permissions do not stop bad instructions.** A well-scoped agent can still be tricked within its scope (see [prompt injection](/running/prompt-injection/)). Narrow access limits the damage.
 
 ## Related
 
-- [APIs, OAuth and API keys](/concepts/data/apis-oauth-and-api-keys/): how sign-in and keys work underneath
-- [Environment variables and secrets](/concepts/running-things/environment-variables-and-secrets/): how a running program receives its keys
-- [Permissions and access control](/concepts/data/permissions-and-access-control/): deciding what each identity may do
-- [Least privilege](/concepts/security/least-privilege/): the rule that shapes every choice on this page
-- [Audit trails](/concepts/security/audit-trails/): the record that makes separate identities worth having
+- [APIs, OAuth and API keys](/agents/apis-oauth-and-api-keys/): how sign-in and keys work underneath
+- [Environment variables and secrets](/building/environment-variables-and-secrets/): how a running program receives its keys
+- [Permissions and access control](/data/permissions-and-access-control/): deciding what each identity may do
+- [Least privilege](/running/least-privilege/): the rule that shapes every choice on this page
+- [Audit trails](/running/audit-trails/): the record that makes separate identities worth having
 
 ## The proper terms
 

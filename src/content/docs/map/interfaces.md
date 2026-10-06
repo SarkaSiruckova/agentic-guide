@@ -21,7 +21,7 @@ It also quietly decides four serious things:
 
 - **Who can use it.** A command line suits a developer. A message in the team chat suits everyone.
 - **How they sign in.** The interface is where identity enters the system, which feeds into [auth and secrets](/map/auth-and-secrets/).
-- **What they see before an action happens.** If the agent wants to send an email or change a CRM record, the interface is where a person gets to say yes or no. This is [human in the loop](/concepts/agents/human-in-the-loop/), and a clumsy approval screen leads people to click through without reading.
+- **What they see before an action happens.** If the agent wants to send an email or change a CRM record, the interface is where a person gets to say yes or no. This is [human in the loop](/agents/human-in-the-loop/), and a clumsy approval screen leads people to click through without reading.
 - **Where conversation data is stored.** Chats can hold investor and founder details. Each interface keeps its history somewhere, under someone's retention rules.
 
 <mark>The interface is where trust is won or lost, because it is the only layer your colleagues can see.</mark>
@@ -71,12 +71,12 @@ Command line and email need no provider: they are ways of reaching an agent you 
 ## Choosing between them
 
 - **Who needs to use it?** Start with the least technical person who will rely on it. If they live in email and the team chat, go there.
-- **How do people sign in?** Prefer the sign-in people already use for work, so access follows their existing account. Compare with [permissions and access control](/concepts/data/permissions-and-access-control/). An agent that acts for the person should see only what that person may see.
+- **How do people sign in?** Prefer the sign-in people already use for work, so access follows their existing account. Compare with [permissions and access control](/data/permissions-and-access-control/). An agent that acts for the person should see only what that person may see.
 - **What does the approval look like?** Check that a person sees the actual action (the exact email, the exact field change) before it happens, not just a vague "continue?".
-- **Where is the chat history stored, and for how long?** Find out who at the vendor can read it, whether it trains models, and how to delete it. See [GDPR, data retention and DPAs](/concepts/security/gdpr-data-retention-and-dpas/).
+- **Where is the chat history stored, and for how long?** Find out who at the vendor can read it, whether it trains models, and how to delete it. See [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/).
 - **Can I switch?** If the interface is a thin layer over your own agent, you can change it later. If the logic lives inside one vendor's assistant, switching means rebuilding.
 - **Build or buy?** A ready-made assistant is quicker. A small custom tool gives you control over what is shown and logged. Many firms use a ready-made chat app first.
-- **Does it fit how the agent connects to data?** Some assistants connect to your systems through standard plugs such as [MCP](/concepts/agents/mcp/). Check that your interface supports the connection method you picked.
+- **Does it fit how the agent connects to data?** Some assistants connect to your systems through standard plugs such as [MCP](/agents/mcp/). Check that your interface supports the connection method you picked.
 
 ## Worked example
 
@@ -94,7 +94,7 @@ Throughout, the developer uses a coding assistant to build and change the agent.
 
 - **Cheapest: what you already pay for.** Using an assistant or suite your team already has costs little extra effort. Custom dashboards cost build and upkeep time.
 - **More surfaces, more to secure.** Each new channel is another place where sign-in, permissions and approvals must be set up and checked.
-- **Messages can carry attacks.** An email or a document the agent reads can hide instructions (see [prompt injection](/concepts/security/prompt-injection/)). The more channels feed text to the agent, the more exposure.
+- **Messages can carry attacks.** An email or a document the agent reads can hide instructions (see [prompt injection](/running/prompt-injection/)). The more channels feed text to the agent, the more exposure.
 - **Approval fatigue.** Too many confirmation clicks teach people to approve without reading. Ask only for the risky actions.
 - **Chat history is data.** It may sit with the vendor, in your suite or in your own database. Decide which, and set a retention period.
 - **Features shift.** Interfaces gain and lose abilities quickly, and plan tiers decide which are available. Verify before you commit.
@@ -102,9 +102,9 @@ Throughout, the developer uses a coding assistant to build and change the agent.
 ## Related
 
 - [Auth and secrets](/map/auth-and-secrets/): how people and agents prove who they are
-- [Human in the loop](/concepts/agents/human-in-the-loop/): what a person should see before an action
-- [Chat, agent, workflow and automation](/concepts/agents/chat-agent-workflow-automation/): how a chat window differs from an agent behind it
-- [Permissions and access control](/concepts/data/permissions-and-access-control/): making sure the agent sees only what the person may see
+- [Human in the loop](/agents/human-in-the-loop/): what a person should see before an action
+- [Chat, agent, workflow and automation](/start/chat-agent-workflow-automation/): how a chat window differs from an agent behind it
+- [Permissions and access control](/data/permissions-and-access-control/): making sure the agent sees only what the person may see
 - [One question through every layer](/map/one-question-through-every-layer/): a question travelling from the interface to the data and back
 
 ## The proper terms
