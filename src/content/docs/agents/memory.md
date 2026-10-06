@@ -6,10 +6,10 @@ lastReviewed: 2026-10-06
 snapshot: false
 published: 2026-10-02
 sidebar:
-  order: 9
+  order: 10
 ---
 
-Skills and instruction files are know-how a person writes down on purpose; memory is the logbook an assistant keeps as it goes. A model forgets everything when a conversation ends, so anything it seems to remember has been written down and handed back to it.
+[Browser and computer-use agents](/agents/browser-and-computer-use-agents/) can act in almost any app, but each conversation still starts from nothing. Memory is the logbook an assistant keeps as it goes, alongside the [skills and instruction files](/agents/skills-and-instruction-files/) a person writes on purpose. A model forgets everything when a conversation ends, so anything it seems to remember has been written down and handed back to it.
 
 **In one line:** memory is information saved outside the model and brought back into its context window later, which is the only way an assistant can seem to remember anything from an earlier conversation.
 
@@ -124,6 +124,7 @@ The most common mistake is assuming memory is a record of everything. It is a sm
 - [RAG and chunking](/data/rag-and-chunking/): the other way to bring saved knowledge back into the window
 - [Skills and instruction files](/agents/skills-and-instruction-files/): memory you write and control yourself
 - [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/): memories about people are personal data
+- [Memory layers](/data/memory-layers/): running memory as infrastructure for your own agents or a team
 
 ## Next up
 

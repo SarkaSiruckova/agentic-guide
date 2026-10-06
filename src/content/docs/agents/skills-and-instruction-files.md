@@ -6,10 +6,10 @@ lastReviewed: 2026-10-06
 snapshot: true
 published: 2026-10-02
 sidebar:
-  order: 7
+  order: 4
 ---
 
-Connectors give an assistant new places to reach. Instruction files and skills give it something different: guidance a person writes on purpose, so the agent knows the rules of the road and the steps of a job before it starts.
+An [agentic harness](/agents/agentic-harness/) hands the model its tools, limits and standing instructions at the start of every job. Instruction files and skills are the part of that you write yourself: guidance saved once, so the agent knows the rules of the road and the steps of a job before it starts, and you stop retyping them.
 
 **In one line:** instruction files and skills are saved written guidance that an agent reads, so you teach it how you work once instead of explaining it in every conversation.
 
@@ -66,7 +66,7 @@ flowchart TD
 
 - **System prompt.** The [system prompt](/using-ai/system-prompts/) is set by whoever builds the application and is always sent. An instruction file is similar but lives with your project and is easy to edit.
 - **Tools.** [Tools](/agents/tool-use/) let an agent do something it could not do before. A skill tells it how to do a job well using the tools it already has.
-- **Memory.** [Memory](/agents/memory/) is what the agent learns or stores over time. Instruction files and skills are written deliberately by people.
+- **Memory.** [Memory](/agents/memory/) (covered later in Part 3) is what the agent learns or stores over time. Instruction files and skills are written deliberately by people.
 
 ## In practice
 
@@ -112,7 +112,7 @@ Nothing changes for requests that have nothing to do with cake orders: the skill
 
 **Skill vs tool.** A tool is an action the agent can take, such as searching the CRM. A skill is know-how about when and how to take actions. A skill often tells the agent how to use several tools well.
 
-**Skill vs MCP.** [MCP](/agents/mcp/) connects the agent to systems. A skill teaches it a procedure. You often need both: MCP to reach the order spreadsheet, a skill to log orders the way the business likes.
+**Skill vs MCP.** [MCP](/agents/mcp/) (a standard way to plug an agent into other systems, covered a few pages on) connects the agent to systems. A skill teaches it a procedure. You often need both: MCP to reach the order spreadsheet, a skill to log orders the way the business likes.
 
 ## Related
 

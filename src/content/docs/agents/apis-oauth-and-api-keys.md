@@ -6,10 +6,10 @@ lastReviewed: 2026-10-06
 snapshot: false
 published: 2026-10-02
 sidebar:
-  order: 4
+  order: 6
 ---
 
-An agent's harness can only offer tools that reach real systems, and those systems keep their data behind a login. Connecting to them starts with two questions: how does software ask another system for data, and how does it prove who it is and what it may do?
+[Skills](/agents/skills-in-claude/) teach an assistant how you like a job done, so you stop retyping yourself. The next step is to stop pasting things in: letting it reach your systems directly. Those systems keep their data behind a login, so connecting to them starts with two questions: how does software ask another system for data, and how does it prove who it is and what it may do?
 
 **In one line:** an API is a defined way for one program to ask another system for things, and API keys and OAuth are the two main ways the program proves who it is and what it is allowed to do.
 
@@ -131,6 +131,7 @@ The most common mistake is pasting a key into a place that is shared, such as a 
 - [Permissions and access control](/data/permissions-and-access-control/): what an identity may see and do once connected
 - [Keeping data fresh](/data/keeping-data-fresh/): live reads rely on a working connection
 - [Auth and secrets](/map/auth-and-secrets/): where identity and keys fit in the wider stack
+- [Agent identity and payments](/running/agent-identity-and-payments/): giving an agent its own identity, and letting it pay safely
 
 ## Next up
 

@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: true
 published: 2026-10-02
 sidebar:
-  order: 11
+  order: 13
 ---
 
 Discounts such as [prompt caching and batch processing](/running/prompt-caching-and-batch-processing/) make each token cheaper, but the biggest price difference is between the models themselves. Model routing is the habit of matching each job to the cheapest model that can do it well.

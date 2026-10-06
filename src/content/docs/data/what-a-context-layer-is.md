@@ -6,10 +6,10 @@ lastReviewed: 2026-10-06
 snapshot: false
 published: 2026-10-02
 sidebar:
-  order: 11
+  order: 13
 ---
 
-Once [permissions](/data/permissions-and-access-control/) decide what each person may see, every part is in place. Connectors, databases, retrieval, entity resolution, freshness and permissions are the parts, and the context layer is how they combine into the maps and road knowledge every agent drives by.
+With [permissions](/data/permissions-and-access-control/) deciding what each person may see and a [memory layer](/data/memory-layers/) keeping what agents learn, every part is in place. Connectors, databases, retrieval, entity resolution, freshness, permissions and memory are the parts, and the context layer is how they combine into the maps and road knowledge every agent drives by.
 
 **In one line:** a context layer is the set of connected, permissioned and reasonably fresh sources, plus the logic that gathers the right information from them for each question, sitting between your raw systems and the agents or people who ask.
 
@@ -120,6 +120,8 @@ The most common mistake is starting with the architecture instead of a question 
 - [Permissions and access control](/data/permissions-and-access-control/): how the layer decides what each person may see
 - [MCP](/agents/mcp/): a common standard for connecting agents to sources
 - [The map](/map/): where each layer of the infrastructure sits
+- [Memory layers](/data/memory-layers/): the piece that keeps what agents learn from conversations
+- [From me to us](/data/from-me-to-us/): the move from personal to shared setup that a context layer serves
 
 ## Next up
 

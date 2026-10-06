@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: false
 published: 2026-10-02
 sidebar:
-  order: 7
+  order: 8
 ---
 
 Tables answer "list all X" and retrieval answers "what did the documents say". Some questions are about how people and companies are connected, and a knowledge graph is built for those.

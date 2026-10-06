@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: false
 published: 2026-10-02
 sidebar:
-  order: 3
+  order: 4
 ---
 
 Knowing which kind of store holds what (see [types of databases](/data/types-of-databases/)) is only half of it. The model also has to turn a plain question into something the database can run, and this page covers the main ways that happens and the guard rails each one needs.

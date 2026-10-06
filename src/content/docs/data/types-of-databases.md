@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: false
 published: 2026-10-02
 sidebar:
-  order: 2
+  order: 3
 ---
 
 Data that fits in tables and data that lives in free text (see [structured vs unstructured data](/data/structured-vs-unstructured-data/)) need different homes. This page tours the main kinds of database and the question each one answers best.

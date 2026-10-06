@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: true
 published: 2026-10-05
 sidebar:
-  order: 10
+  order: 12
 ---
 
 A hosting service such as [Vercel](/building/vercel/) can publish your pages and run short functions, but it has nowhere of its own to keep records. Supabase supplies that missing piece: a database you can use without running a server.

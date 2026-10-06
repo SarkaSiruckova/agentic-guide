@@ -105,6 +105,7 @@ Her conclusion: "open weights" is not a privacy answer on its own. A downloaded 
 - [Inference](/under-the-hood/inference/): what running a model involves, wherever it runs
 - [Permissions and access control](/data/permissions-and-access-control/): who can reach the data once a model is connected
 - [Open-model hosting](/map/open-model-hosting/): who runs an open model for you
+- [Local vs cloud](/building/local-vs-cloud/): which pieces of a setup can run on your own computer
 
 ## Next up
 

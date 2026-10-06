@@ -101,6 +101,7 @@ The model saved time finding the data. Checking against the source caught the er
 - [Hallucination and grounding](/start/hallucination-and-grounding/): why chart readings must be checked
 - [Claude apps](/using-ai/claude-apps/): where uploads happen
 - [Projects and memory](/using-ai/projects-and-memory/): keeping files you use often in one place
+- [Voice and phone agents](/channels/voice-and-phone-agents/): models that listen and speak
 
 ## Next up
 

@@ -165,6 +165,7 @@ Sample Ventures wants associates to ask the agent about portfolio companies from
 - [Telegram](/channels/telegram/): the platform details for a simple bot
 - [WhatsApp](/channels/whatsapp/): the platform details for the business API
 - [Microsoft Teams](/channels/microsoft-teams/): the platform details for a Microsoft 365 firm
+- [Voice and phone agents](/channels/voice-and-phone-agents/): the same pattern when the message is a phone call
 - [Permissions and access control](/data/permissions-and-access-control/): what each person may see
 - [Prompt injection](/running/prompt-injection/): why chat text is untrusted
 

@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: true
 published: 2026-10-05
 sidebar:
-  order: 9
+  order: 11
 ---
 
 Your code now keeps its keys in [environment variables](/building/environment-variables-and-secrets/), and small parts of it can run as [serverless functions](/building/serverless-functions/). Vercel is one service that handles both for you, and it also does the step that turns a GitHub repository into a website people can visit.

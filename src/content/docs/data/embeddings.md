@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: false
 published: 2026-10-02
 sidebar:
-  order: 4
+  order: 5
 ---
 
 Database queries work when you know which field to ask about (see [how LLMs talk to databases](/data/how-llms-talk-to-databases/)), but free text needs a different kind of search. Embeddings let software search by meaning rather than exact words, which is what [RAG](/data/rag-and-chunking/) (having an assistant look up relevant passages before it answers) depends on.

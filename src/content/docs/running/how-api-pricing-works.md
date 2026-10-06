@@ -6,10 +6,10 @@ published: 2026-10-02
 lastReviewed: 2026-10-05
 snapshot: true
 sidebar:
-  order: 9
+  order: 11
 ---
 
-An agent that is safe and handles data properly, as [GDPR, data retention and DPAs](/running/gdpr-data-retention-and-dpas/) describes, still has to be affordable. If the model is the engine and tokens are its fuel, the last pages of Part 6 are about the fuel bill, starting with how providers charge when your software calls a model through the API.
+An agent that is safe, handles data properly and follows clear house rules, as [writing an AI policy](/running/writing-an-ai-policy/) describes, still has to be affordable. If the model is the engine and tokens are its fuel, the last pages of Part 6 are about the fuel bill, starting with how providers charge when your software calls a model through the API.
 
 **In one line:** API use is billed by the token, with the text you send and the text you get back priced separately, and everything else (thinking, tools, discounts) is a variation on that.
 

@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: true
 published: 2026-10-02
 sidebar:
-  order: 5
+  order: 7
 ---
 
 Every system has its own API and its own sign-in, so connecting an assistant to each one used to need custom wiring. MCP is a standard socket: any accessory built for it plugs into any assistant that supports it.

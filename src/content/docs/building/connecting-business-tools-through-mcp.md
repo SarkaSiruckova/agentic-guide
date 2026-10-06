@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: true
 published: 2026-10-05
 sidebar:
-  order: 14
+  order: 16
 ---
 
 A workflow tool such as [n8n](/building/n8n/), Claude Code and the Claude apps all become far more useful once they can reach real business records. This page covers plugging a CRM, Microsoft 365 and email into them through MCP, without handing over the keys to everything.

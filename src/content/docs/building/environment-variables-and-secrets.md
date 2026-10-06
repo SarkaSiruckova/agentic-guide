@@ -6,10 +6,10 @@ lastReviewed: 2026-10-06
 snapshot: false
 published: 2026-10-02
 sidebar:
-  order: 8
+  order: 10
 ---
 
-Small pieces of code, such as [serverless functions](/building/serverless-functions/), need keys to reach a CRM, a file store or a model. This page covers where those keys belong, so they never end up written into the code itself.
+Code running in a [sandbox](/building/sandboxes-and-code-execution/) or a serverless function often needs a key to reach a CRM, a file store or a model. This page covers where those keys belong, so they never end up written into the code itself.
 
 **In one line:** an environment variable is a named setting a program reads from its surroundings instead of from its code, and a secret is the sensitive kind, such as an API key or a password, that must never be written into code or shared.
 

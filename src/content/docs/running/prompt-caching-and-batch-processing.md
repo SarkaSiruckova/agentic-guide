@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: true
 published: 2026-10-02
 sidebar:
-  order: 10
+  order: 12
 ---
 
 The rate per token is set by the provider, as [how API pricing works](/running/how-api-pricing-works/) explains, but how many full-price tokens you pay for is partly up to you. This page covers the two main discounts: reusing a repeated start of a prompt, and sending work that can wait in bulk.

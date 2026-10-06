@@ -6,10 +6,10 @@ lastReviewed: 2026-10-06
 snapshot: false
 published: 2026-10-02
 sidebar:
-  order: 6
+  order: 7
 ---
 
-[Least privilege](/running/least-privilege/) limits what an agent can reach. Hidden instructions, or plain mistakes, still only do harm if the agent has a way to act on them, and this page looks at the most damaging way: tools that can carry sensitive data out, whether an attacker is steering or not.
+[Least privilege](/running/least-privilege/) limits what an agent can reach, and [agent identity and payments](/running/agent-identity-and-payments/) gives it a name badge and a capped wallet. Hidden instructions, or plain mistakes, still only do harm if the agent has a way to act on them, and this page looks at the most damaging way: tools that can carry sensitive data out, whether an attacker is steering or not.
 
 **In one line:** data exfiltration is data leaving the place it should stay, and for an agent, every tool that can send something outside is a possible exit.
 

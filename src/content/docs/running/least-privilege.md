@@ -113,7 +113,10 @@ Now a hidden instruction arrives in an email. At worst it could add a bogus cont
 - [APIs, OAuth and API keys](/agents/apis-oauth-and-api-keys/): where scopes on tokens are set
 - [Prompt injection](/running/prompt-injection/): why a fooled agent should have little to misuse
 - [MCP](/agents/mcp/): connect only the tools a job needs
+- [Agent identity and payments](/running/agent-identity-and-payments/): a name badge and a capped wallet for each agent
+- [Sandboxes and code execution](/building/sandboxes-and-code-execution/): least privilege for code an agent writes and runs
+- [Writing an AI policy](/running/writing-an-ai-policy/): putting who may connect what into your team's rules
 
 ## Next up
 
-Narrow keys limit what an agent can reach. [Data exfiltration through tools](/running/data-exfiltration-through-tools/) looks at the other half: every exit through which what it can reach might leave.
+Narrow keys are half the story. An agent acting for you also needs a name badge, so others know who it is and whose behalf it acts on, and sometimes a wallet with a strict limit: that is [agent identity and payments](/running/agent-identity-and-payments/).

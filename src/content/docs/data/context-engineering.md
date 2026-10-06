@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: false
 published: 2026-10-02
 sidebar:
-  order: 12
+  order: 14
 ---
 
 Everything a [context layer](/data/what-a-context-layer-is/) gathers, along with tools, memory, skills and subagents, ends the same way: as text placed in front of the model. Context engineering is the craft of deciding which of it goes in at each step, so the driver sees the road ahead and not every map in the glovebox.

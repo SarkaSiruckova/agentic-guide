@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: false
 published: 2026-10-02
 sidebar:
-  order: 6
+  order: 7
 ---
 
 With [RAG](/data/rag-and-chunking/) in hand, there are three ways to give a model knowledge or change how it responds: change the prompt, change what it reads, or change the model itself. This page is about choosing between them.

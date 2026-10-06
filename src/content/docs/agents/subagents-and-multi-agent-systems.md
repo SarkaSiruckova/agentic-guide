@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: false
 published: 2026-10-02
 sidebar:
-  order: 12
+  order: 13
 ---
 
 With tools, connections, memory and approvals in place, a single agent can take on large jobs, and its running record grows with every step. Subagents keep that record manageable by handing pieces of the work to helper agents that each start clean.

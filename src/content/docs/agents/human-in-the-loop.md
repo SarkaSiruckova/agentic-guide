@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: false
 published: 2026-10-02
 sidebar:
-  order: 11
+  order: 12
 ---
 
 The simplest [safety habit](/agents/safety-basics/) with connected AI is to keep risky actions behind a person's approval. An agent with tools and memory can act largely on its own, which is the point, and also the reason some of its actions should wait for a yes.
@@ -117,6 +117,7 @@ Common mistakes are putting checkpoints on everything, so people tune out, and o
 - [The agent loop](/agents/the-agent-loop/): where the pause happens, and how the loop carries on afterwards
 - [Prompt injection](/running/prompt-injection/): why approvals on risky actions matter
 - [Audit trails](/running/audit-trails/): the lasting record of approvals given and refused
+- [Agent identity and payments](/running/agent-identity-and-payments/): approval before an agent pays for something
 
 ## Next up
 

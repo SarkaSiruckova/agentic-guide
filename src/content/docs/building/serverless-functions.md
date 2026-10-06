@@ -6,10 +6,10 @@ lastReviewed: 2026-10-06
 snapshot: true
 published: 2026-10-02
 sidebar:
-  order: 7
+  order: 8
 ---
 
-Tools such as [AI code editors and app builders](/building/cursor-and-app-builders/) help you make software, and that software then needs somewhere to run. For small jobs that happen now and then, such as answering a message or sending a weekly reminder, the usual home is a serverless function.
+Some pieces of an AI setup need to run in the cloud so they keep going when your laptop is closed (see [local vs cloud](/building/local-vs-cloud/)). For small pieces of your own code that run now and then, such as answering a message or sending a weekly reminder, the simplest cloud home is a serverless function.
 
 **In one line:** a serverless function is a small piece of code that runs only when something triggers it, on a platform that manages the machines, so you pay for the runs rather than for waiting around.
 
@@ -126,4 +126,4 @@ A common mistake is putting a whole agent in one function and finding out at min
 
 ## Next up
 
-A function that reaches a shop platform, a CRM or a model needs a key to get in. [Environment variables and secrets](/building/environment-variables-and-secrets/) explains where those keys should live.
+A function runs code you wrote and checked. When an agent writes code itself and runs it on the spot, that code needs a sealed-off place to run: [sandboxes and code execution](/building/sandboxes-and-code-execution/).

@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: true
 published: 2026-10-02
 sidebar:
-  order: 12
+  order: 14
 ---
 
 A [trigger](/building/triggers-and-scheduling/) only answers the question of when a job starts. Orchestration tools handle what comes after: running the steps in order across your apps, and keeping a record of every run.

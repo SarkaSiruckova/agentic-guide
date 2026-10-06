@@ -6,7 +6,7 @@ published: 2026-10-06
 lastReviewed: 2026-10-06
 snapshot: true
 sidebar:
-  order: 6
+  order: 8
 ---
 
 MCP is the standard socket that lets an assistant plug into other systems. In the Claude apps, the thing you actually plug in is called a connector, and this page shows how to add one, how to choose what it may touch, and how to switch it off.
@@ -135,7 +135,8 @@ Claude never held Sam's password, and nothing changed in the calendar without Sa
 - [Tool use](/agents/tool-use/): how Claude decides to call a connector's tools
 - [Human in the loop](/agents/human-in-the-loop/): why approval settings matter for writing actions
 - [Least privilege](/running/least-privilege/): the habit of granting only the access a job needs
+- [Browser and computer-use agents](/agents/browser-and-computer-use-agents/): the fallback for apps with no connector
 
 ## Next up
 
-A connector gives Claude access to your tools, but not the know-how to use them your way. [Skills and instruction files](/agents/skills-and-instruction-files/) cover how to write that know-how down once so Claude follows it every time.
+Connectors only reach services that offer one. For everything else, [browser and computer-use agents](/agents/browser-and-computer-use-agents/) let an agent use a website or app the way a person does, by looking at the screen and clicking.

@@ -6,10 +6,10 @@ lastReviewed: 2026-10-06
 snapshot: false
 published: 2026-10-02
 sidebar:
-  order: 1
+  order: 2
 ---
 
-A first agent usually answers one kind of question from one data source (see [your first agent](/building/your-first-agent/)). To do more, it needs more of your data, the maps and road knowledge it drives by, and data comes in two very different shapes.
+Once a team shares its AI setup (see [from me to us](/data/from-me-to-us/)), its agents draw on the team's shared information: the maps and road knowledge they drive by. The first thing to understand about that information is that it comes in two very different shapes.
 
 **In one line:** structured data fits into tables with fixed fields, such as a stage or an amount, while unstructured data is free-form text such as emails, documents and call notes.
 

@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: false
 published: 2026-10-05
 sidebar:
-  order: 15
+  order: 17
 ---
 
 Once one business system is [connected read-only and narrowly](/building/connecting-business-tools-through-mcp/), the garage is stocked and it is time to build something. This page turns everything from the terminal to safe connections into one small, safe build path.
@@ -144,4 +144,4 @@ Limits to keep in mind: an agent is only as good as its data and permissions, a 
 
 ## Next up
 
-An agent is only as good as the data it can reach, and that data comes in two very different shapes. Part 5, Data and the context layer, starts with [structured vs unstructured data](/data/structured-vs-unstructured-data/).
+So far the agent has been yours: your account, your laptop, your connections. Part 5, Data and the context layer, opens with the turning point of the guide, [from me to us](/data/from-me-to-us/): what changes when a whole team relies on it.

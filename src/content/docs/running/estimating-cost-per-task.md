@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: false
 published: 2026-10-02
 sidebar:
-  order: 12
+  order: 14
 ---
 
 Prices, discounts and [model routing](/running/model-routing/) are the parts of the fuel bill. This page adds them up into the figure that matters for a decision: the cost of one finished task, worked out before you build and checked once it runs.

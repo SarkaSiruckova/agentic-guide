@@ -292,6 +292,7 @@ Check usage with `/usage` (`/cost` is an alias). On subscription plans it shows 
 - [Git and GitHub](/building/git-and-github/): the safety net under every session
 - [Human in the loop](/agents/human-in-the-loop/): why approval steps matter
 - [Prompt injection](/running/prompt-injection/): the main risk when an agent reads outside content
+- [Sandboxes and code execution](/building/sandboxes-and-code-execution/): sealed-off spaces for running code an agent writes
 
 ## Next up
 

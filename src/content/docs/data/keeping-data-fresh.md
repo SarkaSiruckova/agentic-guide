@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: false
 published: 2026-10-02
 sidebar:
-  order: 9
+  order: 10
 ---
 
 A map is only useful if the roads on it still exist. Clean, matched records go out of date too, and this page covers how to keep what an agent reads in step with the system where the information really lives.

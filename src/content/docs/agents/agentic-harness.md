@@ -122,4 +122,4 @@ The first week, the logs show the agent suggesting an angel who already invested
 
 ## Next up
 
-A harness can only hand its agent tools that reach real systems: a calendar, a file store, a customer database. Connecting to any of them starts with how software asks for data and proves who it is, which is the subject of [APIs, OAuth and API keys](/agents/apis-oauth-and-api-keys/).
+A harness reads its instructions afresh every time, so a good one lets you write down how you like a job done once instead of retyping it in every chat. [Skills and instruction files](/agents/skills-and-instruction-files/) show how.

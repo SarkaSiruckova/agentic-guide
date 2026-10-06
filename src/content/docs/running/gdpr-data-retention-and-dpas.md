@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: true
 published: 2026-10-02
 sidebar:
-  order: 8
+  order: 9
 ---
 
 Security, from prompt injection through to [audit trails](/running/audit-trails/), keeps data away from the wrong people and records who touched it. Data protection law asks a further question, whether you should hold information about people at all, for how long, and who handles it for you, and this page closes the security pages of Part 6 with those rules as they apply to AI tools.
@@ -155,7 +155,8 @@ The result is a short file: the signed DPA, the DPIA, and a one-page map of wher
 - [Permissions and access control](/data/permissions-and-access-control/): who may see personal data once it is in your systems
 - [Memory](/agents/memory/): a store of facts about people that needs retention rules
 - [RAG and chunking](/data/rag-and-chunking/): indexes hold copies of personal data that deletion must reach
+- [Writing an AI policy](/running/writing-an-ai-policy/): turning these duties into short house rules for your team
 
 ## Next up
 
-With the locks fitted and the paperwork in order, the remaining practical question is what all of this costs to run. The rest of Part 6 is about the fuel bill, starting with [how API pricing works](/running/how-api-pricing-works/).
+The law sets the floor for everyone. Your own house rules on top of it, covering which tools your team may use, what data goes in and what must be checked, belong in [writing an AI policy](/running/writing-an-ai-policy/).

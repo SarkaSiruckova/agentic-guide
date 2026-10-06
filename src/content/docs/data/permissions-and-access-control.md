@@ -6,7 +6,7 @@ lastReviewed: 2026-10-02
 snapshot: false
 published: 2026-10-02
 sidebar:
-  order: 10
+  order: 11
 ---
 
 Connections, search and fresh copies decide what an agent can reach. Permissions are the keys: they decide what it may see and do on behalf of each person, and each person's key should open only the doors they could open anyway.
@@ -125,7 +125,9 @@ The most common mistake is giving the agent a broad account for convenience and 
 - [System prompts](/using-ai/system-prompts/): useful for guidance, not for enforcement
 - [Human in the loop](/agents/human-in-the-loop/): approvals for actions that are risky or hard to undo
 - [Least privilege](/running/least-privilege/): the principle for deciding what to grant
+- [Memory layers](/data/memory-layers/): an agent's saved notes need the same permissions as their sources
+- [From me to us](/data/from-me-to-us/): why access per person matters once a whole team uses AI
 
 ## Next up
 
-Every part is now in place. [What a context layer is](/data/what-a-context-layer-is/) pulls connectors, entity resolution, search, freshness and permissions together into one design.
+Permissions cover documents and records, but an agent also writes its own notes as it works. [Memory layers](/data/memory-layers/) shows how that memory is stored and retrieved for a team, and why it needs the same keys.

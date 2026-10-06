@@ -6,7 +6,7 @@ published: 2026-10-06
 lastReviewed: 2026-10-06
 snapshot: true
 sidebar:
-  order: 8
+  order: 5
 ---
 
 A skill is a packaged set of instructions that an agent opens only when a job needs it. This page is the practical side: where skills live in the Claude apps, how to switch on the built-in ones, how to add your own, and what to check before installing one from someone else.
@@ -106,8 +106,8 @@ If you would rather not write it by hand, Anthropic offers a skill called skill-
 - **One job per skill.** Several small skills combine better than one large one.
 - **Test with real requests.** Ask for the job in the words you would really use. If Claude does not pick the skill up, rewrite the description, not the instructions.
 - **Show an example.** A short sample of good output helps Claude match it.
-- **No secrets inside.** Never put passwords or API keys in a skill. Anyone you share it with gets every file.
-- **Pair with a connector when you need live data.** A skill cannot reach another service by itself. If the job needs your calendar or files, add a [connector](/agents/connectors-in-claude/) and let the skill say how to use it.
+- **No secrets inside.** Never put passwords or API keys (secret codes that let software sign in to a service, covered on the next page) in a skill. Anyone you share it with gets every file.
+- **Pair with a connector when you need live data.** A skill cannot reach another service by itself. If the job needs your calendar or files, add a [connector](/agents/connectors-in-claude/) (a ready-made link that lets Claude reach your other apps, covered a few pages on) and let the skill say how to use it.
 - **Use the right home for the rule.** Instructions you want in every chat belong in your personal preferences or a project's instructions, not in a skill, which loads only when a task matches.
 
 **Installing skills from others.** A skill can contain instructions that steer Claude and scripts that run as part of your conversation. Skills someone shares with you, or that you upload, are not reviewed by Anthropic. Anthropic's own warning names two risks: prompt injection (hidden instructions that make Claude do something you did not ask) and data being sent somewhere it should not go by malicious code. Before turning one on, open it and read the SKILL.md and every file. If you cannot tell what a script does, do not install it. [Safety basics](/agents/safety-basics/), later in this part, covers these risks in more depth.
@@ -152,4 +152,4 @@ Jo wrote the instructions once, and they now arrive only when the job does.
 
 ## Next up
 
-Skills are know-how you write on purpose. [Memory](/agents/memory/) is the other half: what an assistant keeps from one conversation to the next, and how it brings it back.
+You have taught Claude how you like jobs done. Next it needs to reach your systems, such as your email and files, and that starts with how software asks for data and proves who it is: [APIs, OAuth and API keys](/agents/apis-oauth-and-api-keys/).

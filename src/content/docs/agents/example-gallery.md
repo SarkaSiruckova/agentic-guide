@@ -6,7 +6,7 @@ published: 2026-10-06
 lastReviewed: 2026-10-06
 snapshot: false
 sidebar:
-  order: 13
+  order: 14
 ---
 
 Tools, connectors, skills, memory, approvals and [subagents](/agents/subagents-and-multi-agent-systems/) are easier to understand once you see them put together. This page shows six small, realistic setups, so you can spot one close to your own needs and see which pieces it takes.

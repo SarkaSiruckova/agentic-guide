@@ -8,6 +8,15 @@ sidebar:
 
 | Date | Change |
 | --- | --- |
+| 2026-10-07 | Part 3 reordered: skills now come before APIs, MCP and connectors |
+| 2026-10-07 | New page: [From me to us](/data/from-me-to-us/) |
+| 2026-10-07 | New page: [Local vs cloud](/building/local-vs-cloud/) |
+| 2026-10-07 | New page: [Writing an AI policy](/running/writing-an-ai-policy/) |
+| 2026-10-07 | New page: [Browser and computer-use agents](/agents/browser-and-computer-use-agents/) |
+| 2026-10-07 | New page: [Sandboxes and code execution](/building/sandboxes-and-code-execution/) |
+| 2026-10-07 | New page: [Memory layers](/data/memory-layers/) |
+| 2026-10-07 | New page: [Agent identity and payments](/running/agent-identity-and-payments/) |
+| 2026-10-07 | New page: [Voice and phone agents](/channels/voice-and-phone-agents/) |
 | 2026-10-06 | New page design: a jargon card at the top of every page, related pages as tiles, and a Next up box |
 | 2026-10-06 | Added real uses and examples to [LLMs, LRMs and LQMs](/under-the-hood/llms-lrms-and-lqms/) |
 | 2026-10-06 | Guide restructured into seven parts plus electives, from using AI to building agents, with new example personas and Windows notes |

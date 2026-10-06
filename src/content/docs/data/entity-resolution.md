@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: false
 published: 2026-10-02
 sidebar:
-  order: 8
+  order: 9
 ---
 
 Graphs, searches and counts all assume each company or person appears once. Entity resolution is the work that makes that true, by deciding which records, names and addresses belong to the same real-world thing.

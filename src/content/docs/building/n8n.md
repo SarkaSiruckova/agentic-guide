@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: true
 published: 2026-10-05
 sidebar:
-  order: 13
+  order: 15
 ---
 
 [Orchestration tools](/building/orchestration-tools/) range from visual platforms to plain code. n8n is one of the visual ones, and a close look at it shows how the whole category works in practice.

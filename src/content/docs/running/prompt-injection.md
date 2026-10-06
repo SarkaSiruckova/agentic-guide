@@ -127,6 +127,7 @@ The same hidden text in the same email becomes a line in a log instead of a leak
 - [Least privilege](/running/least-privilege/): limits what a fooled agent can reach
 - [Human in the loop](/agents/human-in-the-loop/): a person approves the actions that matter
 - [Tool use](/agents/tool-use/): why tool results are an entry point for hidden instructions
+- [Browser and computer-use agents](/agents/browser-and-computer-use-agents/): agents that read whole web pages, a common route for hidden instructions
 
 ## Next up
 

@@ -6,7 +6,7 @@ published: 2026-10-06
 lastReviewed: 2026-10-06
 snapshot: false
 sidebar:
-  order: 10
+  order: 11
 ---
 
 Connectors, skills and [memory](/agents/memory/) let an assistant read your accounts and act in them. This page covers what to know the first time you switch that on: the main risk, why tools make it real, and a short checklist.
@@ -79,6 +79,7 @@ Tighter access means a few more clicks and the odd refusal. That is the trade-of
 - [Data exfiltration through tools](/running/data-exfiltration-through-tools/): the full version, in Part 6
 - [Connectors in Claude](/agents/connectors-in-claude/): where the permission screens and approvals live
 - [Skills in Claude](/agents/skills-in-claude/): adding and checking skills
+- [Browser and computer-use agents](/agents/browser-and-computer-use-agents/): agents that read untrusted web pages and act in your logged-in browser
 
 ## Next up
 

@@ -5,11 +5,11 @@ tags: [channels, security]
 lastReviewed: 2026-10-06
 snapshot: false
 sidebar:
-  order: 8
+  order: 9
 published: 2026-10-05
 ---
 
-Whatever the channel, the same moment comes once a message arrives: the agent must work out whether it is being asked something or told to change something. This page sets out how to treat those two paths differently.
+Whether a request arrives as a chat message, an email or a phone call, the same moment comes: the agent must work out whether it is being asked something or told to change something. This page sets out how to treat those two paths differently.
 
 **In one line:** reading information and writing information are different risk levels, so an agent reached through a chat channel should be read-only by default and should only write after it knows who is asking, shows what it will change and gets a clear yes.
 

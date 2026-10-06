@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: false
 published: 2026-10-02
 sidebar:
-  order: 7
+  order: 8
 ---
 
 Narrow keys and closed exits, covered in [data exfiltration through tools](/running/data-exfiltration-through-tools/), limit what an agent can do. An audit trail records what it actually did, like an alarm system's log of every door opened and by whom.

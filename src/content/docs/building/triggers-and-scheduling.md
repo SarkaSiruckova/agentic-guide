@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: false
 published: 2026-10-02
 sidebar:
-  order: 11
+  order: 13
 ---
 
 Code on a hosting platform, with its keys stored safely and a database such as [Supabase](/building/supabase/) to write to, still needs something to set it going. This page covers the triggers that start work without anyone typing, and the traps that come with running unattended.
@@ -111,6 +111,7 @@ One day the shop system delivers the same event twice. The job first checks the 
 - [Serverless functions](/building/serverless-functions/): small pieces of code that a timer or event can start
 - [Human-in-the-loop](/agents/human-in-the-loop/): approvals for risky actions in jobs nobody is watching
 - [Observability](/running/observability/): the logs and alerts that show whether unattended jobs ran
+- [Local vs cloud](/building/local-vs-cloud/): why a schedule on your laptop skips runs while it sleeps
 
 ## Next up
 

@@ -118,4 +118,4 @@ When it works you should see the generated files in your GitHub repository, with
 
 ## Next up
 
-All of these tools build software that then needs somewhere to run. For small jobs that only happen now and then, that place is often a [serverless function](/building/serverless-functions/).
+All of these tools build software that then needs somewhere to run. [Local vs cloud](/building/local-vs-cloud/) looks at which pieces can live on your own computer and which need servers that stay on when your laptop is closed.

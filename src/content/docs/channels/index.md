@@ -1,6 +1,6 @@
 ---
 title: Comms channels
-description: Talking to agents through chat apps and email.
+description: Talking to agents through chat apps, email and voice.
 tags: [channels]
 snapshot: true
 lastReviewed: 2026-10-06
@@ -10,7 +10,7 @@ sidebar:
 published: 2026-10-02
 ---
 
-An agent is only useful if people can reach it. Once you have built one (Part 4 of the guide ends with building a first agent), the last elective covers how to connect an agent or context layer to the chat apps and email people already use, both to ask questions and to add information.
+An agent is only useful if people can reach it. Once you have built one (Part 4 of the guide ends with building a first agent), the last elective covers how to connect an agent or context layer to the chat apps, email and phone lines people already use, both to ask questions and to add information.
 
 Platform rules change often, so every channel page is a snapshot as of October 2026. The two pages that stay true whatever the platform are the first and the last.
 
@@ -28,6 +28,7 @@ Platform rules change often, so every channel page is a snapshot as of October 2
 | Telegram | [Telegram](/channels/telegram/) |
 | xAI Grok and its bots | [xAI Grok and bots](/channels/xai-grok/) |
 | Email | [Email](/channels/email/) |
+| Phone and voice | [Voice and phone agents](/channels/voice-and-phone-agents/) |
 
 ## Then make it safe
 

@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: false
 published: 2026-10-02
 sidebar:
-  order: 5
+  order: 6
 ---
 
 [Embeddings](/data/embeddings/) let software find passages by meaning rather than exact words. RAG puts that search to work: it finds the few passages that matter in a large pile of documents and has the model answer from them.

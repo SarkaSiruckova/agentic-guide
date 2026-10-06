@@ -142,7 +142,8 @@ Sample Ventures runs a shared intros mailbox. Founders and other investors send 
 - [Prompt injection](/running/prompt-injection/): why email text cannot be trusted
 - [Human in the loop](/agents/human-in-the-loop/): drafts that a person approves
 - [Auth and secrets](/map/auth-and-secrets/): delegated and application access
+- [Voice and phone agents](/channels/voice-and-phone-agents/): the spoken, real-time channel
 
 ## Next up
 
-Every channel ends with the same design question: what may a message only ask, and what may it change? [Querying vs adding information safely](/channels/querying-vs-adding-safely/) answers it for all of them.
+Email is written and slow, with time to check a draft before it goes. The last channel is spoken and happens in real time: [Voice and phone agents](/channels/voice-and-phone-agents/).
