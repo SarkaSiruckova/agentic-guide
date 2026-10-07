@@ -5,7 +5,18 @@
  * under it comes from the page's own "## Next up" section, which the rehype
  * add-on removes from the article body so it only appears here.
  */
+import { getCollection } from 'astro:content';
+import { parts } from '../data/concept-map';
+
 const { pagination, entry } = Astro.locals.starlightRoute;
+
+// "Tick off as read": only on guide pages that appear on the concept map.
+// Ticks live in the reader's browser (localStorage key guide-map-read),
+// shared with the concept map page, so ticking here shows there too.
+const dirs = new Set(parts.map((p) => p.dir));
+const trackable = dirs.has(entry.id.split('/')[0]);
+const pageId = '/' + entry.id.replace(/\/index$/, '') + '/';
+const total = trackable ? (await getCollection('docs')).filter((e) => dirs.has(e.id.split('/')[0])).length : 0;
 const { prev, next } = pagination;
 
 const body: string = (entry as { body?: string }).body ?? '';
@@ -23,6 +34,43 @@ function inline(md: string): string {
 }
 const paragraphs = nextText ? nextText.split(/\n\s*\n/).map((p) => inline(p.replace(/\n/g, ' '))) : [];
 ---
+
+{
+  trackable && (
+    <div class="guide-tick print:hidden" data-page={pageId} data-total={total}>
+      <button type="button" class="guide-tick-btn" aria-pressed="false">
+        <span class="guide-tick-dot" aria-hidden="true" />
+        <span class="guide-tick-label">Tick off as read</span>
+      </button>
+      <span class="guide-tick-count" />
+      <a class="guide-tick-map" href={`/concept-map/#${pageId}`}>See it on the concept map →</a>
+    </div>
+  )
+}
+
+<script is:inline>
+  (function () {
+    var KEY = 'guide-map-read';
+    document.querySelectorAll('.guide-tick').forEach(function (box) {
+      var id = box.dataset.page, total = box.dataset.total;
+      var btn = box.querySelector('.guide-tick-btn'), label = box.querySelector('.guide-tick-label'), count = box.querySelector('.guide-tick-count');
+      function load() { try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } catch (e) { return []; } }
+      function show() {
+        var read = load(), on = read.indexOf(id) >= 0;
+        btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+        label.textContent = on ? 'Ticked off as read' : 'Tick off as read';
+        count.textContent = read.length ? read.length + ' of ' + total + ' ticked off' : '';
+      }
+      btn.addEventListener('click', function () {
+        var read = load(), i = read.indexOf(id);
+        if (i >= 0) read.splice(i, 1); else read.push(id);
+        try { localStorage.setItem(KEY, JSON.stringify(read)); } catch (e) {}
+        show();
+      });
+      show();
+    });
+  })();
+</script>
 
 {
   (prev || next) && (
@@ -54,6 +102,69 @@ const paragraphs = nextText ? nextText.split(/\n\s*\n/).map((p) => inline(p.repl
 }
 
 <style>
+  .guide-tick {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1rem;
+    margin: 3rem 0 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--sl-color-gray-5);
+    font-family: var(--sl-font);
+  }
+  .guide-tick-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.55rem 1rem;
+    border-radius: 999px;
+    border: 1px solid var(--sl-color-gray-4);
+    background: transparent;
+    color: var(--sl-color-white);
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .guide-tick-btn:hover {
+    border-color: var(--sl-color-accent);
+  }
+  .guide-tick-dot {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 2px solid var(--sl-color-accent);
+    display: grid;
+    place-items: center;
+    font-size: 0.7rem;
+    line-height: 1;
+  }
+  .guide-tick-btn[aria-pressed='true'] {
+    background: var(--sl-color-accent-low);
+    border-color: var(--sl-color-accent);
+  }
+  .guide-tick-btn[aria-pressed='true'] .guide-tick-dot {
+    background: var(--sl-color-accent);
+  }
+  .guide-tick-btn[aria-pressed='true'] .guide-tick-dot::after {
+    content: '✓';
+    color: var(--sl-color-black);
+    font-weight: 700;
+  }
+  .guide-tick-count {
+    font-size: 0.85rem;
+    color: var(--sl-color-gray-3);
+  }
+  .guide-tick-map {
+    margin-left: auto;
+    font-size: 0.9rem;
+    color: var(--sl-color-gray-2);
+    text-underline-offset: 3px;
+  }
+  .guide-tick-map:hover {
+    color: var(--sl-color-white);
+  }
   .guide-pager {
     display: grid;
     gap: 1rem;

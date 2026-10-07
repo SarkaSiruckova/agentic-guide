@@ -139,7 +139,7 @@ If a section does not match this shape, it is shown as plain markdown instead, s
 2. Add a row to the top of the table in `reference/recently-added.md`.
 3. Give the page a `sidebar: order` in its part folder (renumbering if needed), and do the bridges described above.
 4. If it pairs with a commonly confused term, add or update an entry in `reference/confusables.md`.
-5. The [concept map](/concept-map/) (`src/pages/concept-map.astro`) builds itself from every page's title, `sidebar: order`, In one line, jargon section and Related list, so those must stay in their standard format. If the page teaches a journey stage (chat, skills, connectors, agents, automations, workflows, team scale) or clearly runs in one place (inside the AI app, on your laptop, in the cloud, shared by a team, in chat channels), add its URL to `src/data/concept-map.ts`. The build log warns about any URL there that no longer exists.
+5. The [concept map](/concept-map/) (`src/pages/concept-map.astro`) builds itself from every page's title, `sidebar: order`, In one line, jargon section and Related list, so those must stay in their standard format. If the page teaches a journey stage (chat, skills, connectors, agents, automations, workflows, team scale) or clearly runs in one place (inside the AI app, on your laptop, in the cloud, shared by a team, in chat channels), add its URL to `src/data/concept-map.ts`. The build log warns about any URL there that no longer exists. Every page in a part or elective folder also gets a "Tick off as read" button above the bottom navigation (`src/components/Pagination.astro`); ticks are stored in the reader's browser under `guide-map-read` and shared with the concept map.
 
 ## Before every commit
 
