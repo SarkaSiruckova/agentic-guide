@@ -25,6 +25,8 @@ Every idea comes in plain words first, then its proper name, so the vocabulary b
 
 One picture runs through the guide: the model is the engine, and everything built around it is the rest of the car.
 
+To see the whole guide at once, open the [concept map](/concept-map/). It shows every page in reading order, what each one builds on and leads to, and where each piece of jargon comes up.
+
 ## Pick a reading path
 
 <mark>Part 1 is for everyone, because it gives you the words every later page is built on.</mark>

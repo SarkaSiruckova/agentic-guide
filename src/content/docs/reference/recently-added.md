@@ -8,6 +8,7 @@ sidebar:
 
 | Date | Change |
 | --- | --- |
+| 2026-10-07 | New: the [concept map](/concept-map/), every page on one interactive map |
 | 2026-10-07 | Part 3 reordered: skills now come before APIs, MCP and connectors |
 | 2026-10-07 | New page: [From me to us](/data/from-me-to-us/) |
 | 2026-10-07 | New page: [Local vs cloud](/building/local-vs-cloud/) |

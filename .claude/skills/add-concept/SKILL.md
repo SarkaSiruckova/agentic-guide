@@ -38,7 +38,7 @@ The reader is the student and relies on you for accuracy. There is no approval s
 
 1. Research anything that depends on specific tools, providers or current facts. Concept explanations themselves should stay timeless.
 2. Write the page using `templates/concept.md` (for concept pages) and the style rules in `CLAUDE.md`. Include a diagram if anything has moving parts.
-3. Set `published` to today's date. Do the housekeeping steps from `CLAUDE.md`: glossary, recently added, sidebar position, related pages, confusables, and the bridges (this page's opening bridge and Next up, plus the Next up of the page before it).
+3. Set `published` to today's date. Do the housekeeping steps from `CLAUDE.md`: glossary, recently added, sidebar position, related pages, confusables, and the bridges (this page's opening bridge and Next up, plus the Next up of the page before it). Check whether the page belongs to a journey stage or a place in `src/data/concept-map.ts` (see the housekeeping list in `CLAUDE.md`).
 4. Run the safety check and `npm run build`.
 5. Commit and push (or leave that to the publish-guide skill).
 6. Tell the reader what changed, the live link `https://agentic-guide.vercel.app/<path>/`, and anything you are unsure about.

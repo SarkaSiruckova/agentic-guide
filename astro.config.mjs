@@ -126,6 +126,7 @@ export default defineConfig({
           label: 'Reference',
           collapsed: true,
           items: [
+            { label: 'Concept map', link: '/concept-map/' },
             'reference/glossary',
             'reference/confusables',
             { label: 'Browse by tag', link: '/tags/' },
