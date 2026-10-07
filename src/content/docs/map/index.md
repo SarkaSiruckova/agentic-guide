@@ -1,5 +1,5 @@
 ---
-title: The map
+title: Infrastructure map
 description: How every piece of AI infrastructure fits together.
 tags: [infrastructure]
 lastReviewed: 2026-10-06
@@ -59,4 +59,4 @@ Every layer page has a short, dated list of example providers. Those lists chang
 
 ## Next up
 
-The map starts at the bottom of the stack. [Compute and cloud](/map/compute-and-cloud/) covers the chips and data centres everything else runs on.
+The infrastructure map starts at the bottom of the stack. [Compute and cloud](/map/compute-and-cloud/) covers the chips and data centres everything else runs on.

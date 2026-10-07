@@ -35,7 +35,7 @@ To see the whole guide at once, open the [concept map](/concept-map/). It shows 
 | --- | --- | --- |
 | Just using AI | Part 1 Start here and Part 2 Using AI well | The [example gallery](/agents/example-gallery/), to see what agents can do |
 | Building with it | Parts 1 to 4, up to your first agent | Part 5 Data and the context layer, and Part 6 Running it for real |
-| Going deep | Everything in order | Part 7 Under the hood, and the electives on the industry map, model makers and chat channels |
+| Going deep | Everything in order | Part 7 Under the hood, and the electives on the infrastructure map, model makers and chat channels |
 
 ```mermaid
 flowchart TD

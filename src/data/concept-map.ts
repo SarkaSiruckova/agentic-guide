@@ -18,7 +18,7 @@ export const parts = [
   { dir: 'running', kicker: 'Part 6', title: 'Running it for real', colour: '--p6' },
   { dir: 'under-the-hood', kicker: 'Part 7', title: 'Under the hood (optional)', colour: '--p7' },
   { dir: 'models', kicker: 'Side trip', title: 'Model landscape', colour: '--el', side: true },
-  { dir: 'map', kicker: 'Side trip', title: 'The map', colour: '--el', side: true },
+  { dir: 'map', kicker: 'Side trip', title: 'Infrastructure map', colour: '--el', side: true },
   { dir: 'channels', kicker: 'Side trip', title: 'Comms channels', colour: '--el', side: true },
 ];
 

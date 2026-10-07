@@ -119,7 +119,7 @@ The most common mistake is starting with the architecture instead of a question 
 - [Structured vs unstructured data](/data/structured-vs-unstructured-data/): the two kinds of material the layer has to handle
 - [Permissions and access control](/data/permissions-and-access-control/): how the layer decides what each person may see
 - [MCP](/agents/mcp/): a common standard for connecting agents to sources
-- [The map](/map/): where each layer of the infrastructure sits
+- [Infrastructure map](/map/): where each layer of the infrastructure sits
 - [Memory layers](/data/memory-layers/): the piece that keeps what agents learn from conversations
 - [From me to us](/data/from-me-to-us/): the move from personal to shared setup that a context layer serves
 

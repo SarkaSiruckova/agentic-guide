@@ -9,7 +9,7 @@ sidebar:
 published: 2026-10-02
 ---
 
-The map ends at the top of the stack, where a person meets the agent. Every layer below, from chips to logs, is reached through this one.
+The infrastructure map ends at the top of the stack, where a person meets the agent. Every layer below, from chips to logs, is reached through this one.
 
 **In one line:** the interface is the place where a person meets the agent, whether that is a chat window, a command line, a dashboard, a spreadsheet or a message in the team chat.
 

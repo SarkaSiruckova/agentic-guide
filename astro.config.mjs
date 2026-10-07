@@ -107,6 +107,7 @@ export default defineConfig({
       },
       sidebar: [
         { label: '1. Start here', collapsed: true, items: [{ autogenerate: { directory: 'start' } }] },
+        { label: 'Concept map', link: '/concept-map/' },
         { label: '2. Using AI well', collapsed: true, items: [{ autogenerate: { directory: 'using-ai' } }] },
         { label: '3. How agents work', collapsed: true, items: [{ autogenerate: { directory: 'agents' } }] },
         { label: '4. Building your own', collapsed: true, items: [{ autogenerate: { directory: 'building' } }] },
@@ -117,7 +118,7 @@ export default defineConfig({
           label: 'Electives',
           collapsed: true,
           items: [
-            { label: 'The map', collapsed: true, items: [{ autogenerate: { directory: 'map' } }] },
+            { label: 'Infrastructure map', collapsed: true, items: [{ autogenerate: { directory: 'map' } }] },
             { label: 'Model landscape', collapsed: true, items: [{ autogenerate: { directory: 'models' } }] },
             { label: 'Comms channels', collapsed: true, items: [{ autogenerate: { directory: 'channels' } }] },
           ],
@@ -126,7 +127,6 @@ export default defineConfig({
           label: 'Reference',
           collapsed: true,
           items: [
-            { label: 'Concept map', link: '/concept-map/' },
             'reference/glossary',
             'reference/confusables',
             { label: 'Browse by tag', link: '/tags/' },
