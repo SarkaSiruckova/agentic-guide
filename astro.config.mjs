@@ -115,6 +115,7 @@ export default defineConfig({
         { label: '6. Running it for real', collapsed: true, items: [{ autogenerate: { directory: 'running' } }] },
         { label: '7. Under the hood', collapsed: true, items: [{ autogenerate: { directory: 'under-the-hood' } }] },
         { label: '8. Concept map', link: '/concept-map/' },
+        { label: '9. The agentic car', link: '/car-model/' },
         {
           label: 'Electives',
           collapsed: true,

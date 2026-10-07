@@ -402,6 +402,7 @@ const nav=document.getElementById('nav'),scrim=document.getElementById('scrim'),
 function link(href,label,cur){return `<a href="${href}"${cur?' class="cur" aria-current="page"':''}>${esc(label)}</a>`;}
 let n=0;nav.innerHTML=link('/','Home')+PARTS.map((p,i)=>p.side?'':`<details><summary>${++n}. ${esc(p.title.replace(' (optional)',''))}</summary>${cols[i].map(q=>link(q.id,q.sl||q.t)).join('')}</details>`).join('')
   +link('/concept-map/',(n+1)+'. Concept map',true)
+  +link('/car-model/',(n+2)+'. The agentic car')
   +`<details><summary>Electives</summary>${PARTS.map((p,i)=>p.side?`<details class="sub"><summary>${esc(p.title)}</summary>${cols[i].map(q=>link(q.id,q.sl||q.t)).join('')}</details>`:'').join('')}</details>`
   +`<details><summary>Reference</summary>${link('/reference/glossary/','Glossary')}${link('/reference/confusables/','Confusables')}${link('/tags/','Browse by tag')}${link('/reference/recently-added/','Recently added')}</details>`;
 function menu(on){nav.hidden=!on;scrim.hidden=!on;mb.setAttribute('aria-expanded',on?'true':'false');if(on)nav.querySelector('a').focus();}

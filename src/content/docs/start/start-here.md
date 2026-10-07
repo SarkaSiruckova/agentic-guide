@@ -27,6 +27,8 @@ One picture runs through the guide: the model is the engine, and everything buil
 
 To see the whole guide at once, open the [concept map](/concept-map/). It shows every page in reading order, what each one builds on and leads to, and where each piece of jargon comes up.
 
+Prefer a picture? Explore the whole idea as a car you can zoom into: [The agentic car](/car-model/).
+
 ## Pick a reading path
 
 <mark>Part 1 is for everyone, because it gives you the words every later page is built on.</mark>

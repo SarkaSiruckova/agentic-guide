@@ -75,7 +75,7 @@ File names are short, lowercase, hyphenated: `tokens-and-context-windows.md`.
 
 ## Reading order and the sidebar
 
-The folder is the part, and `sidebar: order: N` in each page's frontmatter sets its place within the part. The sidebar in `astro.config.mjs` autogenerates each part from its folder, collapsed except the part being read. Electives sit in one group; Reference lists glossary, confusables, browse by tag and recently added (always last).
+The folder is the part, and `sidebar: order: N` in each page's frontmatter sets its place within the part. The sidebar in `astro.config.mjs` autogenerates each part from its folder, collapsed except the part being read. The menu order is: Home, 1 to 7, 8. Concept map, 9. The agentic car, Electives, Reference. Electives sit in one group; Reference lists glossary, confusables, browse by tag and recently added (always last).
 
 To add a page, put it in the right part folder, give it an order number, and renumber the pages after it if needed. Moving a page to another part changes its URL: add an entry to `redirects` in `astro.config.mjs` when you do. The home page (`index.mdx`) lists the parts as cards; update it only if a part is added or its first page changes.
 
@@ -139,7 +139,10 @@ If a section does not match this shape, it is shown as plain markdown instead, s
 2. Add a row to the top of the table in `reference/recently-added.md`.
 3. Give the page a `sidebar: order` in its part folder (renumbering if needed), and do the bridges described above.
 4. If it pairs with a commonly confused term, add or update an entry in `reference/confusables.md`.
-5. The [concept map](/concept-map/) (`src/pages/concept-map.astro`) builds itself from every page's title, `sidebar: order`, In one line, jargon section and Related list, so those must stay in their standard format. If the page teaches a journey stage (chat, skills, connectors, agents, automations, workflows, team scale) or clearly runs in one place (inside the AI app, on your laptop, in the cloud, shared by a team, in chat channels), add its URL to `src/data/concept-map.ts`. The build log warns about any URL there that no longer exists. Every page in a part or elective folder also gets a "Tick off as read" button above the bottom navigation (`src/components/Pagination.astro`); ticks are stored in the reader's browser under `guide-map-read` and shared with the concept map.
+5. The [concept map](/concept-map/) (`src/pages/concept-map.astro`) builds itself from every page's title, `sidebar: order`, In one line, jargon section and Related list, so those must stay in their standard format. If the page teaches a journey stage (chat, skills, connectors, agents, automations, workflows, team scale) or clearly runs in one place (inside the AI app, on your laptop, in the cloud, shared by a team, in chat channels), add its URL to `src/data/concept-map.ts`. The build log warns about any URL there that no longer exists. The concept map has its own menu drawer, built in the script at the bottom of the page: if the sidebar in `astro.config.mjs` changes, change the drawer to match. Every page in a part or elective folder also gets a "Tick off as read" button above the bottom navigation (`src/components/Pagination.astro`); ticks are stored in the reader's browser under `guide-map-read` and shared with the concept map.
+
+6. [The agentic car](/car-model/) (`src/pages/car-model.astro`) is a standalone page like the concept map, outside the content collection. It has no tick-off button, is not in `src/data/concept-map.ts` and is not indexed by search. Its parts and example providers live in the arrays inside the file (`S.world`, `S.car`, `S.bonnet`, `S.cabin`). If a new guide concept belongs in the car, add an item to the right array, and keep its provider names generic examples, not a ranking.
+7. Snapshot recheck: provider names on the car page, and the pages marked `snapshot: true`, go out of date quickly. Check them against vendor pages when reviewing snapshots, and update the "Snapshot: month year" line in the footer of `car-model.astro`.
 
 ## Before every commit
 
