@@ -43,6 +43,7 @@ const pages = docs
       t: e.data.title,
       g: e.id.split('/')[0],
       o: (e.data.sidebar as { order?: number } | undefined)?.order ?? 0,
+      sl: (e.data.sidebar as { label?: string } | undefined)?.label,
       d: cap(plain(one ? one[1] : e.data.description ?? '')),
       r: related,
       j: terms,
@@ -148,6 +149,20 @@ const total = data.pages.length;
       #legend button{all:unset;cursor:pointer;display:block}
       #hint{position:absolute;right:14px;bottom:14px;font-size:12px;color:var(--t3)}
       aside{width:380px;border-left:1px solid var(--line);background:var(--bg2);overflow:auto;padding:20px 22px 30px}
+      aside:not(.open){display:none}
+      #nav{position:absolute;top:0;left:0;bottom:0;width:min(300px,86vw);background:var(--bg2);border-right:1px solid var(--line);z-index:50;overflow:auto;padding:12px 12px 40px;box-shadow:12px 0 30px rgba(0,0,0,.3)}
+      #scrim{position:absolute;inset:0;background:rgba(0,0,0,.35);z-index:45}
+      #nav[hidden],#scrim[hidden]{display:none}
+      #nav a,#nav summary{display:block;padding:6px 10px;border-radius:6px;color:var(--t2);text-decoration:none;font-size:14.5px;cursor:pointer}
+      #nav>a,#nav>details>summary{color:var(--t1);font-weight:600;font-size:15px}
+      #nav a:hover,#nav summary:hover{background:var(--bg3);color:var(--t1)}
+      #nav a.cur{background:var(--accl);color:var(--t1);font-weight:600}
+      #nav details>a,#nav details>details{margin-left:12px}
+      #nav details.sub>summary{font-weight:600;color:var(--t1)}
+      #nav summary{list-style:none;display:flex;justify-content:space-between}
+      #nav summary::after{content:'›';color:var(--t3);transition:transform .15s}
+      #nav details[open]>summary::after{transform:rotate(90deg)}
+      #nav summary::-webkit-details-marker{display:none}
       .kick{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);display:flex;align-items:center;gap:8px}
       .kick i{width:10px;height:10px;border-radius:50%;display:inline-block}
       aside h2{font-family:'Literata',Georgia,serif;font-weight:600;font-size:22px;line-height:1.25;margin:8px 0 10px}
@@ -189,7 +204,7 @@ const total = data.pages.length;
   </head>
   <body>
     <header>
-      <a class="back" href="/">← Field guide</a>
+      <button class="btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">☰ Menu</button>
       <div class="brand">Concept map<small>{total} pages · 7 Parts · 3 side trips</small></div>
       <div class="search">
         <label class="sr" for="q">Find a page or a term</label>
@@ -201,6 +216,7 @@ const total = data.pages.length;
         <button type="button" data-c="zone" aria-pressed="false">Where it runs</button>
       </div>
       <div class="prog"><b id="pn">0</b> of {total} ticked off<div class="pbar"><i id="pb"></i></div></div>
+      <button class="btn" id="help" type="button">How to use</button>
       <button class="btn" id="fit" type="button">Fit</button>
       <button class="btn" id="theme" type="button">Light</button>
     </header>
@@ -212,6 +228,8 @@ const total = data.pages.length;
       </div>
       <div id="list"></div>
       <aside id="side" aria-live="polite"></aside>
+      <div id="scrim" hidden></div>
+      <nav id="nav" aria-label="Guide menu" hidden></nav>
     </main>
     <script type="application/json" id="cm-data" set:html={json} />
     <script is:inline>
@@ -304,9 +322,10 @@ function progress(){const n=read.size;document.getElementById('pn').textContent=
 const side=document.getElementById('side');
 function li(p,extra){return `<button type="button" class="li" data-id="${p.id}"><i style="background:${read.has(p.id)?pcol(p):'transparent'};border:2px solid ${pcol(p)}"></i>${esc(p.t)}<span>${esc(extra==null?PARTS[PI[p.g]].kicker:extra)}</span></button>`;}
 function chip(attr,val,label,title){return `<button type="button" class="ch" ${attr}="${esc(val)}"${title?` title="${esc(title)}"`:''}>${esc(label)}</button>`;}
-function select(s){sel=s;renderSide();draw();renderList();side.classList.toggle('open',!!s);if(s)side.scrollTop=0;}
+function openPanel(on){side.classList.toggle('open',on);}
+function select(s){sel=s;renderSide();draw();renderList();openPanel(!!s);if(s)side.scrollTop=0;}
 function renderSide(){
-  if(!sel){const nu=nextUnread();side.innerHTML=`<div class="kick">How to use this map</div><h2>Every page, in reading order</h2><p class="one">Each column is a Part, read top to bottom, left to right. The bar across the top is the journey the guide takes you on. Pick any stop to see what it builds on, what it leads to and the jargon it introduces.</p><div class="sec"><h3>Try</h3><div class="chips">${chip('data-st','agents','The Agents stage')}${chip('data-term','Prompt injection','Where prompt injection comes up')}${chip('data-pid','/data/from-me-to-us/','From me to us')}${chip('data-zone','cloud','What runs in the cloud')}</div></div><div class="sec"><h3>${read.size?'Pick up where you left off':'Start at the beginning'}</h3>${li(nu,read.size?'next to read':'Part 1')}</div><p class="note" style="margin-top:18px">Tick pages off as you read them. Your ticks stay in this browser only; nothing is sent anywhere.</p>`;bind();return;}
+  if(!sel){const nu=nextUnread();side.innerHTML=`<button type="button" class="x" aria-label="Close">×</button><div class="kick">How to use this map</div><h2>Every page, in reading order</h2><p class="one">Each column is a Part, read top to bottom, left to right. The bar across the top is the journey the guide takes you on. Pick any stop to see what it builds on, what it leads to and the jargon it introduces.</p><div class="sec"><h3>Try</h3><div class="chips">${chip('data-st','agents','The Agents stage')}${chip('data-term','Prompt injection','Where prompt injection comes up')}${chip('data-pid','/data/from-me-to-us/','From me to us')}${chip('data-zone','cloud','What runs in the cloud')}</div></div><div class="sec"><h3>${read.size?'Pick up where you left off':'Start at the beginning'}</h3>${li(nu,read.size?'next to read':'Part 1')}</div><p class="note" style="margin-top:18px">Tick pages off as you read them. Your ticks stay in this browser only; nothing is sent anywhere.</p>`;bind();return;}
   let h='<button type="button" class="x" aria-label="Close">×</button>';
   if(sel.kind=='page'){const p=sel.v;const L=p.links.map(i=>BY[i]);
     const bef=L.filter(q=>!q.side&&!p.side&&q.gi<p.gi).sort((a,b)=>a.gi-b.gi);
@@ -375,11 +394,23 @@ addEventListener('pointermove',e=>{if(!drag)return;const r=svg.getBoundingClient
 addEventListener('pointerup',()=>{drag=null;wrap.classList.remove('drag');});
 svg.addEventListener('click',e=>{if(moved<5&&e.target===svg)select(null);});
 wrap.addEventListener('wheel',e=>{e.preventDefault();const r=svg.getBoundingClientRect();const mx=view.x+(e.clientX-r.left)/r.width*view.w,my=view.y+(e.clientY-r.top)/r.height*view.h;const f=Math.exp(e.deltaY*.0012);const nw=Math.max(400,Math.min(W*2,view.w*f));const k=nw/view.w;view.x=mx-(mx-view.x)*k;view.y=my-(my-view.y)*k;view.w=nw;view.h*=k;setVB();},{passive:false});
-addEventListener('resize',fit);
+let lastW=0;
+new ResizeObserver(()=>{const r=svg.getBoundingClientRect();if(!r.width)return;if(!lastW)fit();else{const k=view.w/lastW;view.w=r.width*k;view.h=r.height*k;setVB();}lastW=r.width;}).observe(wrap);
+document.getElementById('help').onclick=()=>{const on=!(side.classList.contains('open')&&!sel);sel=null;renderSide();draw();openPanel(on);};
+// guide menu drawer
+const nav=document.getElementById('nav'),scrim=document.getElementById('scrim'),mb=document.getElementById('menuBtn');
+function link(href,label,cur){return `<a href="${href}"${cur?' class="cur" aria-current="page"':''}>${esc(label)}</a>`;}
+let n=0;nav.innerHTML=link('/','Home')+PARTS.map((p,i)=>p.side?'':`<details><summary>${++n}. ${esc(p.title.replace(' (optional)',''))}</summary>${cols[i].map(q=>link(q.id,q.sl||q.t)).join('')}</details>`).join('')
+  +link('/concept-map/',(n+1)+'. Concept map',true)
+  +`<details><summary>Electives</summary>${PARTS.map((p,i)=>p.side?`<details class="sub"><summary>${esc(p.title)}</summary>${cols[i].map(q=>link(q.id,q.sl||q.t)).join('')}</details>`:'').join('')}</details>`
+  +`<details><summary>Reference</summary>${link('/reference/glossary/','Glossary')}${link('/reference/confusables/','Confusables')}${link('/tags/','Browse by tag')}${link('/reference/recently-added/','Recently added')}</details>`;
+function menu(on){nav.hidden=!on;scrim.hidden=!on;mb.setAttribute('aria-expanded',on?'true':'false');if(on)nav.querySelector('a').focus();}
+mb.onclick=()=>menu(nav.hidden);scrim.onclick=()=>menu(false);
+addEventListener('keydown',e=>{if(e.key=='Escape'&&!nav.hidden)menu(false);});
 addEventListener('keydown',e=>{if(e.key=='Escape'&&document.activeElement!==q)select(null);if(e.key=='/'&&document.activeElement!==q){e.preventDefault();q.focus();}});
 const fromHash=()=>BY[decodeURIComponent(location.hash.slice(1))];
 addEventListener('hashchange',()=>{const p=fromHash();if(p)select({kind:'page',v:p});});
-fit();const hp=fromHash();select(hp?{kind:'page',v:hp}:null);
+const hp=fromHash();select(hp?{kind:'page',v:hp}:null);
 })();
     </script>
   </body>

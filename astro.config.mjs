@@ -106,14 +106,15 @@ export default defineConfig({
         Pagination: './src/components/Pagination.astro',
       },
       sidebar: [
+        { label: 'Home', link: '/' },
         { label: '1. Start here', collapsed: true, items: [{ autogenerate: { directory: 'start' } }] },
-        { label: 'Concept map', link: '/concept-map/' },
         { label: '2. Using AI well', collapsed: true, items: [{ autogenerate: { directory: 'using-ai' } }] },
         { label: '3. How agents work', collapsed: true, items: [{ autogenerate: { directory: 'agents' } }] },
         { label: '4. Building your own', collapsed: true, items: [{ autogenerate: { directory: 'building' } }] },
         { label: '5. Data and the context layer', collapsed: true, items: [{ autogenerate: { directory: 'data' } }] },
         { label: '6. Running it for real', collapsed: true, items: [{ autogenerate: { directory: 'running' } }] },
         { label: '7. Under the hood', collapsed: true, items: [{ autogenerate: { directory: 'under-the-hood' } }] },
+        { label: '8. Concept map', link: '/concept-map/' },
         {
           label: 'Electives',
           collapsed: true,
