@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: false
 published: 2026-10-02
 sidebar:
-  order: 6
+  order: 7
 ---
 
 Open-weight models can be downloaded and run on your own hardware, but large ones need a lot of memory. Quantisation is the common way to make them fit.

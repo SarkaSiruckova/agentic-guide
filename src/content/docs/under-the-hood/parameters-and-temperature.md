@@ -119,6 +119,7 @@ Same model, same firm, opposite settings, because the jobs want opposite things:
 - [Hallucination and grounding](/start/hallucination-and-grounding/): why low temperature does not fix made-up answers
 - [Tool use](/agents/tool-use/): where the other meaning of "parameters" appears
 - [Inference](/under-the-hood/inference/): the stage at which sampling happens
+- [Machine learning and neural networks](/under-the-hood/machine-learning-and-neural-networks/): the wider idea that parameters belong to
 
 ## Next up
 

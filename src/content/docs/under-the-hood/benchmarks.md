@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: true
 published: 2026-10-02
 sidebar:
-  order: 7
+  order: 8
 ---
 
 Once models are built, run, labelled, shared and shrunk, the last question is how to compare them, and public benchmarks are where most comparisons start.
@@ -101,4 +101,4 @@ The result: the leaderboard leader gets 22 of 25 right but sometimes mixes up th
 
 ## Next up
 
-That closes the main path of the guide. If you want to keep going, the electives start with [the map of the industry](/map/), which shows who makes what across the AI landscape.
+That closes the main path of the guide. The electives, starting with the [infrastructure map](/map/), cover who makes what across the AI landscape. To see how everything you have read fits together first, open the [concept map](/concept-map/), which shows every page, what it builds on and where each term comes up.

@@ -6,10 +6,10 @@ lastReviewed: 2026-10-06
 snapshot: true
 published: 2026-10-02
 sidebar:
-  order: 4
+  order: 5
 ---
 
-Model labels such as LLM, LRM and LQM are used loosely, and the reasoning models you may already use sit under one of them, LRM. This page sorts out what each one means, and why the more useful question is what a model is built to do.
+Model labels such as LLM, LRM and LQM are used loosely, and the reasoning models you may already use sit under one of them, LRM. Once you know how [machine learning and neural networks](/under-the-hood/machine-learning-and-neural-networks/) work in general, this page sorts out what each label means, and why the more useful question is what a model is built to do.
 
 **In one line:** LLM, LRM and LQM are informal labels for models built around text, step-by-step reasoning, and numbers or simulation, and the useful question is always what a model is built to do and how you can check it.
 
@@ -54,7 +54,7 @@ flowchart TD
 
 The dotted lines matter. In real systems these things are combined: a language model or reasoning model handles the conversation and the planning, and calls a quantitative tool for the part that needs exact numbers.
 
-**Snapshot, as of October 2026.** This paragraph describes how the term is used now, and it may change. The best-known user of "large quantitative models" is SandboxAQ, a company that describes them as AI trained on physics, chemistry, biology and maths to model real-world systems, using data generated from physical principles and lab data. Its examples are drug discovery, materials and chemistry. In 2026 it announced two such models for its marketplace launch on a major cloud platform, one for catalyst and materials discovery and one for drug discovery. Its chief executive has described the approach as complementary to language models, and has said these models use neural networks and knowledge graphs rather than the transformer design behind most language models.
+**Snapshot, as of October 2026.** This paragraph describes how the term is used now, and it may change. The best-known user of "large quantitative models" is SandboxAQ, a company that describes them as AI trained on physics, chemistry, biology and maths to model real-world systems, using data generated from physical principles and lab data. Its examples are drug discovery, materials and chemistry. In 2026 it announced two such models for its marketplace launch on a major cloud platform, one for catalyst and materials discovery and one for drug discovery. Its chief executive has described the approach as complementary to language models, and has said these models use [neural networks](/under-the-hood/machine-learning-and-neural-networks/) and knowledge graphs rather than the transformer design behind most language models.
 
 Others use the same words more loosely. A revenue-software vendor uses "large quantitative models" for models built on structured sales and CRM data that produce forecasts and deal risk scores. A research-and-explainer site and an IT news article describe LQMs generally as models for numerical, structured data used for forecasting, risk and simulation. These descriptions do not agree on what makes a model an LQM, how large it must be, or how it is built. Treat the term as partly vendor branding until an agreed definition appears.
 
@@ -135,6 +135,7 @@ The model attempts each task many times and is rewarded when the final answer is
 - [Reasoning models](/using-ai/reasoning-models/): when to switch thinking on in everyday use
 - [Tool use](/agents/tool-use/): how a language model calls a spreadsheet or script for exact numbers
 - [Benchmarks](/under-the-hood/benchmarks/): how claims about a model's ability are tested
+- [Machine learning and neural networks](/under-the-hood/machine-learning-and-neural-networks/): what a neural network is, before the labels
 
 ## Next up
 

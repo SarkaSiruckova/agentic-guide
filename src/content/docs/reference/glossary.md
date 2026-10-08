@@ -62,6 +62,7 @@ This is the reference for the whole guide: every term in one line, in alphabetic
 - [Base model](/under-the-hood/pre-training-and-post-training/): a pre-trained model that continues text but does not reliably follow instructions
 - [Batch processing](/running/prompt-caching-and-batch-processing/): submitting many non-urgent requests together for a lower price
 - [Benchmark](/under-the-hood/benchmarks/): a public standard test used to compare models in general
+- [Black box](/under-the-hood/machine-learning-and-neural-networks/): a model whose answers you can see but whose reasoning you cannot
 - [Blast radius](/running/least-privilege/): how much damage one mistake or compromise can cause
 - [Block Kit](/channels/slack/): Slack's format for rich messages with buttons and layouts
 - [Bot user](/channels/slack/): an account-like identity an app uses to post in Slack
@@ -141,6 +142,7 @@ This is the reference for the whole guide: every term in one line, in alphabetic
 - [Decode](/under-the-hood/inference/): the stage where the model writes its reply one token at a time
 - [Dedicated deployment](/map/open-model-hosting/): model capacity reserved for you alone
 - [Deduplication](/data/entity-resolution/): finding and removing duplicate records for the same entity
+- [Deep learning](/under-the-hood/machine-learning-and-neural-networks/): machine learning that uses neural networks with many layers
 - [Delegated access](/agents/apis-oauth-and-api-keys/): acting with a user's own permissions
 - [Delegated permission](/map/auth-and-secrets/): access that lets an app act as a signed-in person
 - [Deny rule](/building/claude-code-in-depth/): a settings entry that blocks a tool or path outright
@@ -207,6 +209,7 @@ This is the reference for the whole guide: every term in one line, in alphabetic
 - [Handoff](/map/agent-frameworks/): passing a task from one agent to another
 - [Harness engineering](/agents/agentic-harness/): designing and tuning the parts of a harness to improve reliability
 - [Hobby plan](/building/vercel/): Vercel's free tier for personal, non-commercial projects
+- [Hold-out data](/under-the-hood/machine-learning-and-neural-networks/): examples kept back from training and used afterwards as an exam
 - [Home folder](/building/terminal-basics/): your personal folder, written as `~`
 - [Homebrew](/building/terminal-basics/): a package manager for macOS command-line tools and apps
 - [Hook](/building/claude-code-in-depth/): a command that runs automatically at a set moment
@@ -240,6 +243,7 @@ This is the reference for the whole guide: every term in one line, in alphabetic
 - [Integration](/map/connectors-and-integrations/): any working link between two systems, built by anyone
 - [Interface](/map/interfaces/): the surface a person uses to reach an agent
 - [Internal tool](/map/interfaces/): a small app built for one team's own work
+- [Interpretability](/under-the-hood/machine-learning-and-neural-networks/): methods for working out why a model gives the answers it does
 - [Isolation](/building/sandboxes-and-code-execution/): keeping a program's actions from reaching anything outside its space
 - [Jagged frontier](/start/what-ai-is-good-and-bad-at/): the uneven shape of AI ability, strong at some hard tasks and weak at some easy ones
 - [Jailbreak](/running/prompt-injection/): getting a model to break its own built-in safety rules
@@ -267,6 +271,7 @@ This is the reference for the whole guide: every term in one line, in alphabetic
 - [LoRA](/data/fine-tuning-vs-prompting-vs-rag/): a lightweight fine-tuning method that trains small adapters instead of the whole model
 - [LQM](/under-the-hood/llms-lrms-and-lqms/): large quantitative model, an informal label for models built around numbers or simulation
 - [LRM](/under-the-hood/llms-lrms-and-lqms/): large reasoning model, a language model trained to think step by step first
+- [Machine learning](/under-the-hood/machine-learning-and-neural-networks/): software that learns patterns from examples instead of being given rules
 - [Managed settings](/using-ai/recommended-settings/): organisation-wide settings that individuals cannot override
 - [Mandate](/running/agent-identity-and-payments/): a signed record of what a person told an agent it may buy
 - [Maximum output length](/under-the-hood/parameters-and-temperature/): the cap on how many tokens a reply may contain
@@ -299,6 +304,7 @@ This is the reference for the whole guide: every term in one line, in alphabetic
 - [Multimodal model](/using-ai/multimodal-models/): a model that handles more than one kind of material, such as text and images
 - [Namespace](/data/memory-layers/): a labelled section of memory, such as one per user or one per team
 - [Network egress](/building/sandboxes-and-code-execution/): traffic going out from a machine to the internet
+- [Neural network](/under-the-hood/machine-learning-and-neural-networks/): a model built from layers of simple maths units, with internal numbers adjusted during training
 - [No-code builder](/map/agent-frameworks/): a visual tool for assembling agents without writing code
 - [Node](/data/knowledge-graphs/): a thing in a graph, such as a person, company or fund
 - [Non-determinism](/start/what-ai-is-good-and-bad-at/): getting different outputs from the same input on different runs
@@ -320,6 +326,7 @@ This is the reference for the whole guide: every term in one line, in alphabetic
 - [Outbound channel](/running/data-exfiltration-through-tools/): any tool or route an agent can use to send something out
 - [Output modality](/using-ai/multimodal-models/): a kind of material a model can produce
 - [Output tokens](/running/how-api-pricing-works/): the tokens the model writes back
+- [Overfitting](/under-the-hood/machine-learning-and-neural-networks/): a model memorising its training examples, so it fails on new ones
 - [Package manager](/building/terminal-basics/): a tool that installs and tracks other software
 - Parameters: the inputs a tool needs, such as a company name ([tool use](/agents/tool-use/)), or the internal numbers a model learns in training, also called weights ([what an LLM is](/start/what-an-llm-is/) and [parameters and temperature](/under-the-hood/parameters-and-temperature/))
 - [Path](/building/terminal-basics/): the written address of a file or folder
@@ -474,8 +481,10 @@ This is the reference for the whole guide: every term in one line, in alphabetic
 - [System of record](/map/databases-and-storage/): the one place a given fact officially lives
 - [System prompt](/using-ai/system-prompts/): standing instructions set by the builder, sent before every conversation
 - [Tab completion](/building/terminal-basics/): pressing Tab to finish a file or command name
+- [Tabular data](/under-the-hood/machine-learning-and-neural-networks/): data in rows and columns, like a spreadsheet
 - [Takeover](/agents/browser-and-computer-use-agents/): you take control of the screen for a step, such as typing a password
 - [Tamper-resistant](/running/audit-trails/): protected so records cannot be quietly altered
+- [Target variable](/under-the-hood/machine-learning-and-neural-networks/): the column a model is trained to predict or explain
 - [Team Bot](/channels/xai-grok/): one shared bot that every teammate talks to in private chats
 - [Team plan](/data/from-me-to-us/): a paid account for a group, with central billing and admin controls
 - [Telephony provider](/channels/voice-and-phone-agents/): a company that supplies phone numbers and connects calls to software

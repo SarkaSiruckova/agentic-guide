@@ -37,7 +37,7 @@ Without them, you either pay general-model prices for simple jobs, or you hit jo
 
 ## How it works
 
-Most specialised models are the same kind of technology as a chat model (a neural network trained on lots of examples, see [what an LLM is](/start/what-an-llm-is/)), but trained for one output. Instead of producing free-flowing text, they produce a vector, a score, a label or a transcript.
+Most specialised models are the same kind of technology as a chat model (a [neural network](/under-the-hood/machine-learning-and-neural-networks/) trained on lots of examples, see [what an LLM is](/start/what-an-llm-is/)), but trained for one output. Instead of producing free-flowing text, they produce a vector, a score, a label or a transcript.
 
 Here are the main families:
 
@@ -122,6 +122,7 @@ Voice notes from calls are handled by a speech-to-text model first, then follow 
 - [Multimodal models](/using-ai/multimodal-models/): models that handle images, audio and text together
 - [Databases and storage](/map/databases-and-storage/): where the vectors and source files live
 - [Model access platforms](/map/model-access-platforms/): where you call hosted models from
+- [Machine learning and neural networks](/under-the-hood/machine-learning-and-neural-networks/): what a neural network is and how it learns
 
 ## Next up
 

@@ -123,7 +123,8 @@ If this is slow every day, the options are: send only the relevant sections inst
 - [Tokens and context windows](/start/tokens-and-context-windows/): what is being counted, and how much fits
 - [Quantisation](/under-the-hood/quantisation/): one way to run a model faster and on smaller hardware
 - [How AI pricing works](/running/how-api-pricing-works/): how inference turns into a bill
+- [Machine learning and neural networks](/under-the-hood/machine-learning-and-neural-networks/): the learning idea behind a trained model
 
 ## Next up
 
-Models come in different kinds, and the labels attached to them can be confusing. [LLMs, LRMs and LQMs](/under-the-hood/llms-lrms-and-lqms/) sorts out what each label means and why the more useful question is what a model is built to do.
+A language model is one example of a wider idea, software that learns from examples. [Machine learning and neural networks](/under-the-hood/machine-learning-and-neural-networks/) steps back to show how that learning works, whether the examples are text or the rows of a spreadsheet.

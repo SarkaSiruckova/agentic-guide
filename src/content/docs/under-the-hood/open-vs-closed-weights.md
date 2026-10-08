@@ -6,7 +6,7 @@ lastReviewed: 2026-10-06
 snapshot: true
 published: 2026-10-02
 sidebar:
-  order: 5
+  order: 6
 ---
 
 Once you know what kinds of model exist, a practical question follows: who holds the engine, and can you run it yourself? This page explains the difference between open and closed models.

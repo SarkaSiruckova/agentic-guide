@@ -119,6 +119,7 @@ The most common mistake is treating an LLM as a database or a search engine. It 
 - [Embeddings](/data/embeddings/): how text becomes numbers that capture meaning
 - [Pre-training and post-training](/under-the-hood/pre-training-and-post-training/): how a model gets its knowledge and manners
 - [Inference](/under-the-hood/inference/): what happens when you send a prompt
+- [Machine learning and neural networks](/under-the-hood/machine-learning-and-neural-networks/): the wider idea an LLM is one example of
 
 ## Next up
 

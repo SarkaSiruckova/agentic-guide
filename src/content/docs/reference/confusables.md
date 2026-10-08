@@ -85,6 +85,18 @@ Authentication is proving who you are. Authorisation is deciding what you are al
 
 [Read the full page](/agents/apis-oauth-and-api-keys/).
 
+## Machine learning vs AI vs deep learning
+
+Three terms often used as if they mean the same thing. Each one sits inside the one before it.
+
+| Term | What it covers |
+| --- | --- |
+| AI | Any machine doing a task that seems intelligent, by any method |
+| Machine learning | Software that learns its own rules from examples, one way of building AI |
+| Deep learning | Machine learning with many-layered neural networks, including large language models |
+
+[Read the full page](/under-the-hood/machine-learning-and-neural-networks/).
+
 ## LLM vs LRM vs LQM
 
 Three labels that overlap. An LRM is a kind of LLM, and "LQM" is an informal term whose meaning varies by who uses it.
